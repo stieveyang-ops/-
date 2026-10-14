@@ -1,0 +1,168 @@
+{
+  "targets": {
+    "my_compound_005": [
+      {
+        "target_id": "my_compound_005",
+        "route_id": "my_compound_005__route_001",
+        "original_rank": 1,
+        "new_rank": 1,
+        "solved": true,
+        "original_state_score": 0.9976287063411217,
+        "number_of_reactions": 1,
+        "difficulty_applicable": true,
+        "difficulty_bottleneck": 49.4859282955423,
+        "difficulty_mean": 49.4859282955423,
+        "route_uncertainty": 0.8769393450743337,
+        "route_confidence": "low",
+        "hardest_step_id": "my_compound_005__route_001__step_001",
+        "hardest_step_ids": [
+          "my_compound_005__route_001__step_001"
+        ],
+        "hardest_step_reaction": "CC(=O)OC(C)=O.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1>>CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O",
+        "hardest_step_reactions": [
+          "CC(=O)OC(C)=O.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1>>CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O"
+        ],
+        "route_type": "reaction_route",
+        "steps": [
+          {
+            "target_id": "my_compound_005",
+            "route_id": "my_compound_005__route_001",
+            "step_id": "my_compound_005__route_001__step_001",
+            "reaction_hash": "c8955f2f207fa300f6f48c8d1bd594986bf96068ba392e372c9602137f3f1c18",
+            "reaction_smiles": "CC(=O)OC(C)=O.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1>>CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O",
+            "product_smiles": "CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O",
+            "precursor_smiles": "CC(=O)OC(C)=O.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1",
+            "p_feas": 0.7480530738830566,
+            "d_feas": 0.25194692611694336,
+            "s_max": 0.5431610783357391,
+            "n_analog": 0,
+            "p_prec": 0.0,
+            "d_prec": 1.0,
+            "sc_product": 2.381387948989868,
+            "sc_precursor_max": 2.2836813926696777,
+            "delta_sc": 0.09770655632019043,
+            "d_sc": 0.04675652906486942,
+            "p_easy": 0.3041059347349942,
+            "p_medium": 0.4020695646191656,
+            "p_difficult": 0.2938245006458402,
+            "reaction_difficulty": 49.4859282955423,
+            "uncertainty": 0.8769393450743337,
+            "confidence": "Low",
+            "explanation_code": "reaction_difficulty_v1",
+            "explanation_text": "Reaction difficulty is 49.485928/100 from feasibility difficulty 0.251947, precedent difficulty 1.000000, and normalized delta-SC difficulty 0.046757; confidence is Low."
+          }
+        ],
+        "route_explanation": "Route difficulty is governed by the hardest reaction step (my_compound_005__route_001__step_001); bottleneck=49.485928, mean=49.485928, confidence=low.",
+        "rank_change": 0
+      },
+      {
+        "target_id": "my_compound_005",
+        "route_id": "my_compound_005__route_003",
+        "original_rank": 3,
+        "new_rank": 2,
+        "solved": true,
+        "original_state_score": 0.9976287063411217,
+        "number_of_reactions": 1,
+        "difficulty_applicable": true,
+        "difficulty_bottleneck": 49.57494695492184,
+        "difficulty_mean": 49.57494695492184,
+        "route_uncertainty": 0.9505879887174657,
+        "route_confidence": "low",
+        "hardest_step_id": "my_compound_005__route_003__step_001",
+        "hardest_step_ids": [
+          "my_compound_005__route_003__step_001"
+        ],
+        "hardest_step_reaction": "CC(=O)O.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1>>CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O",
+        "hardest_step_reactions": [
+          "CC(=O)O.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1>>CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O"
+        ],
+        "route_type": "reaction_route",
+        "steps": [
+          {
+            "target_id": "my_compound_005",
+            "route_id": "my_compound_005__route_003",
+            "step_id": "my_compound_005__route_003__step_001",
+            "reaction_hash": "a4de3fad2d674ee9cb5762698555c686486b6186b4c8935cff9e2ca8a6966408",
+            "reaction_smiles": "CC(=O)O.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1>>CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O",
+            "product_smiles": "CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O",
+            "precursor_smiles": "CC(=O)O.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1",
+            "p_feas": 0.657181441783905,
+            "d_feas": 0.34281855821609497,
+            "s_max": 0.6451005554209074,
+            "n_analog": 0,
+            "p_prec": 0.0,
+            "d_prec": 1.0,
+            "sc_product": 2.381387948989868,
+            "sc_precursor_max": 2.2836813926696777,
+            "delta_sc": 0.09770655632019043,
+            "d_sc": 0.04675652906486942,
+            "p_easy": 0.3032077281588098,
+            "p_medium": 0.4020856045839435,
+            "p_difficult": 0.2947066672572467,
+            "reaction_difficulty": 49.57494695492184,
+            "uncertainty": 0.9505879887174657,
+            "confidence": "Low",
+            "explanation_code": "reaction_difficulty_v1",
+            "explanation_text": "Reaction difficulty is 49.574947/100 from feasibility difficulty 0.342819, precedent difficulty 1.000000, and normalized delta-SC difficulty 0.046757; confidence is Low."
+          }
+        ],
+        "route_explanation": "Route difficulty is governed by the hardest reaction step (my_compound_005__route_003__step_001); bottleneck=49.574947, mean=49.574947, confidence=low.",
+        "rank_change": 1
+      },
+      {
+        "target_id": "my_compound_005",
+        "route_id": "my_compound_005__route_002",
+        "original_rank": 2,
+        "new_rank": 3,
+        "solved": true,
+        "original_state_score": 0.9976287063411217,
+        "number_of_reactions": 1,
+        "difficulty_applicable": true,
+        "difficulty_bottleneck": 49.70913002115607,
+        "difficulty_mean": 49.70913002115607,
+        "route_uncertainty": 0.9991831962908861,
+        "route_confidence": "low",
+        "hardest_step_id": "my_compound_005__route_002__step_001",
+        "hardest_step_ids": [
+          "my_compound_005__route_002__step_001"
+        ],
+        "hardest_step_reaction": "CC(=O)Cl.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1>>CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O",
+        "hardest_step_reactions": [
+          "CC(=O)Cl.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1>>CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O"
+        ],
+        "route_type": "reaction_route",
+        "steps": [
+          {
+            "target_id": "my_compound_005",
+            "route_id": "my_compound_005__route_002",
+            "step_id": "my_compound_005__route_002__step_001",
+            "reaction_hash": "b1cb1539400eccfca3547c3cdcea4eed62cf8b5f68188966ff44f45bfa8ca605",
+            "reaction_smiles": "CC(=O)Cl.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1>>CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O",
+            "product_smiles": "CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O",
+            "precursor_smiles": "CC(=O)Cl.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1",
+            "p_feas": 0.5202089548110962,
+            "d_feas": 0.4797910451889038,
+            "s_max": 0.7301508041022224,
+            "n_analog": 0,
+            "p_prec": 0.0,
+            "d_prec": 1.0,
+            "sc_product": 2.381387948989868,
+            "sc_precursor_max": 2.2836813926696777,
+            "delta_sc": 0.09770655632019043,
+            "d_sc": 0.04675652906486942,
+            "p_easy": 0.30185668154240297,
+            "p_medium": 0.4021040364920727,
+            "p_difficult": 0.2960392819655243,
+            "reaction_difficulty": 49.70913002115607,
+            "uncertainty": 0.9991831962908861,
+            "confidence": "Low",
+            "explanation_code": "reaction_difficulty_v1",
+            "explanation_text": "Reaction difficulty is 49.709130/100 from feasibility difficulty 0.479791, precedent difficulty 1.000000, and normalized delta-SC difficulty 0.046757; confidence is Low."
+          }
+        ],
+        "route_explanation": "Route difficulty is governed by the hardest reaction step (my_compound_005__route_002__step_001); bottleneck=49.709130, mean=49.709130, confidence=low.",
+        "rank_change": -1
+      }
+    ]
+  }
+}

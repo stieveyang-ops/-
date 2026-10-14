@@ -1,0 +1,30 @@
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_model.onnx to uspto
+Loading templates from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_templates.csv.gz to uspto
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_ringbreaker_model.onnx to ringbreaker
+Loading templates from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_ringbreaker_templates.csv.gz to ringbreaker
+Loading filter policy model from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_filter_model.onnx to uspto
+Loading stock from InMemoryInchiKeyQuery to zinc
+Selected as stock: zinc
+Compounds in stock: 35205265
+Selected as expansion policy: uspto
+Selected as filter policy: uspto
+  0%|          | 0/100 [00:00<?, ?it/s]  2%|▏         | 2/100 [00:01<01:08,  1.42it/s]  8%|▊         | 8/100 [00:02<00:30,  3.01it/s] 14%|█▍        | 14/100 [00:02<00:14,  6.12it/s] 18%|█▊        | 18/100 [00:03<00:09,  8.52it/s] 22%|██▏       | 22/100 [00:03<00:07, 10.04it/s] 83%|████████▎ | 83/100 [00:03<00:00, 71.26it/s]                                                Trees saved to C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\prospective_runs\my_compound_003_20261013_133423\routes_raw.json
+target: CC(=O)Oc1ccccc1C(=O)O
+search time: 3.571593999862671
+first solution time: 1.406116008758545
+first solution iteration: 1
+number of nodes: 46
+max transforms: 4
+max children: 20
+number of routes: 38
+number of solved routes: 32
+top score: 0.9976287063411217
+is solved: True
+number of steps: 1
+number of precursors: 2
+number of precursors in stock: 2
+precursors in stock: CC(=O)OC(C)=O, O=C(O)c1ccccc1O
+precursors not in stock: 
+precursors availability: zinc;zinc
+policy used counts: {'uspto': 45}
+profiling: {'expansion_calls': 14, 'reactants_generations': 607, 'iterations': 100}

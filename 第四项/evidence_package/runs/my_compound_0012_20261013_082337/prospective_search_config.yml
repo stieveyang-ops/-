@@ -1,0 +1,36 @@
+search:
+  algorithm: mcts
+  algorithm_config:
+    C: 1.4
+    default_prior: 0.5
+    use_prior: true
+    prune_cycles_in_search: true
+    search_rewards:
+    - state score
+    search_rewards_weights: []
+  max_transforms: 6
+  iteration_limit: 100
+  return_first: false
+  time_limit: 120.0
+  exclude_target_from_stock: true
+expansion:
+  uspto:
+  - C:\Users\18706\OneDrive\Desktop\黑客松\可运行作品\external_public_data\public_data\uspto_model.onnx
+  - C:\Users\18706\OneDrive\Desktop\黑客松\可运行作品\external_public_data\public_data\uspto_templates.csv.gz
+  ringbreaker:
+  - C:\Users\18706\OneDrive\Desktop\黑客松\可运行作品\external_public_data\public_data\uspto_ringbreaker_model.onnx
+  - C:\Users\18706\OneDrive\Desktop\黑客松\可运行作品\external_public_data\public_data\uspto_ringbreaker_templates.csv.gz
+filter:
+  uspto:
+    type: quick-filter
+    model: C:\Users\18706\OneDrive\Desktop\黑客松\可运行作品\external_public_data\public_data\uspto_filter_model.onnx
+    filter_cutoff: 0.05
+    use_remote_models: false
+stock:
+  zinc: C:\Users\18706\OneDrive\Desktop\黑客松\可运行作品\external_public_data\public_data\zinc_stock.hdf5
+post_processing:
+  min_routes: 3
+  max_routes: 10
+  all_routes: false
+  route_scorers:
+  - state score

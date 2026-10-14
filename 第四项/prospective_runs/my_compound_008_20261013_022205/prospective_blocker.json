@@ -1,0 +1,103 @@
+{
+  "tool": "prospective_difficulty_tool",
+  "tool_version": "1.0",
+  "project_dir": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\frozen_project",
+  "runtime": {
+    "python_executable": "C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\python.exe",
+    "python_version": "3.10.20",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.0",
+    "scipy": "1.15.2",
+    "sklearn": "1.5.2",
+    "statsmodels": "0.14.4",
+    "rdkit": "2023.9.6",
+    "aizynthfinder": "4.4.1"
+  },
+  "git": {
+    "commit": null,
+    "status_porcelain": ""
+  },
+  "frozen_assets": {
+    "production_config": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\frozen_project\\config\\config_production.yml",
+      "sha256": "B535987F1F27BE1401A46BC39E99DA545BFBEDB76E814F19291ED7816DD95E13",
+      "size_bytes": 952
+    },
+    "difficulty_config": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\frozen_project\\config\\difficulty.yml",
+      "sha256": "815A9F7D21E396349457A535F97CFAB94D10226EE5F353335E770D4D36A395C6",
+      "size_bytes": 1072
+    },
+    "stage5_manifest": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\frozen_project\\reports\\stage5_manifest.json",
+      "sha256": "7895D448A943D9A7CE5A63994E5027E6727004523D21D22DE20AE4EF63816C67",
+      "size_bytes": 9435
+    },
+    "stage8_manifest": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\frozen_project\\reports\\stage8_manifest.json",
+      "sha256": "F1E9C120ED1B01CAD40CDF53ED6657C8AFC71DC897A05B4E84F77A664C9333C2",
+      "size_bytes": 2055
+    },
+    "reference_corpus": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\frozen_project\\data\\reference\\reference_reactions_clean.parquet",
+      "sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+      "size_bytes": 3467089
+    },
+    "reference_embeddings": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\frozen_project\\artifacts\\reference_rxnfp.npy",
+      "sha256": "37766193FEADD7C05CB97FF6285AF5D791A7FCF0EB37CE5D311D481DAD115E44",
+      "size_bytes": 5064832
+    },
+    "reference_metadata": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\frozen_project\\artifacts\\reference_metadata.parquet",
+      "sha256": "7062193C9936AA08FF2E43DB9BBA7C1B1269CC9FED12DE0A85827CAFF1EEB2AB",
+      "size_bytes": 482142
+    },
+    "reference_index": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\frozen_project\\artifacts\\reference_nn_index.joblib",
+      "sha256": "BB0B2D99E7D461604F5B498E56AB9206B587B1935B785959A9CDB715ED24CBB9",
+      "size_bytes": 5065284
+    },
+    "sc_delta_ecdf": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\frozen_project\\artifacts\\sc_delta_ecdf.npz",
+      "sha256": "3F82C235D0B48F6CADA66461E1664B68DA310593E0D76992C3CA546D6E68F6C5",
+      "size_bytes": 40322
+    },
+    "difficulty_model": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\frozen_project\\artifacts\\difficulty_model.pkl",
+      "sha256": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+      "size_bytes": 25572
+    },
+    "difficulty_model_metadata": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\frozen_project\\artifacts\\difficulty_model_metadata.json",
+      "sha256": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055",
+      "size_bytes": 2215
+    }
+  },
+  "search_policy": {
+    "expansion_policy": "uspto",
+    "stock": "zinc",
+    "nproc": 1,
+    "config_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\frozen_project\\config\\config_production.yml"
+  },
+  "input_mode": "search_then_score",
+  "configuration_unchanged": true,
+  "search_parameters": {
+    "iteration_limit": 100,
+    "time_limit": 120.0,
+    "max_transforms": 6,
+    "max_routes": 10,
+    "min_routes": 3
+  },
+  "status": "BLOCKED",
+  "created_at_utc": "2026-10-12T18:22:16.720678+00:00",
+  "error": "ProspectiveBlocked: AiZynthFinder search failed with return code 1:\nTraceback (most recent call last):\n  File \"C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\lib\\runpy.py\", line 196, in _run_module_as_main\n    return _run_code(code, main_globals, None,\n  File \"C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\lib\\runpy.py\", line 86, in _run_code\n    exec(code, run_globals)\n  File \"C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\lib\\site-packages\\aizynthfinder\\interfaces\\aizynthcli.py\", line 385, in <module>\n    main()\n  File \"C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\lib\\site-packages\\aizynthfinder\\interfaces\\aizynthcli.py\", line 358, in main\n    finder = AiZynthFinder(configfile=args.config)\n  File \"C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\lib\\site-packages\\aizynthfinder\\aizynthfinder.py\", line 71, in __init__\n    self.config = Configuration.from_file(configfile)\n  File \"C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\lib\\site-packages\\aizynthfinder\\context\\config.py\", line 134, in from_file\n    txt = fileobj.read()\nUnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 398: illegal multibyte sequence\n",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\prospective_difficulty_tool\\prospective_score.py\", line 1131, in main\n    routes_path, command, config_info = run_search(project, target_smiles, output_dir, search_params, progress)\n  File \"C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\可运行作品\\prospective_difficulty_tool\\prospective_score.py\", line 637, in run_search\n    raise ProspectiveBlocked(\"AiZynthFinder search failed with return code {0}:\\n{1}\".format(return_code, tail))\nProspectiveBlocked: AiZynthFinder search failed with return code 1:\nTraceback (most recent call last):\n  File \"C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\lib\\runpy.py\", line 196, in _run_module_as_main\n    return _run_code(code, main_globals, None,\n  File \"C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\lib\\runpy.py\", line 86, in _run_code\n    exec(code, run_globals)\n  File \"C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\lib\\site-packages\\aizynthfinder\\interfaces\\aizynthcli.py\", line 385, in <module>\n    main()\n  File \"C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\lib\\site-packages\\aizynthfinder\\interfaces\\aizynthcli.py\", line 358, in main\n    finder = AiZynthFinder(configfile=args.config)\n  File \"C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\lib\\site-packages\\aizynthfinder\\aizynthfinder.py\", line 71, in __init__\n    self.config = Configuration.from_file(configfile)\n  File \"C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\lib\\site-packages\\aizynthfinder\\context\\config.py\", line 134, in from_file\n    txt = fileobj.read()\nUnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 398: illegal multibyte sequence\n\n",
+  "scientific_boundaries": {
+    "project_files_modified": false,
+    "labels_read": false,
+    "locked_test_read": false,
+    "training_or_refit": false
+  }
+}

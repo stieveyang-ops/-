@@ -1,0 +1,222 @@
+{
+  "tool": "prospective_difficulty_tool",
+  "tool_version": "1.0",
+  "project_dir": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project",
+  "runtime": {
+    "python_executable": "C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\python.exe",
+    "python_version": "3.10.20",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.0",
+    "scipy": "1.15.2",
+    "sklearn": "1.5.2",
+    "statsmodels": "0.14.4",
+    "rdkit": "2023.9.6",
+    "aizynthfinder": "4.4.1"
+  },
+  "git": {
+    "commit": null,
+    "status_porcelain": ""
+  },
+  "frozen_assets": {
+    "production_config": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project\\config\\config_production.yml",
+      "sha256": "B535987F1F27BE1401A46BC39E99DA545BFBEDB76E814F19291ED7816DD95E13",
+      "size_bytes": 952
+    },
+    "difficulty_config": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project\\config\\difficulty.yml",
+      "sha256": "815A9F7D21E396349457A535F97CFAB94D10226EE5F353335E770D4D36A395C6",
+      "size_bytes": 1072
+    },
+    "stage5_manifest": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project\\reports\\stage5_manifest.json",
+      "sha256": "7895D448A943D9A7CE5A63994E5027E6727004523D21D22DE20AE4EF63816C67",
+      "size_bytes": 9435
+    },
+    "stage8_manifest": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project\\reports\\stage8_manifest.json",
+      "sha256": "F1E9C120ED1B01CAD40CDF53ED6657C8AFC71DC897A05B4E84F77A664C9333C2",
+      "size_bytes": 2055
+    },
+    "reference_corpus": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project\\data\\reference\\reference_reactions_clean.parquet",
+      "sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+      "size_bytes": 3467089
+    },
+    "reference_embeddings": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project\\artifacts\\reference_rxnfp.npy",
+      "sha256": "37766193FEADD7C05CB97FF6285AF5D791A7FCF0EB37CE5D311D481DAD115E44",
+      "size_bytes": 5064832
+    },
+    "reference_metadata": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project\\artifacts\\reference_metadata.parquet",
+      "sha256": "7062193C9936AA08FF2E43DB9BBA7C1B1269CC9FED12DE0A85827CAFF1EEB2AB",
+      "size_bytes": 482142
+    },
+    "reference_index": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project\\artifacts\\reference_nn_index.joblib",
+      "sha256": "BB0B2D99E7D461604F5B498E56AB9206B587B1935B785959A9CDB715ED24CBB9",
+      "size_bytes": 5065284
+    },
+    "sc_delta_ecdf": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project\\artifacts\\sc_delta_ecdf.npz",
+      "sha256": "3F82C235D0B48F6CADA66461E1664B68DA310593E0D76992C3CA546D6E68F6C5",
+      "size_bytes": 40322
+    },
+    "difficulty_model": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project\\artifacts\\difficulty_model.pkl",
+      "sha256": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+      "size_bytes": 25572
+    },
+    "difficulty_model_metadata": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project\\artifacts\\difficulty_model_metadata.json",
+      "sha256": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055",
+      "size_bytes": 2215
+    }
+  },
+  "search_policy": {
+    "expansion_policy": "uspto",
+    "stock": "zinc",
+    "nproc": 1,
+    "config_path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project\\config\\config_production.yml"
+  },
+  "input_mode": "search_then_score",
+  "configuration_unchanged": true,
+  "search_parameters": {
+    "iteration_limit": 100,
+    "time_limit": 120.0,
+    "max_transforms": 6,
+    "max_routes": 10,
+    "min_routes": 3
+  },
+  "search_command": [
+    "C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\python.exe",
+    "-s",
+    "-m",
+    "aizynthfinder.interfaces.aizynthcli",
+    "--config",
+    "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\prospective_search_config.yml",
+    "--smiles",
+    "CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O",
+    "--policy",
+    "uspto",
+    "--stocks",
+    "zinc",
+    "--output",
+    "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\routes_raw.json"
+  ],
+  "search_config": {
+    "original_config_path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project\\config\\config_production.yml",
+    "original_config_sha256": "B535987F1F27BE1401A46BC39E99DA545BFBEDB76E814F19291ED7816DD95E13",
+    "temporary_config_path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\prospective_search_config.yml",
+    "temporary_config_sha256": "BDEE15F2ADD70A6E14C1BC995E206E72126DCF8BB81A8ADE1EFD711FDF9702C5",
+    "effective": {
+      "iteration_limit": 100,
+      "time_limit": 120.0,
+      "max_transforms": 6,
+      "max_routes": 10,
+      "min_routes": 3
+    },
+    "overrides": {
+      "iteration_limit": 100,
+      "time_limit": 120.0,
+      "max_transforms": 6,
+      "max_routes": 10,
+      "min_routes": 3
+    }
+  },
+  "target_input_path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\target.smi",
+  "scoring_summary": {
+    "q33": 0.3005421128682305,
+    "q67": 0.5006582129614043,
+    "feature_order": [
+      "d_feas",
+      "d_prec",
+      "d_sc"
+    ],
+    "precedent": {
+      "tau": 0.8,
+      "N0": 10.0,
+      "metric": "cosine",
+      "top_k": 100
+    },
+    "reaction_unique_count": 3,
+    "reaction_occurrence_count": 3,
+    "route_count": 3
+  },
+  "status": "PASS",
+  "created_at_utc": "2026-10-09T02:23:40.190679+00:00",
+  "target_id": "my_compound_005",
+  "target_smiles": "CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O",
+  "outputs": {
+    "routes_raw": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\routes_raw.json",
+      "sha256": "E479BEC086D40011437AAEBF327BB22D76F12B055EF08A45507801854562205C"
+    },
+    "scored_reactions_parquet": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\scored_reactions.parquet",
+      "sha256": "8565B0B90ACCEB387560A3D7E158E1A1D6BCB54BA1F50F866CBB04A86435CC51"
+    },
+    "scored_reactions_csv": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\scored_reactions.csv",
+      "sha256": "0D6970D0DD7F700CE9CB5087DD443AE35B9C8D72F38815EA7D9279EF2994635E"
+    },
+    "scored_routes_json": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\scored_routes.json",
+      "sha256": "322D1C74B4C46EF3ABB02CB8813B6AE8E6B4A648031B94E813F7719E8BC0642D"
+    },
+    "scored_routes_csv": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\scored_routes.csv",
+      "sha256": "5662D94C5F42BC3CB6E9F00144A80800DFC4E1449982B060D47711F7802D6B95"
+    },
+    "visualization_html": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\prospective_dashboard.html",
+      "sha256": "A185FF09F8EF4B8DA972B59B381D915BF1BFAD2CEF16C3B80F51939EDB20B3C8"
+    },
+    "reaction_diagrams": [
+      {
+        "reaction_hash": "c8955f2f207fa300f6f48c8d1bd594986bf96068ba392e372c9602137f3f1c18",
+        "reaction_smiles": "CC(=O)OC(C)=O.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1>>CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\reaction_diagrams\\c8955f2f207fa300f6f48c8d1bd594986bf96068ba392e372c9602137f3f1c18.svg",
+        "svg_sha256": "310E51FFDC519F163CF6E335CAC21998F7AAFB102202331184694380978760F1",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\reaction_diagrams\\c8955f2f207fa300f6f48c8d1bd594986bf96068ba392e372c9602137f3f1c18.png",
+        "png_sha256": "9CA027F47170721AA85254CD239529EF0A1C48CF620F1DEFE1F80FA20AB0686A"
+      },
+      {
+        "reaction_hash": "b1cb1539400eccfca3547c3cdcea4eed62cf8b5f68188966ff44f45bfa8ca605",
+        "reaction_smiles": "CC(=O)Cl.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1>>CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\reaction_diagrams\\b1cb1539400eccfca3547c3cdcea4eed62cf8b5f68188966ff44f45bfa8ca605.svg",
+        "svg_sha256": "6DFE31C4176C72F8CD035C12781DCD83B65A12A95AF8BE42F3ECBC483891981F",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\reaction_diagrams\\b1cb1539400eccfca3547c3cdcea4eed62cf8b5f68188966ff44f45bfa8ca605.png",
+        "png_sha256": "2845C66BE61A0F5CABFDCC1D0744DBC38B43CEAE3DDAB6F4EE349E1A686C2F1D"
+      },
+      {
+        "reaction_hash": "a4de3fad2d674ee9cb5762698555c686486b6186b4c8935cff9e2ca8a6966408",
+        "reaction_smiles": "CC(=O)O.O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1>>CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\reaction_diagrams\\a4de3fad2d674ee9cb5762698555c686486b6186b4c8935cff9e2ca8a6966408.svg",
+        "svg_sha256": "4E79D9F2464513B6DA489C4B33BCE092FD8C67AB33918AB1FAA374A18E087017",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\my_compound_005_20261009_102206\\reaction_diagrams\\a4de3fad2d674ee9cb5762698555c686486b6186b4c8935cff9e2ca8a6966408.png",
+        "png_sha256": "B23C638AF6A2B163621A984176E563C498CB6EA9C683BBED092B5B36CA74EC03"
+      }
+    ]
+  },
+  "counts": {
+    "route_count": 3,
+    "reaction_occurrence_count": 3,
+    "solved_route_count": 3,
+    "zero_reaction_route_count": 0
+  },
+  "scientific_boundaries": {
+    "prospective_inference": true,
+    "labels_read": false,
+    "locked_test_read": false,
+    "training_or_refit": false,
+    "stage2_10_modified": false,
+    "mcts_modified": false,
+    "stage12_started": false,
+    "experimental_success_probability": false,
+    "route_level_accuracy": false
+  },
+  "diagram_warnings": []
+}

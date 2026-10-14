@@ -1,0 +1,30 @@
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\黑客松\可运行作品\external_public_data\public_data\uspto_model.onnx to uspto
+Loading templates from C:\Users\18706\OneDrive\Desktop\黑客松\可运行作品\external_public_data\public_data\uspto_templates.csv.gz to uspto
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\黑客松\可运行作品\external_public_data\public_data\uspto_ringbreaker_model.onnx to ringbreaker
+Loading templates from C:\Users\18706\OneDrive\Desktop\黑客松\可运行作品\external_public_data\public_data\uspto_ringbreaker_templates.csv.gz to ringbreaker
+Loading filter policy model from C:\Users\18706\OneDrive\Desktop\黑客松\可运行作品\external_public_data\public_data\uspto_filter_model.onnx to uspto
+Loading stock from InMemoryInchiKeyQuery to zinc
+Selected as stock: zinc
+Compounds in stock: 35205265
+Selected as expansion policy: uspto
+Selected as filter policy: uspto
+  0%|          | 0/100 [00:00<?, ?it/s]  2%|▏         | 2/100 [00:04<03:17,  2.01s/it]  4%|▍         | 4/100 [00:04<01:24,  1.14it/s]  7%|▋         | 7/100 [00:04<00:38,  2.44it/s]  9%|▉         | 9/100 [00:08<01:31,  1.00s/it] 13%|█▎        | 13/100 [00:08<00:45,  1.89it/s] 15%|█▌        | 15/100 [00:08<00:35,  2.39it/s] 18%|█▊        | 18/100 [00:09<00:23,  3.43it/s] 20%|██        | 20/100 [00:09<00:23,  3.46it/s] 21%|██        | 21/100 [00:10<00:23,  3.42it/s] 34%|███▍      | 34/100 [00:10<00:05, 12.29it/s] 39%|███▉      | 39/100 [00:10<00:04, 12.32it/s] 54%|█████▍    | 54/100 [00:10<00:01, 24.76it/s] 61%|██████    | 61/100 [00:11<00:01, 21.66it/s] 67%|██████▋   | 67/100 [00:15<00:06,  4.85it/s] 74%|███████▍  | 74/100 [00:15<00:04,  6.18it/s] 87%|████████▋ | 87/100 [00:15<00:01, 10.30it/s] 92%|█████████▏| 92/100 [00:16<00:00, 11.26it/s]100%|██████████| 100/100 [00:16<00:00, 15.13it/s]                                                 Trees saved to C:\Users\18706\OneDrive\Desktop\黑客松\可运行作品\prospective_runs\fix_verify_aspirin_20261013\routes_raw.json
+target: CC(=O)Oc1ccccc1C(=O)O
+search time: 16.188002586364746
+first solution time: 4.026132106781006
+first solution iteration: 1
+number of nodes: 62
+max transforms: 6
+max children: 20
+number of routes: 41
+number of solved routes: 34
+top score: 0.9976287063411217
+is solved: True
+number of steps: 1
+number of precursors: 2
+number of precursors in stock: 2
+precursors in stock: CC(=O)OC(C)=O, O=C(O)c1ccccc1O
+precursors not in stock: 
+precursors availability: zinc;zinc
+policy used counts: {'uspto': 61}
+profiling: {'expansion_calls': 27, 'reactants_generations': 749, 'iterations': 100}

@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prospective difficulty · fix_verify_ethanol</title>
+<style>
+:root { color-scheme: light dark; --bg: light-dark(#f7f8fa,#121417); --fg: light-dark(#1b1f24,#f2f4f7); --muted: light-dark(#5d6672,#a9b1bb); --line: light-dark(#d9dee5,#343b45); --surface: light-dark(#fff,#1b2026); --accent: light-dark(#3267c7,#83aefc); --accent2: light-dark(#b85b24,#f29b6c); }
+* { box-sizing:border-box } body { margin:0; padding:28px; background:var(--bg); color:var(--fg); font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif } main { max-width:1200px; margin:auto } h1 { margin:0 0 4px; font-size:24px; font-weight:500 } h2 { margin:28px 0 10px; font-size:17px; font-weight:500 } .muted { color:var(--muted) } .summary { display:flex; flex-wrap:wrap; gap:12px; margin:20px 0 } .stat { background:var(--surface); border:1px solid var(--line); padding:12px 16px; min-width:150px } .stat strong { display:block; font-size:22px; font-weight:500 } .target { background:var(--surface); border-left:3px solid var(--accent); padding:12px 14px; overflow-wrap:anywhere } .chart { background:var(--surface); border:1px solid var(--line); padding:14px } .bar-row { display:grid; grid-template-columns:minmax(170px,290px) 1fr 70px; gap:10px; align-items:center; margin:8px 0 } .bar-label { overflow:hidden; text-overflow:ellipsis; white-space:nowrap } .bar-track { height:14px; background:color-mix(in srgb,var(--line) 45%,transparent); } .bar-fill { height:100%; background:var(--accent2); } .bar-value { text-align:right; font-variant-numeric:tabular-nums } details { background:var(--surface); border:1px solid var(--line); margin:10px 0; padding:10px 12px } summary { cursor:pointer; font-weight:500 } .route-meta { color:var(--muted); margin:10px 0 } .table-wrap { overflow-x:auto } table { border-collapse:collapse; width:100%; min-width:900px } th,td { border-bottom:1px solid var(--line); padding:7px 8px; text-align:left; vertical-align:top } th { color:var(--muted); font-weight:500 } code { white-space:normal; overflow-wrap:anywhere } footer { color:var(--muted); margin-top:28px; font-size:12px } @media(max-width:700px) { body { padding:16px } .bar-row { grid-template-columns:1fr 64px } .bar-track { grid-column:1/-1; grid-row:2 } .bar-value { grid-column:2; grid-row:1 } }
+</style></head><body><main>
+<h1>新化合物前瞻性难度评分</h1>
+<div class="muted">独立 on-demand 推理结果 · 不修改冻结科研项目</div>
+<p class="target"><strong>target_id:</strong> fix_verify_ethanol<br><strong>SMILES:</strong> <code>CCO</code></p>
+<div class="summary"><div class="stat"><span class="muted">候选路线</span><strong>5</strong></div><div class="stat"><span class="muted">反应步骤</span><strong>5</strong></div><div class="stat"><span class="muted">评分模型</span><strong>0–100</strong></div><div class="stat"><span class="muted">排序依据</span><strong>瓶颈难度</strong></div></div>
+<h2>路线瓶颈难度（越低越容易）</h2><div class="chart" role="img" aria-label="按新排名排列的路线瓶颈难度条形图"><div class="bar-row"><div class="bar-label">#1 fix_verify_ethanol__route_005</div><div class="bar-track"><div class="bar-fill" style="width:49.37%"></div></div><div class="bar-value">49.37</div></div><div class="bar-row"><div class="bar-label">#2 fix_verify_ethanol__route_003</div><div class="bar-track"><div class="bar-fill" style="width:49.97%"></div></div><div class="bar-value">49.97</div></div><div class="bar-row"><div class="bar-label">#3 fix_verify_ethanol__route_001</div><div class="bar-track"><div class="bar-fill" style="width:50.10%"></div></div><div class="bar-value">50.10</div></div><div class="bar-row"><div class="bar-label">#4 fix_verify_ethanol__route_004</div><div class="bar-track"><div class="bar-fill" style="width:50.15%"></div></div><div class="bar-value">50.15</div></div><div class="bar-row"><div class="bar-label">#5 fix_verify_ethanol__route_002</div><div class="bar-track"><div class="bar-fill" style="width:50.24%"></div></div><div class="bar-value">50.24</div></div></div>
+<h2>路线和步骤明细</h2><details><summary>路线 #1 · fix_verify_ethanol__route_005 · 瓶颈 49.37 · low</summary><div class="route-meta">原始排名：5　排名变化：4　步骤数：1　平均难度：49.37　路线不确定性：0.5398</div><p>Route difficulty is governed by the hardest reaction step (fix_verify_ethanol__route_005__step_001); bottleneck=49.367571, mean=49.367571, confidence=low.</p><div class="table-wrap"><table><thead><tr><th>step_id</th><th>reaction</th><th>difficulty</th><th>d_feas</th><th>d_prec</th><th>d_sc</th><th>uncertainty</th><th>confidence</th></tr></thead><tbody><tr><td>fix_verify_ethanol__route_005__step_001</td><td><code>CCOC&gt;&gt;CCO</code></td><td>49.37</td><td>0.0203</td><td>1.0000</td><td>0.0042</td><td>0.5398</td><td>Low</td></tr><tr><td colspan=8><div class="reaction-diagram" aria-label="Reaction key-line diagram"><?xml version='1.0' encoding='iso-8859-1'?>
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xmlns:rdkit='http://www.rdkit.org/xml'
+                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                  xml:space='preserve'
+width='900px' height='240px' viewBox='0 0 900 240'>
+<!-- END OF HEADER -->
+<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='900.0' height='240.0' x='0.0' y='0.0'> </rect>
+<path class='bond-0 atom-0 atom-1' d='M 81.5,122.4 L 180.5,80.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 180.5,80.3 L 215.2,106.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 215.2,106.4 L 250.0,132.5' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-2 atom-3' d='M 283.1,137.9 L 324.3,120.4' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-2 atom-3' d='M 324.3,120.4 L 365.5,102.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 175.5,82.4 L 180.5,80.3 L 182.2,81.6' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;' />
+<path class='atom-2' d='M 253.5 145.0
+Q 253.5 138.2, 256.9 134.4
+Q 260.2 130.6, 266.5 130.6
+Q 272.8 130.6, 276.1 134.4
+Q 279.5 138.2, 279.5 145.0
+Q 279.5 151.9, 276.1 155.8
+Q 272.7 159.7, 266.5 159.7
+Q 260.3 159.7, 256.9 155.8
+Q 253.5 152.0, 253.5 145.0
+M 266.5 156.5
+Q 270.8 156.5, 273.1 153.6
+Q 275.5 150.7, 275.5 145.0
+Q 275.5 139.5, 273.1 136.7
+Q 270.8 133.8, 266.5 133.8
+Q 262.2 133.8, 259.8 136.6
+Q 257.5 139.4, 257.5 145.0
+Q 257.5 150.8, 259.8 153.6
+Q 262.2 156.5, 266.5 156.5
+' fill='#FF0000'/>
+<path class='bond-0 atom-0 atom-1' d='M 594.0,139.5 L 687.2,85.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 687.2,85.7 L 725.5,107.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 725.5,107.8 L 763.9,130.0' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 682.6,88.4 L 687.2,85.7 L 689.1,86.8' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;' />
+<path class='atom-2' d='M 767.4 139.6
+Q 767.4 132.8, 770.8 129.0
+Q 774.1 125.2, 780.4 125.2
+Q 786.7 125.2, 790.1 129.0
+Q 793.4 132.8, 793.4 139.6
+Q 793.4 146.5, 790.0 150.4
+Q 786.6 154.3, 780.4 154.3
+Q 774.2 154.3, 770.8 150.4
+Q 767.4 146.5, 767.4 139.6
+M 780.4 151.1
+Q 784.7 151.1, 787.1 148.2
+Q 789.4 145.3, 789.4 139.6
+Q 789.4 134.0, 787.1 131.2
+Q 784.7 128.4, 780.4 128.4
+Q 776.1 128.4, 773.7 131.2
+Q 771.4 134.0, 771.4 139.6
+Q 771.4 145.3, 773.7 148.2
+Q 776.1 151.1, 780.4 151.1
+' fill='#FF0000'/>
+<path class='atom-2' d='M 797.8 125.5
+L 801.7 125.5
+L 801.7 137.6
+L 816.2 137.6
+L 816.2 125.5
+L 820.0 125.5
+L 820.0 153.8
+L 816.2 153.8
+L 816.2 140.8
+L 801.7 140.8
+L 801.7 153.8
+L 797.8 153.8
+L 797.8 125.5
+' fill='#FF0000'/>
+<path d='M 404.0,120.0 L 556.0,120.0' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 556.0,120.0 L 548.4,124.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 556.0,120.0 L 548.4,115.6' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+</svg>
+</div></td></tr></tbody></table></div></details><details><summary>路线 #2 · fix_verify_ethanol__route_003 · 瓶颈 49.97 · low</summary><div class="route-meta">原始排名：3　排名变化：1　步骤数：1　平均难度：49.97　路线不确定性：0.9489</div><p>Route difficulty is governed by the hardest reaction step (fix_verify_ethanol__route_003__step_001); bottleneck=49.966180, mean=49.966180, confidence=low.</p><div class="table-wrap"><table><thead><tr><th>step_id</th><th>reaction</th><th>difficulty</th><th>d_feas</th><th>d_prec</th><th>d_sc</th><th>uncertainty</th><th>confidence</th></tr></thead><tbody><tr><td>fix_verify_ethanol__route_003__step_001</td><td><code>CCCO&gt;&gt;CCO</code></td><td>49.97</td><td>0.6599</td><td>1.0000</td><td>0.0152</td><td>0.9489</td><td>Low</td></tr><tr><td colspan=8><div class="reaction-diagram" aria-label="Reaction key-line diagram"><?xml version='1.0' encoding='iso-8859-1'?>
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xmlns:rdkit='http://www.rdkit.org/xml'
+                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                  xml:space='preserve'
+width='900px' height='240px' viewBox='0 0 900 240'>
+<!-- END OF HEADER -->
+<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='900.0' height='240.0' x='0.0' y='0.0'> </rect>
+<path class='bond-0 atom-0 atom-1' d='M 73.1,129.5 L 168.8,88.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 168.8,88.7 L 251.9,151.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-2 atom-3' d='M 251.9,151.3 L 291.8,134.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-2 atom-3' d='M 291.8,134.3 L 331.7,117.3' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 164.0,90.8 L 168.8,88.7 L 173.0,91.9' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;' />
+<path d='M 247.8,148.1 L 251.9,151.3 L 253.9,150.4' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;' />
+<path class='atom-3' d='M 335.1 110.6
+Q 335.1 104.0, 338.4 100.4
+Q 341.6 96.7, 347.7 96.7
+Q 353.7 96.7, 357.0 100.4
+Q 360.2 104.0, 360.2 110.6
+Q 360.2 117.3, 356.9 121.0
+Q 353.7 124.8, 347.7 124.8
+Q 341.6 124.8, 338.4 121.0
+Q 335.1 117.3, 335.1 110.6
+M 347.7 121.7
+Q 351.8 121.7, 354.1 118.9
+Q 356.4 116.1, 356.4 110.6
+Q 356.4 105.2, 354.1 102.5
+Q 351.8 99.8, 347.7 99.8
+Q 343.5 99.8, 341.2 102.5
+Q 339.0 105.2, 339.0 110.6
+Q 339.0 116.1, 341.2 118.9
+Q 343.5 121.7, 347.7 121.7
+' fill='#FF0000'/>
+<path class='atom-3' d='M 364.5 97.0
+L 368.2 97.0
+L 368.2 108.6
+L 382.2 108.6
+L 382.2 97.0
+L 385.9 97.0
+L 385.9 124.4
+L 382.2 124.4
+L 382.2 111.7
+L 368.2 111.7
+L 368.2 124.4
+L 364.5 124.4
+L 364.5 97.0
+' fill='#FF0000'/>
+<path class='bond-3 atom-4 atom-5' d='M 608.3,138.9 L 698.4,86.9' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-4 atom-5 atom-6' d='M 698.4,86.9 L 735.4,108.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-4 atom-5 atom-6' d='M 735.4,108.2 L 772.5,129.6' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='atom-2' d='M 775.9 139.0
+Q 775.9 132.4, 779.2 128.7
+Q 782.4 125.0, 788.5 125.0
+Q 794.5 125.0, 797.8 128.7
+Q 801.0 132.4, 801.0 139.0
+Q 801.0 145.6, 797.7 149.4
+Q 794.5 153.1, 788.5 153.1
+Q 782.4 153.1, 779.2 149.4
+Q 775.9 145.6, 775.9 139.0
+M 788.5 150.0
+Q 792.6 150.0, 794.9 147.3
+Q 797.2 144.4, 797.2 139.0
+Q 797.2 133.6, 794.9 130.9
+Q 792.6 128.1, 788.5 128.1
+Q 784.3 128.1, 782.0 130.8
+Q 779.8 133.5, 779.8 139.0
+Q 779.8 144.5, 782.0 147.3
+Q 784.3 150.0, 788.5 150.0
+' fill='#FF0000'/>
+<path class='atom-2' d='M 805.3 125.3
+L 809.0 125.3
+L 809.0 137.0
+L 823.0 137.0
+L 823.0 125.3
+L 826.7 125.3
+L 826.7 152.7
+L 823.0 152.7
+L 823.0 140.1
+L 809.0 140.1
+L 809.0 152.7
+L 805.3 152.7
+L 805.3 125.3
+' fill='#FF0000'/>
+<path d='M 423.0,120.0 L 571.0,120.0' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 571.0,120.0 L 563.6,124.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 571.0,120.0 L 563.6,115.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+</svg>
+</div></td></tr></tbody></table></div></details><details><summary>路线 #3 · fix_verify_ethanol__route_001 · 瓶颈 50.10 · low</summary><div class="route-meta">原始排名：1　排名变化：-2　步骤数：1　平均难度：50.10　路线不确定性：0.8251</div><p>Route difficulty is governed by the hardest reaction step (fix_verify_ethanol__route_001__step_001); bottleneck=50.098143, mean=50.098143, confidence=low.</p><div class="table-wrap"><table><thead><tr><th>step_id</th><th>reaction</th><th>difficulty</th><th>d_feas</th><th>d_prec</th><th>d_sc</th><th>uncertainty</th><th>confidence</th></tr></thead><tbody><tr><td>fix_verify_ethanol__route_001__step_001</td><td><code>CC(=O)O&gt;&gt;CCO</code></td><td>50.10</td><td>0.7957</td><td>1.0000</td><td>0.0156</td><td>0.8251</td><td>Low</td></tr><tr><td colspan=8><div class="reaction-diagram" aria-label="Reaction key-line diagram"><?xml version='1.0' encoding='iso-8859-1'?>
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xmlns:rdkit='http://www.rdkit.org/xml'
+                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                  xml:space='preserve'
+width='900px' height='240px' viewBox='0 0 900 240'>
+<!-- END OF HEADER -->
+<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='900.0' height='240.0' x='0.0' y='0.0'> </rect>
+<path class='bond-0 atom-0 atom-1' d='M 123.3,200.5 L 216.5,146.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 208.4,151.3 L 248.8,174.6' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 248.8,174.6 L 289.1,197.9' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 216.5,137.4 L 256.8,160.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 256.8,160.7 L 297.2,184.0' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-1 atom-3' d='M 216.5,146.7 L 216.5,102.0' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-1 atom-3' d='M 216.5,102.0 L 216.5,57.4' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 211.8,149.4 L 216.5,146.7 L 216.5,144.5' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;' />
+<path class='atom-2' d='M 296.7 200.6
+Q 296.7 193.8, 300.1 190.0
+Q 303.4 186.2, 309.7 186.2
+Q 316.0 186.2, 319.3 190.0
+Q 322.7 193.8, 322.7 200.6
+Q 322.7 207.5, 319.3 211.4
+Q 315.9 215.3, 309.7 215.3
+Q 303.5 215.3, 300.1 211.4
+Q 296.7 207.5, 296.7 200.6
+M 309.7 212.1
+Q 314.0 212.1, 316.3 209.2
+Q 318.7 206.3, 318.7 200.6
+Q 318.7 195.0, 316.3 192.2
+Q 314.0 189.4, 309.7 189.4
+Q 305.4 189.4, 303.0 192.2
+Q 300.7 195.0, 300.7 200.6
+Q 300.7 206.3, 303.0 209.2
+Q 305.4 212.1, 309.7 212.1
+' fill='#FF0000'/>
+<path class='atom-3' d='M 203.5 39.1
+Q 203.5 32.3, 206.9 28.5
+Q 210.2 24.7, 216.5 24.7
+Q 222.8 24.7, 226.1 28.5
+Q 229.5 32.3, 229.5 39.1
+Q 229.5 46.0, 226.1 49.9
+Q 222.7 53.8, 216.5 53.8
+Q 210.3 53.8, 206.9 49.9
+Q 203.5 46.1, 203.5 39.1
+M 216.5 50.6
+Q 220.8 50.6, 223.1 47.7
+Q 225.5 44.8, 225.5 39.1
+Q 225.5 33.6, 223.1 30.8
+Q 220.8 27.9, 216.5 27.9
+Q 212.2 27.9, 209.8 30.7
+Q 207.5 33.5, 207.5 39.1
+Q 207.5 44.9, 209.8 47.7
+Q 212.2 50.6, 216.5 50.6
+' fill='#FF0000'/>
+<path class='atom-3' d='M 233.9 25.1
+L 237.7 25.1
+L 237.7 37.1
+L 252.2 37.1
+L 252.2 25.1
+L 256.1 25.1
+L 256.1 53.4
+L 252.2 53.4
+L 252.2 40.3
+L 237.7 40.3
+L 237.7 53.4
+L 233.9 53.4
+L 233.9 25.1
+' fill='#FF0000'/>
+<path class='bond-0 atom-0 atom-1' d='M 551.0,139.5 L 644.2,85.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 644.2,85.7 L 682.5,107.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 682.5,107.8 L 720.9,130.0' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 639.6,88.4 L 644.2,85.7 L 646.1,86.8' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;' />
+<path class='atom-2' d='M 724.4 139.6
+Q 724.4 132.8, 727.8 129.0
+Q 731.1 125.2, 737.4 125.2
+Q 743.7 125.2, 747.1 129.0
+Q 750.4 132.8, 750.4 139.6
+Q 750.4 146.5, 747.0 150.4
+Q 743.6 154.3, 737.4 154.3
+Q 731.2 154.3, 727.8 150.4
+Q 724.4 146.5, 724.4 139.6
+M 737.4 151.1
+Q 741.7 151.1, 744.1 148.2
+Q 746.4 145.3, 746.4 139.6
+Q 746.4 134.0, 744.1 131.2
+Q 741.7 128.4, 737.4 128.4
+Q 733.1 128.4, 730.7 131.2
+Q 728.4 134.0, 728.4 139.6
+Q 728.4 145.3, 730.7 148.2
+Q 733.1 151.1, 737.4 151.1
+' fill='#FF0000'/>
+<path class='atom-2' d='M 754.8 125.5
+L 758.7 125.5
+L 758.7 137.6
+L 773.2 137.6
+L 773.2 125.5
+L 777.0 125.5
+L 777.0 153.8
+L 773.2 153.8
+L 773.2 140.8
+L 758.7 140.8
+L 758.7 153.8
+L 754.8 153.8
+L 754.8 125.5
+' fill='#FF0000'/>
+<path d='M 361.0,120.0 L 513.0,120.0' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 513.0,120.0 L 505.4,124.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 513.0,120.0 L 505.4,115.6' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+</svg>
+</div></td></tr></tbody></table></div></details><details><summary>路线 #4 · fix_verify_ethanol__route_004 · 瓶颈 50.15 · low</summary><div class="route-meta">原始排名：4　排名变化：0　步骤数：1　平均难度：50.15　路线不确定性：0.7167</div><p>Route difficulty is governed by the hardest reaction step (fix_verify_ethanol__route_004__step_001); bottleneck=50.151399, mean=50.151399, confidence=low.</p><div class="table-wrap"><table><thead><tr><th>step_id</th><th>reaction</th><th>difficulty</th><th>d_feas</th><th>d_prec</th><th>d_sc</th><th>uncertainty</th><th>confidence</th></tr></thead><tbody><tr><td>fix_verify_ethanol__route_004__step_001</td><td><code>OCCO&gt;&gt;CCO</code></td><td>50.15</td><td>0.8764</td><td>1.0000</td><td>0.0257</td><td>0.7167</td><td>Low</td></tr><tr><td colspan=8><div class="reaction-diagram" aria-label="Reaction key-line diagram"><?xml version='1.0' encoding='iso-8859-1'?>
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xmlns:rdkit='http://www.rdkit.org/xml'
+                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                  xml:space='preserve'
+width='900px' height='240px' viewBox='0 0 900 240'>
+<!-- END OF HEADER -->
+<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='900.0' height='240.0' x='0.0' y='0.0'> </rect>
+<path class='bond-0 atom-0 atom-1' d='M 357.3,122.5 L 319.4,106.4' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-0 atom-0 atom-1' d='M 319.4,106.4 L 281.6,90.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 281.6,90.3 L 202.7,149.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-2 atom-3' d='M 202.7,149.7 L 164.9,133.6' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-2 atom-3' d='M 164.9,133.6 L 127.0,117.5' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 283.5,91.1 L 281.6,90.3 L 277.6,93.3' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;' />
+<path d='M 206.6,146.7 L 202.7,149.7 L 200.8,148.9' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;' />
+<path class='atom-0' d='M 360.5 129.1
+Q 360.5 122.8, 363.6 119.3
+Q 366.7 115.8, 372.4 115.8
+Q 378.2 115.8, 381.3 119.3
+Q 384.4 122.8, 384.4 129.1
+Q 384.4 135.4, 381.2 139.0
+Q 378.1 142.5, 372.4 142.5
+Q 366.7 142.5, 363.6 139.0
+Q 360.5 135.4, 360.5 129.1
+M 372.4 139.6
+Q 376.4 139.6, 378.5 136.9
+Q 380.7 134.3, 380.7 129.1
+Q 380.7 124.0, 378.5 121.4
+Q 376.4 118.8, 372.4 118.8
+Q 368.5 118.8, 366.3 121.4
+Q 364.2 123.9, 364.2 129.1
+Q 364.2 134.3, 366.3 136.9
+Q 368.5 139.6, 372.4 139.6
+' fill='#FF0000'/>
+<path class='atom-0' d='M 388.4 116.1
+L 391.9 116.1
+L 391.9 127.2
+L 405.2 127.2
+L 405.2 116.1
+L 408.7 116.1
+L 408.7 142.1
+L 405.2 142.1
+L 405.2 130.1
+L 391.9 130.1
+L 391.9 142.1
+L 388.4 142.1
+L 388.4 116.1
+' fill='#FF0000'/>
+<path class='atom-3' d='M 74.3 98.2
+L 77.8 98.2
+L 77.8 109.2
+L 91.1 109.2
+L 91.1 98.2
+L 94.6 98.2
+L 94.6 124.2
+L 91.1 124.2
+L 91.1 112.2
+L 77.8 112.2
+L 77.8 124.2
+L 74.3 124.2
+L 74.3 98.2
+' fill='#FF0000'/>
+<path class='atom-3' d='M 99.9 111.1
+Q 99.9 104.9, 103.0 101.4
+Q 106.1 97.9, 111.8 97.9
+Q 117.6 97.9, 120.7 101.4
+Q 123.8 104.9, 123.8 111.1
+Q 123.8 117.4, 120.7 121.0
+Q 117.5 124.6, 111.8 124.6
+Q 106.1 124.6, 103.0 121.0
+Q 99.9 117.4, 99.9 111.1
+M 111.8 121.6
+Q 115.8 121.6, 117.9 119.0
+Q 120.1 116.3, 120.1 111.1
+Q 120.1 106.0, 117.9 103.4
+Q 115.8 100.8, 111.8 100.8
+Q 107.9 100.8, 105.7 103.4
+Q 103.6 106.0, 103.6 111.1
+Q 103.6 116.3, 105.7 119.0
+Q 107.9 121.6, 111.8 121.6
+' fill='#FF0000'/>
+<path class='bond-3 atom-4 atom-5' d='M 619.4,137.9 L 704.9,88.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-4 atom-5 atom-6' d='M 704.9,88.5 L 740.0,108.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-4 atom-5 atom-6' d='M 740.0,108.8 L 775.2,129.1' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='atom-2' d='M 778.4 138.0
+Q 778.4 131.7, 781.5 128.3
+Q 784.6 124.8, 790.4 124.8
+Q 796.1 124.8, 799.2 128.3
+Q 802.3 131.7, 802.3 138.0
+Q 802.3 144.3, 799.2 147.9
+Q 796.0 151.5, 790.4 151.5
+Q 784.6 151.5, 781.5 147.9
+Q 778.4 144.3, 778.4 138.0
+M 790.4 148.5
+Q 794.3 148.5, 796.4 145.9
+Q 798.6 143.2, 798.6 138.0
+Q 798.6 132.9, 796.4 130.3
+Q 794.3 127.7, 790.4 127.7
+Q 786.4 127.7, 784.2 130.3
+Q 782.1 132.8, 782.1 138.0
+Q 782.1 143.2, 784.2 145.9
+Q 786.4 148.5, 790.4 148.5
+' fill='#FF0000'/>
+<path class='atom-2' d='M 806.3 125.1
+L 809.8 125.1
+L 809.8 136.1
+L 823.1 136.1
+L 823.1 125.1
+L 826.6 125.1
+L 826.6 151.0
+L 823.1 151.0
+L 823.1 139.0
+L 809.8 139.0
+L 809.8 151.0
+L 806.3 151.0
+L 806.3 125.1
+' fill='#FF0000'/>
+<path d='M 444.0,120.0 L 584.0,120.0' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 584.0,120.0 L 577.0,124.0' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 584.0,120.0 L 577.0,116.0' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+</svg>
+</div></td></tr></tbody></table></div></details><details><summary>路线 #5 · fix_verify_ethanol__route_002 · 瓶颈 50.24 · low</summary><div class="route-meta">原始排名：2　排名变化：-3　步骤数：1　平均难度：50.24　路线不确定性：0.6603</div><p>Route difficulty is governed by the hardest reaction step (fix_verify_ethanol__route_002__step_001); bottleneck=50.236409, mean=50.236409, confidence=low.</p><div class="table-wrap"><table><thead><tr><th>step_id</th><th>reaction</th><th>difficulty</th><th>d_feas</th><th>d_prec</th><th>d_sc</th><th>uncertainty</th><th>confidence</th></tr></thead><tbody><tr><td>fix_verify_ethanol__route_002__step_001</td><td><code>COC(C)=O&gt;&gt;CCO</code></td><td>50.24</td><td>0.9122</td><td>1.0000</td><td>0.0061</td><td>0.6603</td><td>Low</td></tr><tr><td colspan=8><div class="reaction-diagram" aria-label="Reaction key-line diagram"><?xml version='1.0' encoding='iso-8859-1'?>
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xmlns:rdkit='http://www.rdkit.org/xml'
+                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                  xml:space='preserve'
+width='900px' height='240px' viewBox='0 0 900 240'>
+<!-- END OF HEADER -->
+<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='900.0' height='240.0' x='0.0' y='0.0'> </rect>
+<path class='bond-0 atom-0 atom-1' d='M 83.2,92.9 L 121.5,70.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-0 atom-0 atom-1' d='M 121.5,70.7 L 159.8,48.6' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 192.9,48.6 L 231.3,70.7' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 231.3,70.7 L 269.6,92.9' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-2 atom-2 atom-3' d='M 269.6,92.9 L 362.8,39.1' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-3 atom-2 atom-4' d='M 261.5,88.2 L 261.5,135.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-3 atom-2 atom-4' d='M 261.5,135.4 L 261.5,182.6' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-3 atom-2 atom-4' d='M 277.7,88.2 L 277.7,135.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-3 atom-2 atom-4' d='M 277.7,135.4 L 277.7,182.6' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 267.7,91.8 L 269.6,92.9 L 274.3,90.2' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;' />
+<path class='atom-1' d='M 163.4 39.1
+Q 163.4 32.3, 166.8 28.5
+Q 170.1 24.7, 176.4 24.7
+Q 182.7 24.7, 186.0 28.5
+Q 189.4 32.3, 189.4 39.1
+Q 189.4 46.0, 186.0 49.9
+Q 182.6 53.8, 176.4 53.8
+Q 170.2 53.8, 166.8 49.9
+Q 163.4 46.1, 163.4 39.1
+M 176.4 50.6
+Q 180.7 50.6, 183.0 47.7
+Q 185.4 44.8, 185.4 39.1
+Q 185.4 33.6, 183.0 30.8
+Q 180.7 27.9, 176.4 27.9
+Q 172.1 27.9, 169.7 30.7
+Q 167.4 33.5, 167.4 39.1
+Q 167.4 44.9, 169.7 47.7
+Q 172.1 50.6, 176.4 50.6
+' fill='#FF0000'/>
+<path class='atom-4' d='M 256.6 200.6
+Q 256.6 193.8, 260.0 190.0
+Q 263.3 186.2, 269.6 186.2
+Q 275.9 186.2, 279.2 190.0
+Q 282.6 193.8, 282.6 200.6
+Q 282.6 207.5, 279.2 211.4
+Q 275.8 215.3, 269.6 215.3
+Q 263.4 215.3, 260.0 211.4
+Q 256.6 207.5, 256.6 200.6
+M 269.6 212.1
+Q 273.9 212.1, 276.2 209.2
+Q 278.6 206.3, 278.6 200.6
+Q 278.6 195.0, 276.2 192.2
+Q 273.9 189.4, 269.6 189.4
+Q 265.3 189.4, 262.9 192.2
+Q 260.6 195.0, 260.6 200.6
+Q 260.6 206.3, 262.9 209.2
+Q 265.3 212.1, 269.6 212.1
+' fill='#FF0000'/>
+<path class='bond-0 atom-0 atom-1' d='M 591.0,139.5 L 684.2,85.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 684.2,85.7 L 722.5,107.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path class='bond-1 atom-1 atom-2' d='M 722.5,107.8 L 760.9,130.0' style='fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 679.6,88.4 L 684.2,85.7 L 686.1,86.8' style='fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;' />
+<path class='atom-2' d='M 764.4 139.6
+Q 764.4 132.8, 767.8 129.0
+Q 771.1 125.2, 777.4 125.2
+Q 783.7 125.2, 787.1 129.0
+Q 790.4 132.8, 790.4 139.6
+Q 790.4 146.5, 787.0 150.4
+Q 783.6 154.3, 777.4 154.3
+Q 771.2 154.3, 767.8 150.4
+Q 764.4 146.5, 764.4 139.6
+M 777.4 151.1
+Q 781.7 151.1, 784.1 148.2
+Q 786.4 145.3, 786.4 139.6
+Q 786.4 134.0, 784.1 131.2
+Q 781.7 128.4, 777.4 128.4
+Q 773.1 128.4, 770.7 131.2
+Q 768.4 134.0, 768.4 139.6
+Q 768.4 145.3, 770.7 148.2
+Q 773.1 151.1, 777.4 151.1
+' fill='#FF0000'/>
+<path class='atom-2' d='M 794.8 125.5
+L 798.7 125.5
+L 798.7 137.6
+L 813.2 137.6
+L 813.2 125.5
+L 817.0 125.5
+L 817.0 153.8
+L 813.2 153.8
+L 813.2 140.8
+L 798.7 140.8
+L 798.7 153.8
+L 794.8 153.8
+L 794.8 125.5
+' fill='#FF0000'/>
+<path d='M 401.0,120.0 L 553.0,120.0' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 553.0,120.0 L 545.4,124.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 553.0,120.0 L 545.4,115.6' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+</svg>
+</div></td></tr></tbody></table></div></details>
+<footer>固定特征顺序：[d_feas, d_prec, d_sc]；precedent 参数：tau=0.80、N0=10、cosine、top_k=100。reaction_difficulty 是相对难度，不是产率或实验成功概率。</footer>
+<script>window.prospectiveResult = {"target_id": "fix_verify_ethanol", "target_smiles": "CCO", "routes": [{"target_id": "fix_verify_ethanol", "route_id": "fix_verify_ethanol__route_005", "original_rank": 5, "new_rank": 1, "solved": true, "original_state_score": 0.9976287063411217, "number_of_reactions": 1, "difficulty_applicable": true, "difficulty_bottleneck": 49.367571317343646, "difficulty_mean": 49.367571317343646, "route_uncertainty": 0.539831918215782, "route_confidence": "low", "hardest_step_id": "fix_verify_ethanol__route_005__step_001", "hardest_step_ids": ["fix_verify_ethanol__route_005__step_001"], "hardest_step_reaction": "CCOC>>CCO", "hardest_step_reactions": ["CCOC>>CCO"], "route_type": "reaction_route", "steps": [{"target_id": "fix_verify_ethanol", "route_id": "fix_verify_ethanol__route_005", "step_id": "fix_verify_ethanol__route_005__step_001", "reaction_hash": "90cd89caacaaccf09f6f1105e49c7f2d96c1db555b4929275515037ef140cbcc", "reaction_smiles": "CCOC>>CCO", "product_smiles": "CCO", "precursor_smiles": "CCOC", "p_feas": 0.9796707630157471, "d_feas": 0.02032923698425293, "s_max": 0.6518956834776521, "n_analog": 0, "p_prec": 0.0, "d_prec": 1.0, "sc_product": 1.000002384185791, "sc_precursor_max": 1.3406524658203125, "delta_sc": -0.3406500816345215, "d_sc": 0.004212299915754001, "p_easy": 0.3053025220410246, "p_medium": 0.4020435295710779, "p_difficult": 0.2926539483878975, "reaction_difficulty": 49.367571317343646, "uncertainty": 0.539831918215782, "confidence": "Low", "explanation_code": "reaction_difficulty_v1", "explanation_text": "Reaction difficulty is 49.367571/100 from feasibility difficulty 0.020329, precedent difficulty 1.000000, and normalized delta-SC difficulty 0.004212; confidence is Low."}], "route_explanation": "Route difficulty is governed by the hardest reaction step (fix_verify_ethanol__route_005__step_001); bottleneck=49.367571, mean=49.367571, confidence=low.", "rank_change": 4}, {"target_id": "fix_verify_ethanol", "route_id": "fix_verify_ethanol__route_003", "original_rank": 3, "new_rank": 2, "solved": true, "original_state_score": 0.9976287063411217, "number_of_reactions": 1, "difficulty_applicable": true, "difficulty_bottleneck": 49.96617967811038, "difficulty_mean": 49.96617967811038, "route_uncertainty": 0.9488610383159255, "route_confidence": "low", "hardest_step_id": "fix_verify_ethanol__route_003__step_001", "hardest_step_ids": ["fix_verify_ethanol__route_003__step_001"], "hardest_step_reaction": "CCCO>>CCO", "hardest_step_reactions": ["CCCO>>CCO"], "route_type": "reaction_route", "steps": [{"target_id": "fix_verify_ethanol", "route_id": "fix_verify_ethanol__route_003", "step_id": "fix_verify_ethanol__route_003__step_001", "reaction_hash": "e61871a8133de8838a0182808596f7d2e5cbb062e08e898340286a01ab2918a9", "reaction_smiles": "CCCO>>CCO", "product_smiles": "CCO", "precursor_smiles": "CCCO", "p_feas": 0.3400954008102417, "d_feas": 0.6599045991897583, "s_max": 0.7684225116605092, "n_analog": 0, "p_prec": 0.0, "d_prec": 1.0, "sc_product": 1.000002384185791, "sc_precursor_max": 1.0847703218460083, "delta_sc": -0.08476793766021729, "d_sc": 0.015164279696714406, "p_easy": 0.29927817797375333, "p_medium": 0.4021200504902859, "p_difficult": 0.2986017715359608, "reaction_difficulty": 49.96617967811038, "uncertainty": 0.9488610383159255, "confidence": "Low", "explanation_code": "reaction_difficulty_v1", "explanation_text": "Reaction difficulty is 49.966180/100 from feasibility difficulty 0.659905, precedent difficulty 1.000000, and normalized delta-SC difficulty 0.015164; confidence is Low."}], "route_explanation": "Route difficulty is governed by the hardest reaction step (fix_verify_ethanol__route_003__step_001); bottleneck=49.966180, mean=49.966180, confidence=low.", "rank_change": 1}, {"target_id": "fix_verify_ethanol", "route_id": "fix_verify_ethanol__route_001", "original_rank": 1, "new_rank": 3, "solved": true, "original_state_score": 0.9976287063411217, "number_of_reactions": 1, "difficulty_applicable": true, "difficulty_bottleneck": 50.09814335346349, "difficulty_mean": 50.09814335346349, "route_uncertainty": 0.8251188795731377, "route_confidence": "low", "hardest_step_id": "fix_verify_ethanol__route_001__step_001", "hardest_step_ids": ["fix_verify_ethanol__route_001__step_001"], "hardest_step_reaction": "CC(=O)O>>CCO", "hardest_step_reactions": ["CC(=O)O>>CCO"], "route_type": "reaction_route", "steps": [{"target_id": "fix_verify_ethanol", "route_id": "fix_verify_ethanol__route_001", "step_id": "fix_verify_ethanol__route_001__step_001", "reaction_hash": "d747cc23504b6495daa4f9ddd0f66f9606aef3c6e55f5c7303e8841ef6546cb6", "reaction_smiles": "CC(=O)O>>CCO", "product_smiles": "CCO", "precursor_smiles": "CC(=O)O", "p_feas": 0.20429649949073792, "d_feas": 0.7957035005092621, "s_max": 0.6096617747104267, "n_analog": 0, "p_prec": 0.0, "d_prec": 1.0, "sc_product": 1.000002384185791, "sc_precursor_max": 1.0788253545761108, "delta_sc": -0.07882297039031982, "d_sc": 0.015585509688289806, "p_easy": 0.29795935556317094, "p_medium": 0.40211842180438834, "p_difficult": 0.2999222226324407, "reaction_difficulty": 50.09814335346349, "uncertainty": 0.8251188795731377, "confidence": "Low", "explanation_code": "reaction_difficulty_v1", "explanation_text": "Reaction difficulty is 50.098143/100 from feasibility difficulty 0.795704, precedent difficulty 1.000000, and normalized delta-SC difficulty 0.015586; confidence is Low."}], "route_explanation": "Route difficulty is governed by the hardest reaction step (fix_verify_ethanol__route_001__step_001); bottleneck=50.098143, mean=50.098143, confidence=low.", "rank_change": -2}, {"target_id": "fix_verify_ethanol", "route_id": "fix_verify_ethanol__route_004", "original_rank": 4, "new_rank": 4, "solved": true, "original_state_score": 0.9976287063411217, "number_of_reactions": 1, "difficulty_applicable": true, "difficulty_bottleneck": 50.15139904167579, "difficulty_mean": 50.15139904167579, "route_uncertainty": 0.7166587873635546, "route_confidence": "low", "hardest_step_id": "fix_verify_ethanol__route_004__step_001", "hardest_step_ids": ["fix_verify_ethanol__route_004__step_001"], "hardest_step_reaction": "OCCO>>CCO", "hardest_step_reactions": ["OCCO>>CCO"], "route_type": "reaction_route", "steps": [{"target_id": "fix_verify_ethanol", "route_id": "fix_verify_ethanol__route_004", "step_id": "fix_verify_ethanol__route_004__step_001", "reaction_hash": "7b8ba95b80c718e5a8763517ad2e1c95d92bf57b1e958e9a265ac699820cceaf", "reaction_smiles": "OCCO>>CCO", "product_smiles": "CCO", "precursor_smiles": "OCCO", "p_feas": 0.12360844016075134, "d_feas": 0.8763915598392487, "s_max": 0.6084860310731349, "n_analog": 0, "p_prec": 0.0, "d_prec": 1.0, "sc_product": 1.000002384185791, "sc_precursor_max": 1.000130295753479, "delta_sc": -0.00012791156768798828, "d_sc": 0.025695029486099412, "p_easy": 0.2974280736391198, "p_medium": 0.4021158718882447, "p_difficult": 0.30045605447263546, "reaction_difficulty": 50.15139904167579, "uncertainty": 0.7166587873635546, "confidence": "Low", "explanation_code": "reaction_difficulty_v1", "explanation_text": "Reaction difficulty is 50.151399/100 from feasibility difficulty 0.876392, precedent difficulty 1.000000, and normalized delta-SC difficulty 0.025695; confidence is Low."}], "route_explanation": "Route difficulty is governed by the hardest reaction step (fix_verify_ethanol__route_004__step_001); bottleneck=50.151399, mean=50.151399, confidence=low.", "rank_change": 0}, {"target_id": "fix_verify_ethanol", "route_id": "fix_verify_ethanol__route_002", "original_rank": 2, "new_rank": 5, "solved": true, "original_state_score": 0.9976287063411217, "number_of_reactions": 1, "difficulty_applicable": true, "difficulty_bottleneck": 50.23640883435169, "difficulty_mean": 50.23640883435169, "route_uncertainty": 0.6602524300397974, "route_confidence": "low", "hardest_step_id": "fix_verify_ethanol__route_002__step_001", "hardest_step_ids": ["fix_verify_ethanol__route_002__step_001"], "hardest_step_reaction": "COC(C)=O>>CCO", "hardest_step_reactions": ["COC(C)=O>>CCO"], "route_type": "reaction_route", "steps": [{"target_id": "fix_verify_ethanol", "route_id": "fix_verify_ethanol__route_002", "step_id": "fix_verify_ethanol__route_002__step_001", "reaction_hash": "3a28d44f916d1ada92eaa8f1b4ff4f5eed4b02d20806d7b538acbb12758176ee", "reaction_smiles": "COC(C)=O>>CCO", "product_smiles": "CCO", "precursor_smiles": "COC(C)=O", "p_feas": 0.08784252405166626, "d_feas": 0.9121574759483337, "s_max": 0.6559805182951544, "n_analog": 0, "p_prec": 0.0, "d_prec": 1.0, "sc_product": 1.000002384185791, "sc_precursor_max": 1.2624716758728027, "delta_sc": -0.2624692916870117, "d_sc": 0.006107834877843303, "p_easy": 0.29658113849462897, "p_medium": 0.4021095463237082, "p_difficult": 0.3013093151816628, "reaction_difficulty": 50.23640883435169, "uncertainty": 0.6602524300397974, "confidence": "Low", "explanation_code": "reaction_difficulty_v1", "explanation_text": "Reaction difficulty is 50.236409/100 from feasibility difficulty 0.912157, precedent difficulty 1.000000, and normalized delta-SC difficulty 0.006108; confidence is Low."}], "route_explanation": "Route difficulty is governed by the hardest reaction step (fix_verify_ethanol__route_002__step_001); bottleneck=50.236409, mean=50.236409, confidence=low.", "rank_change": -3}]};</script>
+</main></body></html>

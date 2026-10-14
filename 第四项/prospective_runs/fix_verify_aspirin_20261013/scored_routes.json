@@ -1,0 +1,330 @@
+{
+  "targets": {
+    "fix_verify_aspirin": [
+      {
+        "target_id": "fix_verify_aspirin",
+        "route_id": "fix_verify_aspirin__route_001",
+        "original_rank": 1,
+        "new_rank": 1,
+        "solved": true,
+        "original_state_score": 0.9976287063411217,
+        "number_of_reactions": 1,
+        "difficulty_applicable": true,
+        "difficulty_bottleneck": 49.223731688610215,
+        "difficulty_mean": 49.223731688610215,
+        "route_uncertainty": 0.500365428888216,
+        "route_confidence": "medium",
+        "hardest_step_id": "fix_verify_aspirin__route_001__step_001",
+        "hardest_step_ids": [
+          "fix_verify_aspirin__route_001__step_001"
+        ],
+        "hardest_step_reaction": "CC(=O)OC(C)=O.O=C(O)c1ccccc1O>>CC(=O)Oc1ccccc1C(=O)O",
+        "hardest_step_reactions": [
+          "CC(=O)OC(C)=O.O=C(O)c1ccccc1O>>CC(=O)Oc1ccccc1C(=O)O"
+        ],
+        "route_type": "reaction_route",
+        "steps": [
+          {
+            "target_id": "fix_verify_aspirin",
+            "route_id": "fix_verify_aspirin__route_001",
+            "step_id": "fix_verify_aspirin__route_001__step_001",
+            "reaction_hash": "a1982bb426ec1bee153006d117a61ca73a57432d3fe25f335c7db8b16832cece",
+            "reaction_smiles": "CC(=O)OC(C)=O.O=C(O)c1ccccc1O>>CC(=O)Oc1ccccc1C(=O)O",
+            "product_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "precursor_smiles": "CC(=O)OC(C)=O.O=C(O)c1ccccc1O",
+            "p_feas": 0.9998172521591187,
+            "d_feas": 0.00018274784088134766,
+            "s_max": 0.5489345542502013,
+            "n_analog": 0,
+            "p_prec": 0.0,
+            "d_prec": 1.0,
+            "sc_product": 1.5930638313293457,
+            "sc_precursor_max": 1.4618436098098755,
+            "delta_sc": 0.13122022151947021,
+            "d_sc": 0.05286436394271272,
+            "p_easy": 0.3067603559414946,
+            "p_medium": 0.4020046543448064,
+            "p_difficult": 0.291234989713699,
+            "reaction_difficulty": 49.223731688610215,
+            "uncertainty": 0.500365428888216,
+            "confidence": "Medium",
+            "explanation_code": "reaction_difficulty_v1",
+            "explanation_text": "Reaction difficulty is 49.223732/100 from feasibility difficulty 0.000183, precedent difficulty 1.000000, and normalized delta-SC difficulty 0.052864; confidence is Medium."
+          }
+        ],
+        "route_explanation": "Route difficulty is governed by the hardest reaction step (fix_verify_aspirin__route_001__step_001); bottleneck=49.223732, mean=49.223732, confidence=medium.",
+        "rank_change": 0
+      },
+      {
+        "target_id": "fix_verify_aspirin",
+        "route_id": "fix_verify_aspirin__route_003",
+        "original_rank": 3,
+        "new_rank": 2,
+        "solved": true,
+        "original_state_score": 0.9976287063411217,
+        "number_of_reactions": 1,
+        "difficulty_applicable": true,
+        "difficulty_bottleneck": 49.22719518730557,
+        "difficulty_mean": 49.22719518730557,
+        "route_uncertainty": 0.5074098096131081,
+        "route_confidence": "low",
+        "hardest_step_id": "fix_verify_aspirin__route_003__step_001",
+        "hardest_step_ids": [
+          "fix_verify_aspirin__route_003__step_001"
+        ],
+        "hardest_step_reaction": "CC(=O)O.O=C(O)c1ccccc1O>>CC(=O)Oc1ccccc1C(=O)O",
+        "hardest_step_reactions": [
+          "CC(=O)O.O=C(O)c1ccccc1O>>CC(=O)Oc1ccccc1C(=O)O"
+        ],
+        "route_type": "reaction_route",
+        "steps": [
+          {
+            "target_id": "fix_verify_aspirin",
+            "route_id": "fix_verify_aspirin__route_003",
+            "step_id": "fix_verify_aspirin__route_003__step_001",
+            "reaction_hash": "06bcde5464d0221af82bb163d9b544c6d973ef332f568e800738d16807139df9",
+            "reaction_smiles": "CC(=O)O.O=C(O)c1ccccc1O>>CC(=O)Oc1ccccc1C(=O)O",
+            "product_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "precursor_smiles": "CC(=O)O.O=C(O)c1ccccc1O",
+            "p_feas": 0.9962812662124634,
+            "d_feas": 0.003718733787536621,
+            "s_max": 0.6281766920984231,
+            "n_analog": 0,
+            "p_prec": 0.0,
+            "d_prec": 1.0,
+            "sc_product": 1.5930638313293457,
+            "sc_precursor_max": 1.4618436098098755,
+            "delta_sc": 0.13122022151947021,
+            "d_sc": 0.05286436394271272,
+            "p_easy": 0.30672520628809286,
+            "p_medium": 0.40200568367770295,
+            "p_difficult": 0.2912691100342042,
+            "reaction_difficulty": 49.22719518730557,
+            "uncertainty": 0.5074098096131081,
+            "confidence": "Low",
+            "explanation_code": "reaction_difficulty_v1",
+            "explanation_text": "Reaction difficulty is 49.227195/100 from feasibility difficulty 0.003719, precedent difficulty 1.000000, and normalized delta-SC difficulty 0.052864; confidence is Low."
+          }
+        ],
+        "route_explanation": "Route difficulty is governed by the hardest reaction step (fix_verify_aspirin__route_003__step_001); bottleneck=49.227195, mean=49.227195, confidence=low.",
+        "rank_change": 1
+      },
+      {
+        "target_id": "fix_verify_aspirin",
+        "route_id": "fix_verify_aspirin__route_002",
+        "original_rank": 2,
+        "new_rank": 3,
+        "solved": true,
+        "original_state_score": 0.9976287063411217,
+        "number_of_reactions": 1,
+        "difficulty_applicable": true,
+        "difficulty_bottleneck": 49.23083921135471,
+        "difficulty_mean": 49.23083921135471,
+        "route_uncertainty": 0.5147673566350193,
+        "route_confidence": "low",
+        "hardest_step_id": "fix_verify_aspirin__route_002__step_001",
+        "hardest_step_ids": [
+          "fix_verify_aspirin__route_002__step_001"
+        ],
+        "hardest_step_reaction": "CC(=O)Cl.O=C(O)c1ccccc1O>>CC(=O)Oc1ccccc1C(=O)O",
+        "hardest_step_reactions": [
+          "CC(=O)Cl.O=C(O)c1ccccc1O>>CC(=O)Oc1ccccc1C(=O)O"
+        ],
+        "route_type": "reaction_route",
+        "steps": [
+          {
+            "target_id": "fix_verify_aspirin",
+            "route_id": "fix_verify_aspirin__route_002",
+            "step_id": "fix_verify_aspirin__route_002__step_001",
+            "reaction_hash": "763ee0c0866efe3c62680dd450ab5c1d9c41946dc0a21be86f4f4ddfee72ecd9",
+            "reaction_smiles": "CC(=O)Cl.O=C(O)c1ccccc1O>>CC(=O)Oc1ccccc1C(=O)O",
+            "product_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "precursor_smiles": "CC(=O)Cl.O=C(O)c1ccccc1O",
+            "p_feas": 0.9925609827041626,
+            "d_feas": 0.007439017295837402,
+            "s_max": 0.7309906968182345,
+            "n_analog": 0,
+            "p_prec": 0.0,
+            "d_prec": 1.0,
+            "sc_product": 1.5930638313293457,
+            "sc_precursor_max": 1.4618436098098755,
+            "delta_sc": 0.13122022151947021,
+            "d_sc": 0.05286436394271272,
+            "p_easy": 0.30668822703953036,
+            "p_medium": 0.40200676169384497,
+            "p_difficult": 0.29130501126662467,
+            "reaction_difficulty": 49.23083921135471,
+            "uncertainty": 0.5147673566350193,
+            "confidence": "Low",
+            "explanation_code": "reaction_difficulty_v1",
+            "explanation_text": "Reaction difficulty is 49.230839/100 from feasibility difficulty 0.007439, precedent difficulty 1.000000, and normalized delta-SC difficulty 0.052864; confidence is Low."
+          }
+        ],
+        "route_explanation": "Route difficulty is governed by the hardest reaction step (fix_verify_aspirin__route_002__step_001); bottleneck=49.230839, mean=49.230839, confidence=low.",
+        "rank_change": -1
+      },
+      {
+        "target_id": "fix_verify_aspirin",
+        "route_id": "fix_verify_aspirin__route_004",
+        "original_rank": 4,
+        "new_rank": 4,
+        "solved": true,
+        "original_state_score": 0.9976287063411217,
+        "number_of_reactions": 1,
+        "difficulty_applicable": true,
+        "difficulty_bottleneck": 49.51650622574407,
+        "difficulty_mean": 49.51650622574407,
+        "route_uncertainty": 0.8838654094852245,
+        "route_confidence": "low",
+        "hardest_step_id": "fix_verify_aspirin__route_004__step_001",
+        "hardest_step_ids": [
+          "fix_verify_aspirin__route_004__step_001"
+        ],
+        "hardest_step_reaction": "CC(=O)Oc1ccccc1C=O.O=P(O)(O)O>>CC(=O)Oc1ccccc1C(=O)O",
+        "hardest_step_reactions": [
+          "CC(=O)Oc1ccccc1C=O.O=P(O)(O)O>>CC(=O)Oc1ccccc1C(=O)O"
+        ],
+        "route_type": "reaction_route",
+        "steps": [
+          {
+            "target_id": "fix_verify_aspirin",
+            "route_id": "fix_verify_aspirin__route_004",
+            "step_id": "fix_verify_aspirin__route_004__step_001",
+            "reaction_hash": "1b3d1ae450611ff4e860e95c9456843f14d8e868ee0554fda0069f1726d0ed9a",
+            "reaction_smiles": "CC(=O)Oc1ccccc1C=O.O=P(O)(O)O>>CC(=O)Oc1ccccc1C(=O)O",
+            "product_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "precursor_smiles": "CC(=O)Oc1ccccc1C=O.O=P(O)(O)O",
+            "p_feas": 0.740971565246582,
+            "d_feas": 0.25902843475341797,
+            "s_max": 0.4702122078543919,
+            "n_analog": 0,
+            "p_prec": 0.0,
+            "d_prec": 1.0,
+            "sc_product": 1.5930638313293457,
+            "sc_precursor_max": 1.5527138710021973,
+            "delta_sc": 0.04034996032714844,
+            "d_sc": 0.037489469250210614,
+            "p_easy": 0.30379722914910534,
+            "p_medium": 0.40207541718690787,
+            "p_difficult": 0.2941273536639868,
+            "reaction_difficulty": 49.51650622574407,
+            "uncertainty": 0.8838654094852245,
+            "confidence": "Low",
+            "explanation_code": "reaction_difficulty_v1",
+            "explanation_text": "Reaction difficulty is 49.516506/100 from feasibility difficulty 0.259028, precedent difficulty 1.000000, and normalized delta-SC difficulty 0.037489; confidence is Low."
+          }
+        ],
+        "route_explanation": "Route difficulty is governed by the hardest reaction step (fix_verify_aspirin__route_004__step_001); bottleneck=49.516506, mean=49.516506, confidence=low.",
+        "rank_change": 0
+      },
+      {
+        "target_id": "fix_verify_aspirin",
+        "route_id": "fix_verify_aspirin__route_006",
+        "original_rank": 6,
+        "new_rank": 5,
+        "solved": true,
+        "original_state_score": 0.9976287063411217,
+        "number_of_reactions": 1,
+        "difficulty_applicable": true,
+        "difficulty_bottleneck": 50.2628014917761,
+        "difficulty_mean": 50.2628014917761,
+        "route_uncertainty": 0.6287002944180795,
+        "route_confidence": "low",
+        "hardest_step_id": "fix_verify_aspirin__route_006__step_001",
+        "hardest_step_ids": [
+          "fix_verify_aspirin__route_006__step_001"
+        ],
+        "hardest_step_reaction": "CC(=O)OCc1c2ccccc2c(COC(C)=O)c2ccccc12.O=C(O)c1ccccc1O>>CC(=O)Oc1ccccc1C(=O)O",
+        "hardest_step_reactions": [
+          "CC(=O)OCc1c2ccccc2c(COC(C)=O)c2ccccc12.O=C(O)c1ccccc1O>>CC(=O)Oc1ccccc1C(=O)O"
+        ],
+        "route_type": "reaction_route",
+        "steps": [
+          {
+            "target_id": "fix_verify_aspirin",
+            "route_id": "fix_verify_aspirin__route_006",
+            "step_id": "fix_verify_aspirin__route_006__step_001",
+            "reaction_hash": "b070e517d421a3032b9ee105139edd74c1436c4e770628e1e5003c5aa4b3b376",
+            "reaction_smiles": "CC(=O)OCc1c2ccccc2c(COC(C)=O)c2ccccc12.O=C(O)c1ccccc1O>>CC(=O)Oc1ccccc1C(=O)O",
+            "product_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "precursor_smiles": "CC(=O)OCc1c2ccccc2c(COC(C)=O)c2ccccc12.O=C(O)c1ccccc1O",
+            "p_feas": 0.06912896037101746,
+            "d_feas": 0.9308710396289825,
+            "s_max": 0.514297777893915,
+            "n_analog": 0,
+            "p_prec": 0.0,
+            "d_prec": 1.0,
+            "sc_product": 1.5930638313293457,
+            "sc_precursor_max": 2.092261791229248,
+            "delta_sc": -0.49919795989990234,
+            "d_sc": 0.0029486099410278013,
+            "p_easy": 0.29631847592468,
+            "p_medium": 0.4021070183151178,
+            "p_difficult": 0.30157450576020217,
+            "reaction_difficulty": 50.2628014917761,
+            "uncertainty": 0.6287002944180795,
+            "confidence": "Low",
+            "explanation_code": "reaction_difficulty_v1",
+            "explanation_text": "Reaction difficulty is 50.262801/100 from feasibility difficulty 0.930871, precedent difficulty 1.000000, and normalized delta-SC difficulty 0.002949; confidence is Low."
+          }
+        ],
+        "route_explanation": "Route difficulty is governed by the hardest reaction step (fix_verify_aspirin__route_006__step_001); bottleneck=50.262801, mean=50.262801, confidence=low.",
+        "rank_change": 1
+      },
+      {
+        "target_id": "fix_verify_aspirin",
+        "route_id": "fix_verify_aspirin__route_005",
+        "original_rank": 5,
+        "new_rank": 6,
+        "solved": true,
+        "original_state_score": 0.9976287063411217,
+        "number_of_reactions": 1,
+        "difficulty_applicable": true,
+        "difficulty_bottleneck": 52.42509614547852,
+        "difficulty_mean": 52.42509614547852,
+        "route_uncertainty": 0.3305413254989765,
+        "route_confidence": "medium",
+        "hardest_step_id": "fix_verify_aspirin__route_005__step_001",
+        "hardest_step_ids": [
+          "fix_verify_aspirin__route_005__step_001"
+        ],
+        "hardest_step_reaction": "CC(=O)O.O=C(O)c1ccccc1F>>CC(=O)Oc1ccccc1C(=O)O",
+        "hardest_step_reactions": [
+          "CC(=O)O.O=C(O)c1ccccc1F>>CC(=O)Oc1ccccc1C(=O)O"
+        ],
+        "route_type": "reaction_route",
+        "steps": [
+          {
+            "target_id": "fix_verify_aspirin",
+            "route_id": "fix_verify_aspirin__route_005",
+            "step_id": "fix_verify_aspirin__route_005__step_001",
+            "reaction_hash": "717d46fc596b94e836f277e6d954dce0e709f154eed642f13696b3414745383a",
+            "reaction_smiles": "CC(=O)O.O=C(O)c1ccccc1F>>CC(=O)Oc1ccccc1C(=O)O",
+            "product_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+            "precursor_smiles": "CC(=O)O.O=C(O)c1ccccc1F",
+            "p_feas": 0.8372306823730469,
+            "d_feas": 0.16276931762695312,
+            "s_max": 0.9722167282032076,
+            "n_analog": 24,
+            "p_prec": 0.8840192164668836,
+            "d_prec": 0.11598078353311636,
+            "sc_product": 1.5930638313293457,
+            "sc_precursor_max": 1.399355411529541,
+            "delta_sc": 0.1937084197998047,
+            "d_sc": 0.06866048862679022,
+            "p_easy": 0.2752528136964018,
+            "p_medium": 0.400992449697626,
+            "p_difficult": 0.3237547366059722,
+            "reaction_difficulty": 52.42509614547852,
+            "uncertainty": 0.3305413254989765,
+            "confidence": "Medium",
+            "explanation_code": "reaction_difficulty_v1",
+            "explanation_text": "Reaction difficulty is 52.425096/100 from feasibility difficulty 0.162769, precedent difficulty 0.115981, and normalized delta-SC difficulty 0.068660; confidence is Medium."
+          }
+        ],
+        "route_explanation": "Route difficulty is governed by the hardest reaction step (fix_verify_aspirin__route_005__step_001); bottleneck=52.425096, mean=52.425096, confidence=medium.",
+        "rank_change": -1
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\AI2026_30.6\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\external_public_data\public_data\uspto_model.onnx to uspto
+Loading templates from C:\Users\18706\OneDrive\Desktop\AI2026_30.6\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\external_public_data\public_data\uspto_templates.csv.gz to uspto
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\AI2026_30.6\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\external_public_data\public_data\uspto_ringbreaker_model.onnx to ringbreaker
+Loading templates from C:\Users\18706\OneDrive\Desktop\AI2026_30.6\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\external_public_data\public_data\uspto_ringbreaker_templates.csv.gz to ringbreaker
+Loading filter policy model from C:\Users\18706\OneDrive\Desktop\AI2026_30.6\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\external_public_data\public_data\uspto_filter_model.onnx to uspto
+Loading stock from InMemoryInchiKeyQuery to zinc
+Selected as stock: zinc
+Compounds in stock: 35205265
+Selected as expansion policy: uspto
+Selected as filter policy: uspto
+  0%|          | 0/100 [00:00<?, ?it/s]  2%|¨‡         | 2/100 [00:01<01:09,  1.42it/s]  8%|¨‚         | 8/100 [00:03<00:32,  2.81it/s] 11%|¨€         | 11/100 [00:03<00:21,  4.12it/s] 14%|¨€¨…        | 14/100 [00:03<00:15,  5.62it/s] 18%|¨€¨‚        | 18/100 [00:03<00:09,  8.36it/s] 23%|¨€¨€¨†       | 23/100 [00:05<00:18,  4.18it/s] 36%|¨€¨€¨€¨„      | 36/100 [00:05<00:06, 10.10it/s] 42%|¨€¨€¨€¨€¨‡     | 42/100 [00:05<00:04, 12.79it/s] 47%|¨€¨€¨€¨€¨ƒ     | 47/100 [00:05<00:03, 14.71it/s] 52%|¨€¨€¨€¨€¨€¨‡    | 52/100 [00:06<00:02, 17.42it/s] 60%|¨€¨€¨€¨€¨€¨€    | 60/100 [00:06<00:01, 23.88it/s] 65%|¨€¨€¨€¨€¨€¨€¨„   | 65/100 [00:06<00:01, 25.87it/s] 70%|¨€¨€¨€¨€¨€¨€¨€   | 70/100 [00:06<00:01, 24.41it/s] 79%|¨€¨€¨€¨€¨€¨€¨€¨  | 79/100 [00:06<00:00, 33.66it/s] 84%|¨€¨€¨€¨€¨€¨€¨€¨€¨… | 84/100 [00:06<00:00, 34.37it/s] 89%|¨€¨€¨€¨€¨€¨€¨€¨€¨ | 89/100 [00:07<00:00, 35.16it/s] 94%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨…| 94/100 [00:07<00:00, 32.61it/s]                                                Trees saved to C:\Users\18706\OneDrive\Desktop\AI2026_30.6\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\prospective_runs\my_compound_005_20261009_102206\routes_raw.json
+target: CC(=O)Oc1ccc(NC(=O)CCC(=O)O)cc1C(=O)O
+search time: 7.297314167022705
+first solution time: 1.4124927520751953
+first solution iteration: 1
+number of nodes: 245
+max transforms: 6
+max children: 23
+number of routes: 86
+number of solved routes: 77
+top score: 0.9976287063411217
+is solved: True
+number of steps: 1
+number of precursors: 2
+number of precursors in stock: 2
+precursors in stock: CC(=O)OC(C)=O, O=C(O)CCC(=O)Nc1ccc(O)c(C(=O)O)c1
+precursors not in stock: 
+precursors availability: zinc;zinc
+policy used counts: {'uspto': 244}
+profiling: {'expansion_calls': 161, 'reactants_generations': 613, 'iterations': 100}

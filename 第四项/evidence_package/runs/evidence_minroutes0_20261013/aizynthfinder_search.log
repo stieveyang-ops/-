@@ -1,0 +1,24 @@
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_model.onnx to uspto
+Loading templates from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_templates.csv.gz to uspto
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_ringbreaker_model.onnx to ringbreaker
+Loading templates from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_ringbreaker_templates.csv.gz to ringbreaker
+Loading filter policy model from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_filter_model.onnx to uspto
+Loading stock from InMemoryInchiKeyQuery to zinc
+Selected as stock: zinc
+Compounds in stock: 35205265
+Selected as expansion policy: uspto
+Selected as filter policy: uspto
+  0%|          | 0/50 [00:00<?, ?it/s]  4%|▍         | 2/50 [00:04<01:38,  2.05s/it] 14%|█▍        | 7/50 [00:04<00:20,  2.07it/s] 32%|███▏      | 16/50 [00:08<00:16,  2.06it/s] 98%|█████████▊| 49/50 [00:08<00:00,  8.79it/s]                                               Traceback (most recent call last):
+  File "C:\Users\18706\miniconda3\envs\aizynth-portable\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\18706\miniconda3\envs\aizynth-portable\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\18706\miniconda3\envs\aizynth-portable\lib\site-packages\aizynthfinder\interfaces\aizynthcli.py", line 385, in <module>
+    main()
+  File "C:\Users\18706\miniconda3\envs\aizynth-portable\lib\site-packages\aizynthfinder\interfaces\aizynthcli.py", line 381, in main
+    _process_single_smiles(*params)
+  File "C:\Users\18706\miniconda3\envs\aizynth-portable\lib\site-packages\aizynthfinder\interfaces\aizynthcli.py", line 202, in _process_single_smiles
+    finder.routes.compute_scores(*finder.scorers.objects())
+  File "C:\Users\18706\miniconda3\envs\aizynth-portable\lib\site-packages\aizynthfinder\analysis\routes.py", line 200, in compute_scores
+    if self.nodes[0]:
+IndexError: list index out of range

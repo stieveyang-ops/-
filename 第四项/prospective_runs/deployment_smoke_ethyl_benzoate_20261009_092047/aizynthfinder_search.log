@@ -1,0 +1,30 @@
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\AI2026_30.6\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\external_public_data\public_data\uspto_model.onnx to uspto
+Loading templates from C:\Users\18706\OneDrive\Desktop\AI2026_30.6\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\external_public_data\public_data\uspto_templates.csv.gz to uspto
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\AI2026_30.6\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\external_public_data\public_data\uspto_ringbreaker_model.onnx to ringbreaker
+Loading templates from C:\Users\18706\OneDrive\Desktop\AI2026_30.6\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\external_public_data\public_data\uspto_ringbreaker_templates.csv.gz to ringbreaker
+Loading filter policy model from C:\Users\18706\OneDrive\Desktop\AI2026_30.6\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\external_public_data\public_data\uspto_filter_model.onnx to uspto
+Loading stock from InMemoryInchiKeyQuery to zinc
+Selected as stock: zinc
+Compounds in stock: 35205265
+Selected as expansion policy: uspto
+Selected as filter policy: uspto
+  0%|          | 0/30 [00:00<?, ?it/s] 53%|¨€¨€¨€¨€¨€¨†    | 16/30 [00:00<00:00, 101.42it/s] 90%|¨€¨€¨€¨€¨€¨€¨€¨€¨€ | 27/30 [00:02<00:00, 10.39it/s]                                                Trees saved to C:\Users\18706\OneDrive\Desktop\AI2026_30.6\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\prospective_runs\deployment_smoke_ethyl_benzoate_20261009_092047\routes_raw.json
+target: CCOC(=O)c1ccccc1
+search time: 3.9058339595794678
+first solution time: 1.6805996894836426
+first solution iteration: 1
+number of nodes: 32
+max transforms: 1
+max children: 31
+number of routes: 31
+number of solved routes: 27
+top score: 0.9976287063411217
+is solved: True
+number of steps: 1
+number of precursors: 2
+number of precursors in stock: 2
+precursors in stock: O=C(O)c1ccccc1, CCO
+precursors not in stock: 
+precursors availability: zinc;zinc
+policy used counts: {'uspto': 31}
+profiling: {'expansion_calls': 5, 'reactants_generations': 243, 'iterations': 30}

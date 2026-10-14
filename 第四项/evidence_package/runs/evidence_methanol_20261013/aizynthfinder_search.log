@@ -1,0 +1,30 @@
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_model.onnx to uspto
+Loading templates from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_templates.csv.gz to uspto
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_ringbreaker_model.onnx to ringbreaker
+Loading templates from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_ringbreaker_templates.csv.gz to ringbreaker
+Loading filter policy model from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\external_public_data\public_data\uspto_filter_model.onnx to uspto
+Loading stock from InMemoryInchiKeyQuery to zinc
+Selected as stock: zinc
+Compounds in stock: 35205265
+Selected as expansion policy: uspto
+Selected as filter policy: uspto
+  0%|          | 0/100 [00:00<?, ?it/s]  2%|▏         | 2/100 [00:03<03:12,  1.96s/it]                                               Trees saved to C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\prospective_runs\evidence_methanol_20261013\routes_raw.json
+target: CO
+search time: 3.93790340423584
+first solution time: 0
+first solution iteration: 0
+number of nodes: 1
+max transforms: 0
+max children: 0
+number of routes: 1
+number of solved routes: 0
+top score: 0.049100689501895424
+is solved: False
+number of steps: 0
+number of precursors: 1
+number of precursors in stock: 0
+precursors in stock: 
+precursors not in stock: CO
+precursors availability: Not in stock
+policy used counts: {}
+profiling: {'expansion_calls': 1, 'reactants_generations': 50, 'iterations': 100}

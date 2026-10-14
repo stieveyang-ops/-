@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\18706\miniconda3\envs\aizynth-portable\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\18706\miniconda3\envs\aizynth-portable\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\18706\miniconda3\envs\aizynth-portable\lib\site-packages\aizynthfinder\interfaces\aizynthcli.py", line 385, in <module>
+    main()
+  File "C:\Users\18706\miniconda3\envs\aizynth-portable\lib\site-packages\aizynthfinder\interfaces\aizynthcli.py", line 358, in main
+    finder = AiZynthFinder(configfile=args.config)
+  File "C:\Users\18706\miniconda3\envs\aizynth-portable\lib\site-packages\aizynthfinder\aizynthfinder.py", line 71, in __init__
+    self.config = Configuration.from_file(configfile)
+  File "C:\Users\18706\miniconda3\envs\aizynth-portable\lib\site-packages\aizynthfinder\context\config.py", line 134, in from_file
+    txt = fileobj.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 398: illegal multibyte sequence

@@ -1,0 +1,30 @@
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\Aizynth_Work\AIZynthFinder_RD_Portable_2026-10-13\external_public_data\public_data\uspto_model.onnx to uspto
+Loading templates from C:\Users\18706\OneDrive\Desktop\Aizynth_Work\AIZynthFinder_RD_Portable_2026-10-13\external_public_data\public_data\uspto_templates.csv.gz to uspto
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\Aizynth_Work\AIZynthFinder_RD_Portable_2026-10-13\external_public_data\public_data\uspto_ringbreaker_model.onnx to ringbreaker
+Loading templates from C:\Users\18706\OneDrive\Desktop\Aizynth_Work\AIZynthFinder_RD_Portable_2026-10-13\external_public_data\public_data\uspto_ringbreaker_templates.csv.gz to ringbreaker
+Loading filter policy model from C:\Users\18706\OneDrive\Desktop\Aizynth_Work\AIZynthFinder_RD_Portable_2026-10-13\external_public_data\public_data\uspto_filter_model.onnx to uspto
+Loading stock from InMemoryInchiKeyQuery to zinc
+Selected as stock: zinc
+Compounds in stock: 35205265
+Selected as expansion policy: uspto
+Selected as filter policy: uspto
+  0%|          | 0/100 [00:00<?, ?it/s]  2%|▏         | 2/100 [00:03<03:09,  1.94s/it]  7%|▋         | 7/100 [00:04<00:42,  2.21it/s] 16%|█▌        | 16/100 [00:07<00:33,  2.54it/s] 49%|████▉     | 49/100 [00:07<00:04, 10.86it/s]                                                Trees saved to C:\Users\18706\OneDrive\Desktop\Aizynth_Work\AIZynthFinder_RD_Portable_2026-10-13\prospective_runs\fix_move_smoke_ethanol_20261013\routes_raw.json
+target: CCO
+search time: 7.706753492355347
+first solution time: 3.8801348209381104
+first solution iteration: 1
+number of nodes: 15
+max transforms: 4
+max children: 6
+number of routes: 11
+number of solved routes: 8
+top score: 0.9976287063411217
+is solved: True
+number of steps: 1
+number of precursors: 1
+number of precursors in stock: 1
+precursors in stock: CC(=O)O
+precursors not in stock: 
+precursors availability: zinc
+policy used counts: {'uspto': 14}
+profiling: {'expansion_calls': 7, 'reactants_generations': 262, 'iterations': 100}

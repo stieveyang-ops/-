@@ -1,0 +1,168 @@
+{
+  "targets": {
+    "deployment_smoke_ethyl_benzoate_20261009_092047": [
+      {
+        "target_id": "deployment_smoke_ethyl_benzoate_20261009_092047",
+        "route_id": "deployment_smoke_ethyl_benzoate_20261009_092047__route_001",
+        "original_rank": 1,
+        "new_rank": 1,
+        "solved": true,
+        "original_state_score": 0.9976287063411217,
+        "number_of_reactions": 1,
+        "difficulty_applicable": true,
+        "difficulty_bottleneck": 49.31112690382875,
+        "difficulty_mean": 49.31112690382875,
+        "route_uncertainty": 0.500005960446714,
+        "route_confidence": "medium",
+        "hardest_step_id": "deployment_smoke_ethyl_benzoate_20261009_092047__route_001__step_001",
+        "hardest_step_ids": [
+          "deployment_smoke_ethyl_benzoate_20261009_092047__route_001__step_001"
+        ],
+        "hardest_step_reaction": "CCO.O=C(O)c1ccccc1>>CCOC(=O)c1ccccc1",
+        "hardest_step_reactions": [
+          "CCO.O=C(O)c1ccccc1>>CCOC(=O)c1ccccc1"
+        ],
+        "route_type": "reaction_route",
+        "steps": [
+          {
+            "target_id": "deployment_smoke_ethyl_benzoate_20261009_092047",
+            "route_id": "deployment_smoke_ethyl_benzoate_20261009_092047__route_001",
+            "step_id": "deployment_smoke_ethyl_benzoate_20261009_092047__route_001__step_001",
+            "reaction_hash": "173bb10ccc1a20bf4bb42552c5707776c887a1e0df266ae5bd558f701e5376fe",
+            "reaction_smiles": "CCO.O=C(O)c1ccccc1>>CCOC(=O)c1ccccc1",
+            "product_smiles": "CCOC(=O)c1ccccc1",
+            "precursor_smiles": "CCO.O=C(O)c1ccccc1",
+            "p_feas": 0.9999970197677612,
+            "d_feas": 2.9802322387695312e-06,
+            "s_max": 0.5954474483786373,
+            "n_analog": 0,
+            "p_prec": 0.0,
+            "d_prec": 1.0,
+            "sc_product": 1.6067816019058228,
+            "sc_precursor_max": 1.642978310585022,
+            "delta_sc": -0.03619670867919922,
+            "d_sc": 0.018534119629317607,
+            "p_easy": 0.30587412060379976,
+            "p_medium": 0.40202922071582553,
+            "p_difficult": 0.2920966586803747,
+            "reaction_difficulty": 49.31112690382875,
+            "uncertainty": 0.500005960446714,
+            "confidence": "Medium",
+            "explanation_code": "reaction_difficulty_v1",
+            "explanation_text": "Reaction difficulty is 49.311127/100 from feasibility difficulty 0.000003, precedent difficulty 1.000000, and normalized delta-SC difficulty 0.018534; confidence is Medium."
+          }
+        ],
+        "route_explanation": "Route difficulty is governed by the hardest reaction step (deployment_smoke_ethyl_benzoate_20261009_092047__route_001__step_001); bottleneck=49.311127, mean=49.311127, confidence=medium.",
+        "rank_change": 0
+      },
+      {
+        "target_id": "deployment_smoke_ethyl_benzoate_20261009_092047",
+        "route_id": "deployment_smoke_ethyl_benzoate_20261009_092047__route_003",
+        "original_rank": 3,
+        "new_rank": 2,
+        "solved": true,
+        "original_state_score": 0.9976287063411217,
+        "number_of_reactions": 1,
+        "difficulty_applicable": true,
+        "difficulty_bottleneck": 49.44717390578049,
+        "difficulty_mean": 49.44717390578049,
+        "route_uncertainty": 0.4569402537954111,
+        "route_confidence": "medium",
+        "hardest_step_id": "deployment_smoke_ethyl_benzoate_20261009_092047__route_003__step_001",
+        "hardest_step_ids": [
+          "deployment_smoke_ethyl_benzoate_20261009_092047__route_003__step_001"
+        ],
+        "hardest_step_reaction": "CCO.O=C(OC(=O)c1ccccc1)c1ccccc1>>CCOC(=O)c1ccccc1",
+        "hardest_step_reactions": [
+          "CCO.O=C(OC(=O)c1ccccc1)c1ccccc1>>CCOC(=O)c1ccccc1"
+        ],
+        "route_type": "reaction_route",
+        "steps": [
+          {
+            "target_id": "deployment_smoke_ethyl_benzoate_20261009_092047",
+            "route_id": "deployment_smoke_ethyl_benzoate_20261009_092047__route_003",
+            "step_id": "deployment_smoke_ethyl_benzoate_20261009_092047__route_003__step_001",
+            "reaction_hash": "2fc597507fa8396e051ae528a148ddb94b1be83f2151ecb986072cee64236a79",
+            "reaction_smiles": "CCO.O=C(OC(=O)c1ccccc1)c1ccccc1>>CCOC(=O)c1ccccc1",
+            "product_smiles": "CCOC(=O)c1ccccc1",
+            "precursor_smiles": "CCO.O=C(OC(=O)c1ccccc1)c1ccccc1",
+            "p_feas": 0.9999954104423523,
+            "d_feas": 4.589557647705078e-06,
+            "s_max": 0.9051651266467509,
+            "n_analog": 1,
+            "p_prec": 0.08613785055551251,
+            "d_prec": 0.9138621494444875,
+            "sc_product": 1.6067816019058228,
+            "sc_precursor_max": 1.3657371997833252,
+            "delta_sc": 0.24104440212249756,
+            "d_sc": 0.08298230834035383,
+            "p_easy": 0.3044974451357937,
+            "p_medium": 0.40206163161280295,
+            "p_difficult": 0.29344092325140336,
+            "reaction_difficulty": 49.44717390578049,
+            "uncertainty": 0.4569402537954111,
+            "confidence": "Medium",
+            "explanation_code": "reaction_difficulty_v1",
+            "explanation_text": "Reaction difficulty is 49.447174/100 from feasibility difficulty 0.000005, precedent difficulty 0.913862, and normalized delta-SC difficulty 0.082982; confidence is Medium."
+          }
+        ],
+        "route_explanation": "Route difficulty is governed by the hardest reaction step (deployment_smoke_ethyl_benzoate_20261009_092047__route_003__step_001); bottleneck=49.447174, mean=49.447174, confidence=medium.",
+        "rank_change": 1
+      },
+      {
+        "target_id": "deployment_smoke_ethyl_benzoate_20261009_092047",
+        "route_id": "deployment_smoke_ethyl_benzoate_20261009_092047__route_002",
+        "original_rank": 2,
+        "new_rank": 3,
+        "solved": true,
+        "original_state_score": 0.9976287063411217,
+        "number_of_reactions": 1,
+        "difficulty_applicable": true,
+        "difficulty_bottleneck": 52.243849521667556,
+        "difficulty_mean": 52.243849521667556,
+        "route_uncertainty": 0.08268414408427371,
+        "route_confidence": "high",
+        "hardest_step_id": "deployment_smoke_ethyl_benzoate_20261009_092047__route_002__step_001",
+        "hardest_step_ids": [
+          "deployment_smoke_ethyl_benzoate_20261009_092047__route_002__step_001"
+        ],
+        "hardest_step_reaction": "CCI.O=C(O)c1ccccc1>>CCOC(=O)c1ccccc1",
+        "hardest_step_reactions": [
+          "CCI.O=C(O)c1ccccc1>>CCOC(=O)c1ccccc1"
+        ],
+        "route_type": "reaction_route",
+        "steps": [
+          {
+            "target_id": "deployment_smoke_ethyl_benzoate_20261009_092047",
+            "route_id": "deployment_smoke_ethyl_benzoate_20261009_092047__route_002",
+            "step_id": "deployment_smoke_ethyl_benzoate_20261009_092047__route_002__step_001",
+            "reaction_hash": "f92d6ddb96f6d8cba13c6637d686f61a0030b2f1c78d0a4829bdcb4be7552c02",
+            "reaction_smiles": "CCI.O=C(O)c1ccccc1>>CCOC(=O)c1ccccc1",
+            "product_smiles": "CCOC(=O)c1ccccc1",
+            "precursor_smiles": "CCI.O=C(O)c1ccccc1",
+            "p_feas": 0.9985030889511108,
+            "d_feas": 0.0014969110488891602,
+            "s_max": 0.8406733189925204,
+            "n_analog": 95,
+            "p_prec": 0.8406103930562561,
+            "d_prec": 0.15938960694374393,
+            "sc_product": 1.6067816019058228,
+            "sc_precursor_max": 1.642978310585022,
+            "delta_sc": -0.03619670867919922,
+            "d_sc": 0.018534119629317607,
+            "p_easy": 0.27698417641264594,
+            "p_medium": 0.40115465674135686,
+            "p_difficult": 0.3218611668459972,
+            "reaction_difficulty": 52.243849521667556,
+            "uncertainty": 0.08268414408427371,
+            "confidence": "High",
+            "explanation_code": "reaction_difficulty_v1",
+            "explanation_text": "Reaction difficulty is 52.243850/100 from feasibility difficulty 0.001497, precedent difficulty 0.159390, and normalized delta-SC difficulty 0.018534; confidence is High."
+          }
+        ],
+        "route_explanation": "Route difficulty is governed by the hardest reaction step (deployment_smoke_ethyl_benzoate_20261009_092047__route_002__step_001); bottleneck=52.243850, mean=52.243850, confidence=high.",
+        "rank_change": -1
+      }
+    ]
+  }
+}

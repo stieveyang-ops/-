@@ -1,0 +1,302 @@
+{
+  "tool": "prospective_difficulty_tool",
+  "tool_version": "1.0",
+  "project_dir": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\frozen_project",
+  "runtime": {
+    "python_executable": "C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\python.exe",
+    "python_version": "3.10.20",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.0",
+    "scipy": "1.15.2",
+    "sklearn": "1.5.2",
+    "statsmodels": "0.14.4",
+    "rdkit": "2023.9.6",
+    "aizynthfinder": "4.4.1"
+  },
+  "git": {
+    "commit": null,
+    "status_porcelain": ""
+  },
+  "frozen_assets": {
+    "production_config": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\frozen_project\\config\\config_production.yml",
+      "sha256": "B535987F1F27BE1401A46BC39E99DA545BFBEDB76E814F19291ED7816DD95E13",
+      "size_bytes": 952
+    },
+    "difficulty_config": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\frozen_project\\config\\difficulty.yml",
+      "sha256": "815A9F7D21E396349457A535F97CFAB94D10226EE5F353335E770D4D36A395C6",
+      "size_bytes": 1072
+    },
+    "stage5_manifest": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\frozen_project\\reports\\stage5_manifest.json",
+      "sha256": "7895D448A943D9A7CE5A63994E5027E6727004523D21D22DE20AE4EF63816C67",
+      "size_bytes": 9435
+    },
+    "stage8_manifest": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\frozen_project\\reports\\stage8_manifest.json",
+      "sha256": "F1E9C120ED1B01CAD40CDF53ED6657C8AFC71DC897A05B4E84F77A664C9333C2",
+      "size_bytes": 2055
+    },
+    "reference_corpus": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\frozen_project\\data\\reference\\reference_reactions_clean.parquet",
+      "sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+      "size_bytes": 3467089
+    },
+    "reference_embeddings": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\frozen_project\\artifacts\\reference_rxnfp.npy",
+      "sha256": "37766193FEADD7C05CB97FF6285AF5D791A7FCF0EB37CE5D311D481DAD115E44",
+      "size_bytes": 5064832
+    },
+    "reference_metadata": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\frozen_project\\artifacts\\reference_metadata.parquet",
+      "sha256": "7062193C9936AA08FF2E43DB9BBA7C1B1269CC9FED12DE0A85827CAFF1EEB2AB",
+      "size_bytes": 482142
+    },
+    "reference_index": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\frozen_project\\artifacts\\reference_nn_index.joblib",
+      "sha256": "BB0B2D99E7D461604F5B498E56AB9206B587B1935B785959A9CDB715ED24CBB9",
+      "size_bytes": 5065284
+    },
+    "sc_delta_ecdf": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\frozen_project\\artifacts\\sc_delta_ecdf.npz",
+      "sha256": "3F82C235D0B48F6CADA66461E1664B68DA310593E0D76992C3CA546D6E68F6C5",
+      "size_bytes": 40322
+    },
+    "difficulty_model": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\frozen_project\\artifacts\\difficulty_model.pkl",
+      "sha256": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+      "size_bytes": 25572
+    },
+    "difficulty_model_metadata": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\frozen_project\\artifacts\\difficulty_model_metadata.json",
+      "sha256": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055",
+      "size_bytes": 2215
+    }
+  },
+  "search_policy": {
+    "expansion_policy": "uspto",
+    "stock": "zinc",
+    "nproc": 1,
+    "config_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\frozen_project\\config\\config_production.yml"
+  },
+  "input_mode": "search_then_score",
+  "configuration_unchanged": true,
+  "search_parameters": {
+    "iteration_limit": 100,
+    "time_limit": 120.0,
+    "max_transforms": 6,
+    "max_routes": 10,
+    "min_routes": 3
+  },
+  "search_command": [
+    "C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\python.exe",
+    "-s",
+    "-m",
+    "aizynthfinder.interfaces.aizynthcli",
+    "--config",
+    "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\prospective_search_config.yml",
+    "--smiles",
+    "NNc1ccc([N+](=O)[O-])cc1[N+](=O)[O-]",
+    "--policy",
+    "uspto",
+    "--stocks",
+    "zinc",
+    "--output",
+    "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\routes_raw.json"
+  ],
+  "search_config": {
+    "original_config_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\frozen_project\\config\\config_production.yml",
+    "original_config_sha256": "B535987F1F27BE1401A46BC39E99DA545BFBEDB76E814F19291ED7816DD95E13",
+    "temporary_config_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\prospective_search_config.yml",
+    "temporary_config_sha256": "1E649CF4CC6098F24134479BF684CCC26FD8037AC0320F0B22BF133ED8F7E00F",
+    "effective": {
+      "iteration_limit": 100,
+      "time_limit": 120.0,
+      "max_transforms": 6,
+      "max_routes": 10,
+      "min_routes": 3
+    },
+    "overrides": {
+      "iteration_limit": 100,
+      "time_limit": 120.0,
+      "max_transforms": 6,
+      "max_routes": 10,
+      "min_routes": 3
+    }
+  },
+  "target_input_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\target.smi",
+  "scoring_summary": {
+    "q33": 0.3005421128682305,
+    "q67": 0.5006582129614043,
+    "feature_order": [
+      "d_feas",
+      "d_prec",
+      "d_sc"
+    ],
+    "precedent": {
+      "tau": 0.8,
+      "N0": 10.0,
+      "metric": "cosine",
+      "top_k": 100
+    },
+    "reaction_unique_count": 13,
+    "reaction_occurrence_count": 29,
+    "route_count": 10
+  },
+  "status": "PASS",
+  "created_at_utc": "2026-10-13T01:46:40.998542+00:00",
+  "target_id": "my_compound_0014",
+  "target_smiles": "NNc1ccc([N+](=O)[O-])cc1[N+](=O)[O-]",
+  "outputs": {
+    "routes_raw": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\routes_raw.json",
+      "sha256": "B723B4D64489206FEEB6104DE5DA4F682B7E13E6FC8B6A1C6F691038EA869133"
+    },
+    "scored_reactions_parquet": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\scored_reactions.parquet",
+      "sha256": "6DF81C453E6AEFAB9E9F8665634690DB714ECACA47C449CD9F0AAFAD0EBBBF75"
+    },
+    "scored_reactions_csv": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\scored_reactions.csv",
+      "sha256": "4249E2A99EB673EEC93E04FF04A8F75F00848F350E3415CDFFB244E552D020C7"
+    },
+    "scored_routes_json": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\scored_routes.json",
+      "sha256": "80F237F5361F27A501520637616ABE8B2914785E4AF72289FB2B46AC69CF3CF8"
+    },
+    "scored_routes_csv": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\scored_routes.csv",
+      "sha256": "0368FB6CE4B02F71D10FF205A1FCCF4C583FD633281EB9093830C9C079463400"
+    },
+    "visualization_html": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\prospective_dashboard.html",
+      "sha256": "10A2FE60C7EADDBB38F7F6AE31C80924B328841AFB171932BE684142379B5965"
+    },
+    "reaction_diagrams": [
+      {
+        "reaction_hash": "f98676c6e6b688d9b0c27931a5bbff29e305420c9fe11e238e522d2f99003bd8",
+        "reaction_smiles": "NNc1ccc([N+](=O)[O-])cc1.O=[N+]([O-])O>>NNc1ccc([N+](=O)[O-])cc1[N+](=O)[O-]",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\f98676c6e6b688d9b0c27931a5bbff29e305420c9fe11e238e522d2f99003bd8.svg",
+        "svg_sha256": "429EDC9B3B5EAEF0B346C97E66CE9792FAD3E2A0061EBE1F060BA9BF3739264D",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\f98676c6e6b688d9b0c27931a5bbff29e305420c9fe11e238e522d2f99003bd8.png",
+        "png_sha256": "6DA42F0F68B603469F3A0E5C60A3AD61087BEA674614FF2585831D6B07067587"
+      },
+      {
+        "reaction_hash": "eed3c16145abbd4e4ad074c40855686174ee16988f8a69672ba210c99cfcddd7",
+        "reaction_smiles": "NNc1ccccc1[N+](=O)[O-].O=[N+]([O-])O>>NNc1ccc([N+](=O)[O-])cc1[N+](=O)[O-]",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\eed3c16145abbd4e4ad074c40855686174ee16988f8a69672ba210c99cfcddd7.svg",
+        "svg_sha256": "8CADBB8C34314688C1FA07E2041D41DFDA7BBBFBF549D8BAFBB6E4F3EEA6EC9E",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\eed3c16145abbd4e4ad074c40855686174ee16988f8a69672ba210c99cfcddd7.png",
+        "png_sha256": "75A2F0B712D778974BBCE9A23DC3AAF085FF437256387FCF2D2F2514B9F088ED"
+      },
+      {
+        "reaction_hash": "8eeb812ac849fae9629e75e34a2c485f484bcffc874455c0514e6a4eee51d804",
+        "reaction_smiles": "NN.O=[N+]([O-])c1ccc(Cl)c([N+](=O)[O-])c1>>NNc1ccc([N+](=O)[O-])cc1[N+](=O)[O-]",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\8eeb812ac849fae9629e75e34a2c485f484bcffc874455c0514e6a4eee51d804.svg",
+        "svg_sha256": "C799423F957ED0F2E1829F74FF57055B8540B74B0DEBAA19FDDD0F6E4F481BC7",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\8eeb812ac849fae9629e75e34a2c485f484bcffc874455c0514e6a4eee51d804.png",
+        "png_sha256": "A1C9C8B25E0677616CE46AE41F9D74629B45EB52098365FBF934B9E04CF1CE36"
+      },
+      {
+        "reaction_hash": "7d5a18aa2601daa68a7855bef24f5f423c8a925f4ebc936212e0cc9ed209c585",
+        "reaction_smiles": "NN=O>>NN",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\7d5a18aa2601daa68a7855bef24f5f423c8a925f4ebc936212e0cc9ed209c585.svg",
+        "svg_sha256": "22A1FF2BD643470BCCB6883C0CB9652BAC0FE431ED4344A2D421C75CBBD9884C",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\7d5a18aa2601daa68a7855bef24f5f423c8a925f4ebc936212e0cc9ed209c585.png",
+        "png_sha256": "FFD4F1A3BCB9921A528B3B327C58E4468444629E7DF9CE4B0DE5DEA6B9A32008"
+      },
+      {
+        "reaction_hash": "f75d1cb45b81b851bf301598092b2aca01139e5b3768d4b0f9b5bb9425a35a97",
+        "reaction_smiles": "O=N[N+](=O)[O-]>>NN=O",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\f75d1cb45b81b851bf301598092b2aca01139e5b3768d4b0f9b5bb9425a35a97.svg",
+        "svg_sha256": "6AEAA8AA6E7E6FBAA79123B3AE646E99E1543811A76F7D6EC079A9CCBCB6661C",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\f75d1cb45b81b851bf301598092b2aca01139e5b3768d4b0f9b5bb9425a35a97.png",
+        "png_sha256": "1CCF4E614A5E35BCACD088C83D0D1FAC89F0A80DDC0AF3930B1A78EEABB50FEE"
+      },
+      {
+        "reaction_hash": "c6a0c602f4a66c15bd9aca9f89861543959cb270a9f54e328f8d3874c97edc05",
+        "reaction_smiles": "N[N+](=O)[O-]>>NN",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\c6a0c602f4a66c15bd9aca9f89861543959cb270a9f54e328f8d3874c97edc05.svg",
+        "svg_sha256": "786593E31C0D50DE92AB139B1EB5862CC6F689E1085A01E052BE99F781C1DB75",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\c6a0c602f4a66c15bd9aca9f89861543959cb270a9f54e328f8d3874c97edc05.png",
+        "png_sha256": "6AD20D5FBF953616AB3CB3CBAC1EE0FFC86C3EA5734F7B0662A27146C5FBBD5E"
+      },
+      {
+        "reaction_hash": "7ceb4a44531a20dbb3545baf79b7a4fbbc2869723c3917864abb758cda511225",
+        "reaction_smiles": "O=N[N+](=O)[O-]>>N[N+](=O)[O-]",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\7ceb4a44531a20dbb3545baf79b7a4fbbc2869723c3917864abb758cda511225.svg",
+        "svg_sha256": "0218DEFDDEDA388A2F9286656C839EB70C06CFDA5FD66446EB1D404853FD5A06",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\7ceb4a44531a20dbb3545baf79b7a4fbbc2869723c3917864abb758cda511225.png",
+        "png_sha256": "AF955E64C357CEA5AFD8CED0E0C1713A60D1FD80F8A96A0E98E9AB50C5679CFB"
+      },
+      {
+        "reaction_hash": "87d539843edbb5d11b0f4dd55e112a866c9042bce64c81fb86dca97ba8a3919e",
+        "reaction_smiles": "NN.O=[N+]([O-])c1ccc(F)c([N+](=O)[O-])c1>>NNc1ccc([N+](=O)[O-])cc1[N+](=O)[O-]",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\87d539843edbb5d11b0f4dd55e112a866c9042bce64c81fb86dca97ba8a3919e.svg",
+        "svg_sha256": "C04F58E0E6C4857C55F38029794A77D4B63673B0CB479A0B72862CB2785E4711",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\87d539843edbb5d11b0f4dd55e112a866c9042bce64c81fb86dca97ba8a3919e.png",
+        "png_sha256": "287BC0676DF13CA4C09ADE9CA05B536EBB3EF85F3F444332472FAD1A66C73470"
+      },
+      {
+        "reaction_hash": "45b380671a190ed20968b9366fdf57766d3c0733bc497cad9b0d557a934388a3",
+        "reaction_smiles": "NN.O=[N+]([O-])c1ccc([N+](=O)[O-])c([N+](=O)[O-])c1>>NNc1ccc([N+](=O)[O-])cc1[N+](=O)[O-]",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\45b380671a190ed20968b9366fdf57766d3c0733bc497cad9b0d557a934388a3.svg",
+        "svg_sha256": "3504FE08241E518FA030CAEB228937C744E3F5DD8D9F9B18FE6C55B0C71C9E64",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\45b380671a190ed20968b9366fdf57766d3c0733bc497cad9b0d557a934388a3.png",
+        "png_sha256": "8E2E482A07E23309CEC32970741D905EE4EBA5DC6229E31BA0D468F2AAA2232D"
+      },
+      {
+        "reaction_hash": "2d69e7ecdade57d83e1298ab6422ec101c6e43970dbafc7911a75e07594f47c0",
+        "reaction_smiles": "O=[N+]([O-])O.O=[N+]([O-])c1ccccc1[N+](=O)[O-]>>O=[N+]([O-])c1ccc([N+](=O)[O-])c([N+](=O)[O-])c1",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\2d69e7ecdade57d83e1298ab6422ec101c6e43970dbafc7911a75e07594f47c0.svg",
+        "svg_sha256": "840E60B0740B6E80BDE1B8C446D8633B6BE7CBDF8F6B75F24E2D9A44CD9E0B2B",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\2d69e7ecdade57d83e1298ab6422ec101c6e43970dbafc7911a75e07594f47c0.png",
+        "png_sha256": "99F5E3CED370A044683605CA32B0C6FC66BDD7E5414F9392248CC7DBF0EE7A80"
+      },
+      {
+        "reaction_hash": "c99426f170459da63080ce12e6fa4a5f9bf5ac6abf5dcd2da393d5a2a25118d0",
+        "reaction_smiles": "O=[N+]([O-])O.O=[N+]([O-])c1cccc([N+](=O)[O-])c1>>O=[N+]([O-])c1ccc([N+](=O)[O-])c([N+](=O)[O-])c1",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\c99426f170459da63080ce12e6fa4a5f9bf5ac6abf5dcd2da393d5a2a25118d0.svg",
+        "svg_sha256": "536F11169DBD8E8810725B6A9BC063BD2F55FE523C89377DA9EDE3A75B251828",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\c99426f170459da63080ce12e6fa4a5f9bf5ac6abf5dcd2da393d5a2a25118d0.png",
+        "png_sha256": "BF098B9E951116C3C038AB0952F064B7702E1C5A92DF91A514C9F2679645D9C7"
+      },
+      {
+        "reaction_hash": "13a74b3e13dc0ddc0e71dfa38879377143fee009cae8c8ad1f21dee11f21abc9",
+        "reaction_smiles": "O=[N+]([O-])O.O=[N+]([O-])c1ccc([N+](=O)[O-])cc1>>O=[N+]([O-])c1ccc([N+](=O)[O-])c([N+](=O)[O-])c1",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\13a74b3e13dc0ddc0e71dfa38879377143fee009cae8c8ad1f21dee11f21abc9.svg",
+        "svg_sha256": "6793D9A23CAA4C4230C43857E490A5CAE3B6B7BA0ED5E37EE852B01EB3A8C23E",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\13a74b3e13dc0ddc0e71dfa38879377143fee009cae8c8ad1f21dee11f21abc9.png",
+        "png_sha256": "58B7EEAFF1DA7FF7267A7D7EE8A64F2389302B340FEFBBB15C482CA0305B93F1"
+      },
+      {
+        "reaction_hash": "7480c8838fd39f8621d85a921e5ceecd72263d2d0c3ebe2b91cf55588eacc4d4",
+        "reaction_smiles": "NN.O=[N+]([O-])c1ccc(Br)c([N+](=O)[O-])c1>>NNc1ccc([N+](=O)[O-])cc1[N+](=O)[O-]",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\7480c8838fd39f8621d85a921e5ceecd72263d2d0c3ebe2b91cf55588eacc4d4.svg",
+        "svg_sha256": "AB095DCF20BB5092D42810F7583AB1AC27B5DBED83603CB63F01975CCD23692F",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\Aizynth_Work\\AIZynthFinder_RD_Portable_2026-10-13\\prospective_runs\\my_compound_0014_20261013_094431\\reaction_diagrams\\7480c8838fd39f8621d85a921e5ceecd72263d2d0c3ebe2b91cf55588eacc4d4.png",
+        "png_sha256": "03F904015CC4C9145A8FEA4AAFB77E411CA85EDA2E44D684C24EE9DDFDCE226C"
+      }
+    ]
+  },
+  "counts": {
+    "route_count": 10,
+    "reaction_occurrence_count": 29,
+    "solved_route_count": 10,
+    "zero_reaction_route_count": 0
+  },
+  "scientific_boundaries": {
+    "prospective_inference": true,
+    "labels_read": false,
+    "locked_test_read": false,
+    "training_or_refit": false,
+    "stage2_10_modified": false,
+    "mcts_modified": false,
+    "stage12_started": false,
+    "experimental_success_probability": false,
+    "route_level_accuracy": false
+  },
+  "diagram_warnings": []
+}
