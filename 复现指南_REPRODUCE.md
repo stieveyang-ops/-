@@ -52,7 +52,19 @@ notepad portable_config.ps1      # 将 $env:AIZYNTH_PYTHON 改为你的 python.e
 | `uspto_ringbreaker_templates.csv.gz` | RingBreaker 模板库（下载后需重命名为 uspto_ringbreaker_templates.csv.gz） | Zenodo 7341155 | [zenodo.org/record/7341155/files/uspto_ringbreaker_unique_t…](https://zenodo.org/record/7341155/files/uspto_ringbreaker_unique_templates.csv.gz) | 373,753 | `5616A056454B10A2…` |
 | `zinc_stock.hdf5` | ZINC 可购化合物库存（1,339,073,560 字节版本） | Figshare 文章 29145899「zincstock for aizynthfinder」DOI 10.6084/m9.figshare.29145899.v1 | [ndownloader.figshare.com/files/54815918…](https://ndownloader.figshare.com/files/54815918) | 1,339,073,560 | `FF54C334C3DFC118…` |
 
-### 方式 A（推荐）：用 AiZynthFinder 自带命令下载 5 个模型/模板
+### 方式 A（最快，推荐）：从本仓库 Release 直接下载
+
+作者已把 6 个文件按**逐字节一致的版本**打包为 Release 附件（下载后可直接用校验脚本核对）：
+
+| 内容 | 链接 |
+| --- | --- |
+| 数据包（557.2 MB） | <https://github.com/stieveyang-ops/-/releases/download/v1.0-data/ProRetro-Agent_public_data_v1.zip> |
+| Release 页面 | <https://github.com/stieveyang-ops/-/releases/tag/v1.0-data> |
+
+- 附件 SHA-256 = `7C64CC6DCF7F8853CF4907B1056721A720859E7A579DD8EBE115EB512B94E7A0`（584,303,731 字节）；解压后得到 `public_data/` 目录
+- 把其中 6 个文件放入 `external_public_data\public_data\`，再运行 `python verify_public_data.py external_public_data\public_data`，期望 6 项全部 `[OK]`
+
+### 方式 B：用 AiZynthFinder 自带命令下载 5 个模型/模板
 
 ```powershell
 # AiZynthFinder 的官方下载命令（写入目标目录）
@@ -64,7 +76,7 @@ python -m aizynthfinder.tools.download_public_data external_public_data\public_d
 （`zinc_stock_17_04_20.hdf5`，663,232,280 字节，figshare 文件 23086469），**与本项目使用的版本不同**。
 因此 ZINC 库存请务必用下表直链单独下载（1,339,073,560 字节）。
 
-### 方式 B：逐个直链下载（最稳）
+### 方式 C：逐个直链下载（官方源，最稳）
 
 ```powershell
 # 5 个模型/模板（Zenodo，AiZynthFinder 官方发布）

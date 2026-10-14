@@ -5,9 +5,13 @@
 
 ## 附件
 
+- Release 页面：<https://github.com/stieveyang-ops/-/releases/tag/v1.0-data>
+- 附件直链：<https://github.com/stieveyang-ops/-/releases/download/v1.0-data/ProRetro-Agent_public_data_v1.zip>
+
+
 | 文件 | 大小 | SHA-256 |
 | --- | --- | --- |
-| `ProRetro-Agent_公开数据_v1.zip` | 584,303,731 字节（557.2 MB） | `7C64CC6DCF7F8853CF4907B1056721A720859E7A579DD8EBE115EB512B94E7A0` |
+| `ProRetro-Agent_public_data_v1.zip` | 584,303,731 字节（557.2 MB） | `7C64CC6DCF7F8853CF4907B1056721A720859E7A579DD8EBE115EB512B94E7A0` |
 
 ## 包内内容与放置位置
 
