@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "product_rule_version": "single_connected_product_only_v1",
+  "n_reference_total": 4946,
+  "n_reference_valid": 4748,
+  "n_reference_invalid": 198,
+  "invalid_reason_counts": {
+    "multiple_products_undefined": 198
+  },
+  "invalid_duplicate_count_sum": 12804,
+  "delta_min": -0.8148665428161621,
+  "delta_median": 0.7494872808456421,
+  "delta_max": 3.718854308128357,
+  "reference_corpus_sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+  "scscore_model_sha256": "0D7975D63D35492DE828C9C6D804821B9348D3103EE55685D1FDF956855D2980",
+  "ecdf_artifact_sha256": "3F82C235D0B48F6CADA66461E1664B68DA310593E0D76992C3CA546D6E68F6C5",
+  "audit_output_sha256": "10F47BB483F14EA3B3FBBED82A41E43F51C18355D7A4D04C058B80538027427F",
+  "timestamp_utc": "2026-09-11T06:08:50.338419+00:00"
+}

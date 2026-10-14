@@ -1,0 +1,42 @@
+{
+  "stage": 1,
+  "status": "PASS",
+  "checks": {
+    "benchmark_has_filter_section": false,
+    "production_has_quick_filter": true,
+    "non_filter_settings_equal": true,
+    "referenced_files": {
+      "D:/aizynthfinder-work/public_data/uspto_filter_model.onnx": {
+        "exists": true,
+        "readable": true
+      },
+      "D:/aizynthfinder-work/public_data/uspto_model.onnx": {
+        "exists": true,
+        "readable": true
+      },
+      "D:/aizynthfinder-work/public_data/uspto_ringbreaker_model.onnx": {
+        "exists": true,
+        "readable": true
+      },
+      "D:/aizynthfinder-work/public_data/uspto_ringbreaker_templates.csv.gz": {
+        "exists": true,
+        "readable": true
+      },
+      "D:/aizynthfinder-work/public_data/uspto_templates.csv.gz": {
+        "exists": true,
+        "readable": true
+      },
+      "D:/aizynthfinder-work/public_data/zinc_stock.hdf5": {
+        "exists": true,
+        "readable": true
+      }
+    },
+    "benchmark_filter_items": [],
+    "benchmark_filter_selection": [],
+    "production_filter_items": [
+      "uspto"
+    ],
+    "production_filter_loaded": true
+  },
+  "errors": []
+}

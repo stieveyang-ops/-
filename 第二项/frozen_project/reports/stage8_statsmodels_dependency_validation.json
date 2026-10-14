@@ -1,0 +1,149 @@
+{
+  "stage": 8,
+  "purpose": "dependency installation and validation only",
+  "status": "PASS",
+  "before": {
+    "python_executable": "E:\\Anaconda\\envs\\aizynth\\python.exe",
+    "python_version": "3.10.20",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.0",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "scikit_learn": "1.5.2",
+    "statsmodels": null,
+    "conda_dry_run": "blocked: EnvironmentNotWritableError; no package changes",
+    "pip_dry_run": "statsmodels 0.14.4 + patsy 1.0.3; existing numpy/scipy/pandas retained",
+    "protected_hashes": {
+      "data/processed/reaction_features.parquet": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_features.parquet",
+        "exists": true,
+        "sha256": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+        "bytes": 122262
+      },
+      "data/processed/reaction_steps_raw.parquet": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_steps_raw.parquet",
+        "exists": true,
+        "sha256": "611B4F7DA5C701D093BA3D36B1E79EF76F08DEDFA6E3A1D9397814C532FF43DF",
+        "bytes": 129487
+      },
+      "data/labels/final_expert_labels.parquet": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\final_expert_labels.parquet",
+        "exists": true,
+        "sha256": "F5BA0C82D24DBADD0EC6169246966C492C99EA69E66A95E641B08CD38F0FB72D",
+        "bytes": 38485
+      },
+      "reports/stage6_manifest.json": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\reports\\stage6_manifest.json",
+        "exists": true,
+        "sha256": "BA87AD76E4C6C2087CADB76D71A3C9B56E5F533EDA7C5CC7E6DF58DCD07C5105",
+        "bytes": 8481
+      },
+      "reports/stage7_annotation_manifest.json": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\reports\\stage7_annotation_manifest.json",
+        "exists": true,
+        "sha256": "D9417A0FAE588987045B746A231C5FB0659E7E38A656CB22ED6BB2CA1FFC641A",
+        "bytes": 4655
+      },
+      "reports/stage7_finalization_report.json": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\reports\\stage7_finalization_report.json",
+        "exists": true,
+        "sha256": "8656D3B91690642163841F21C7348CAA08EB4FDACF9F12CFC1C6F0A041744416",
+        "bytes": 3515
+      }
+    }
+  },
+  "after": {
+    "python_executable": "E:\\Anaconda\\envs\\aizynth\\python.exe",
+    "python_version": "3.10.20 | packaged by Anaconda, Inc. | (main, Jun 11 2026, 15:13:20) [MSC v.1942 64 bit (AMD64)]",
+    "statsmodels_version": "0.14.4",
+    "statsmodels_file": "C:\\Users\\Pasem\\AppData\\Roaming\\Python\\Python310\\site-packages\\statsmodels\\__init__.py",
+    "patsy_version": "1.0.3",
+    "patsy_file": "C:\\Users\\Pasem\\AppData\\Roaming\\Python\\Python310\\site-packages\\patsy\\__init__.py",
+    "numpy_version": "1.26.4",
+    "scipy_version": "1.15.3",
+    "pandas_version": "2.3.3",
+    "pyarrow_version": "25.0.0",
+    "scikit_learn_version": "1.5.2",
+    "install_source": "python -m pip install --user statsmodels==0.14.4 (PyPI mirror configured at https://pypi.tuna.tsinghua.edu.cn/simple); Conda-forge attempted first but target environment was not writable",
+    "user_site": "C:\\Users\\Pasem\\AppData\\Roaming\\Python\\Python310\\site-packages",
+    "orderedmodel_import": "PASS",
+    "orderedmodel_symbol": "<class 'statsmodels.miscmodels.ordinal_model.OrderedModel'>",
+    "minimal_instantiation": "PASS",
+    "minimal_fit": {
+      "converged": true,
+      "finite_params": true,
+      "prediction_shape": [
+        12,
+        3
+      ]
+    },
+    "protected_hashes": {
+      "data/processed/reaction_features.parquet": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_features.parquet",
+        "exists": true,
+        "sha256": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+        "bytes": 122262
+      },
+      "data/processed/reaction_steps_raw.parquet": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_steps_raw.parquet",
+        "exists": true,
+        "sha256": "611B4F7DA5C701D093BA3D36B1E79EF76F08DEDFA6E3A1D9397814C532FF43DF",
+        "bytes": 129487
+      },
+      "data/labels/final_expert_labels.parquet": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\final_expert_labels.parquet",
+        "exists": true,
+        "sha256": "F5BA0C82D24DBADD0EC6169246966C492C99EA69E66A95E641B08CD38F0FB72D",
+        "bytes": 38485
+      },
+      "reports/stage6_manifest.json": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\reports\\stage6_manifest.json",
+        "exists": true,
+        "sha256": "BA87AD76E4C6C2087CADB76D71A3C9B56E5F533EDA7C5CC7E6DF58DCD07C5105",
+        "bytes": 8481
+      },
+      "reports/stage7_annotation_manifest.json": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\reports\\stage7_annotation_manifest.json",
+        "exists": true,
+        "sha256": "D9417A0FAE588987045B746A231C5FB0659E7E38A656CB22ED6BB2CA1FFC641A",
+        "bytes": 4655
+      },
+      "reports/stage7_finalization_report.json": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\reports\\stage7_finalization_report.json",
+        "exists": true,
+        "sha256": "8656D3B91690642163841F21C7348CAA08EB4FDACF9F12CFC1C6F0A041744416",
+        "bytes": 3515
+      }
+    },
+    "stage8_training_started": false,
+    "stage9_started": false,
+    "stage2_7_modified": false,
+    "existing_scientific_artifacts_modified": false
+  },
+  "dependency_changes": [
+    {
+      "name": "statsmodels",
+      "version": "0.14.4",
+      "location": "C:\\Users\\Pasem\\AppData\\Roaming\\Python\\Python310\\site-packages\\statsmodels",
+      "action": "installed user-site"
+    },
+    {
+      "name": "patsy",
+      "version": "1.0.3",
+      "location": "C:\\Users\\Pasem\\AppData\\Roaming\\Python\\Python310\\site-packages\\patsy",
+      "action": "installed user-site"
+    }
+  ],
+  "non_changes": {
+    "numpy": "unchanged 1.26.4",
+    "scipy": "unchanged 1.15.3",
+    "pandas": "unchanged 2.3.3",
+    "scikit_learn": "unchanged 1.5.2",
+    "pyarrow": "unchanged 25.0.0",
+    "stage8_training_started": "NO",
+    "stage9_started": "NO",
+    "stage2_7_modified": "NO",
+    "existing_scientific_artifacts_modified": "NO"
+  },
+  "created_at_utc": "2026-09-12T12:18:01.994342+00:00"
+}

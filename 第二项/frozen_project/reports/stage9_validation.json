@@ -1,0 +1,22 @@
+{
+  "stage": 9,
+  "status": "PASS",
+  "errors": [],
+  "reaction_rows": 828,
+  "unique_reaction_hash": 537,
+  "route_rows": 358,
+  "targets": 40,
+  "solved_routes": 331,
+  "unsolved_routes": 27,
+  "zero_reaction_routes": 0,
+  "routes_with_changed_rank": 320,
+  "routes_unchanged": 38,
+  "stage2_route_universe_unchanged": true,
+  "nan_inf": 0,
+  "provider_equivalence": {
+    "tested": 20,
+    "mismatches": 0,
+    "max_abs_difference": 2.2923263842677954e-08,
+    "status": "PASS"
+  }
+}

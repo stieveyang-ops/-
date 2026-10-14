@@ -1,0 +1,58 @@
+{
+  "model_name": "Ordinal Logistic Regression / OrderedModel",
+  "distribution": "logit",
+  "feature_order": [
+    "d_feas",
+    "d_prec",
+    "d_sc"
+  ],
+  "label_order": {
+    "0": "Easy",
+    "1": "Medium",
+    "2": "Difficult"
+  },
+  "coefficients": {
+    "d_feas": 0.04674571055212085,
+    "d_prec": -0.1664519197063325,
+    "d_sc": -0.12173464735965327
+  },
+  "thresholds": {
+    "0/1": -0.988187704644257,
+    "1/2": 0.5333905912129299
+  },
+  "all_parameters": {
+    "d_feas": 0.04674571055212085,
+    "d_prec": -0.1664519197063325,
+    "d_sc": -0.12173464735965327,
+    "0/1": -0.988187704644257,
+    "1/2": 0.5333905912129299
+  },
+  "optimizer": "bfgs + maxiter=1000",
+  "converged": true,
+  "development_count": 244,
+  "locked_test_count": 47,
+  "train_ids_sha256": "77B0BF7238686AE0339622181CD421923222A4F0961CD0FAC1722DD718ED30B4",
+  "test_ids_sha256": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+  "input_feature_table_sha256": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+  "expert_label_file_sha256": "F5BA0C82D24DBADD0EC6169246966C492C99EA69E66A95E641B08CD38F0FB72D",
+  "python_version": "3.10.20 | packaged by Anaconda, Inc. | (main, Jun 11 2026, 15:13:20) [MSC v.1942 64 bit (AMD64)]",
+  "statsmodels_version": "0.14.4",
+  "sklearn_version": "1.5.2",
+  "numpy_version": "1.26.4",
+  "pandas_version": "2.3.3",
+  "random_seed": 42,
+  "created_at": "2026-09-12T12:30:23.926326+00:00",
+  "fit_on": "development only",
+  "locked_test_used_for_fit": false,
+  "locked_test_used_for_thresholds": false,
+  "locked_test_used_for_hyperparameters": false,
+  "feature_selection": "none; fixed [d_feas, d_prec, d_sc]",
+  "uncertainty_thresholds_pending": false,
+  "model_artifact_sha256": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+  "uncertainty_formula": "[4*P_feas*(1-P_feas)+(1-P_prec)]/2",
+  "quantile_method": "linear",
+  "q33": 0.3005421128682305,
+  "q67": 0.5006582129614043,
+  "development_ids_sha256": "77B0BF7238686AE0339622181CD421923222A4F0961CD0FAC1722DD718ED30B4",
+  "source_feature_table_sha256": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226"
+}

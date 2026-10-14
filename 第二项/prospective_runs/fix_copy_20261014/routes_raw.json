@@ -1,0 +1,19 @@
+[
+  {
+    "type": "mol",
+    "hide": false,
+    "smiles": "CO",
+    "is_chemical": true,
+    "in_stock": false,
+    "scores": {
+      "state score": 0.049100689501895424,
+      "number of reactions": 0,
+      "number of pre-cursors": 1,
+      "number of pre-cursors in stock": 0
+    },
+    "metadata": {
+      "created_at_iteration": 0,
+      "is_solved": false
+    }
+  }
+]

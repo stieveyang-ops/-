@@ -1,0 +1,278 @@
+{
+  "tool": "prospective_difficulty_tool",
+  "tool_version": "1.0",
+  "project_dir": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\frozen_project",
+  "runtime": {
+    "python_executable": "C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\python.exe",
+    "python_version": "3.10.20",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.0",
+    "scipy": "1.15.2",
+    "sklearn": "1.5.2",
+    "statsmodels": "0.14.4",
+    "rdkit": "2023.9.6",
+    "aizynthfinder": "4.4.1"
+  },
+  "git": {
+    "commit": null,
+    "status_porcelain": ""
+  },
+  "frozen_assets": {
+    "production_config": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\frozen_project\\config\\config_production.yml",
+      "sha256": "B535987F1F27BE1401A46BC39E99DA545BFBEDB76E814F19291ED7816DD95E13",
+      "size_bytes": 952
+    },
+    "difficulty_config": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\frozen_project\\config\\difficulty.yml",
+      "sha256": "815A9F7D21E396349457A535F97CFAB94D10226EE5F353335E770D4D36A395C6",
+      "size_bytes": 1072
+    },
+    "stage5_manifest": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\frozen_project\\reports\\stage5_manifest.json",
+      "sha256": "7895D448A943D9A7CE5A63994E5027E6727004523D21D22DE20AE4EF63816C67",
+      "size_bytes": 9435
+    },
+    "stage8_manifest": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\frozen_project\\reports\\stage8_manifest.json",
+      "sha256": "F1E9C120ED1B01CAD40CDF53ED6657C8AFC71DC897A05B4E84F77A664C9333C2",
+      "size_bytes": 2055
+    },
+    "reference_corpus": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\frozen_project\\data\\reference\\reference_reactions_clean.parquet",
+      "sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+      "size_bytes": 3467089
+    },
+    "reference_embeddings": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\frozen_project\\artifacts\\reference_rxnfp.npy",
+      "sha256": "37766193FEADD7C05CB97FF6285AF5D791A7FCF0EB37CE5D311D481DAD115E44",
+      "size_bytes": 5064832
+    },
+    "reference_metadata": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\frozen_project\\artifacts\\reference_metadata.parquet",
+      "sha256": "7062193C9936AA08FF2E43DB9BBA7C1B1269CC9FED12DE0A85827CAFF1EEB2AB",
+      "size_bytes": 482142
+    },
+    "reference_index": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\frozen_project\\artifacts\\reference_nn_index.joblib",
+      "sha256": "BB0B2D99E7D461604F5B498E56AB9206B587B1935B785959A9CDB715ED24CBB9",
+      "size_bytes": 5065284
+    },
+    "sc_delta_ecdf": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\frozen_project\\artifacts\\sc_delta_ecdf.npz",
+      "sha256": "3F82C235D0B48F6CADA66461E1664B68DA310593E0D76992C3CA546D6E68F6C5",
+      "size_bytes": 40322
+    },
+    "difficulty_model": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\frozen_project\\artifacts\\difficulty_model.pkl",
+      "sha256": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+      "size_bytes": 25572
+    },
+    "difficulty_model_metadata": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\frozen_project\\artifacts\\difficulty_model_metadata.json",
+      "sha256": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055",
+      "size_bytes": 2215
+    }
+  },
+  "search_policy": {
+    "expansion_policy": "uspto",
+    "stock": "zinc",
+    "nproc": 1,
+    "config_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\frozen_project\\config\\config_production.yml"
+  },
+  "input_mode": "search_then_score",
+  "configuration_unchanged": true,
+  "search_parameters": {
+    "iteration_limit": 105,
+    "time_limit": 120.0,
+    "max_transforms": 6,
+    "max_routes": 10,
+    "min_routes": 3
+  },
+  "search_command": [
+    "C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\python.exe",
+    "-s",
+    "-m",
+    "aizynthfinder.interfaces.aizynthcli",
+    "--config",
+    "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\prospective_search_config.yml",
+    "--smiles",
+    "[O-][n+]1cccc(C(Cl)=NOC[C@H](O)CN2CCCCC2)c1",
+    "--policy",
+    "uspto",
+    "--stocks",
+    "zinc",
+    "--output",
+    "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\routes_raw.json"
+  ],
+  "search_config": {
+    "original_config_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\frozen_project\\config\\config_production.yml",
+    "original_config_sha256": "B535987F1F27BE1401A46BC39E99DA545BFBEDB76E814F19291ED7816DD95E13",
+    "temporary_config_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\prospective_search_config.yml",
+    "temporary_config_sha256": "291E47F3C572C4992E0F2AAD6D43DC757F5503533BB8263C885204CDB0A5CDDA",
+    "effective": {
+      "iteration_limit": 105,
+      "time_limit": 120.0,
+      "max_transforms": 6,
+      "max_routes": 10,
+      "min_routes": 3
+    },
+    "overrides": {
+      "iteration_limit": 105,
+      "time_limit": 120.0,
+      "max_transforms": 6,
+      "max_routes": 10,
+      "min_routes": 3
+    }
+  },
+  "target_input_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\target.smi",
+  "scoring_summary": {
+    "q33": 0.3005421128682305,
+    "q67": 0.5006582129614043,
+    "feature_order": [
+      "d_feas",
+      "d_prec",
+      "d_sc"
+    ],
+    "precedent": {
+      "tau": 0.8,
+      "N0": 10.0,
+      "metric": "cosine",
+      "top_k": 100
+    },
+    "reaction_unique_count": 10,
+    "reaction_occurrence_count": 16,
+    "route_count": 6
+  },
+  "status": "PASS",
+  "created_at_utc": "2026-10-14T05:29:29.723323+00:00",
+  "target_id": "my_compound_0020",
+  "target_smiles": "[O-][n+]1cccc(C(Cl)=NOC[C@H](O)CN2CCCCC2)c1",
+  "outputs": {
+    "routes_raw": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\routes_raw.json",
+      "sha256": "816708D2851E813C0E81F8378962B870811ACC3B771869E5BFE30E22D9E52D57"
+    },
+    "scored_reactions_parquet": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\scored_reactions.parquet",
+      "sha256": "4C9B338617CE2C61240053D6F4E6009EF6451EC7135B4FE0B83045E3FE6F0614"
+    },
+    "scored_reactions_csv": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\scored_reactions.csv",
+      "sha256": "D0AE7F9326938D0F2C2B13692CEFA70439BED3CE5971F5965784CF76F004A561"
+    },
+    "scored_routes_json": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\scored_routes.json",
+      "sha256": "61C8A4FD5366D070B30F143955DF0A6B19DD608CEB34323CDF208443C3405128"
+    },
+    "scored_routes_csv": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\scored_routes.csv",
+      "sha256": "69BA60235C54B4F6790FBDC753BBC94280C61EE86D38D01185824CF70125F4B0"
+    },
+    "visualization_html": {
+      "path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\prospective_dashboard.html",
+      "sha256": "A821B2AC99B46ACA1CA54C19873E96DA74EDFDAE0AC0501BA340250DC486DB65"
+    },
+    "reaction_diagrams": [
+      {
+        "reaction_hash": "f3a26f599fa78b134513432b89ab4a186c4f0921d71b34059ddaec96999f25fd",
+        "reaction_smiles": "O[C@@H](CCl)CN1CCCCC1.[O-][n+]1cccc(C(Cl)=NO)c1>>[O-][n+]1cccc(C(Cl)=NOC[C@H](O)CN2CCCCC2)c1",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\f3a26f599fa78b134513432b89ab4a186c4f0921d71b34059ddaec96999f25fd.svg",
+        "svg_sha256": "7F7A3B714D2F295EF46B110E35F46EF48C72A4E72F5B868C13D3A633B8FC683B",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\f3a26f599fa78b134513432b89ab4a186c4f0921d71b34059ddaec96999f25fd.png",
+        "png_sha256": "AC16920DF6D76EE345C4D1CCB75C4F4F3888DF5E9C151B7E7CB98C3871162AB0"
+      },
+      {
+        "reaction_hash": "9c66f0a10c79d6a84fc718ed2647d9dc58bfc6b1252436d6564667505b951c23",
+        "reaction_smiles": "O=C(OO)c1cccc(Cl)c1.ON=C(Cl)c1cccnc1>>[O-][n+]1cccc(C(Cl)=NO)c1",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\9c66f0a10c79d6a84fc718ed2647d9dc58bfc6b1252436d6564667505b951c23.svg",
+        "svg_sha256": "7F6D552E888ECF3E8241F0941C6583ADDC74E3F0D7FB98952E415CF06BD973C3",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\9c66f0a10c79d6a84fc718ed2647d9dc58bfc6b1252436d6564667505b951c23.png",
+        "png_sha256": "DC4399E5DC95C826E0FB2A603CBB3C3E52B07509BEE0ACA47DD0B08E6206F883"
+      },
+      {
+        "reaction_hash": "be8dcb07b37b6151d6dd453d65f88de8d9270d62e1e4d474a78533e6e5b36332",
+        "reaction_smiles": "CC(=O)OO.ON=C(Cl)c1cccnc1>>[O-][n+]1cccc(C(Cl)=NO)c1",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\be8dcb07b37b6151d6dd453d65f88de8d9270d62e1e4d474a78533e6e5b36332.svg",
+        "svg_sha256": "5EA27463AB28AF2FD149ED8EC3AB2DE4C6CC9ABA08037330195E602B89A03F4B",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\be8dcb07b37b6151d6dd453d65f88de8d9270d62e1e4d474a78533e6e5b36332.png",
+        "png_sha256": "6CD7EBCCE15A4FDEFD1016CEF0A82C4501AC7B478D039D72D89FA43C7573E035"
+      },
+      {
+        "reaction_hash": "7f867e83d455d9be9c991de496f1f23819cf58075b8bc325c8fe6c3cc2ef5a3a",
+        "reaction_smiles": "C1CCNCC1.[O-][n+]1cccc(C(Cl)=NOC[C@H]2CO2)c1>>[O-][n+]1cccc(C(Cl)=NOC[C@H](O)CN2CCCCC2)c1",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\7f867e83d455d9be9c991de496f1f23819cf58075b8bc325c8fe6c3cc2ef5a3a.svg",
+        "svg_sha256": "1F79364646AB39998F77FAD9777D604433682454429CCAD8310237741079CCAB",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\7f867e83d455d9be9c991de496f1f23819cf58075b8bc325c8fe6c3cc2ef5a3a.png",
+        "png_sha256": "04B506A58C0AC699B5207B943D05FC41EC2ED6855FE8AEF29AB1891D0685A4B6"
+      },
+      {
+        "reaction_hash": "43bc637d731358e62b98ee8b7c3bb489bfb6fedcef0f133aa843f205d7355a86",
+        "reaction_smiles": "ClC(=NOC[C@H]1CO1)c1cccnc1.O=C(OO)c1cccc(Cl)c1>>[O-][n+]1cccc(C(Cl)=NOC[C@H]2CO2)c1",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\43bc637d731358e62b98ee8b7c3bb489bfb6fedcef0f133aa843f205d7355a86.svg",
+        "svg_sha256": "45E7739D525157BB9C686E8DCFE4DA9CB740A5DEE0C965963D64EA03F3EAB7D4",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\43bc637d731358e62b98ee8b7c3bb489bfb6fedcef0f133aa843f205d7355a86.png",
+        "png_sha256": "4A96356442814E78A2FF78396FA46EE51D8D9D31267940E2D39AFED5900F3CEA"
+      },
+      {
+        "reaction_hash": "386cca14a25efbc7ea7c20aab240c0fad799596cf3a41bda0beb825cd5ce1b4d",
+        "reaction_smiles": "CCOC(C)=O.CN(C)C=O.ON=C(Cl)c1cccnc1>>ClC(=NOC[C@H]1CO1)c1cccnc1",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\386cca14a25efbc7ea7c20aab240c0fad799596cf3a41bda0beb825cd5ce1b4d.svg",
+        "svg_sha256": "A4EA4CB0D47F350DE9F0A5B5CDA279D93F87D4DCA070DE016C703C74A814F3DD",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\386cca14a25efbc7ea7c20aab240c0fad799596cf3a41bda0beb825cd5ce1b4d.png",
+        "png_sha256": "D7C8530FB526B768AA81A9B56DE1AB3ACC1B2372E5C1B196A0C8B87A2BFE3F03"
+      },
+      {
+        "reaction_hash": "65154e91218253701324f28ebdbfc25845e71ae59a76d8aa862cbebb14e53e8e",
+        "reaction_smiles": "O=C1CCC(=O)N1Cl.[O-][n+]1cccc(C=NO)c1>>[O-][n+]1cccc(C(Cl)=NO)c1",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\65154e91218253701324f28ebdbfc25845e71ae59a76d8aa862cbebb14e53e8e.svg",
+        "svg_sha256": "F0042C581D4AC1663EF823FACA09030AC99FE0AD76608F2371A06E989D2EE702",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\65154e91218253701324f28ebdbfc25845e71ae59a76d8aa862cbebb14e53e8e.png",
+        "png_sha256": "1BBE96C9EEA5D9702C933FD493210F6361A6E1244C87467BE7E16ADC696FF24E"
+      },
+      {
+        "reaction_hash": "86b340a4b30247e842f726053c318147a681636f9f359340e032f4de7736bcb7",
+        "reaction_smiles": "O=C(OO)c1cccc(Cl)c1.ON=Cc1cccnc1>>[O-][n+]1cccc(C=NO)c1",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\86b340a4b30247e842f726053c318147a681636f9f359340e032f4de7736bcb7.svg",
+        "svg_sha256": "8EB4CDD0D4742ECE0883472D3C788CAB9A1184C2637BABF55D34AA8E710A4273",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\86b340a4b30247e842f726053c318147a681636f9f359340e032f4de7736bcb7.png",
+        "png_sha256": "DFE31F34ACDA2131DC44E97C16EC58C9D03C65DB830DA365907BA9467F050B70"
+      },
+      {
+        "reaction_hash": "54c45afdb41bba3344967fe5c165a7b96c5d863c1a102750968263fd94d36e63",
+        "reaction_smiles": "C1CCNCC1.[O-][n+]1cccc(C(Cl)=NOC[C@H](O)CCl)c1>>[O-][n+]1cccc(C(Cl)=NOC[C@H](O)CN2CCCCC2)c1",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\54c45afdb41bba3344967fe5c165a7b96c5d863c1a102750968263fd94d36e63.svg",
+        "svg_sha256": "61B14FCB3271D08A4F8A3A3CD09AE57F98480DB75077BC9CF908CAF203B20F18",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\54c45afdb41bba3344967fe5c165a7b96c5d863c1a102750968263fd94d36e63.png",
+        "png_sha256": "B1D9B5966F632456E88173E7819BC0F4776FDFBABFE7F4D49DBCCE74B05ACEA3"
+      },
+      {
+        "reaction_hash": "95cf5d01018ae6ae2eb42eea3ba1e0ffb260ef4336f199bd4d88efb1133f45f0",
+        "reaction_smiles": "O[C@H](CCl)CBr.[O-][n+]1cccc(C(Cl)=NO)c1>>[O-][n+]1cccc(C(Cl)=NOC[C@H](O)CCl)c1",
+        "svg_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\95cf5d01018ae6ae2eb42eea3ba1e0ffb260ef4336f199bd4d88efb1133f45f0.svg",
+        "svg_sha256": "FD0559A9577171AB72EB8427C3DEDC25274A906817F771A6BCA22D871C99CE25",
+        "png_path": "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\prospective_runs\\my_compound_0020_20261014_132724\\reaction_diagrams\\95cf5d01018ae6ae2eb42eea3ba1e0ffb260ef4336f199bd4d88efb1133f45f0.png",
+        "png_sha256": "864791AA6C85D4E123CE76F6A596DC4F4F87F26AD7E38ADAEB67FA759D1CB70F"
+      }
+    ]
+  },
+  "counts": {
+    "route_count": 6,
+    "reaction_occurrence_count": 16,
+    "solved_route_count": 6,
+    "zero_reaction_route_count": 0
+  },
+  "scientific_boundaries": {
+    "prospective_inference": true,
+    "labels_read": false,
+    "locked_test_read": false,
+    "training_or_refit": false,
+    "stage2_10_modified": false,
+    "mcts_modified": false,
+    "stage12_started": false,
+    "experimental_success_probability": false,
+    "route_level_accuracy": false
+  },
+  "diagram_warnings": []
+}

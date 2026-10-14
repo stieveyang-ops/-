@@ -1,0 +1,70 @@
+{
+  "audit_type": "stage11_dependency_remediation",
+  "status": "BLOCKED",
+  "error_code": "BLOCKED_RELEASE_REPRODUCIBILITY",
+  "created_at": "2026-09-13T01:36:08+08:00",
+  "project_root": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty",
+  "target_python": "E:\\Anaconda\\envs\\aizynth\\python.exe",
+  "target_environment": "E:\\Anaconda\\envs\\aizynth",
+  "read_only_precheck": {
+    "sys_prefix": "E:\\Anaconda\\envs\\aizynth",
+    "sitepackages": [
+      "E:\\Anaconda\\envs\\aizynth",
+      "E:\\Anaconda\\envs\\aizynth\\lib\\site-packages"
+    ],
+    "enable_user_site_normal": true,
+    "enable_user_site_isolated_s": false,
+    "normal_statsmodels_version": "0.14.4",
+    "normal_statsmodels_file": "C:\\Users\\Pasem\\AppData\\Roaming\\Python\\Python310\\site-packages\\statsmodels\\__init__.py",
+    "isolated_import": "FAIL: ModuleNotFoundError: No module named 'statsmodels'",
+    "target_environment_statsmodels_exists": false,
+    "target_sitepackages_writable": false,
+    "write_probe_error": "Access denied for E:\\Anaconda\\envs\\aizynth\\Lib\\site-packages\\.stage11_write_probe.tmp"
+  },
+  "installation_attempts": [
+    {
+      "method": "conda-forge",
+      "specification": "statsmodels==0.14.4",
+      "command": "E:\\Anaconda\\Scripts\\conda.exe install -n aizynth -c conda-forge statsmodels=0.14.4 --yes",
+      "exit_code": 1,
+      "result": "EnvironmentNotWritableError: The current user does not have write permissions to E:\\Anaconda\\envs\\aizynth",
+      "log_path": "reports/stage11_dependency_logs/statsmodels_install_attempt_2026-09-13.log",
+      "log_sha256": "3A24F3E48A1864EE2C31D429A808D93BBBF802893E18BD3F8CFE90D12AD525AD"
+    },
+    {
+      "method": "target-python-pip",
+      "specification": "statsmodels==0.14.4",
+      "command": "E:\\Anaconda\\envs\\aizynth\\python.exe -m pip install statsmodels==0.14.4 --no-user",
+      "exit_code": 0,
+      "result": "No target-environment installation; pip found only the existing user-site installation and did not change it",
+      "log_path": "reports/stage11_dependency_logs/statsmodels_pip_install_attempt_2026-09-13.log",
+      "log_sha256": "B762850B53E3BC083A77D5F626FFC32D1FA5E4E2EEDA991E09CF64CB320EF87F"
+    }
+  ],
+  "isolation_validation": {
+    "command": "E:\\Anaconda\\envs\\aizynth\\python.exe -s -c import statsmodels; from statsmodels.miscmodels.ordinal_model import OrderedModel",
+    "status": "FAIL",
+    "error": "ModuleNotFoundError: No module named 'statsmodels'",
+    "user_site_used": false,
+    "ordered_model_imported": false
+  },
+  "stage2_10_integrity": {
+    "source_report": "reports/stage11_git_baseline_inventory.json",
+    "key_hash_check_count": 26,
+    "hash_failures": 0,
+    "locked_test_sha256": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+    "scientific_artifacts_modified": false
+  },
+  "stage11_artifacts_at_block": {
+    "reports/stage11_manifest.json": "658658EC7382C7B9338652C3F3382D0087274D7BDDA6395E5EF54A99E292C40B",
+    "reports/stage11_release_qa.json": "7B957F6A94C099218C09C6781E23B14D0A68C7E8485B2DAEB449037F76FC0B0F",
+    "reports/stage11_reproducibility.json": "38AAC9D068C80FF59C0E7BA81F2E7D1F03510BD519B91A1C52E41E688F6D5DC5",
+    "reports/final_engineering_audit.json": "A96DEDA86C952974E7107BE53EBEAE3F3D30CC84296ACE53678A77739ABAAB03",
+    "outputs/stage11_release/scored_routes.json": "ABA37ED42A27997A8A265A97CE8B9C8F326B476F5F54C17DE626F028B889C78A",
+    "outputs/stage11_release/scored_reactions.parquet": "562FE5C16956F10CC1AA6F147E12977A84F1AB44697653EC346151327CF23A7E"
+  },
+  "required_research_team_action": "An administrator must grant write permission to E:\\Anaconda\\envs\\aizynth, or explicitly approve a separately specified writable environment. Do not use user-site as a release dependency.",
+  "release_tag": "NOT_CREATED",
+  "stage11_training_started": false,
+  "stage12_started": false
+}

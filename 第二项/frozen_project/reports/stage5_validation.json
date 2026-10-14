@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "precedent": {
+    "n_queries": 828,
+    "mode": "deployment",
+    "tau": 0.8,
+    "n0": 10.0,
+    "s_max_min": 0.3459718991323588,
+    "s_max_max": 0.9983626575858489,
+    "n_analog_min": 0,
+    "n_analog_max": 592,
+    "p_prec_min": 0.0,
+    "p_prec_max": 0.9983626575858489,
+    "n_exact_hash_excluded": 0
+  },
+  "sc_ecdf": {
+    "product_rule_version": "single_connected_product_only_v1",
+    "n_reference_total": 4946,
+    "n_reference_valid": 4748,
+    "n_reference_invalid": 198,
+    "invalid_reason_counts": {
+      "multiple_products_undefined": 198
+    },
+    "invalid_duplicate_count_sum": 12804,
+    "delta_min": -0.8148665428161621,
+    "delta_median": 0.7494872808456421,
+    "delta_max": 3.718854308128357,
+    "d_sc_min": 0.00021061499578770007,
+    "d_sc_max": 0.9901010951979781,
+    "ecdf_algorithm": "#(delta<=x)/N, side=right"
+  },
+  "integrity": {
+    "query_row_alignment": true,
+    "hash_alignment": true,
+    "nan_count": 0,
+    "inf_count": 0,
+    "determinism": "PASS",
+    "reference_corpus_sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+    "scscore_model_sha256": "0D7975D63D35492DE828C9C6D804821B9348D3103EE55685D1FDF956855D2980",
+    "ecdf_artifact_sha256": "3F82C235D0B48F6CADA66461E1664B68DA310593E0D76992C3CA546D6E68F6C5"
+  },
+  "timestamp_utc": "2026-09-11T06:22:40.319525+00:00",
+  "product_rule_audit": {
+    "status": "PASS",
+    "product_rule_version": "single_connected_product_only_v1",
+    "n_reference_clean_unique": 4946,
+    "n_multi_product_unique": 198,
+    "n_multi_product_raw_weight": 12804,
+    "n_single_product_unique": 4748,
+    "n_single_product_raw_weight": 163581,
+    "n_empty_or_unparseable_product": 0,
+    "n_other_invalid_for_sc_ecdf": 0,
+    "n_reference_sc_ecdf_eligible": 4748,
+    "invalid_counts_and_reasons": {
+      "multiple_products_undefined": 198
+    },
+    "audit_json_sha256": "AE2054414B64A344848AAE879FA8017532E5143DA03741F4F0BFF1C48EE3E6D6",
+    "audit_csv_sha256": "5AEBCB94135741815B25236672288DDFD866858E1AAD45A6EE94400168A034F7"
+  },
+  "canonicalization_audit": {
+    "status": "PASS",
+    "path": "reports/stage4_canonicalization_audit.json",
+    "csv_path": "reports/stage4_canonicalization_audit.csv",
+    "sha256": "F292DFB751D3AD719A4BF2E18EBBA6F3FBE7D025DDDBDDC3C68195C6722CCFB4",
+    "csv_sha256": "405E229342002ADA171FCA60F620B90F3F367E9007E148ED767D719C7528F044",
+    "canonicalization_version": "stage2_aiz_rd_chemistry_v1",
+    "raw_valid_transformation_rows": 176385,
+    "clean_unique_rows": 4946,
+    "recanonicalization_errors": 0,
+    "clean_hash_frequency_mismatches": 0,
+    "mapping_removed": true,
+    "agent_block_removed": true,
+    "stereochemistry_preserved": true,
+    "formal_charge_preserved": true,
+    "isotope_preserved": true,
+    "salts_ions_small_molecules_preserved": true,
+    "disconnected_components_preserved": true,
+    "neutralization": false,
+    "desalting": false,
+    "largest_fragment_selection": false,
+    "tautomer_normalization": false,
+    "reaction_hash_definition": "SHA256(UTF-8 bytes of complete canonical reactants>>products)"
+  }
+}

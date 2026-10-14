@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "target_count": 40,
+  "targets_with_routes": 40,
+  "targets_without_routes": 0,
+  "route_count_total": 358,
+  "reaction_row_count": 828,
+  "unique_reaction_hash_count": 537,
+  "duplicate_reaction_hash_rows": 291,
+  "invalid_molecule_count": 0,
+  "route_topology_mismatch_count": 0,
+  "routes_raw_sha256": "5FA6489B6DF5437066F42AC1323C179C0871F711ACFE9BC3435A0C63221F49BE",
+  "reaction_steps_raw_sha256": "611B4F7DA5C701D093BA3D36B1E79EF76F08DEDFA6E3A1D9397814C532FF43DF",
+  "warnings": [],
+  "errors": []
+}

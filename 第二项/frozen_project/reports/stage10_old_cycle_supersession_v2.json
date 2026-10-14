@@ -1,0 +1,12 @@
+{
+  "stage": 10,
+  "cycle_version": "stage10_v2",
+  "old_cycle_status": "SUPERSEDED_INVALID_FOR_NEW_CYCLE",
+  "old_receipt_path": "reports/test_unseal_receipt.json",
+  "old_receipt_original_sha256": "E638A85CF118479A27539AFE630D6F0D54B77977E87516A57E55648DFB5AE9FF",
+  "old_receipt_original_timestamp": "2026-09-12T14:15:32.500908+00:00",
+  "reason": "receipt created before required Stage 10 tests were executed and recorded",
+  "old_receipt_content_modified": false,
+  "old_preanalysis_manifest_preserved": true,
+  "old_blocker_preserved": true
+}

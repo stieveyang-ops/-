@@ -1,0 +1,65 @@
+{
+  "receipt_type": "stage11_git_provenance_baseline",
+  "status": "BASELINE_CREATED_NOT_FINAL_RELEASE",
+  "created_at_utc": "2026-09-13T00:26:08+08:00",
+  "project_root": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty",
+  "purpose": "Resolve BLOCKED_RELEASE_NO_GIT_HISTORY by establishing an honest local provenance baseline.",
+  "historical_git_recovery": {
+    "nearby_git_repository_found": false,
+    "nearby_git_bundle_found": false,
+    "history_fabricated": false,
+    "original_history_overwritten": false
+  },
+  "pre_git_snapshot": {
+    "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-13\\pre_git_snapshot_5f190dc6d81a45da8eebf0d1d35771d2",
+    "manifest_path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-13\\pre_git_snapshot_5f190dc6d81a45da8eebf0d1d35771d2\\PRE_GIT_SNAPSHOT_MANIFEST.json",
+    "snapshot_manifest_sha256": "C4F0E20EF29AF2AF98E3CBC17835DF7D52607E9B263F473295E7593F526A36B4",
+    "files_copied": 342,
+    "bytes_copied": 50515814,
+    "key_stage2_10_files_verified": true
+  },
+  "git_identity": {
+    "user_name": "Evan Pasemory",
+    "user_email": "Pasemory33550336@outlook.com",
+    "source": "pre-existing global Git configuration; not guessed"
+  },
+  "scope": {
+    "stage2_10_scientific_artifacts_modified": false,
+    "stage2_10_scientific_artifacts_hash_verified": true,
+    "old_blocker_reports_modified": false,
+    "stage11_scientific_implementation_started": false,
+    "release_qa_started": false,
+    "final_release_tag_created": false,
+    "stage12_started": false
+  },
+  "excluded_files": [
+    {
+      "path": "work/stage4_canonicalization_audit.log",
+      "sha256": "D324E8746DA49D1FAC0C899CF5E96A0406F225CDA9FF72E3EBD8ACBE16226BEA",
+      "reason": "temporary/log file excluded by .gitignore",
+      "external_or_local_retention": "retained in project workspace"
+    },
+    {
+      "path": "reports/stage2_aizynthcli.log",
+      "sha256": "BB142A5BEDAB8121D4FA21371F8A30B6AAFE6902A80893448DF87DE6168D3D70",
+      "reason": "temporary/log file excluded by .gitignore",
+      "external_or_local_retention": "retained in project workspace"
+    },
+    {
+      "path": "E:\\ord-data-github-05fe1a6",
+      "sha256": "see external E:\\ord-data-github-05fe1a6\\ord_manifest.json; 49-file manifest verified",
+      "reason": "ORD source data is CC-BY-SA-4.0 licensed and remains external authoritative data; not copied into repository",
+      "external_or_local_retention": "external read-only source retained at E:\\ord-data-github-05fe1a6; provenance recorded in reports/stage4_manifest.json"
+    }
+  ],
+  "baseline_commit": {
+    "message": "provenance: import pre-Stage-11 project baseline",
+    "commit_sha": "2a70b62bff404c6b481c0afd258c69389417b330",
+    "tree_sha": "0b707439a6a922bbd372ed82b3b59a362e258559",
+    "actual_commit_date_used": "2026-09-13T00:26:08+08:00",
+    "is_final_release": false
+  },
+  "inventory_report": "reports/stage11_git_baseline_inventory.json",
+  "old_blocker_preserved": "reports/stage10_blocker.json",
+  "statement": "This repository was initialized from an existing working directory with no prior Git history; the baseline is provenance evidence, not a final release."
+}

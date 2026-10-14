@@ -1,0 +1,49 @@
+{
+  "stage": 11,
+  "status": "BLOCKED",
+  "created_at_utc": "2026-09-13T09:20:00+08:00",
+  "git_commit_before": "f994a7274bf5d8f8f92aae119fc374cde120d028",
+  "git_commit_after": "6bf453c06809e7b91c1f9feb4f536526b5285926",
+  "baseline_commit": "2a70b62bff404c6b481c0afd258c69389417b330",
+  "files_created": [
+    "config/difficulty.yml",
+    "scripts/30_check_stage11_prerequisites.py",
+    "scripts/run_difficulty_pipeline.py",
+    "scripts/run_release_qa.py",
+    "src/aiz_rd/explanations.py",
+    "src/aiz_rd/provenance.py",
+    "tests/test_stage11_release.py",
+    "outputs/stage11_release/scored_routes.json",
+    "outputs/stage11_release/scored_reactions.parquet",
+    "reports/run_metadata.json",
+    "reports/stage11_prerequisite_check.json",
+    "reports/stage11_release_qa.json",
+    "reports/stage11_reproducibility.json",
+    "reports/final_engineering_audit.json",
+    "reports/final_scientific_audit.md",
+    "reports/stage11_release_inventory.json",
+    "CHANGELOG.md",
+    "RELEASE_NOTES_v1.0.md"
+  ],
+  "stage2_10_modified": false,
+  "locked_test_modified": false,
+  "external_ord": {
+    "path": "E:/ord-data-github-05fe1a6",
+    "manifest_sha256": "AEAF164127C07E22FFC8C10AFFE1FC643DADE0D34E3A8BA10AE53B0CBBEE1832",
+    "file_count": 49,
+    "all_hashes_match": true
+  },
+  "tests": {
+    "specialized": "PASS: 4 passed",
+    "full_pytest": "PASS: 106 passed",
+    "release_qa": "BLOCKED",
+    "reproducibility": "BLOCKED_RELEASE_REPRODUCIBILITY",
+    "clean_environment": "BLOCKED_RELEASE_REPRODUCIBILITY"
+  },
+  "blocked_reasons": [
+    "BLOCKED_RELEASE_REPRODUCIBILITY: isolated target-environment run cannot import statsmodels because it is only user-site installed and the environment is not writable",
+    "BLOCKED_RELEASE_TEST_FAILURE: release QA gate is not satisfied, so the contract-required tag reaction-difficulty-v1.0 was not created"
+  ],
+  "release_ready": false,
+  "stage12_started": false
+}

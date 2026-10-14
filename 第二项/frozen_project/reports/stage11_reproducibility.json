@@ -1,0 +1,23 @@
+{
+  "audit_type": "stage11_reproducibility",
+  "status": "BLOCKED",
+  "run_1": {
+    "output_dir": "outputs/stage11_release",
+    "scored_routes_sha256": "ABA37ED42A27997A8A265A97CE8B9C8F326B476F5F54C17DE626F028B889C78A",
+    "scored_reactions_sha256": "562FE5C16956F10CC1AA6F147E12977A84F1AB44697653EC346151327CF23A7E"
+  },
+  "run_2": {
+    "output_dir": "outputs/stage11_release_repeat",
+    "scored_routes_sha256": "ABA37ED42A27997A8A265A97CE8B9C8F326B476F5F54C17DE626F028B889C78A",
+    "scored_reactions_sha256": "562FE5C16956F10CC1AA6F147E12977A84F1AB44697653EC346151327CF23A7E"
+  },
+  "route_ranks_identical": true,
+  "reaction_count_identical": true,
+  "route_count_identical": true,
+  "scientific_content_identical": true,
+  "max_abs_numeric_difference": 0.0,
+  "allowed_metadata_differences": ["run metadata timestamp"],
+    "clean_environment_pass": false,
+  "clean_environment_error_code": "BLOCKED_RELEASE_REPRODUCIBILITY",
+  "clean_environment_note": "Isolated -I execution failed because statsmodels 0.14.4 is only user-site installed; target environment is not writable for conda installation."
+}

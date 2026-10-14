@@ -1,0 +1,13 @@
+{
+  "source_xlsx": "D:\\Documents\\xwechat_files\\wxid_81187vee7lw522_c575\\msg\\file\\2026-08\\AIZ_Run_Summary_40_optimized.xlsx",
+  "source_xlsx_sha256": "69A9EB3DE9E8D8B4DA2FB71547394CB9E3A8117536750D63C34986E1F52263AE",
+  "worksheet": "Sheet1",
+  "source_columns": {
+    "target_id": "PubChem CID",
+    "target_smiles": "SMILES"
+  },
+  "row_order_preserved": true,
+  "target_count": 40,
+  "output": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\raw\\targets.csv",
+  "original_smiles_preserved": true
+}

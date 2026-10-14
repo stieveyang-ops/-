@@ -1,0 +1,127 @@
+{
+    "stage":  1,
+    "overall_status":  "PASS",
+    "timestamp_utc":  "2026-09-09T13:02:44.690427+00:00",
+    "project_root":  "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty",
+    "python":  {
+                   "status":  "PASS",
+                   "version":  "3.10.20",
+                   "executable":  "C:\\Users\\Pasem\\.conda\\envs\\aizynth_new\\python.exe",
+                   "supported_for_aizynthfinder_4_4_1":  true
+               },
+    "aizynthfinder":  {
+                          "status":  "PASS",
+                          "version":  "4.4.1",
+                          "module_path":  "C:\\Users\\Pasem\\.conda\\envs\\aizynth_new\\lib\\site-packages\\aizynthfinder\\__init__.py"
+                      },
+    "rdkit":  {
+                  "status":  "PASS",
+                  "version":  "2023.9.6"
+              },
+    "numpy":  {
+                  "status":  "PASS",
+                  "version":  "1.26.4"
+              },
+    "pandas":  {
+                   "status":  "PASS",
+                   "version":  "2.3.3"
+               },
+    "onnxruntime":  {
+                        "status":  "PASS",
+                        "version":  "1.23.2"
+                    },
+    "pytest":  {
+                   "status":  "PASS",
+                   "version":  "8.4.2"
+               },
+    "blockers":  [
+
+                 ],
+    "stage_2_work_performed":  false,
+    "pip_check":  {
+                      "status":  "PASS",
+                      "message":  "No broken requirements found."
+                  },
+    "expansion_policy":  {
+                             "status":  "PASS",
+                             "key":  [
+                                         "uspto"
+                                     ],
+                             "model_path":  "../external_public_data/public_data/uspto_model.onnx",
+                             "template_path":  "../external_public_data/public_data/uspto_templates.csv.gz",
+                             "model_sha256":  "BD0A3CB74CD7068DE474C8FB789A00A66BC42C75636D66510CCAC585EBE928F8",
+                             "template_sha256":  "A4F1945E90CFA195538320833D68AED38F14E2FCC2F8AFB5D958BC920EDCAFBE"
+                         },
+    "stock":  {
+                  "status":  "PASS",
+                  "key":  [
+                              "zinc"
+                          ],
+                  "query_result":  true,
+                  "collection_size":  35205265,
+                  "path":  "../external_public_data/public_data/zinc_stock.hdf5",
+                  "sha256":  "FF54C334C3DFC11882D5FA3024FDE3BE8CF3E38F979D93A39B9BE8CCA1A5DC85"
+              },
+    "quick_filter":  {
+                         "status":  "PASS",
+                         "key":  [
+                                     "uspto"
+                                 ],
+                         "smoke_probability":  0.9998172521591187,
+                         "model_path":  "../external_public_data/public_data/uspto_filter_model.onnx",
+                         "sha256":  "AD29AA32BDFCBE37065045546493806CF04899C55386C438905D83FB14BB6320"
+                     },
+    "scscore":  {
+                    "status":  "PASS",
+                    "model_path":  "../artifacts/runtime/scscore/scscore_model_1024bool_aizynth.pickle",
+                    "sha256":  "0D7975D63D35492DE828C9C6D804821B9348D3103EE55685D1FDF956855D2980",
+                    "smoke_score":  1.000002384185791
+                },
+    "configs":  {
+                    "status":  "PASS",
+                    "benchmark_has_filter_section":  false,
+                    "production_has_quick_filter":  true,
+                    "non_filter_settings_equal":  true
+                },
+    "rxnfp":  {
+                  "status":  "PASS",
+                  "mode":  "isolated_environment",
+                  "version":  "0.1.0",
+                  "embedding_dimension":  256,
+                  "finite":  true,
+                  "smoke_stdout":  "256",
+                  "smoke_stderr":  ""
+              },
+    "assets":  {
+                   "expansion_model":  {
+                                           "path":  "../external_public_data/public_data/uspto_model.onnx",
+                                           "exists":  true,
+                                           "size_bytes":  91518243,
+                                           "sha256":  "BD0A3CB74CD7068DE474C8FB789A00A66BC42C75636D66510CCAC585EBE928F8"
+                                       },
+                   "template":  {
+                                    "path":  "../external_public_data/public_data/uspto_templates.csv.gz",
+                                    "exists":  true,
+                                    "size_bytes":  3313598,
+                                    "sha256":  "A4F1945E90CFA195538320833D68AED38F14E2FCC2F8AFB5D958BC920EDCAFBE"
+                                },
+                   "stock":  {
+                                 "path":  "../external_public_data/public_data/zinc_stock.hdf5",
+                                 "exists":  true,
+                                 "size_bytes":  1339073560,
+                                 "sha256":  "FF54C334C3DFC11882D5FA3024FDE3BE8CF3E38F979D93A39B9BE8CCA1A5DC85"
+                             },
+                   "quick_filter":  {
+                                        "path":  "../external_public_data/public_data/uspto_filter_model.onnx",
+                                        "exists":  true,
+                                        "size_bytes":  16788859,
+                                        "sha256":  "AD29AA32BDFCBE37065045546493806CF04899C55386C438905D83FB14BB6320"
+                                    },
+                   "scscore":  {
+                                   "path":  "../artifacts/runtime/scscore/scscore_model_1024bool_aizynth.pickle",
+                                   "exists":  true,
+                                   "size_bytes":  2676597,
+                                   "sha256":  "0D7975D63D35492DE828C9C6D804821B9348D3103EE55685D1FDF956855D2980"
+                               }
+               }
+}

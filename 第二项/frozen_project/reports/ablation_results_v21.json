@@ -1,0 +1,48 @@
+{
+  "stage": 10,
+  "cycle_version": "stage10_v2.1",
+  "status": "PASS",
+  "results": [
+    {
+      "ablation": "Full",
+      "source_model": "D",
+      "n_test": 47,
+      "kendall_tau_b": -0.03448731531164059,
+      "spearman_rho": -0.0476892883818471,
+      "macro_f1": 0.21256038647342992,
+      "balanced_accuracy": 0.3333333333333333,
+      "quadratic_weighted_kappa": 0.0
+    },
+    {
+      "ablation": "Feasibility-only",
+      "source_model": "A",
+      "n_test": 47,
+      "kendall_tau_b": 0.26900105943079666,
+      "spearman_rho": 0.3294498546012007,
+      "macro_f1": 0.21256038647342992,
+      "balanced_accuracy": 0.3333333333333333,
+      "quadratic_weighted_kappa": 0.0
+    },
+    {
+      "ablation": "Precedent-only",
+      "source_model": "B",
+      "n_test": 47,
+      "kendall_tau_b": -0.09305468755977471,
+      "spearman_rho": -0.11695258482824897,
+      "macro_f1": 0.21256038647342992,
+      "balanced_accuracy": 0.3333333333333333,
+      "quadratic_weighted_kappa": 0.0
+    },
+    {
+      "ablation": "Delta-SC-only",
+      "source_model": "C",
+      "n_test": 47,
+      "kendall_tau_b": -0.029958370833639163,
+      "spearman_rho": -0.047477393155956775,
+      "macro_f1": 0.21256038647342992,
+      "balanced_accuracy": 0.3333333333333333,
+      "quadratic_weighted_kappa": 0.0
+    }
+  ],
+  "leave_one_out": "NOT_ESTIMABLE_PENDING_IMPLEMENTATION"
+}

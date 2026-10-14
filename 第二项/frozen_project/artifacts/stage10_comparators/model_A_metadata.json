@@ -1,0 +1,21 @@
+{
+  "features": [
+    "d_feas"
+  ],
+  "distribution": "logit",
+  "optimizer": "bfgs + maxiter=1000",
+  "converged": true,
+  "parameters": {
+    "d_feas": 0.04431392622936792,
+    "0/1": -0.8422580643000946,
+    "1/2": 0.5320979058088672
+  },
+  "label_order": {
+    "0": "Easy",
+    "1": "Medium",
+    "2": "Difficult"
+  },
+  "model": "A",
+  "development_ids_sha256": "77B0BF7238686AE0339622181CD421923222A4F0961CD0FAC1722DD718ED30B4",
+  "created_at_utc": "2026-09-12T14:57:13.659859+00:00"
+}

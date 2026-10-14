@@ -1,0 +1,1 @@
+target_id,route_id,step_id,reaction_hash,reaction_smiles,product_smiles,precursor_smiles,p_feas,d_feas,s_max,n_analog,p_prec,d_prec,sc_product,sc_precursor_max,delta_sc,d_sc,p_easy,p_medium,p_difficult,reaction_difficulty,uncertainty,confidence,explanation_code,explanation_text

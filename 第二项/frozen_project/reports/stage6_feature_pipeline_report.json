@@ -1,0 +1,144 @@
+{
+  "stage": 6,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "created_at_utc": "2026-09-11T11:27:54.255421+00:00",
+  "baseline_label": "DEVELOPMENT BASELINE ONLY - NOT FINAL MODEL",
+  "input_audit": {
+    "reaction_steps_raw": {
+      "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_steps_raw.parquet",
+      "sha256": "611B4F7DA5C701D093BA3D36B1E79EF76F08DEDFA6E3A1D9397814C532FF43DF",
+      "rows": 828
+    },
+    "reaction_feasibility": {
+      "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_feasibility.parquet",
+      "sha256": "11CEC9A29C108DB3402793A48F2E49FD7883338DF4998EE019CBCD2E2ABFBDF4",
+      "rows": 828
+    },
+    "reaction_sc_raw": {
+      "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_sc_raw.parquet",
+      "sha256": "91E01FF220538DC3C9B3FAD6EE87B28520C45169235C3BECC74EBBD95E25D1BE",
+      "rows": 828
+    },
+    "reaction_precedent": {
+      "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_precedent.parquet",
+      "sha256": "B5697790CF3D502A0F197F2A6E6007DCE458DCD743D5EBBF1AFE7B1863F57A80",
+      "rows": 828
+    },
+    "reaction_sc_normalized": {
+      "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_sc_normalized.parquet",
+      "sha256": "26DFF4A3603975E47FBC440CF22409E9F22873A382BD7FD3353C6D1BC1CF2EB7",
+      "rows": 828
+    }
+  },
+  "merge_audit": {
+    "base_rows": 828,
+    "feasibility_rows_matched": 828,
+    "sc_raw_rows_matched": 828,
+    "precedent_rows_matched": 828,
+    "d_sc_rows_matched": 828,
+    "missing_keys": 0,
+    "extra_keys": 0,
+    "duplicate_keys": 0
+  },
+  "validation": {
+    "row_count": 828,
+    "finite_counts": {
+      "p_feas": 828,
+      "d_feas": 828,
+      "s_max": 828,
+      "p_prec": 828,
+      "d_prec": 828,
+      "d_sc": 828,
+      "sc_product": 828,
+      "sc_precursor_max": 828,
+      "delta_sc": 828,
+      "difficulty_dev": 828
+    },
+    "nan_count": 0,
+    "inf_count": 0,
+    "range_checks": {
+      "p_feas": true,
+      "d_feas": true,
+      "s_max": true,
+      "p_prec": true,
+      "d_prec": true,
+      "d_sc": true
+    },
+    "formula_checks": {
+      "d_feas": true,
+      "d_prec": true,
+      "delta_sc": true,
+      "difficulty_dev": true
+    },
+    "n_analog_integer_nonnegative": true,
+    "difficulty_dev": {
+      "min": 0.8333557351085286,
+      "median": 41.28472797039084,
+      "max": 92.41337371680952,
+      "q25": 24.757891264663606,
+      "q75": 54.721146207371845
+    }
+  },
+  "boundary_and_monotonicity_tests": {
+    "weight_sum": 1.0,
+    "boundaries": {
+      "all_easy": 0.0,
+      "all_hard": 100.0,
+      "feas_only": 45.0,
+      "precedent_only": 40.0,
+      "sc_only": 15.0
+    },
+    "monotonicity_deltas": {
+      "p_feas_drop": 4.5,
+      "p_prec_drop": 4.0,
+      "d_sc_rise": 1.5
+    },
+    "all_pass": true
+  },
+  "difficulty_dev_distribution": {
+    "min": 0.8333557351085286,
+    "median": 41.28472797039084,
+    "max": 92.41337371680952,
+    "q25": 24.757891264663606,
+    "q75": 54.721146207371845
+  },
+  "output": {
+    "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_features.parquet",
+    "sha256": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+    "rows": 828,
+    "columns": [
+      "target_id",
+      "route_id",
+      "step_id",
+      "reaction_hash",
+      "reaction_smiles",
+      "product_smiles",
+      "precursor_smiles",
+      "p_feas",
+      "d_feas",
+      "s_max",
+      "n_analog",
+      "p_prec",
+      "d_prec",
+      "sc_product",
+      "sc_precursor_max",
+      "delta_sc",
+      "d_sc",
+      "difficulty_dev"
+    ]
+  },
+  "scientific_boundary": {
+    "expert_labels_used": false,
+    "model_trained": false,
+    "missing_values_imputed": false,
+    "route_aggregation_or_ranking": false,
+    "aizynthfinder_modified": false,
+    "stage7_started": false
+  },
+  "manifest": {
+    "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\reports\\stage6_manifest.json",
+    "sha256": "BA87AD76E4C6C2087CADB76D71A3C9B56E5F533EDA7C5CC7E6DF58DCD07C5105"
+  }
+}

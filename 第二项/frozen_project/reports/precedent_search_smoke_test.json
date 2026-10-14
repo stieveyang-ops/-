@@ -1,0 +1,644 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "self_query_count": 10,
+  "self_queries": [
+    {
+      "reference_id": "ref_0015d3a23136521f7c264ff9787abea291eef976bd6178c71817f1bf38660172",
+      "reaction_hash": "0015d3a23136521f7c264ff9787abea291eef976bd6178c71817f1bf38660172",
+      "deployment_top1": {
+        "rank": 1,
+        "reference_id": "ref_0015d3a23136521f7c264ff9787abea291eef976bd6178c71817f1bf38660172",
+        "similarity": 1.0,
+        "reaction_hash": "0015d3a23136521f7c264ff9787abea291eef976bd6178c71817f1bf38660172",
+        "reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCc1ccccc1>>O=C(NCc1ccccc1)c1ccc2ccccc2c1",
+        "source": "ord",
+        "duplicate_count": 1
+      },
+      "benchmark_top1": {
+        "rank": 1,
+        "reference_id": "ref_840e4a0721165b14ef7a3c670db9e5143a27e64c52b9c680d04a1c5fc59afd48",
+        "similarity": 0.9980542063713074,
+        "reaction_hash": "840e4a0721165b14ef7a3c670db9e5143a27e64c52b9c680d04a1c5fc59afd48",
+        "reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCCc1ccccc1>>O=C(NCCc1ccccc1)c1ccc2ccccc2c1",
+        "source": "ord",
+        "duplicate_count": 1
+      },
+      "benchmark_effective_k": 100
+    },
+    {
+      "reference_id": "ref_003e583f7f94b4cd3142f6672ac738bc29e272ecbaac6e2d96125bd279f5b491",
+      "reaction_hash": "003e583f7f94b4cd3142f6672ac738bc29e272ecbaac6e2d96125bd279f5b491",
+      "deployment_top1": {
+        "rank": 1,
+        "reference_id": "ref_003e583f7f94b4cd3142f6672ac738bc29e272ecbaac6e2d96125bd279f5b491",
+        "similarity": 0.9999999403953552,
+        "reaction_hash": "003e583f7f94b4cd3142f6672ac738bc29e272ecbaac6e2d96125bd279f5b491",
+        "reaction_smiles": "NCc1ccc(F)cc1F.O=C(O)c1cc2ccccc2o1>>O=C(NCc1ccc(F)cc1F)c1cc2ccccc2o1",
+        "source": "ord",
+        "duplicate_count": 72
+      },
+      "benchmark_top1": {
+        "rank": 1,
+        "reference_id": "ref_1ecaf66c2c6401e14f54a1e580f9e57c70cb683654b5732728a1bec1515a1031",
+        "similarity": 0.9988921880722046,
+        "reaction_hash": "1ecaf66c2c6401e14f54a1e580f9e57c70cb683654b5732728a1bec1515a1031",
+        "reaction_smiles": "NCc1ccc(Cl)cc1.O=C(O)c1cc2ccccc2s1>>O=C(NCc1ccc(Cl)cc1)c1cc2ccccc2s1",
+        "source": "ord",
+        "duplicate_count": 94
+      },
+      "benchmark_effective_k": 100
+    },
+    {
+      "reference_id": "ref_00578f5c4f1d7cb9e9f5e5d2fbb601dfa10e6f8a1d68c24d543c3b4812dbf88d",
+      "reaction_hash": "00578f5c4f1d7cb9e9f5e5d2fbb601dfa10e6f8a1d68c24d543c3b4812dbf88d",
+      "deployment_top1": {
+        "rank": 1,
+        "reference_id": "ref_00578f5c4f1d7cb9e9f5e5d2fbb601dfa10e6f8a1d68c24d543c3b4812dbf88d",
+        "similarity": 1.0,
+        "reaction_hash": "00578f5c4f1d7cb9e9f5e5d2fbb601dfa10e6f8a1d68c24d543c3b4812dbf88d",
+        "reaction_smiles": "Fc1cccc2cc[nH]c12>>CC1(C)OB(c2c[nH]c3c(F)cccc23)OC1(C)C",
+        "source": "ord",
+        "duplicate_count": 2
+      },
+      "benchmark_top1": {
+        "rank": 1,
+        "reference_id": "ref_9afd6e08d668c14f979d88112f551b8f86a476bd4133fabdf8abd0c7186abced",
+        "similarity": 0.9975801110267639,
+        "reaction_hash": "9afd6e08d668c14f979d88112f551b8f86a476bd4133fabdf8abd0c7186abced",
+        "reaction_smiles": "Fc1ccc2cc[nH]c2c1>>CC1(C)OB(c2c[nH]c3cc(F)ccc23)OC1(C)C",
+        "source": "ord",
+        "duplicate_count": 2
+      },
+      "benchmark_effective_k": 100
+    },
+    {
+      "reference_id": "ref_0058a7dd3a265c9c7e5fe29a7ce739accd6506988fdfd7702e36b497042390be",
+      "reaction_hash": "0058a7dd3a265c9c7e5fe29a7ce739accd6506988fdfd7702e36b497042390be",
+      "deployment_top1": {
+        "rank": 1,
+        "reference_id": "ref_0058a7dd3a265c9c7e5fe29a7ce739accd6506988fdfd7702e36b497042390be",
+        "similarity": 1.0,
+        "reaction_hash": "0058a7dd3a265c9c7e5fe29a7ce739accd6506988fdfd7702e36b497042390be",
+        "reaction_smiles": "CC(C)(C)OC(=O)N1CCC(COc2cc(Br)cnc2N)CC1.CC1(C)OB(B2OC(C)(C)C(C)(C)O2)OC1(C)C>>CC(C)(C)OC(=O)N1CCC(COc2cc(B3OC(C)(C)C(C)(C)O3)cnc2N)CC1",
+        "source": "ord",
+        "duplicate_count": 96
+      },
+      "benchmark_top1": {
+        "rank": 1,
+        "reference_id": "ref_5e308ba4d906ea5c6fd818593909fa03714f0cde12f7556df9041d2bf8bd2077",
+        "similarity": 0.6508675217628479,
+        "reaction_hash": "5e308ba4d906ea5c6fd818593909fa03714f0cde12f7556df9041d2bf8bd2077",
+        "reaction_smiles": "Cn1cnc2ccc(Br)cc21.OB(O)B(O)O>>Cn1cnc2ccc(B(O)O)cc21",
+        "source": "ord",
+        "duplicate_count": 240
+      },
+      "benchmark_effective_k": 100
+    },
+    {
+      "reference_id": "ref_0064b717d1c9253444a66e687f4012acf13934e9d069248c741e3c30e5c54631",
+      "reaction_hash": "0064b717d1c9253444a66e687f4012acf13934e9d069248c741e3c30e5c54631",
+      "deployment_top1": {
+        "rank": 1,
+        "reference_id": "ref_0064b717d1c9253444a66e687f4012acf13934e9d069248c741e3c30e5c54631",
+        "similarity": 0.9999998211860657,
+        "reaction_hash": "0064b717d1c9253444a66e687f4012acf13934e9d069248c741e3c30e5c54631",
+        "reaction_smiles": "CC(C)(C)OC(=O)N1CCN(c2ccc(NC(=O)c3ccc(-c4ccc(C#N)cc4)o3)cc2)CC1.CC(C)=CCBr>>CC(C)(C)OC(=O)N1CCN(c2ccc(NC(=O)c3ccc(-c4ccc(C#N)cc4)o3)cc2)CC1.CC(C)=CCN(C(=O)c1ccc(-c2ccc(C#N)cc2)o1)c1ccc(N2CCNCC2)cc1",
+        "source": "ord",
+        "duplicate_count": 4
+      },
+      "benchmark_top1": {
+        "rank": 1,
+        "reference_id": "ref_d1bad1836ec86aa1e7df71920b8caab72b54e71c9e31b015623ec349f2f23baa",
+        "similarity": 0.9966639280319214,
+        "reaction_hash": "d1bad1836ec86aa1e7df71920b8caab72b54e71c9e31b015623ec349f2f23baa",
+        "reaction_smiles": "CC(C)(C)OC(=O)N1CCN(c2ccc(NC(=O)c3ccc(-c4ccc(Cl)cc4)o3)cc2)CC1.CC(C)=CCBr>>CC(C)(C)OC(=O)N1CCN(c2ccc(NC(=O)c3ccc(-c4ccc(Cl)cc4)o3)cc2)CC1.CC(C)=CCN(C(=O)c1ccc(-c2ccc(Cl)cc2)o1)c1ccc(N2CCNCC2)cc1",
+        "source": "ord",
+        "duplicate_count": 4
+      },
+      "benchmark_effective_k": 100
+    },
+    {
+      "reference_id": "ref_00681f258a39683a8be8fb5e4b014bf9e7f4ab794ccb2d3c15e7506fcecdbb34",
+      "reaction_hash": "00681f258a39683a8be8fb5e4b014bf9e7f4ab794ccb2d3c15e7506fcecdbb34",
+      "deployment_top1": {
+        "rank": 1,
+        "reference_id": "ref_00681f258a39683a8be8fb5e4b014bf9e7f4ab794ccb2d3c15e7506fcecdbb34",
+        "similarity": 1.0,
+        "reaction_hash": "00681f258a39683a8be8fb5e4b014bf9e7f4ab794ccb2d3c15e7506fcecdbb34",
+        "reaction_smiles": "Cc1ccc(N)nc1.Cn1c(C=O)nc2ccccc21.[C-]#[N+]C1CCCCC1>>Cc1ccc2nc(-c3nc4ccccc4n3C)c(NC3CCCCC3)n2c1",
+        "source": "ord",
+        "duplicate_count": 1
+      },
+      "benchmark_top1": {
+        "rank": 1,
+        "reference_id": "ref_0413b418e4ec56f6f9e9c8f9e0cb5ddbee102e5fc4b640c15b74fbc29b554b85",
+        "similarity": 0.9964455366134644,
+        "reaction_hash": "0413b418e4ec56f6f9e9c8f9e0cb5ddbee102e5fc4b640c15b74fbc29b554b85",
+        "reaction_smiles": "COc1nc2ccccc2cc1C=O.Cc1ccc(N)nc1.[C-]#[N+]C1CCCCC1>>COc1nc2ccccc2cc1-c1nc2ccc(C)cn2c1NC1CCCCC1",
+        "source": "ord",
+        "duplicate_count": 1
+      },
+      "benchmark_effective_k": 100
+    },
+    {
+      "reference_id": "ref_00768a85737d8e515c994615c339d57d5b31896bc15b5aaa8f0b2799cba8f8e4",
+      "reaction_hash": "00768a85737d8e515c994615c339d57d5b31896bc15b5aaa8f0b2799cba8f8e4",
+      "deployment_top1": {
+        "rank": 1,
+        "reference_id": "ref_00768a85737d8e515c994615c339d57d5b31896bc15b5aaa8f0b2799cba8f8e4",
+        "similarity": 1.0,
+        "reaction_hash": "00768a85737d8e515c994615c339d57d5b31896bc15b5aaa8f0b2799cba8f8e4",
+        "reaction_smiles": "Br[Mg]c1ccccc1.CCN(CC)C(=O)Oc1ccccc1C>>Cc1ccccc1-c1ccccc1",
+        "source": "ord",
+        "duplicate_count": 1
+      },
+      "benchmark_top1": {
+        "rank": 1,
+        "reference_id": "ref_9e50dc6d59ad15a6bc13281a494104be4dede9fe43a0f260f8629d5d51e34713",
+        "similarity": 0.9975287914276123,
+        "reaction_hash": "9e50dc6d59ad15a6bc13281a494104be4dede9fe43a0f260f8629d5d51e34713",
+        "reaction_smiles": "Br[Mg]c1ccccc1.CCN(CC)C(=O)Oc1ccccc1OC>>COc1ccccc1-c1ccccc1",
+        "source": "ord",
+        "duplicate_count": 1
+      },
+      "benchmark_effective_k": 100
+    },
+    {
+      "reference_id": "ref_007e03cbbe6b4cb78555c4c52924bb63a0e8438a060eeb4dce1ac05ef5e7893d",
+      "reaction_hash": "007e03cbbe6b4cb78555c4c52924bb63a0e8438a060eeb4dce1ac05ef5e7893d",
+      "deployment_top1": {
+        "rank": 1,
+        "reference_id": "ref_007e03cbbe6b4cb78555c4c52924bb63a0e8438a060eeb4dce1ac05ef5e7893d",
+        "similarity": 1.0,
+        "reaction_hash": "007e03cbbe6b4cb78555c4c52924bb63a0e8438a060eeb4dce1ac05ef5e7893d",
+        "reaction_smiles": "COc1cc(C)cc(C)c1.Cc1ccc([Mg]Br)cc1>>Cc1ccc(-c2cc(C)cc(C)c2)cc1",
+        "source": "ord",
+        "duplicate_count": 1
+      },
+      "benchmark_top1": {
+        "rank": 1,
+        "reference_id": "ref_a237de553dfaf7e355d370dabaf15cc21f0edba1b0d4ec65e4790d6d564c9e11",
+        "similarity": 0.9943988919258118,
+        "reaction_hash": "a237de553dfaf7e355d370dabaf15cc21f0edba1b0d4ec65e4790d6d564c9e11",
+        "reaction_smiles": "COc1cccc(N(C)C)c1.Cc1ccc([Mg]Br)cc1>>Cc1ccc(-c2cccc(N(C)C)c2)cc1",
+        "source": "ord",
+        "duplicate_count": 1
+      },
+      "benchmark_effective_k": 100
+    },
+    {
+      "reference_id": "ref_0086b97328257a81d6a238d2ff27973583dae218e93bab169f9d17c30245d65a",
+      "reaction_hash": "0086b97328257a81d6a238d2ff27973583dae218e93bab169f9d17c30245d65a",
+      "deployment_top1": {
+        "rank": 1,
+        "reference_id": "ref_0086b97328257a81d6a238d2ff27973583dae218e93bab169f9d17c30245d65a",
+        "similarity": 1.0,
+        "reaction_hash": "0086b97328257a81d6a238d2ff27973583dae218e93bab169f9d17c30245d65a",
+        "reaction_smiles": "O=C(Oc1ccc2ccccc2c1)c1ccccc1.c1ccc(B2OB(c3ccccc3)OB(c3ccccc3)O2)cc1>>c1ccc(-c2ccc3ccccc3c2)cc1",
+        "source": "ord",
+        "duplicate_count": 1
+      },
+      "benchmark_top1": {
+        "rank": 1,
+        "reference_id": "ref_9b34ab333c6b9915e483599cb0009a0e50a305c1cd561d25fb9f214187b6ca78",
+        "similarity": 0.9855374097824097,
+        "reaction_hash": "9b34ab333c6b9915e483599cb0009a0e50a305c1cd561d25fb9f214187b6ca78",
+        "reaction_smiles": "O=C(Oc1ccc2ccccc2c1)c1ccccn1.c1ccc(B2OB(c3ccccc3)OB(c3ccccc3)O2)cc1>>c1ccc(-c2ccc3ccccc3c2)cc1",
+        "source": "ord",
+        "duplicate_count": 1
+      },
+      "benchmark_effective_k": 100
+    },
+    {
+      "reference_id": "ref_008ae46a175bace77e337b714a6e2ba467129768531a1152244208d84897a694",
+      "reaction_hash": "008ae46a175bace77e337b714a6e2ba467129768531a1152244208d84897a694",
+      "deployment_top1": {
+        "rank": 1,
+        "reference_id": "ref_008ae46a175bace77e337b714a6e2ba467129768531a1152244208d84897a694",
+        "similarity": 1.0,
+        "reaction_hash": "008ae46a175bace77e337b714a6e2ba467129768531a1152244208d84897a694",
+        "reaction_smiles": "CC(=O)Nc1cc(N)ccc1C.N#Cc1cnn2c(NC3COC3)cc(Cl)nc12>>CC(=O)Nc1cc(Nc2cc(NC3COC3)n3ncc(C#N)c3n2)ccc1C",
+        "source": "ord",
+        "duplicate_count": 1
+      },
+      "benchmark_top1": {
+        "rank": 1,
+        "reference_id": "ref_625a7b4964299df7dfcb77ee7733fda2018423434ac7ed906de2b3b6bf22a6c3",
+        "similarity": 0.9997179508209229,
+        "reaction_hash": "625a7b4964299df7dfcb77ee7733fda2018423434ac7ed906de2b3b6bf22a6c3",
+        "reaction_smiles": "CC(=O)Nc1cc(N)ccc1C.N#Cc1cnn2c(NC3CC3)cc(Cl)nc12>>CC(=O)Nc1cc(Nc2cc(NC3CC3)n3ncc(C#N)c3n2)ccc1C",
+        "source": "ord",
+        "duplicate_count": 4
+      },
+      "benchmark_effective_k": 100
+    }
+  ],
+  "stage2_query_count": 20,
+  "stage2_queries": [
+    {
+      "step_id": "10130337__route_001__step_001",
+      "reaction_hash": "0104ce31cc6400ae7c8a3d7139a6d0918a242e6bbc47f7688d9122233a7324fd",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_0015d3a23136521f7c264ff9787abea291eef976bd6178c71817f1bf38660172",
+      "top1_similarity": 0.6156931519508362,
+      "top1_reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCc1ccccc1>>O=C(NCc1ccccc1)c1ccc2ccccc2c1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_001__step_001",
+      "reaction_hash": "0104ce31cc6400ae7c8a3d7139a6d0918a242e6bbc47f7688d9122233a7324fd",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_0015d3a23136521f7c264ff9787abea291eef976bd6178c71817f1bf38660172",
+      "top1_similarity": 0.6156931519508362,
+      "top1_reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCc1ccccc1>>O=C(NCc1ccccc1)c1ccc2ccccc2c1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_002__step_001",
+      "reaction_hash": "da0ddf6af2425fbb30e1244c7655e6fdc4c8fc4dc6646c1a19efa20dcc1268fc",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_d13885bc437254cd117f40509c8fd3252acd95f1365502bd3826931eda72a4b0",
+      "top1_similarity": 0.6566261053085327,
+      "top1_reaction_smiles": "O=C(Cc1ccccn1)Nc1ccc(C[C@@H]2CC[C@H](c3nnc(NC(=O)Cc4ccccn4)s3)C2)nn1>>Nc1ccc(C[C@@H]2CC[C@H](c3nnc(NC(=O)Cc4ccccn4)s3)C2)nn1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_002__step_001",
+      "reaction_hash": "da0ddf6af2425fbb30e1244c7655e6fdc4c8fc4dc6646c1a19efa20dcc1268fc",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_d13885bc437254cd117f40509c8fd3252acd95f1365502bd3826931eda72a4b0",
+      "top1_similarity": 0.6566261053085327,
+      "top1_reaction_smiles": "O=C(Cc1ccccn1)Nc1ccc(C[C@@H]2CC[C@H](c3nnc(NC(=O)Cc4ccccn4)s3)C2)nn1>>Nc1ccc(C[C@@H]2CC[C@H](c3nnc(NC(=O)Cc4ccccn4)s3)C2)nn1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_003__step_001",
+      "reaction_hash": "e97bd4cf52230e1d723dee2d16403c1e39f23eacd948056033c8016f9c842786",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_98f9acc4b5559a09480ca7faecf7eb4c805ad3ac2c077f372b42f9478514262d",
+      "top1_similarity": 0.6033012866973877,
+      "top1_reaction_smiles": "C[C@]1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCN(C(=O)OCc2ccccc2)C1>>CC1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCNC1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_003__step_001",
+      "reaction_hash": "e97bd4cf52230e1d723dee2d16403c1e39f23eacd948056033c8016f9c842786",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_98f9acc4b5559a09480ca7faecf7eb4c805ad3ac2c077f372b42f9478514262d",
+      "top1_similarity": 0.6033012866973877,
+      "top1_reaction_smiles": "C[C@]1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCN(C(=O)OCc2ccccc2)C1>>CC1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCNC1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_003__step_002",
+      "reaction_hash": "c6f31da23debe78068f7a0a660eb826aa379029ccb9c5e82779057591bb77595",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_42df0082b40395ad3ddfa34f24f67744b292885d3c6c30bd544bb55fe28c8b28",
+      "top1_similarity": 0.7022313475608826,
+      "top1_reaction_smiles": "O=Cc1cnccc1Cl>>COC(=O)c1ccncc1C=O",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_003__step_002",
+      "reaction_hash": "c6f31da23debe78068f7a0a660eb826aa379029ccb9c5e82779057591bb77595",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_42df0082b40395ad3ddfa34f24f67744b292885d3c6c30bd544bb55fe28c8b28",
+      "top1_similarity": 0.7022313475608826,
+      "top1_reaction_smiles": "O=Cc1cnccc1Cl>>COC(=O)c1ccncc1C=O",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_004__step_001",
+      "reaction_hash": "e97bd4cf52230e1d723dee2d16403c1e39f23eacd948056033c8016f9c842786",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_98f9acc4b5559a09480ca7faecf7eb4c805ad3ac2c077f372b42f9478514262d",
+      "top1_similarity": 0.6033012866973877,
+      "top1_reaction_smiles": "C[C@]1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCN(C(=O)OCc2ccccc2)C1>>CC1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCNC1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_004__step_001",
+      "reaction_hash": "e97bd4cf52230e1d723dee2d16403c1e39f23eacd948056033c8016f9c842786",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_98f9acc4b5559a09480ca7faecf7eb4c805ad3ac2c077f372b42f9478514262d",
+      "top1_similarity": 0.6033012866973877,
+      "top1_reaction_smiles": "C[C@]1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCN(C(=O)OCc2ccccc2)C1>>CC1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCNC1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_004__step_002",
+      "reaction_hash": "4b88c5e648f49382663694a8e514f0b8074725b1282d0682768f70c39022bd06",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_1f5d9dcf4241ebd4e03f0d5fd08300e530e70eb9c5852af19bee89cd488e50eb",
+      "top1_similarity": 0.754573404788971,
+      "top1_reaction_smiles": "CC(C)C[Al](CC(C)C)c1ccccc1.CCN(CC)C(=O)Oc1ccc(F)cc1>>COc1ccc(-c2ccc(F)cc2)cc1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_004__step_002",
+      "reaction_hash": "4b88c5e648f49382663694a8e514f0b8074725b1282d0682768f70c39022bd06",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_1f5d9dcf4241ebd4e03f0d5fd08300e530e70eb9c5852af19bee89cd488e50eb",
+      "top1_similarity": 0.754573404788971,
+      "top1_reaction_smiles": "CC(C)C[Al](CC(C)C)c1ccccc1.CCN(CC)C(=O)Oc1ccc(F)cc1>>COc1ccc(-c2ccc(F)cc2)cc1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_005__step_001",
+      "reaction_hash": "e97bd4cf52230e1d723dee2d16403c1e39f23eacd948056033c8016f9c842786",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_98f9acc4b5559a09480ca7faecf7eb4c805ad3ac2c077f372b42f9478514262d",
+      "top1_similarity": 0.6033012866973877,
+      "top1_reaction_smiles": "C[C@]1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCN(C(=O)OCc2ccccc2)C1>>CC1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCNC1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_005__step_001",
+      "reaction_hash": "e97bd4cf52230e1d723dee2d16403c1e39f23eacd948056033c8016f9c842786",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_98f9acc4b5559a09480ca7faecf7eb4c805ad3ac2c077f372b42f9478514262d",
+      "top1_similarity": 0.6033012866973877,
+      "top1_reaction_smiles": "C[C@]1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCN(C(=O)OCc2ccccc2)C1>>CC1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCNC1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_005__step_002",
+      "reaction_hash": "1299b6e73f605e35026297b04997773b97242bb5864aed3c547be83abbfaf721",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_1f5d9dcf4241ebd4e03f0d5fd08300e530e70eb9c5852af19bee89cd488e50eb",
+      "top1_similarity": 0.7596022486686707,
+      "top1_reaction_smiles": "CC(C)C[Al](CC(C)C)c1ccccc1.CCN(CC)C(=O)Oc1ccc(F)cc1>>COc1ccc(-c2ccc(F)cc2)cc1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_005__step_002",
+      "reaction_hash": "1299b6e73f605e35026297b04997773b97242bb5864aed3c547be83abbfaf721",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_1f5d9dcf4241ebd4e03f0d5fd08300e530e70eb9c5852af19bee89cd488e50eb",
+      "top1_similarity": 0.7596022486686707,
+      "top1_reaction_smiles": "CC(C)C[Al](CC(C)C)c1ccccc1.CCN(CC)C(=O)Oc1ccc(F)cc1>>COc1ccc(-c2ccc(F)cc2)cc1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_006__step_001",
+      "reaction_hash": "434f1b05a4f065910ee88447c347d56a199425da537fc3c5d445e1f8766e5243",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_d13885bc437254cd117f40509c8fd3252acd95f1365502bd3826931eda72a4b0",
+      "top1_similarity": 0.6026850938796997,
+      "top1_reaction_smiles": "O=C(Cc1ccccn1)Nc1ccc(C[C@@H]2CC[C@H](c3nnc(NC(=O)Cc4ccccn4)s3)C2)nn1>>Nc1ccc(C[C@@H]2CC[C@H](c3nnc(NC(=O)Cc4ccccn4)s3)C2)nn1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_006__step_001",
+      "reaction_hash": "434f1b05a4f065910ee88447c347d56a199425da537fc3c5d445e1f8766e5243",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_d13885bc437254cd117f40509c8fd3252acd95f1365502bd3826931eda72a4b0",
+      "top1_similarity": 0.6026850938796997,
+      "top1_reaction_smiles": "O=C(Cc1ccccn1)Nc1ccc(C[C@@H]2CC[C@H](c3nnc(NC(=O)Cc4ccccn4)s3)C2)nn1>>Nc1ccc(C[C@@H]2CC[C@H](c3nnc(NC(=O)Cc4ccccn4)s3)C2)nn1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_006__step_002",
+      "reaction_hash": "153484afa7f933aecd2a1f45e12e45463a5a2f0ceafa7b03094ee4bc87b8262f",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_840e4a0721165b14ef7a3c670db9e5143a27e64c52b9c680d04a1c5fc59afd48",
+      "top1_similarity": 0.7752732038497925,
+      "top1_reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCCc1ccccc1>>O=C(NCCc1ccccc1)c1ccc2ccccc2c1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_006__step_002",
+      "reaction_hash": "153484afa7f933aecd2a1f45e12e45463a5a2f0ceafa7b03094ee4bc87b8262f",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_840e4a0721165b14ef7a3c670db9e5143a27e64c52b9c680d04a1c5fc59afd48",
+      "top1_similarity": 0.7752732038497925,
+      "top1_reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCCc1ccccc1>>O=C(NCCc1ccccc1)c1ccc2ccccc2c1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_007__step_001",
+      "reaction_hash": "434f1b05a4f065910ee88447c347d56a199425da537fc3c5d445e1f8766e5243",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_d13885bc437254cd117f40509c8fd3252acd95f1365502bd3826931eda72a4b0",
+      "top1_similarity": 0.6026850938796997,
+      "top1_reaction_smiles": "O=C(Cc1ccccn1)Nc1ccc(C[C@@H]2CC[C@H](c3nnc(NC(=O)Cc4ccccn4)s3)C2)nn1>>Nc1ccc(C[C@@H]2CC[C@H](c3nnc(NC(=O)Cc4ccccn4)s3)C2)nn1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_007__step_001",
+      "reaction_hash": "434f1b05a4f065910ee88447c347d56a199425da537fc3c5d445e1f8766e5243",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_d13885bc437254cd117f40509c8fd3252acd95f1365502bd3826931eda72a4b0",
+      "top1_similarity": 0.6026850938796997,
+      "top1_reaction_smiles": "O=C(Cc1ccccn1)Nc1ccc(C[C@@H]2CC[C@H](c3nnc(NC(=O)Cc4ccccn4)s3)C2)nn1>>Nc1ccc(C[C@@H]2CC[C@H](c3nnc(NC(=O)Cc4ccccn4)s3)C2)nn1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_007__step_002",
+      "reaction_hash": "2693976418cfe33ce0ddf8adcc6936c70c07b3c530ab4404209979e51fea0d3c",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_840e4a0721165b14ef7a3c670db9e5143a27e64c52b9c680d04a1c5fc59afd48",
+      "top1_similarity": 0.7576593160629272,
+      "top1_reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCCc1ccccc1>>O=C(NCCc1ccccc1)c1ccc2ccccc2c1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_007__step_002",
+      "reaction_hash": "2693976418cfe33ce0ddf8adcc6936c70c07b3c530ab4404209979e51fea0d3c",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_840e4a0721165b14ef7a3c670db9e5143a27e64c52b9c680d04a1c5fc59afd48",
+      "top1_similarity": 0.7576593160629272,
+      "top1_reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCCc1ccccc1>>O=C(NCCc1ccccc1)c1ccc2ccccc2c1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_008__step_001",
+      "reaction_hash": "6b1a408291dbe577b073cba49b4ed4e38199030a3565f0ea8d3c9982fe731998",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_76faba9d5242a61673a0362678e07428dabf0c46a64699f317f158ad52433196",
+      "top1_similarity": 0.9635477662086487,
+      "top1_reaction_smiles": "c1ccc(CN(Cc2ccccc2)C23CC(C2)C3)cc1>>NC12CC(C1)C2",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_008__step_001",
+      "reaction_hash": "6b1a408291dbe577b073cba49b4ed4e38199030a3565f0ea8d3c9982fe731998",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_76faba9d5242a61673a0362678e07428dabf0c46a64699f317f158ad52433196",
+      "top1_similarity": 0.9635477662086487,
+      "top1_reaction_smiles": "c1ccc(CN(Cc2ccccc2)C23CC(C2)C3)cc1>>NC12CC(C1)C2",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_008__step_002",
+      "reaction_hash": "c056a46fe186835832358c2c05b69c32e6bc227d0f2035f823fd1c4830f525b0",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_840e4a0721165b14ef7a3c670db9e5143a27e64c52b9c680d04a1c5fc59afd48",
+      "top1_similarity": 0.8096354603767395,
+      "top1_reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCCc1ccccc1>>O=C(NCCc1ccccc1)c1ccc2ccccc2c1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_008__step_002",
+      "reaction_hash": "c056a46fe186835832358c2c05b69c32e6bc227d0f2035f823fd1c4830f525b0",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_840e4a0721165b14ef7a3c670db9e5143a27e64c52b9c680d04a1c5fc59afd48",
+      "top1_similarity": 0.8096354603767395,
+      "top1_reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCCc1ccccc1>>O=C(NCCc1ccccc1)c1ccc2ccccc2c1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_009__step_001",
+      "reaction_hash": "29260d986100a1b926c174063cd7e12d4f12a17d594aa3947de9c77f471f73be",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_f5e5b02173f6ac282c3ee5455db3c16bd993541890e13194193d523c7bd9cb32",
+      "top1_similarity": 0.9144337177276611,
+      "top1_reaction_smiles": "CCOC(=O)C1(C(=O)OCC)CCN(Cc2ccccc2)C1>>CCOC(=O)C1(C(=O)OCC)CCNC1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_009__step_001",
+      "reaction_hash": "29260d986100a1b926c174063cd7e12d4f12a17d594aa3947de9c77f471f73be",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_f5e5b02173f6ac282c3ee5455db3c16bd993541890e13194193d523c7bd9cb32",
+      "top1_similarity": 0.9144337177276611,
+      "top1_reaction_smiles": "CCOC(=O)C1(C(=O)OCC)CCN(Cc2ccccc2)C1>>CCOC(=O)C1(C(=O)OCC)CCNC1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_009__step_002",
+      "reaction_hash": "929f62fa548d7394d2f60c1f8a8a9e4318e4684b3d94b962d43eae9e1d6e2378",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_840e4a0721165b14ef7a3c670db9e5143a27e64c52b9c680d04a1c5fc59afd48",
+      "top1_similarity": 0.756357729434967,
+      "top1_reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCCc1ccccc1>>O=C(NCCc1ccccc1)c1ccc2ccccc2c1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_009__step_002",
+      "reaction_hash": "929f62fa548d7394d2f60c1f8a8a9e4318e4684b3d94b962d43eae9e1d6e2378",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_840e4a0721165b14ef7a3c670db9e5143a27e64c52b9c680d04a1c5fc59afd48",
+      "top1_similarity": 0.756357729434967,
+      "top1_reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCCc1ccccc1>>O=C(NCCc1ccccc1)c1ccc2ccccc2c1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_010__step_001",
+      "reaction_hash": "cb72f49021334ae83b8f2484d9440aeba6b7ddaab4dae32b25e63d320151cf27",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_98f9acc4b5559a09480ca7faecf7eb4c805ad3ac2c077f372b42f9478514262d",
+      "top1_similarity": 0.9624648094177246,
+      "top1_reaction_smiles": "C[C@]1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCN(C(=O)OCc2ccccc2)C1>>CC1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCNC1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_010__step_001",
+      "reaction_hash": "cb72f49021334ae83b8f2484d9440aeba6b7ddaab4dae32b25e63d320151cf27",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_98f9acc4b5559a09480ca7faecf7eb4c805ad3ac2c077f372b42f9478514262d",
+      "top1_similarity": 0.9624648094177246,
+      "top1_reaction_smiles": "C[C@]1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCN(C(=O)OCc2ccccc2)C1>>CC1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCNC1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_010__step_002",
+      "reaction_hash": "6047b0ef09efcb979429d3d49df2a96cce0ec6c56ca3d479d1e5b2482b414cb8",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_0015d3a23136521f7c264ff9787abea291eef976bd6178c71817f1bf38660172",
+      "top1_similarity": 0.7214587926864624,
+      "top1_reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCc1ccccc1>>O=C(NCc1ccccc1)c1ccc2ccccc2c1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_010__step_002",
+      "reaction_hash": "6047b0ef09efcb979429d3d49df2a96cce0ec6c56ca3d479d1e5b2482b414cb8",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_0015d3a23136521f7c264ff9787abea291eef976bd6178c71817f1bf38660172",
+      "top1_similarity": 0.7214587926864624,
+      "top1_reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCc1ccccc1>>O=C(NCc1ccccc1)c1ccc2ccccc2c1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_011__step_001",
+      "reaction_hash": "cb72f49021334ae83b8f2484d9440aeba6b7ddaab4dae32b25e63d320151cf27",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_98f9acc4b5559a09480ca7faecf7eb4c805ad3ac2c077f372b42f9478514262d",
+      "top1_similarity": 0.9624648094177246,
+      "top1_reaction_smiles": "C[C@]1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCN(C(=O)OCc2ccccc2)C1>>CC1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCNC1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_011__step_001",
+      "reaction_hash": "cb72f49021334ae83b8f2484d9440aeba6b7ddaab4dae32b25e63d320151cf27",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_98f9acc4b5559a09480ca7faecf7eb4c805ad3ac2c077f372b42f9478514262d",
+      "top1_similarity": 0.9624648094177246,
+      "top1_reaction_smiles": "C[C@]1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCN(C(=O)OCc2ccccc2)C1>>CC1(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)CCNC1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_011__step_002",
+      "reaction_hash": "1b9f8805d523a68a9672a460b93177cfb45cd1dd8eea639421661d3d9378f9e1",
+      "mode": "deployment",
+      "effective_k": 100,
+      "top1_reference_id": "ref_840e4a0721165b14ef7a3c670db9e5143a27e64c52b9c680d04a1c5fc59afd48",
+      "top1_similarity": 0.7198801636695862,
+      "top1_reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCCc1ccccc1>>O=C(NCCc1ccccc1)c1ccc2ccccc2c1",
+      "exact_match_present": false
+    },
+    {
+      "step_id": "10130337__route_011__step_002",
+      "reaction_hash": "1b9f8805d523a68a9672a460b93177cfb45cd1dd8eea639421661d3d9378f9e1",
+      "mode": "benchmark",
+      "effective_k": 100,
+      "top1_reference_id": "ref_840e4a0721165b14ef7a3c670db9e5143a27e64c52b9c680d04a1c5fc59afd48",
+      "top1_similarity": 0.7198801636695862,
+      "top1_reaction_smiles": "CC(C)(C)C(=O)Oc1ccc2ccccc2c1.O=C=NCCc1ccccc1>>O=C(NCCc1ccccc1)c1ccc2ccccc2c1",
+      "exact_match_present": false
+    }
+  ],
+  "total_query_seconds": 4.2334264000019175,
+  "mean_query_seconds": 0.1058356774999993,
+  "timestamp_utc": "2026-09-11T01:49:21.122681+00:00"
+}

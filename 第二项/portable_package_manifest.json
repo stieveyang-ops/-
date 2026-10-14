@@ -1,0 +1,33 @@
+{
+  "package_name": "AIZynthFinder_Reaction_Difficulty_Portable",
+  "package_version": "2026-10-08-v2",
+  "created_at_local": "2026-10-08",
+  "copy_semantics": "Copied files only; the source project was not moved or edited.",
+  "source_project_at_packaging": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty",
+  "source_git_head_at_packaging": "18cc4023aae228d315bfd043fc7e7154422405af",
+  "source_git_status_at_packaging": "clean",
+  "runtime_entrypoints": [
+    "launch_gui.cmd",
+    "launch_gui.ps1",
+    "prospective_difficulty_tool/run_prospective_scoring.ps1",
+    "prospective_difficulty_tool/prospective_score.py"
+  ],
+  "scientific_scope": "Prospective search then on-demand scoring only; Stage 1-11 artifacts are frozen and read-only.",
+  "explicit_exclusions": [
+    ".git metadata and history",
+    "cache directories and __pycache__",
+    "prior smoke-test and temporary output directories",
+    "the machine-wide Conda environment"
+  ],
+  "external_data": {
+    "included": true,
+    "location_in_package": "external_public_data/public_data",
+    "source_machine_ORD": "not required for prospective runtime; not copied"
+  },
+  "validation_reports": [
+    "package_completeness_report.json",
+    "environment_validation.json",
+    "source_copy_verification.csv",
+    "package_files_sha256.csv"
+  ]
+}

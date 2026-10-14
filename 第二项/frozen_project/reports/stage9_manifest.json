@@ -1,0 +1,51 @@
+{
+  "stage": 9,
+  "status": "PASS",
+  "routes_raw_sha256": "5FA6489B6DF5437066F42AC1323C179C0871F711ACFE9BC3435A0C63221F49BE",
+  "reaction_steps_sha256": "611B4F7DA5C701D093BA3D36B1E79EF76F08DEDFA6E3A1D9397814C532FF43DF",
+  "reaction_features_sha256": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+  "difficulty_model_sha256": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+  "difficulty_metadata_sha256": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055",
+  "stage8_manifest_sha256": "F1E9C120ED1B01CAD40CDF53ED6657C8AFC71DC897A05B4E84F77A664C9333C2",
+  "q33": 0.3005421128682305,
+  "q67": 0.5006582129614043,
+  "model_feature_order": [
+    "d_feas",
+    "d_prec",
+    "d_sc"
+  ],
+  "route_aggregation": [
+    "max",
+    "mean",
+    "max uncertainty"
+  ],
+  "ranking_rule": "solved desc, bottleneck asc, mean asc, state score desc, original_rank asc, route_id asc",
+  "scorer_name": "reaction ease score",
+  "scorer_formula": "1 - bottleneck/100",
+  "aizynthfinder_version": "4.4.1",
+  "post_search_only": true,
+  "mcts_modified": false,
+  "stage10_started": false,
+  "outputs": {
+    "scored_reactions_parquet": "C4A24417197B1ABAC2B22987C3A1352F27D4953456D7F465F7F7146DA784CAFF",
+    "scored_routes_parquet": "8EB0A886716FA8F7CAD6EB25B828BBFB0B95ED3B1B1E9D637AEB3578F572CF01",
+    "scored_routes_csv": "5F9984BA44E42DEB4AE950C046747AAA4080626C2062C11784D6A1C814E271C9",
+    "scored_routes_json": "AB0EAA1B08D49C4F702B448018B53BC56F1FC8811B32EC67B81F90FC7853F59A",
+    "reaction_preview_csv": "D3F101BEA0ADABB56D9C0641BF96AAA4F06495DC176A7E895CD76E4FCFCBF5D8",
+    "route_preview_csv": "86E4A4B94636D276BC93E3F3F9A4B12541102AA502BCF22FA645E4A410C2BC4A"
+  },
+  "reports": {
+    "reaction_inference": "6F71F9B01B783CB2A5D55271CD7FFDC32ED1C2C0F903213509BB0900129144AF",
+    "route_ranking": "60465C84F552BE855AEF64E8C2C67CF2391A9101E14876286417E19DBECC35B5",
+    "scorer_integration": "69DF2CE62BD916ED1882007FC267F9B92E6BA4F6CE65B13BBA86185978F2697A",
+    "validation": "42718FD8AC7E19E7E3CE8DA08C8E38BA033B6884EB6E87C1DBA48834351A9468"
+  },
+  "provider_equivalence": {
+    "tested": 20,
+    "mismatches": 0,
+    "max_abs_difference": 2.2923263842677954e-08,
+    "status": "PASS"
+  },
+  "tests": "91 passed",
+  "created_at": "2026-09-12T13:48:45.021470+00:00"
+}

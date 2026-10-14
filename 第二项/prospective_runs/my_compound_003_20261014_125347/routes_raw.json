@@ -1,0 +1,227 @@
+[
+  {
+    "type": "mol",
+    "hide": false,
+    "smiles": "CCO",
+    "is_chemical": true,
+    "in_stock": false,
+    "children": [
+      {
+        "type": "reaction",
+        "hide": false,
+        "smiles": "[C:1]([CH3:2])[OH:3]>>O=[C:1]([CH3:2])[OH:3]",
+        "is_reaction": true,
+        "metadata": {
+          "template_hash": "c42f96a0658c03bc12dc20efce06e66daaeccc675d73631eea24ea610a7227b8",
+          "classification": "0.0 Unrecognized",
+          "library_occurence": 3921,
+          "policy_probability": 0.09149999916553497,
+          "policy_probability_rank": 0,
+          "policy_name": "uspto",
+          "template_code": 32658,
+          "template": "[C:2]-[CH2;D2;+0:1]-[O;D1;H1:3]>>O=[C;H0;D3;+0:1](-[C:2])-[O;D1;H1:3]",
+          "mapped_reaction_smiles": "[CH3:1][CH2:2][OH:3]>>[CH3:1][C:2]([OH:3])=[O:4]"
+        },
+        "children": [
+          {
+            "type": "mol",
+            "hide": false,
+            "smiles": "CC(=O)O",
+            "is_chemical": true,
+            "in_stock": true
+          }
+        ]
+      }
+    ],
+    "scores": {
+      "state score": 0.9976287063411217,
+      "number of reactions": 1,
+      "number of pre-cursors": 1,
+      "number of pre-cursors in stock": 1
+    },
+    "metadata": {
+      "created_at_iteration": 1,
+      "is_solved": true
+    }
+  },
+  {
+    "type": "mol",
+    "hide": false,
+    "smiles": "CCO",
+    "is_chemical": true,
+    "in_stock": false,
+    "children": [
+      {
+        "type": "reaction",
+        "hide": false,
+        "smiles": "[O:1][C:2][CH3:3]>>C[O:1][C:2](=O)[CH3:3]",
+        "is_reaction": true,
+        "metadata": {
+          "template_hash": "fa0d851e142c3b477b32521aea18d9f060fb648ef723206a28e37b25b71593bd",
+          "classification": "0.0 Unrecognized",
+          "library_occurence": 2881,
+          "policy_probability": 0.020099999383091927,
+          "policy_probability_rank": 5,
+          "policy_name": "uspto",
+          "template_code": 41576,
+          "template": "[C:3]-[CH2;D2;+0:2]-[OH;D1;+0:1]>>C-[O;H0;D2;+0:1]-[C;H0;D3;+0:2](=O)-[C:3]",
+          "mapped_reaction_smiles": "[CH3:1][CH2:2][OH:3]>>[CH3:1][C:2]([O:3][CH3:4])=[O:5]"
+        },
+        "children": [
+          {
+            "type": "mol",
+            "hide": false,
+            "smiles": "COC(C)=O",
+            "is_chemical": true,
+            "in_stock": true
+          }
+        ]
+      }
+    ],
+    "scores": {
+      "state score": 0.9976287063411217,
+      "number of reactions": 1,
+      "number of pre-cursors": 1,
+      "number of pre-cursors in stock": 1
+    },
+    "metadata": {
+      "created_at_iteration": 2,
+      "is_solved": true
+    }
+  },
+  {
+    "type": "mol",
+    "hide": false,
+    "smiles": "CCO",
+    "is_chemical": true,
+    "in_stock": false,
+    "children": [
+      {
+        "type": "reaction",
+        "hide": false,
+        "smiles": "[C:1][CH3:2]>>C[C:1][CH3:2]",
+        "is_reaction": true,
+        "metadata": {
+          "template_hash": "316f8653822b4830866eb0ac96a68f7438e86f65b59b894ea1c21b943e7b76dc",
+          "classification": "0.0 Unrecognized",
+          "library_occurence": 138,
+          "policy_probability": 0.005400000140070915,
+          "policy_probability_rank": 10,
+          "policy_name": "uspto",
+          "template_code": 8275,
+          "template": "[C:2]-[CH3;D1;+0:1]>>C-[CH2;D2;+0:1]-[C:2]",
+          "mapped_reaction_smiles": "[CH3:1][CH2:2][OH:3]>>[CH2:1]([CH2:2][OH:3])[CH3:4]"
+        },
+        "children": [
+          {
+            "type": "mol",
+            "hide": false,
+            "smiles": "CCCO",
+            "is_chemical": true,
+            "in_stock": true
+          }
+        ]
+      }
+    ],
+    "scores": {
+      "state score": 0.9976287063411217,
+      "number of reactions": 1,
+      "number of pre-cursors": 1,
+      "number of pre-cursors in stock": 1
+    },
+    "metadata": {
+      "created_at_iteration": 4,
+      "is_solved": true
+    }
+  },
+  {
+    "type": "mol",
+    "hide": false,
+    "smiles": "CCO",
+    "is_chemical": true,
+    "in_stock": false,
+    "children": [
+      {
+        "type": "reaction",
+        "hide": false,
+        "smiles": "[C:1][CH3:2]>>O[C:1][CH3:2]",
+        "is_reaction": true,
+        "metadata": {
+          "template_hash": "eed72631fd672d704fbf8f7dd30e7efd10635a22b48f1b6ff56deaf15f8847ea",
+          "classification": "0.0 Unrecognized",
+          "library_occurence": 23,
+          "policy_probability": 0.004399999976158142,
+          "policy_probability_rank": 13,
+          "policy_name": "uspto",
+          "template_code": 39680,
+          "template": "[C:2]-[CH3;D1;+0:1]>>O-[CH2;D2;+0:1]-[C:2]",
+          "mapped_reaction_smiles": "[CH3:1][CH2:2][OH:3]>>[CH2:1]([CH2:2][OH:3])[OH:4]"
+        },
+        "children": [
+          {
+            "type": "mol",
+            "hide": false,
+            "smiles": "OCCO",
+            "is_chemical": true,
+            "in_stock": true
+          }
+        ]
+      }
+    ],
+    "scores": {
+      "state score": 0.9976287063411217,
+      "number of reactions": 1,
+      "number of pre-cursors": 1,
+      "number of pre-cursors in stock": 1
+    },
+    "metadata": {
+      "created_at_iteration": 5,
+      "is_solved": true
+    }
+  },
+  {
+    "type": "mol",
+    "hide": false,
+    "smiles": "CCO",
+    "is_chemical": true,
+    "in_stock": false,
+    "children": [
+      {
+        "type": "reaction",
+        "hide": false,
+        "smiles": "[O:1][CH3:2]>>C[O:1][CH3:2]",
+        "is_reaction": true,
+        "metadata": {
+          "template_hash": "45a96c1bf376f17f6746ebc72a2eea60b0df66546a0c7c53e3ee83f91f10bd56",
+          "classification": "0.0 Unrecognized",
+          "library_occurence": 784,
+          "policy_probability": 0.00139999995008111,
+          "policy_probability_rank": 46,
+          "policy_name": "uspto",
+          "template_code": 11673,
+          "template": "[C:2]-[OH;D1;+0:1]>>C-[O;H0;D2;+0:1]-[C:2]",
+          "mapped_reaction_smiles": "[CH3:1][CH2:2][OH:3]>>[CH3:1][CH2:2][O:3][CH3:4]"
+        },
+        "children": [
+          {
+            "type": "mol",
+            "hide": false,
+            "smiles": "CCOC",
+            "is_chemical": true,
+            "in_stock": true
+          }
+        ]
+      }
+    ],
+    "scores": {
+      "state score": 0.9976287063411217,
+      "number of reactions": 1,
+      "number of pre-cursors": 1,
+      "number of pre-cursors in stock": 1
+    },
+    "metadata": {
+      "created_at_iteration": 6,
+      "is_solved": true
+    }
+  }
+]

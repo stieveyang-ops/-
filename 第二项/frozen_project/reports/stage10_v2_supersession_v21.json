@@ -1,0 +1,16 @@
+{
+  "stage": 10,
+  "superseded_cycle": "stage10_v2",
+  "superseding_cycle": "stage10_v2.1",
+  "status": "SUPERSEDED_INVALID_FOR_FINAL_REPORTING",
+  "reason": [
+    "v2 benchmark table included 9 abstain rows outside the primary benchmark",
+    "v2 SCScore mean sensitivity refit did not replace d_sc with d_sc_mean"
+  ],
+  "v2_outputs_preserved": true,
+  "v2_manifest_path": "reports/stage10_manifest_v2.json",
+  "v2_unseal_receipt_path": "reports/stage10_unseal_receipt_v2.json",
+  "v2_locked_test_sha256": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+  "locked_test_modified": "NO",
+  "stage2_9_modified": "NO"
+}

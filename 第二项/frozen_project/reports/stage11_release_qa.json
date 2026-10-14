@@ -1,0 +1,61 @@
+{
+  "audit_type": "stage11_release_qa",
+  "created_at_utc": "2026-09-12T17:17:21.305783+00:00",
+  "status": "BLOCKED",
+  "checks": {
+    "required_outputs": {
+      "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\outputs\\stage11_release\\scored_routes.json": true,
+      "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\outputs\\stage11_release\\scored_reactions.parquet": true,
+      "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\reports\\run_metadata.json": true
+    },
+    "output_schema": {
+      "rows": 828,
+      "has_explanations": true,
+      "finite": true
+    },
+    "bounds": {
+      "features": true,
+      "difficulty": true,
+      "uncertainty": true
+    },
+    "stage2_10_unchanged": true,
+    "inference_isolation": {
+      "labels_or_locked_test_read": false,
+      "training_or_refit": false
+    },
+    "external_ord": {
+      "path": "E:\\ord-data-github-05fe1a6",
+      "manifest": "E:\\ord-data-github-05fe1a6\\ord_manifest.json",
+      "not_copied_into_repo": true
+    },
+    "deterministic_explanations": true,
+    "runtime": {
+      "python": "3.10.20",
+      "python_executable": "E:\\Anaconda\\envs\\aizynth\\python.exe",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "pyarrow": "25.0.0",
+      "sklearn": "1.5.2",
+      "scipy": "1.15.3",
+      "statsmodels": "0.14.4",
+      "aizynthfinder": "unknown",
+      "rdkit": "2023.09.6"
+    },
+    "pytest": {
+      "status": "PASS",
+      "full_pytest": "106 passed",
+      "specialized": "4 passed"
+    },
+    "clean_environment": {
+      "status": "BLOCKED",
+      "error_code": "BLOCKED_RELEASE_REPRODUCIBILITY",
+      "reason": "The target environment has no environment-local statsmodels; isolated -I inference cannot import OrderedModel."
+    }
+  },
+  "artifact_hashes": {
+    "outputs\\stage11_release\\scored_routes.json": "ABA37ED42A27997A8A265A97CE8B9C8F326B476F5F54C17DE626F028B889C78A",
+    "outputs\\stage11_release\\scored_reactions.parquet": "562FE5C16956F10CC1AA6F147E12977A84F1AB44697653EC346151327CF23A7E",
+    "reports\\run_metadata.json": "C0F4A6C8AF80D2398DC7BD1EB93A773481184E168689ADF5CB23164F770191FE"
+  },
+  "canonical_scored_routes_hash": "B3CCDF240B0E8AE505E554C607C4BE61B7A9D1BF77FCB03602CB70A5D37BDABA"
+}

@@ -1,0 +1,45 @@
+{
+  "stage": 5,
+  "status": "BLOCKED",
+  "error_code": "BLOCKED_REFERENCE_MULTIPLE_PRODUCTS_UNDEFINED",
+  "timestamp_utc": "2026-09-11T02:13:51.1257687Z",
+  "project_root": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty",
+  "preconditions": {
+    "stage2": "PASS",
+    "stage3": "PASS",
+    "stage4": "PASS",
+    "stage4_manifest_sha256": "4EE006512CB84F1E2F41392F8E59A092AC8D34F89FB922B96FF0479F03789B69",
+    "reference_clean_sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8"
+  },
+  "observed": {
+    "reference_corpus": "data/reference/reference_reactions_clean.parquet",
+    "reference_unique_rows": 4946,
+    "reference_rows_with_multiple_product_components": 22,
+    "duplicate_weight_of_affected_rows": 241,
+    "first_affected_reference_ids": [
+      "ref_03ee1d052e26eb611806b42f0336603c48a674ab210e438db987fe0c74b976e3",
+      "ref_0d6e90f5d3a25cd517ea5bdf484447c77a197890cf5c1462a927723920021322",
+      "ref_132f291387499a321b1d9565003c3fd6a62c738edf508abb0d0e680ab9303d75",
+      "ref_14d4497b93f42ee0298cf7d32e791f033ceac7453846e0aabc46349fb168fcb4",
+      "ref_28f055e282abbc5134fcb829b1675b0b24a75cf0edf1001dc523ba6b4cdbdc36"
+    ]
+  },
+  "contract_basis": "Stage 5 section 6.2 requires SC(product) to use a single target product. If multiple products exist and Stage 4 did not define a main-product rule, execution must be BLOCKED; selecting the largest product or another heuristic is forbidden.",
+  "not_performed": [
+    "precedent score computation",
+    "reference delta-SC ECDF construction",
+    "query D_SC normalization",
+    "reaction_precedent.parquet",
+    "reaction_sc_normalized.parquet",
+    "sc_delta_ecdf.npz",
+    "stage5_manifest.json",
+    "Stage 5 PASS declaration"
+  ],
+  "preserved": {
+    "stage2_and_stage3_outputs_modified": false,
+    "stage4_outputs_modified": false,
+    "synthetic_or_substitute_data_used": false,
+    "stage6_started": false
+  },
+  "required_research_team_decision": "Define and approve a provenance-preserving main-product rule for the 22 affected Stage 4 reference reactions, then rerun Stage 4 if that rule changes the frozen corpus; no other next step is authorized by this execution contract."
+}

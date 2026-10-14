@@ -1,0 +1,5 @@
+category,unique_rows,raw_weight,component_counts,reasons
+all_clean,4946,176385,"{""1"": 4748, ""2"": 188, ""3"": 4, ""4"": 5, ""6"": 1}","{""none"": 4748, ""multiple_products_undefined"": 198}"
+multi_product,198,12804,"{""2"": 188, ""3"": 4, ""4"": 5, ""6"": 1}","{""multiple_products_undefined"": 198}"
+single_product,4748,163581,"{""1"": 4748}","{""none"": 4748}"
+invalid_for_sc_ecdf,198,12804,"{""2"": 188, ""3"": 4, ""4"": 5, ""6"": 1}","{""multiple_products_undefined"": 198}"

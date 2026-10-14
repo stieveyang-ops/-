@@ -1,0 +1,16 @@
+{
+  "stage": 10,
+  "superseded_cycle": "stage10_v2.1",
+  "superseding_cycle": "stage10_v2.2",
+  "status": "SUPERSEDED_INVALID_FOR_FINAL_REPORTING",
+  "reasons": [
+    "v2.1 did not run the three estimable leave-one-out two-feature models",
+    "v2.1 bootstrap rows did not include explicit undefined-metric reasons",
+    "v2.1 benchmark JSON did not include complete comparator provenance hashes"
+  ],
+  "v2.1_manifest_path": "reports/stage10_manifest_v21.json",
+  "v2.1_receipt_path": "reports/stage10_unseal_receipt_v21.json",
+  "v2.1_outputs_preserved": true,
+  "locked_test_modified": "NO",
+  "stage2_9_modified": "NO"
+}

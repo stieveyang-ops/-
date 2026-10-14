@@ -1,0 +1,56 @@
+{
+  "stage": 8,
+  "status": "PASS",
+  "split_strategy": "StratifiedGroupKFold",
+  "random_state": 42,
+  "target_test_fraction": 0.2,
+  "actual_test_fraction": 0.16151202749140894,
+  "development_reactions": 244,
+  "locked_test_reactions": 47,
+  "development_leakage_groups": 32,
+  "locked_test_leakage_groups": 5,
+  "development_class_counts": {
+    "0.0": 73,
+    "1.0": 98,
+    "2.0": 73
+  },
+  "locked_test_class_counts": {
+    "0.0": 15,
+    "1.0": 22,
+    "2.0": 10
+  },
+  "reaction_hash_overlap": 0,
+  "target_id_overlap": 0,
+  "leakage_group_overlap": 0,
+  "train_ids_sha256": "77B0BF7238686AE0339622181CD421923222A4F0961CD0FAC1722DD718ED30B4",
+  "test_ids_sha256": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+  "modeling_reaction_hashes": 291,
+  "abstain_excluded": 9,
+  "cv_fold_sizes": [
+    {
+      "fold": 0,
+      "train": 244,
+      "test": 47
+    },
+    {
+      "fold": 1,
+      "train": 224,
+      "test": 67
+    },
+    {
+      "fold": 2,
+      "train": 244,
+      "test": 47
+    },
+    {
+      "fold": 3,
+      "train": 258,
+      "test": 33
+    },
+    {
+      "fold": 4,
+      "train": 194,
+      "test": 97
+    }
+  ]
+}

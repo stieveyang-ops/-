@@ -1,0 +1,19 @@
+{
+  "stage": 10,
+  "cycle_version": "stage10_v2.2",
+  "status": "UNSEALED_ONCE",
+  "preanalysis_manifest_path": "reports/stage10_preanalysis_manifest_v22.json",
+  "preanalysis_manifest_sha256": "820ECCF6942C28280BFB5670726919B835E65921ACDB7DA6F77AE18035F60A71",
+  "locked_test_path": "data/splits/test_ids_locked.txt",
+  "locked_test_sha256": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+  "preunseal_test_report_path": "reports/stage10_preunseal_test_report_v22.json",
+  "preunseal_test_report_sha256": "5FE9D8F75A8C8590FAA5043C529185712D0DC7482C533A8ECFE753F3A0E64757",
+  "preunseal_test_completion_timestamp": "2026-09-12T15:31:12.165184+00:00",
+  "receipt_creation_timestamp": "2026-09-12T15:31:58.110584+00:00",
+  "temporal_ordering_verified": true,
+  "old_receipt_path": "reports/test_unseal_receipt.json",
+  "old_receipt_sha256": "E638A85CF118479A27539AFE630D6F0D54B77977E87516A57E55648DFB5AE9FF",
+  "old_receipt_preserved": true,
+  "locked_test_modified": "NO",
+  "stage11_started": "NO"
+}

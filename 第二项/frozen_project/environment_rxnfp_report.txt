@@ -1,0 +1,15 @@
+RXNFP ISOLATED ENVIRONMENT REPORT — PASS
+
+Package: rxnfp 0.1.0 from the official rxn4chemistry/rxnfp distribution.
+Environment: .conda-rxnfp\python.exe, Python 3.8.20, Windows x64.
+Reason for isolation: the legacy RXNFP dependency set cannot coexist with the AiZynthFinder 4.4.1 main environment without changing its NumPy/SciPy compatibility.
+Verified dependencies: NumPy 1.19.3, SciPy 1.4.1, RDKit 2022.09.5, pandas 1.3.5, PyTorch 2.4.1, Transformers 4.46.3.
+pip check: PASS.
+
+Smoke test:
+Reaction: CC(=O)O.Nc1ccccc1>>CC(=O)Nc1ccccc1
+Generator: RXNBERTFingerprintGenerator with get_default_model_and_tokenizer().
+Embedding dimension: 256.
+Finite values: true.
+
+No alternative fingerprint algorithm was installed or used. The main AiZynthFinder_New environment was not modified for RXNFP compatibility.

@@ -1,0 +1,83 @@
+{
+  "stage": 10,
+  "cycle_version": "stage10_v2.2",
+  "status": "PASS",
+  "created_at_utc": "2026-09-12T15:31:12.169708+00:00",
+  "preanalysis_manifest_path": "reports/stage10_preanalysis_manifest_v22.json",
+  "preanalysis_manifest_sha256": "820ECCF6942C28280BFB5670726919B835E65921ACDB7DA6F77AE18035F60A71",
+  "checks": [
+    {
+      "command": "E:\\Anaconda\\envs\\aizynth\\python.exe -m pytest -q tests/test_stage10_models.py tests/test_stage10_metrics.py tests/test_cluster_bootstrap.py tests/test_ablation.py tests/test_precedent_sensitivity.py tests/test_scscore_sensitivity.py tests/test_leakage_audit.py tests/test_stage10_integrity.py tests/test_stage10_v22_integrity.py",
+      "started_at_utc": "2026-09-12T15:29:38.582241+00:00",
+      "finished_at_utc": "2026-09-12T15:29:44.425626+00:00",
+      "exit_code": 0,
+      "stdout_tail": "...........                                                              [100%]\n11 passed in 5.00s\n",
+      "stderr_tail": "",
+      "status": "PASS"
+    },
+    {
+      "command": "E:\\Anaconda\\envs\\aizynth\\python.exe -m pytest -q",
+      "started_at_utc": "2026-09-12T15:29:44.425626+00:00",
+      "finished_at_utc": "2026-09-12T15:31:11.288388+00:00",
+      "exit_code": 0,
+      "stdout_tail": "................................ [ 70%]\n..............................                                           [100%]\n============================== warnings summary ===============================\nE:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\__init__.py:20\n  E:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\__init__.py:20: DeprecationWarning: The module rdkit.Chem.MolStandardize.standardize is deprecated and will be removed in the next release.\n    from .standardize import (Standardizer, canonicalize_tautomer_smiles,\n\nE:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\standardize.py:23\n  E:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\standardize.py:23: DeprecationWarning: The module rdkit.Chem.MolStandardize.charge is deprecated and will be removed in the next release.\n    from .charge import ACID_BASE_PAIRS, CHARGE_CORRECTIONS, Reionizer, Uncharger\n\nE:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\standardize.py:24\n  E:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\standardize.py:24: DeprecationWarning: The module rdkit.Chem.MolStandardize.fragment is deprecated and will be removed in the next release.\n    from .fragment import PREFER_ORGANIC, FragmentRemover, LargestFragmentChooser\n\nE:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\standardize.py:25\n  E:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\standardize.py:25: DeprecationWarning: The module rdkit.Chem.MolStandardize.metal is deprecated and will be removed in the next release.\n    from .metal import MetalDisconnector\n\nE:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\standardize.py:26\n  E:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\standardize.py:26: DeprecationWarning: The module rdkit.Chem.MolStandardize.normalize is deprecated and will be removed in the next release.\n    from .normalize import MAX_RESTARTS, NORMALIZATIONS, Normalizer\n\nE:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\standardize.py:27\n  E:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\standardize.py:27: DeprecationWarning: The module rdkit.Chem.MolStandardize.tautomer is deprecated and will be removed in the next release.\n    from .tautomer import (MAX_TAUTOMERS, TAUTOMER_SCORES, TAUTOMER_TRANSFORMS, TautomerCanonicalizer,\n\nE:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\__init__.py:22\n  E:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\__init__.py:22: DeprecationWarning: The module rdkit.Chem.MolStandardize.validate is deprecated and will be removed in the next release.\n    from .validate import Validator, validate_smiles\n\nE:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\validate.py:24\n  E:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rdkit\\Chem\\MolStandardize\\validate.py:24: DeprecationWarning: The module rdkit.Chem.MolStandardize.validations is deprecated and will be removed in the next release.\n    from .validations import VALIDATIONS\n\nE:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rxnutils\\routes\\utils\\validation.py:28\n  E:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\rxnutils\\routes\\utils\\validation.py:28: PydanticDeprecatedSince20: The `update_forward_refs` method is deprecated; use `model_rebuild` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/\n    MoleculeNode.update_forward_refs()\n\ntests/test_difficulty_model.py::test_model_save_load_prediction_reproducible\n  C:\\Users\\Pasem\\AppData\\Roaming\\Python\\Python310\\site-packages\\statsmodels\\base\\model.py:595: HessianInversionWarning: Inverting hessian failed, no bse or cov_params available\n    warnings.warn('Inverting hessian failed, no bse or cov_params '\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n102 passed, 10 warnings in 78.27s (0:01:18)\n",
+      "stderr_tail": "",
+      "status": "PASS"
+    },
+    {
+      "command": "E:\\Anaconda\\envs\\aizynth\\python.exe scripts/12_leakage_audit.py",
+      "started_at_utc": "2026-09-12T15:31:11.288388+00:00",
+      "finished_at_utc": "2026-09-12T15:31:12.165184+00:00",
+      "exit_code": 0,
+      "stdout_tail": "{\n  \"exact_match_count\": 0,\n  \"duplicate_hash_count\": 0,\n  \"train_test_target_overlap\": 0,\n  \"train_test_reaction_overlap\": 0,\n  \"train_test_leakage_group_overlap\": 0,\n  \"reference_test_exact_overlap_raw\": 0,\n  \"reference_test_exact_overlap\": 0,\n  \"reference_test_exact_overlap_effective\": 0,\n  \"reference_train_exact_overlap_raw\": 0,\n  \"benchmark_exact_exclusion_verified\": true,\n  \"label_duplicate_conflict_count\": 0,\n  \"status\": \"PASS\",\n  \"stage\": 10,\n  \"reference_metadata_sha256\": \"7062193C9936AA08FF2E43DB9BBA7C1B1269CC9FED12DE0A85827CAFF1EEB2AB\",\n  \"benchmark_reaction_hashes\": 300,\n  \"timestamp_utc\": \"2026-09-12T15:31:12.124015+00:00\"\n}\n",
+      "stderr_tail": "",
+      "status": "PASS"
+    }
+  ],
+  "hash_checks": {
+    "locked_test_sha256": {
+      "expected": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+      "actual": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+      "status": "PASS"
+    },
+    "stage8_model_sha256": {
+      "expected": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+      "actual": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+      "status": "PASS"
+    },
+    "stage8_model_metadata_sha256": {
+      "expected": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055",
+      "actual": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055",
+      "status": "PASS"
+    },
+    "stage9_ranking_sha256": {
+      "expected": "8EB0A886716FA8F7CAD6EB25B828BBFB0B95ED3B1B1E9D637AEB3578F572CF01",
+      "actual": "8EB0A886716FA8F7CAD6EB25B828BBFB0B95ED3B1B1E9D637AEB3578F572CF01",
+      "status": "PASS"
+    }
+  },
+  "v22_formal_artifacts_present_before_unseal": {
+    "data/benchmark/stage10_benchmark_reactions_v22.parquet": false,
+    "outputs/stage10_locked_test_predictions_v22.parquet": false,
+    "reports/benchmark_results_v22.csv": false,
+    "reports/benchmark_results_v22.json": false,
+    "reports/bootstrap_metrics_v22.parquet": false,
+    "reports/model_pairwise_differences_v22.csv": false,
+    "reports/ablation_results_v22.csv": false,
+    "reports/ablation_results_v22.json": false,
+    "reports/precedent_sensitivity_results_v22.csv": false,
+    "reports/precedent_sensitivity_results_v22.json": false,
+    "artifacts/sc_delta_mean_ecdf_stage10_v22.npz": false,
+    "reports/scscore_sensitivity_results_v22.csv": false,
+    "reports/scscore_sensitivity_results_v22.json": false,
+    "reports/leakage_audit_v22.json": false,
+    "reports/stage10_manifest_v22.json": false
+  },
+  "test_labels_read_for_metrics_before_unseal": false,
+  "test_predictions_read_before_unseal": false,
+  "benchmark_metrics_computed_before_unseal": false,
+  "test_tuning_before_unseal": false,
+  "model_retrained_before_unseal": false,
+  "locked_test_modified": "NO",
+  "stage11_started": "NO"
+}

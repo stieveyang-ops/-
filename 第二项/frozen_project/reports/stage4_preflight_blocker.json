@@ -1,0 +1,50 @@
+﻿{
+    "stage":  4,
+    "status":  "BLOCKED",
+    "code":  "BLOCKED_REFERENCE_DATA_REQUIRED",
+    "timestamp_utc":  "2026-09-11T00:39:02.8290208Z",
+    "preconditions":  {
+                          "stage1_environment":  "PASS",
+                          "stage2_frozen_inputs":  "PASS",
+                          "stage3_outputs":  "PASS",
+                          "stage2_canonicalization_tests":  "PASS",
+                          "rxnfp_runtime":  {
+                                                "status":  "PASS",
+                                                "mode":  "isolated_environment",
+                                                "interpreter":  ".conda-rxnfp\\python.exe",
+                                                "package_version":  "0.1.0",
+                                                "embedding_dimension":  256
+                                            },
+                          "reference_source":  "BLOCKED"
+                      },
+    "blocker":  {
+                    "reason":  "No user-specified, legally readable reference corpus was provided.",
+                    "required_config_fields":  [
+                                                   "reference.source_type",
+                                                   "reference.input_path",
+                                                   "reference.source_name",
+                                                   "reference.reaction_column (for generic/csv/parquet sources)"
+                                               ],
+                    "observed":  {
+                                     "precedent_config_exists":  false,
+                                     "reference_directory_exists":  false,
+                                     "reference_corpus_found":  false,
+                                     "stage2_uspto_expansion_policy_is_reference_source":  false
+                                 },
+                    "not_performed":  [
+                                          "reference corpus import/cleaning",
+                                          "reference embedding generation",
+                                          "nearest-neighbour index construction",
+                                          "precedent search smoke tests",
+                                          "stage4 PASS manifest"
+                                      ]
+                },
+    "preserved":  {
+                      "stage2_reaction_steps_raw_sha256":  "611B4F7DA5C701D093BA3D36B1E79EF76F08DEDFA6E3A1D9397814C532FF43DF",
+                      "stage2_routes_raw_sha256":  "5FA6489B6DF5437066F42AC1323C179C0871F711ACFE9BC3435A0C63221F49BE",
+                      "stage2_chemistry_py_sha256":  "F6A71B210F152096D41F94713ECDCAADC58FA2653FAE7706A0C6A316C55C8E38",
+                      "stage3_outputs_modified":  false,
+                      "aizynthfinder_modified":  false
+                  },
+    "next_required_user_action":  "Provide a legally usable local reference corpus path and explicitly specify source_type/source_name; for generic CSV/TSV/Parquet also specify reaction_column and optional source_id_column."
+}

@@ -1,0 +1,21 @@
+{
+  "features": [
+    "difficulty_dev"
+  ],
+  "distribution": "logit",
+  "optimizer": "bfgs + maxiter=1000",
+  "converged": true,
+  "parameters": {
+    "difficulty_dev": -0.0017941785640615939,
+    "0/1": -0.922461672123486,
+    "1/2": 0.5324333816923018
+  },
+  "label_order": {
+    "0": "Easy",
+    "1": "Medium",
+    "2": "Difficult"
+  },
+  "model": "E",
+  "cycle_version": "stage10_v2.2",
+  "development_ids_sha256": "77B0BF7238686AE0339622181CD421923222A4F0961CD0FAC1722DD718ED30B4"
+}

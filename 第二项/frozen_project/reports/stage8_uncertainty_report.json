@@ -1,0 +1,20 @@
+{
+  "stage": 8,
+  "status": "PASS",
+  "development_n": 244,
+  "u_dev_min": 0.001646774821837893,
+  "u_dev_max": 0.9983702919765545,
+  "u_dev_mean": 0.4133113492666782,
+  "u_dev_median": 0.46255358144147013,
+  "q33": 0.3005421128682305,
+  "q67": 0.5006582129614043,
+  "quantile_method": "linear",
+  "confidence_counts": {
+    "Medium": 82,
+    "Low": 81,
+    "High": 81
+  },
+  "source": "development only",
+  "locked_test_used": false,
+  "formula": "[4*P_feas*(1-P_feas)+(1-P_prec)]/2"
+}

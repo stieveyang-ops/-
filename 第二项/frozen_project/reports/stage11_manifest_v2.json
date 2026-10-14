@@ -1,0 +1,102 @@
+{
+  "audit_type": "stage11_manifest_v2",
+  "stage": 11,
+  "cycle": "statsmodels_environment_remediation_v2",
+  "status": "PASS_FINAL_RELEASE",
+  "created_at_utc": "2026-09-12T18:55:00Z",
+  "project_root": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty",
+  "target_python": "E:\\Anaconda\\envs\\aizynth\\python.exe",
+  "runtime": {
+    "python_version": "3.10.20",
+    "sys_prefix": "E:\\Anaconda\\envs\\aizynth",
+    "user_site_enabled_under_python_s": false,
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.0",
+    "scipy": "1.15.2",
+    "statsmodels": "0.14.4",
+    "statsmodels_file": "E:\\Anaconda\\envs\\aizynth\\Lib\\site-packages\\statsmodels\\__init__.py",
+    "ordered_model_import": true,
+    "rdkit": "2023.09.6",
+    "aizynthfinder": "4.4.1",
+    "pytest_support": "C:\\Users\\Pasem\\AppData\\Roaming\\Python\\Python310\\site-packages",
+    "sklearn_support": "C:\\Users\\Pasem\\AppData\\Roaming\\Python\\Python310\\site-packages"
+  },
+  "dependency_validation": {
+    "report": "reports/stage11_dependency_validation_v2.json",
+    "log": "reports/stage11_dependency_validation_v2.log",
+    "status": "PASS",
+    "report_sha256": "8451CFD380994F24D505E3EDEF91678B69054869522D0F322CB98F946BC7F59C",
+    "log_sha256": "DD8CF946FF0377BAD1382458C18BA62A2654C686D7D5520CECAA4E5C506151D2"
+  },
+  "git": {
+    "baseline_commit": "2a70b62bff404c6b481c0afd258c69389417b330",
+    "head_before_release_commit": "1d4a101aea0af53a95361f503ecc79f9e619109a",
+    "release_commit": "090875a4b71fce72615b6c76f7dc0d761f289865",
+    "release_commit_tree": "f461baa750f1a43397e7c246961dd772a56575a9",
+    "release_tag": "reaction-difficulty-v1.0",
+    "history_rewritten": false
+  },
+  "frozen_stage2_10_files": {
+    "data/generated/routes_raw.json": "5FA6489B6DF5437066F42AC1323C179C0871F711ACFE9BC3435A0C63221F49BE",
+    "data/processed/reaction_steps_raw.parquet": "611B4F7DA5C701D093BA3D36B1E79EF76F08DEDFA6E3A1D9397814C532FF43DF",
+    "data/processed/reaction_features.parquet": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+    "data/reference/reference_reactions_clean.parquet": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+    "data/reference/reference_reactions.parquet": "4F0B098E97B8465E38F2B900BB4BCC8C9B5ECC43709D91FAC570470EF0E6970B",
+    "data/reference/reference_reactions_rejected.parquet": "8CD219229FEC58C7FC784A20C8B8BBDCCBC6781ECAAAEC35B84352C5DD3BC6DF",
+    "artifacts/reference_rxnfp.npy": "37766193FEADD7C05CB97FF6285AF5D791A7FCF0EB37CE5D311D481DAD115E44",
+    "artifacts/reference_metadata.parquet": "7062193C9936AA08FF2E43DB9BBA7C1B1269CC9FED12DE0A85827CAFF1EEB2AB",
+    "artifacts/reference_nn_index.joblib": "BB0B2D99E7D461604F5B498E56AB9206B587B1935B785959A9CDB715ED24CBB9",
+    "data/processed/reaction_precedent.parquet": "B5697790CF3D502A0F197F2A6E6007DCE458DCD743D5EBBF1AFE7B1863F57A80",
+    "data/processed/reaction_sc_normalized.parquet": "26DFF4A3603975E47FBC440CF22409E9F22873A382BD7FD3353C6D1BC1CF2EB7",
+    "artifacts/sc_delta_ecdf.npz": "3F82C235D0B48F6CADA66461E1664B68DA310593E0D76992C3CA546D6E68F6C5",
+    "data/processed/reaction_feasibility.parquet": "11CEC9A29C108DB3402793A48F2E49FD7883338DF4998EE019CBCD2E2ABFBDF4",
+    "data/processed/reaction_sc_raw.parquet": "91E01FF220538DC3C9B3FAD6EE87B28520C45169235C3BECC74EBBD95E25D1BE",
+    "data/splits/test_ids_locked.txt": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+    "data/splits/train_ids.txt": "77B0BF7238686AE0339622181CD421923222A4F0961CD0FAC1722DD718ED30B4",
+    "data/labels/final_expert_labels.parquet": "F5BA0C82D24DBADD0EC6169246966C492C99EA69E66A95E641B08CD38F0FB72D",
+    "artifacts/difficulty_model.pkl": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+    "artifacts/difficulty_model_metadata.json": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055",
+    "outputs/scored_reactions.parquet": "C4A24417197B1ABAC2B22987C3A1352F27D4953456D7F465F7F7146DA784CAFF",
+    "outputs/scored_routes.parquet": "8EB0A886716FA8F7CAD6EB25B828BBFB0B95ED3B1B1E9D637AEB3578F572CF01",
+    "outputs/scored_routes.json": "AB0EAA1B08D49C4F702B448018B53BC56F1FC8811B32EC67B81F90FC7853F59A",
+    "reports/stage10_manifest_v22.json": "C457773111ADB9BE5DD165F0E8B80DAF78F4521225C50A72F6C77E79FCF63F04",
+    "reports/stage10_preanalysis_manifest_v22.json": "820ECCF6942C28280BFB5670726919B835E65921ACDB7DA6F77AE18035F60A71",
+    "reports/stage10_preunseal_test_report_v22.json": "5FE9D8F75A8C8590FAA5043C529185712D0DC7482C533A8ECFE753F3A0E64757",
+    "reports/stage10_unseal_receipt_v22.json": "E923BC093786F31CE2AD081BEDDD84E634193846A5AB49461DBFB406A98D3C58"
+  },
+  "locked_test": {
+    "path": "data/splits/test_ids_locked.txt",
+    "sha256": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+    "modified": false
+  },
+  "external_ord": {
+    "path": "E:\\ord-data-github-05fe1a6",
+    "manifest": "E:\\ord-data-github-05fe1a6\\ord_manifest.json",
+    "manifest_sha256": "AEAF164127C07E22FFC8C10AFFE1FC643DADE0D34E3A8BA10AE53B0CBBEE1832",
+    "revision": "05fe1a62cb36d6bc3c07592ac1bd4ff1a4d8e43c",
+    "file_count": 49,
+    "not_copied_into_git": true
+  },
+  "stage11_checks": {
+    "specialized_tests": "4 passed",
+    "full_pytest": "106 passed",
+    "full_pytest_command": "E:\\Anaconda\\envs\\aizynth\\python.exe -s -m pytest -q (pytest/sklearn support explicitly supplied from existing user site; statsmodels remained environment-local)",
+    "full_pytest_isolated_dependency_gate": "PASS",
+    "release_qa": "PASS",
+    "reproducibility": "PASS",
+    "clean_environment_e2e": "PASS",
+    "formal_e2e": {"reaction_rows": 828, "route_count": 358, "target_count": 40},
+    "deterministic_output_hashes": {
+      "scored_routes.json": "F039DDF4E6DE25C6CCB9F969D632651EE111FC23F33C2AF93D03908C6B8453E8",
+      "scored_reactions.parquet": "A7ED126D108EA45D4BD76D337B3F3F74586270352D01E0BF8DA6C05D803B503F",
+      "scored_routes.csv": "DF9085D0D4063E31B33ECF4702FEF7567A798B6692FB6894E8A57529CC744755"
+    }
+  },
+  "stage12_started": false,
+  "stage2_10_modified": false,
+  "expert_labels_modified": false,
+  "test_set_tuning": false,
+  "training_or_refit_during_inference": false,
+  "release_gate_statement": "All required Stage 11 dependency, inference, reproducibility, QA, and test gates passed; Stage 12 was not started."
+}

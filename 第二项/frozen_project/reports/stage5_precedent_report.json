@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "n_queries": 828,
+  "mode": "deployment",
+  "tau": 0.8,
+  "n0": 10.0,
+  "s_max_min": 0.3459718991323588,
+  "s_max_max": 0.9983626575858489,
+  "n_analog_min": 0,
+  "n_analog_max": 592,
+  "p_prec_min": 0.0,
+  "p_prec_max": 0.9983626575858489,
+  "d_prec_min": 0.001637342414151144,
+  "d_prec_max": 1.0,
+  "n_exact_hash_excluded": 0,
+  "reference_corpus_sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+  "rxnfp_artifact_sha256": "37766193FEADD7C05CB97FF6285AF5D791A7FCF0EB37CE5D311D481DAD115E44",
+  "output_sha256": "B5697790CF3D502A0F197F2A6E6007DCE458DCD743D5EBBF1AFE7B1863F57A80",
+  "timestamp_utc": "2026-09-11T06:14:00.036948+00:00"
+}

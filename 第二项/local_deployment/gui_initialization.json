@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "title": "AiZynthFinder - Independent Prospective Scoring",
+  "python": "C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\python.exe",
+  "project_dir": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project",
+  "output_root": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs",
+  "search_parameters": {
+    "iteration_limit": 100,
+    "time_limit": 120.0,
+    "max_transforms": 6,
+    "max_routes": 10,
+    "min_routes": 3
+  }
+}

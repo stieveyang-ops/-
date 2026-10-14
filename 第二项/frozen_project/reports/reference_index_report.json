@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "backend": "sklearn",
+  "metric": "cosine",
+  "algorithm": "brute",
+  "n_embeddings": 4946,
+  "embedding_sha256": "37766193FEADD7C05CB97FF6285AF5D791A7FCF0EB37CE5D311D481DAD115E44",
+  "metadata_sha256": "7062193C9936AA08FF2E43DB9BBA7C1B1269CC9FED12DE0A85827CAFF1EEB2AB",
+  "index_sha256": "BB0B2D99E7D461604F5B498E56AB9206B587B1935B785959A9CDB715ED24CBB9",
+  "build_elapsed_seconds": 0.029369000003498513,
+  "timestamp_utc": "2026-09-11T01:49:11.187907+00:00"
+}

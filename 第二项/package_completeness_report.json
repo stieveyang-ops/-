@@ -1,0 +1,19 @@
+﻿{
+    "status":  "BLOCKED",
+    "package_root":  "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项",
+    "generated_at":  "2026-10-14T02:37:40.5058187Z",
+    "copy_semantics":  "Copied package; source was not moved or edited.",
+    "source_project_required_at_runtime":  false,
+    "included_top_level_components":  "prospective_difficulty_tool; frozen_project; external_public_data/public_data",
+    "included_file_count":  29424,
+    "included_bytes":  3277619589,
+    "excluded_items":  ".git metadata/history; cache directories; old validation/output directories; machine-wide Conda environment",
+    "required_file_count":  28,
+    "forbidden_directories_found_count":  0,
+    "forbidden_directories_first_entries":  "",
+    "hash_inventory":  "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\package_files_sha256.csv",
+    "environment_validation_status":  "BLOCKED",
+    "environment_validation_log":  "C:\\Users\\18706\\OneDrive\\Desktop\\黑客松\\待提交作品\\第二项\\package_completeness_validation.log",
+    "warnings":  "",
+    "errors":  "validate_environment.py failed; see package_completeness_validation.log"
+}

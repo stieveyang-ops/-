@@ -1,0 +1,31 @@
+{
+  "audit_type": "stage11_reproducibility_v2",
+  "status": "PASS",
+  "run_1": {
+    "output_dir": "outputs/stage11_release_v2",
+    "scored_routes_sha256": "F039DDF4E6DE25C6CCB9F969D632651EE111FC23F33C2AF93D03908C6B8453E8",
+    "scored_reactions_sha256": "A7ED126D108EA45D4BD76D337B3F3F74586270352D01E0BF8DA6C05D803B503F",
+    "reaction_count": 828,
+    "route_count": 358
+  },
+  "run_2": {
+    "output_dir": "outputs/stage11_release_v2_repeat",
+    "scored_routes_sha256": "F039DDF4E6DE25C6CCB9F969D632651EE111FC23F33C2AF93D03908C6B8453E8",
+    "scored_reactions_sha256": "A7ED126D108EA45D4BD76D337B3F3F74586270352D01E0BF8DA6C05D803B503F",
+    "reaction_count": 828,
+    "route_count": 358
+  },
+  "clean_environment_run": {
+    "output_dir": "outputs/stage11_clean_environment_v2",
+    "command": "E:\\Anaconda\\envs\\aizynth\\python.exe -s scripts/run_difficulty_pipeline.py",
+    "status": "PASS",
+    "scored_routes_sha256": "F039DDF4E6DE25C6CCB9F969D632651EE111FC23F33C2AF93D03908C6B8453E8",
+    "scored_reactions_sha256": "A7ED126D108EA45D4BD76D337B3F3F74586270352D01E0BF8DA6C05D803B503F"
+  },
+  "route_ranks_identical": true,
+  "scientific_content_identical": true,
+  "max_abs_numeric_difference": 0.0,
+  "allowed_metadata_differences": ["run metadata timestamp"],
+  "labels_or_locked_test_read": false,
+  "training_or_refit": false
+}

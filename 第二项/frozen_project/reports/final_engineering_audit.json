@@ -1,0 +1,18 @@
+{
+  "audit_type": "stage11_final_engineering_audit",
+  "status": "BLOCKED",
+  "pytest_pass": true,
+  "specialized_tests_pass": true,
+  "e2e_pass": true,
+  "reproducibility_pass": true,
+  "clean_environment_pass": false,
+  "output_schema_pass": true,
+  "provenance_pass": true,
+  "explanation_deterministic_pass": true,
+  "inference_without_labels_pass": true,
+  "no_training_during_inference_pass": true,
+  "atomic_write_pass": true,
+  "git_clean_pass": false,
+  "blocked_reasons": ["BLOCKED_RELEASE_REPRODUCIBILITY", "BLOCKED_RELEASE_TEST_FAILURE"],
+  "note": "A clean-environment run cannot import OrderedModel without user-site; no release tag was created."
+}

@@ -1,0 +1,78 @@
+﻿STAGE 1 ENVIRONMENT REPORT — PASS
+
+Date: 2026-09-09
+OS: Microsoft Windows 11 Home, x64 (10.0.26200)
+Main environment: existing conda environment aizynth_new
+Python: 
+3.10.20
+ (
+C:\Users\Pasem\.conda\envs\aizynth_new\python.exe
+)
+AiZynthFinder: 4.4.1
+RDKit: 
+2023.9.6
+NumPy: 
+1.26.4
+pandas: 
+2.3.3
+ONNX Runtime: 
+1.23.2
+pytest: 
+8.4.2
+pip check: PASS — 
+No broken requirements found.
+
+RXNFP:
+- Mode: isolated_environment
+- Official package: rxnfp 0.1.0
+- Fixed RXNBERT smoke reaction generated a finite 256-dimensional fingerprint.
+- Isolated environment pip check: PASS.
+
+SCScore:
+- Source: official Connor Coley scscore repository, full_reaxys_model_1024bool/model.ckpt-10654.as_numpy.pickle.
+- Original downloaded file retained as artifacts/runtime/scscore/scscore_model_1024bool.pickle.
+- AiZynthFinder-compatible serialization uses the same weights: artifacts/runtime/scscore/scscore_model_1024bool_aizynth.pickle.
+- Smoke molecule CCO score: 
+1.000002384185791
+, finite and within expected 1–5 range.
+
+Runtime asset hashes:
+- Expansion model: 
+D:\aizynthfinder-work\public_data\uspto_model.onnx
+, SHA256 
+BD0A3CB74CD7068DE474C8FB789A00A66BC42C75636D66510CCAC585EBE928F8
+- Templates: 
+D:\aizynthfinder-work\public_data\uspto_templates.csv.gz
+, SHA256 
+A4F1945E90CFA195538320833D68AED38F14E2FCC2F8AFB5D958BC920EDCAFBE
+- Stock: 
+D:\aizynthfinder-work\public_data\zinc_stock.hdf5
+, SHA256 
+FF54C334C3DFC11882D5FA3024FDE3BE8CF3E38F979D93A39B9BE8CCA1A5DC85
+- QuickFilter: 
+D:\aizynthfinder-work\public_data\uspto_filter_model.onnx
+, SHA256 
+AD29AA32BDFCBE37065045546493806CF04899C55386C438905D83FB14BB6320
+- SCScore: 
+C:\Users\Pasem\Documents\Codex\2026-09-09\xia\aizynth-reaction-difficulty\artifacts\runtime\scscore\scscore_model_1024bool_aizynth.pickle
+, SHA256 
+0D7975D63D35492DE828C9C6D804821B9348D3103EE55685D1FDF956855D2980
+
+Configuration contract:
+- benchmark has filter section: false
+- production has QuickFilter: true
+- all non-filter settings identical: true
+- benchmark runtime filter collection: empty
+- production runtime filter collection: [uspto]
+
+Commands and results:
+- python -m pip install -e .: exit 0
+- python -m pip check: exit 0
+- python scripts/01_validate_configs.py: exit 0
+- python scripts/00_check_environment.py: exit 0
+- python -m pytest -q: exit 0 (3 passed)
+
+Warnings/limits:
+- RXNFP is isolated because its legacy dependencies are incompatible with the AiZynthFinder main environment. No substitute fingerprint was used.
+- No AiZynthFinder package source, data, expansion algorithms, policies, search rewards, or MCTS logic were modified.
+- No formal research targets or Stage-2 outputs were generated.

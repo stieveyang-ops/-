@@ -1,0 +1,221 @@
+{
+  "stage": 6,
+  "status": "PASS",
+  "created_at": "2026-09-11T11:27:54.255421+00:00",
+  "git_commit": null,
+  "git_commit_reason": "Project directory is not a Git worktree",
+  "python_version": "3.10.20",
+  "package_versions": {
+    "aizynthfinder": "4.4.1",
+    "rdkit": "2023.9.6",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.5.2",
+    "rxnfp": "0.1.0",
+    "ord-schema": "0.5.9",
+    "pyarrow": "25.0.0"
+  },
+  "input_files": {
+    "reaction_steps_raw": {
+      "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_steps_raw.parquet",
+      "sha256": "611B4F7DA5C701D093BA3D36B1E79EF76F08DEDFA6E3A1D9397814C532FF43DF"
+    },
+    "reaction_feasibility": {
+      "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_feasibility.parquet",
+      "sha256": "11CEC9A29C108DB3402793A48F2E49FD7883338DF4998EE019CBCD2E2ABFBDF4"
+    },
+    "reaction_sc_raw": {
+      "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_sc_raw.parquet",
+      "sha256": "91E01FF220538DC3C9B3FAD6EE87B28520C45169235C3BECC74EBBD95E25D1BE"
+    },
+    "reaction_precedent": {
+      "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_precedent.parquet",
+      "sha256": "B5697790CF3D502A0F197F2A6E6007DCE458DCD743D5EBBF1AFE7B1863F57A80"
+    },
+    "reaction_sc_normalized": {
+      "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_sc_normalized.parquet",
+      "sha256": "26DFF4A3603975E47FBC440CF22409E9F22873A382BD7FD3353C6D1BC1CF2EB7"
+    }
+  },
+  "upstream_manifests": {
+    "stage2_validation": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\reports\\stage2_validation.json",
+    "stage3_validation": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\reports\\stage3_validation.json",
+    "stage3_manifest": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\generated\\stage3_run_manifest.json",
+    "stage4_manifest": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\reports\\stage4_manifest.json",
+    "stage5_manifest": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\reports\\stage5_manifest.json"
+  },
+  "merge_key_columns": [
+    "target_id",
+    "route_id",
+    "step_id",
+    "reaction_hash"
+  ],
+  "row_count": 828,
+  "weights": {
+    "d_feas": 0.45,
+    "d_prec": 0.4,
+    "d_sc": 0.15
+  },
+  "baseline_label": "DEVELOPMENT BASELINE ONLY - NOT FINAL MODEL",
+  "frozen_stage5_identity": {
+    "tau": 0.8,
+    "n0": 10,
+    "precedent_mode": "deployment",
+    "reference_corpus_sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+    "reference_embedding_sha256": "37766193FEADD7C05CB97FF6285AF5D791A7FCF0EB37CE5D311D481DAD115E44",
+    "scscore_model_sha256": "0D7975D63D35492DE828C9C6D804821B9348D3103EE55685D1FDF956855D2980",
+    "ecdf_artifact_sha256": "3F82C235D0B48F6CADA66461E1664B68DA310593E0D76992C3CA546D6E68F6C5",
+    "rxnfp_model_identity": {
+      "package": "0.1.0",
+      "model_name": "bert_ft",
+      "dimension": 256,
+      "device": "cpu",
+      "interpreter": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\.conda-rxnfp\\python.exe"
+    }
+  },
+  "output": {
+    "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_features.parquet",
+    "sha256": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226"
+  },
+  "validation_summary": {
+    "stage": 6,
+    "status": "PASS",
+    "errors": [],
+    "warnings": [],
+    "created_at_utc": "2026-09-11T11:27:54.255421+00:00",
+    "baseline_label": "DEVELOPMENT BASELINE ONLY - NOT FINAL MODEL",
+    "input_audit": {
+      "reaction_steps_raw": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_steps_raw.parquet",
+        "sha256": "611B4F7DA5C701D093BA3D36B1E79EF76F08DEDFA6E3A1D9397814C532FF43DF",
+        "rows": 828
+      },
+      "reaction_feasibility": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_feasibility.parquet",
+        "sha256": "11CEC9A29C108DB3402793A48F2E49FD7883338DF4998EE019CBCD2E2ABFBDF4",
+        "rows": 828
+      },
+      "reaction_sc_raw": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_sc_raw.parquet",
+        "sha256": "91E01FF220538DC3C9B3FAD6EE87B28520C45169235C3BECC74EBBD95E25D1BE",
+        "rows": 828
+      },
+      "reaction_precedent": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_precedent.parquet",
+        "sha256": "B5697790CF3D502A0F197F2A6E6007DCE458DCD743D5EBBF1AFE7B1863F57A80",
+        "rows": 828
+      },
+      "reaction_sc_normalized": {
+        "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_sc_normalized.parquet",
+        "sha256": "26DFF4A3603975E47FBC440CF22409E9F22873A382BD7FD3353C6D1BC1CF2EB7",
+        "rows": 828
+      }
+    },
+    "merge_audit": {
+      "base_rows": 828,
+      "feasibility_rows_matched": 828,
+      "sc_raw_rows_matched": 828,
+      "precedent_rows_matched": 828,
+      "d_sc_rows_matched": 828,
+      "missing_keys": 0,
+      "extra_keys": 0,
+      "duplicate_keys": 0
+    },
+    "validation": {
+      "row_count": 828,
+      "finite_counts": {
+        "p_feas": 828,
+        "d_feas": 828,
+        "s_max": 828,
+        "p_prec": 828,
+        "d_prec": 828,
+        "d_sc": 828,
+        "sc_product": 828,
+        "sc_precursor_max": 828,
+        "delta_sc": 828,
+        "difficulty_dev": 828
+      },
+      "nan_count": 0,
+      "inf_count": 0,
+      "range_checks": {
+        "p_feas": true,
+        "d_feas": true,
+        "s_max": true,
+        "p_prec": true,
+        "d_prec": true,
+        "d_sc": true
+      },
+      "formula_checks": {
+        "d_feas": true,
+        "d_prec": true,
+        "delta_sc": true,
+        "difficulty_dev": true
+      },
+      "n_analog_integer_nonnegative": true,
+      "difficulty_dev": {
+        "min": 0.8333557351085286,
+        "median": 41.28472797039084,
+        "max": 92.41337371680952,
+        "q25": 24.757891264663606,
+        "q75": 54.721146207371845
+      }
+    },
+    "boundary_and_monotonicity_tests": {
+      "weight_sum": 1.0,
+      "boundaries": {
+        "all_easy": 0.0,
+        "all_hard": 100.0,
+        "feas_only": 45.0,
+        "precedent_only": 40.0,
+        "sc_only": 15.0
+      },
+      "monotonicity_deltas": {
+        "p_feas_drop": 4.5,
+        "p_prec_drop": 4.0,
+        "d_sc_rise": 1.5
+      },
+      "all_pass": true
+    },
+    "difficulty_dev_distribution": {
+      "min": 0.8333557351085286,
+      "median": 41.28472797039084,
+      "max": 92.41337371680952,
+      "q25": 24.757891264663606,
+      "q75": 54.721146207371845
+    },
+    "output": {
+      "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_features.parquet",
+      "sha256": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+      "rows": 828,
+      "columns": [
+        "target_id",
+        "route_id",
+        "step_id",
+        "reaction_hash",
+        "reaction_smiles",
+        "product_smiles",
+        "precursor_smiles",
+        "p_feas",
+        "d_feas",
+        "s_max",
+        "n_analog",
+        "p_prec",
+        "d_prec",
+        "sc_product",
+        "sc_precursor_max",
+        "delta_sc",
+        "d_sc",
+        "difficulty_dev"
+      ]
+    },
+    "scientific_boundary": {
+      "expert_labels_used": false,
+      "model_trained": false,
+      "missing_values_imputed": false,
+      "route_aggregation_or_ranking": false,
+      "aizynthfinder_modified": false,
+      "stage7_started": false
+    }
+  },
+  "stage7_started": false
+}

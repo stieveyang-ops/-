@@ -1,0 +1,139 @@
+{
+  "stage": 7,
+  "status": "COMPLETE",
+  "created_at_utc": "2026-09-11T11:55:38.192177+00:00",
+  "git_commit": null,
+  "git_commit_reason": "Project directory is not a Git worktree",
+  "python_version": "3.10.20",
+  "input_reaction_features_sha256": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+  "input_stage6_report_sha256": "9A2F6B58C452D27A7F409C1C86B758EF86A25DA48D597B276B11F2B8B99B7516",
+  "sampling_seed": 42,
+  "sampling_target_n": 300,
+  "sampling_minimum_n": 200,
+  "actual_sample_n": 300,
+  "n_experts": 3,
+  "expert_ids": [
+    "E01",
+    "E02",
+    "E03"
+  ],
+  "per_expert_shuffle_seeds": {
+    "E01": 4201,
+    "E02": 4202,
+    "E03": 4203
+  },
+  "reaction_id_scheme": "RXNANN_ + SHA256(reaction_hash + frozen_stage7_salt)[:16]",
+  "reaction_id_salt_hash": "7DF3D11F4453E17F92B2CF4125613B8B4B1D8C017F39986ADC67D8FBE50DBDE4",
+  "sampling_bin_edges": {
+    "feas": {
+      "quantile_tertiles": {
+        "q1": 0.8849717179934183,
+        "q2": 0.9993416865666708
+      },
+      "effective_edges": [
+        -Infinity,
+        0.8849717179934183,
+        0.9993416865666708,
+        Infinity
+      ],
+      "n_effective_bins": 3,
+      "unique_value_count": 516
+    },
+    "prec": {
+      "quantile_tertiles": {
+        "q1": 0.0,
+        "q2": 0.5830325039057839
+      },
+      "effective_edges": [
+        -Infinity,
+        0.0,
+        0.5830325039057839,
+        Infinity
+      ],
+      "n_effective_bins": 3,
+      "unique_value_count": 297
+    },
+    "dsc": {
+      "quantile_tertiles": {
+        "q1": 0.06830946363381071,
+        "q2": 0.32729570345408593
+      },
+      "effective_edges": [
+        -Infinity,
+        0.06830946363381071,
+        0.32729570345408593,
+        Infinity
+      ],
+      "n_effective_bins": 3,
+      "unique_value_count": 344
+    }
+  },
+  "blinded_master_sha256": "6C7135E308D1C7852DCE0BE211C9B07F09393490C8D1A7B1B900C45C3E2BAD4D",
+  "hidden_key_sha256": "F86B087099C79A3A7D2C80CBA633953F2EA8A0498F4083FCB5354031C5359B64",
+  "per_expert_template_sha256": {
+    "E01": "7E231E4200BF6391D89B526CE776C09528D3499ACA8F8A148A314EEF53D629E8",
+    "E02": "CD7E073C9E7DAE7DF288F6F52657B8DD85EF8D27FE33B8598E2D94F28F2B7B47",
+    "E03": "2CD3307A34561F53F93069C529115F0D536EC38CD27B4AFD48390D696032B1DB"
+  },
+  "agreement_method": "ordinal_krippendorff_alpha",
+  "expert_return_files": {
+    "E01": {
+      "path": "data/labels/raw_expert/annotation_E01_labeled.xlsx",
+      "sha256": "D6EABD735F73E13CDCFD5BCDFA1D91EA424605DF5B860944F2D0DDEF1B7B2F8F",
+      "rows": 300,
+      "label_counts": {"0": 88, "1": 120, "2": 85, "3": 7}
+    },
+    "E02": {
+      "path": "data/labels/raw_expert/annotation_E02_labeled.xlsx",
+      "sha256": "0DBE566DE8027B222A2447DFEEE5CFEB827161F87B71E7279F490B8BE37D6D69",
+      "rows": 300,
+      "label_counts": {"0": 74, "1": 130, "2": 40, "3": 56}
+    },
+    "E03": {
+      "path": "data/labels/raw_expert/annotation_E03_labeled.xlsx",
+      "sha256": "E7B43D93AF4950880AC153C8A33073B93D84A6E3050476150707B898670D94FC",
+      "rows": 300,
+      "label_counts": {"0": 185, "1": 23, "2": 83, "3": 9}
+    }
+  },
+  "long_annotations_sha256": "9FC137978FC20953C03ACC81F5B716D4D93E2E20B029A8AC426B9B3810977728",
+  "long_annotations_rows": 900,
+  "adjudication_required_sha256": "BAA9A3AA69E63801FA4CBDA6F54A607AF7D03C332DF3D3A134150E0B570CCFCC",
+  "adjudication_required_rows": 171,
+  "final_expert_labels_sha256": "F5BA0C82D24DBADD0EC6169246966C492C99EA69E66A95E641B08CD38F0FB72D",
+  "final_expert_labels_rows": 300,
+  "final_labeled_n": 291,
+  "final_abstain_n": 9,
+  "final_unanimous_n": 129,
+  "final_adjudication_n": 171,
+  "stage8_started": false,
+  "agreement_value": 0.7828435535149016,
+  "agreement_valid_n": 291,
+  "agreement_excluded_n": 9,
+  "samples_with_any_abstain": 56,
+  "human_gate": "STAGE_7_COMPLETE_STOP_BEFORE_STAGE_8",
+  "abstain_semantics": "missing_not_ordinal_level",
+  "pytest_summary": {
+    "pre_return_baseline": {
+      "command": "E:\\Anaconda\\envs\\aizynth\\python.exe -m pytest -q",
+      "exit_code": 0,
+      "passed": 74,
+      "failed": 0,
+      "warnings": 9
+    },
+    "post_return_stage7_targeted": {
+      "command": "E:\\Anaconda\\envs\\aizynth\\python.exe -m pytest -q tests/test_annotation_blinding.py tests/test_annotation_merge.py tests/test_interrater_agreement.py",
+      "exit_code": 0,
+      "passed": 6,
+      "failed": 0
+    },
+    "post_return_full_collection": {
+      "command": "E:\\Anaconda\\envs\\aizynth\\python.exe -m pytest -q (project root)",
+      "exit_code": 0,
+      "passed": 74,
+      "failed": 0,
+      "warnings": 9
+    }
+  },
+  "protocol_version": "stage7_expert_annotation_protocol_v1"
+}

@@ -1,0 +1,30 @@
+{
+  "stage": 3,
+  "schema_version": "stage3-feature-manifest-v1",
+  "input_reaction_steps": "data/processed/reaction_steps_raw.parquet",
+  "input_reaction_steps_sha256": "611B4F7DA5C701D093BA3D36B1E79EF76F08DEDFA6E3A1D9397814C532FF43DF",
+  "routes_raw_sha256": "5FA6489B6DF5437066F42AC1323C179C0871F711ACFE9BC3435A0C63221F49BE",
+  "aizynthfinder_version": "4.4.1",
+  "rdkit_version": "2023.09.6",
+  "quickfilter": {
+    "key": "uspto",
+    "model_path": "D:\\aizynthfinder-work\\public_data\\uspto_filter_model.onnx",
+    "model_sha256": "AD29AA32BDFCBE37065045546493806CF04899C55386C438905D83FB14BB6320",
+    "filter_cutoff": 0.05
+  },
+  "scscore": {
+    "model_path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\artifacts\\runtime\\scscore\\scscore_model_1024bool_aizynth.pickle",
+    "model_sha256": "0D7975D63D35492DE828C9C6D804821B9348D3103EE55685D1FDF956855D2980",
+    "implementation": "aizynthfinder.utils.sc_score.SCScore"
+  },
+  "definitions": {
+    "d_feas": "1 - p_feas",
+    "sc_precursor": "max SC over AiZynthFinder precursor molecule nodes",
+    "delta_sc": "sc_product - sc_precursor_max",
+    "delta_sc_normalized": false
+  },
+  "output_feasibility_sha256": "11CEC9A29C108DB3402793A48F2E49FD7883338DF4998EE019CBCD2E2ABFBDF4",
+  "output_sc_raw_sha256": "91E01FF220538DC3C9B3FAD6EE87B28520C45169235C3BECC74EBBD95E25D1BE",
+  "reaction_row_count": 828,
+  "timestamp_utc": "2026-09-09T15:17:33.819542+00:00"
+}

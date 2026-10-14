@@ -1,0 +1,19 @@
+{
+    "status":  "PASS",
+    "package_root":  "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2",
+    "generated_at":  "2026-10-09T01:23:02.6380383Z",
+    "copy_semantics":  "Copied package; source was not moved or edited.",
+    "source_project_required_at_runtime":  false,
+    "included_top_level_components":  "prospective_difficulty_tool; frozen_project; external_public_data/public_data",
+    "included_file_count":  29426,
+    "included_bytes":  3277616931,
+    "excluded_items":  ".git metadata/history; cache directories; old validation/output directories; machine-wide Conda environment",
+    "required_file_count":  28,
+    "forbidden_directories_found_count":  0,
+    "forbidden_directories_first_entries":  "",
+    "hash_inventory":  "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\package_files_sha256.csv",
+    "environment_validation_status":  "PASS",
+    "environment_validation_log":  "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\package_completeness_validation.log",
+    "warnings":  "",
+    "errors":  ""
+}

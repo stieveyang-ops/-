@@ -1,0 +1,349 @@
+{
+  "stage": 2,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "search_executed": true,
+  "benchmark_config": "config/config_benchmark.yml",
+  "benchmark_config_sha256": "07C118A0AC88A71A62C8D7B57B2EC1A76C39A71862751543A4796B09DD1F3EB3",
+  "expansion_policies_available": [
+    "uspto",
+    "ringbreaker"
+  ],
+  "stocks_available": [
+    "zinc"
+  ],
+  "nproc": 1,
+  "filter_loaded_for_search": false,
+  "expansion_policy_selected": "uspto",
+  "stock_selected": "zinc",
+  "command": [
+    "C:\\Users\\Pasem\\.conda\\envs\\aizynth_new\\python.exe",
+    "-m",
+    "aizynthfinder.interfaces.aizynthcli",
+    "--config",
+    "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\config\\config_benchmark.yml",
+    "--smiles",
+    "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\generated\\targets.smi",
+    "--policy",
+    "uspto",
+    "--stocks",
+    "zinc",
+    "--output",
+    "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\generated\\routes_raw.json"
+  ],
+  "return_code": 0,
+  "target_count": 40,
+  "route_count_total": 358,
+  "targets_without_routes": 0,
+  "routes_raw_sha256": "5FA6489B6DF5437066F42AC1323C179C0871F711ACFE9BC3435A0C63221F49BE",
+  "target_summary": [
+    {
+      "target": "Cc1ncc([N+](=O)[O-])n1CC(C)O",
+      "number_of_routes": 6,
+      "number_of_solved_routes": 42,
+      "is_solved": true,
+      "search_time": 6.0358381271
+    },
+    {
+      "target": "NC(=O)OC[C@H](N)Cc1ccccc1",
+      "number_of_routes": 11,
+      "number_of_solved_routes": 44,
+      "is_solved": true,
+      "search_time": 6.1213724613
+    },
+    {
+      "target": "N[C@H](C(=O)O)[C@H](O)c1ccc(O)c(O)c1",
+      "number_of_routes": 5,
+      "number_of_solved_routes": 1,
+      "is_solved": true,
+      "search_time": 6.0396134853
+    },
+    {
+      "target": "Cc1ccc(-c2ccc(C)cn2)nc1",
+      "number_of_routes": 5,
+      "number_of_solved_routes": 41,
+      "is_solved": true,
+      "search_time": 2.1056101322
+    },
+    {
+      "target": "N#Cc1ccc([C@H]2CCc3cncn32)c(F)c1",
+      "number_of_routes": 7,
+      "number_of_solved_routes": 0,
+      "is_solved": false,
+      "search_time": 7.3047039509000005
+    },
+    {
+      "target": "CCNC(C)Cc1cccc(C(F)(F)F)c1",
+      "number_of_routes": 23,
+      "number_of_solved_routes": 39,
+      "is_solved": true,
+      "search_time": 3.2052783966
+    },
+    {
+      "target": "CCOc1ccccc1OCC1CNCCO1",
+      "number_of_routes": 6,
+      "number_of_solved_routes": 34,
+      "is_solved": true,
+      "search_time": 3.8859786987
+    },
+    {
+      "target": "O=C(Cn1ccnc1[N+](=O)[O-])NCc1ccccc1",
+      "number_of_routes": 7,
+      "number_of_solved_routes": 29,
+      "is_solved": true,
+      "search_time": 0.38103508950000003
+    },
+    {
+      "target": "N#Cc1ccc(Oc2ccc3c(c2)COB3O)cc1",
+      "number_of_routes": 13,
+      "number_of_solved_routes": 36,
+      "is_solved": true,
+      "search_time": 1.4996268749000001
+    },
+    {
+      "target": "NC(=O)O[C@@H](Cn1ncnn1)c1ccccc1Cl",
+      "number_of_routes": 9,
+      "number_of_solved_routes": 0,
+      "is_solved": false,
+      "search_time": 11.4725682735
+    },
+    {
+      "target": "Clc1ccc(CCCOCCCN2CCCCC2)cc1",
+      "number_of_routes": 5,
+      "number_of_solved_routes": 98,
+      "is_solved": true,
+      "search_time": 1.7731528282
+    },
+    {
+      "target": "O=C(O)c1ccc2nc(-c3cc(Cl)cc(Cl)c3)oc2c1",
+      "number_of_routes": 6,
+      "number_of_solved_routes": 55,
+      "is_solved": true,
+      "search_time": 2.2411830425
+    },
+    {
+      "target": "CC(C)(CCCCCC(O)CCCCCC(C)(C)C(=O)O)C(=O)O",
+      "number_of_routes": 7,
+      "number_of_solved_routes": 26,
+      "is_solved": true,
+      "search_time": 4.9964497089
+    },
+    {
+      "target": "CSc1ccc(OCc2ncc([N+](=O)[O-])n2C)cc1",
+      "number_of_routes": 16,
+      "number_of_solved_routes": 42,
+      "is_solved": true,
+      "search_time": 2.1436810493
+    },
+    {
+      "target": "CC(C)n1c(=O)cc(N[C@@H](C)c2ccccc2)[nH]c1=O",
+      "number_of_routes": 6,
+      "number_of_solved_routes": 61,
+      "is_solved": true,
+      "search_time": 2.9542558193
+    },
+    {
+      "target": "CC(C)c1c(O)cc(/C=C/c2ccccc2)cc1O",
+      "number_of_routes": 6,
+      "number_of_solved_routes": 73,
+      "is_solved": true,
+      "search_time": 2.7952461243
+    },
+    {
+      "target": "COCCCN1CCC(NC(=O)c2cc(Cl)c(N)c3c2OCC3)CC1",
+      "number_of_routes": 7,
+      "number_of_solved_routes": 37,
+      "is_solved": true,
+      "search_time": 3.0357861519
+    },
+    {
+      "target": "C[C@H](NCc1ccc(OCc2cccc(F)c2)cc1)C(N)=O",
+      "number_of_routes": 7,
+      "number_of_solved_routes": 26,
+      "is_solved": true,
+      "search_time": 1.421122551
+    },
+    {
+      "target": "O=C(O)CNC(=O)C1C(=O)N(C2CCCCC2)C(=O)N(C2CCCCC2)C1=O",
+      "number_of_routes": 5,
+      "number_of_solved_routes": 8,
+      "is_solved": true,
+      "search_time": 5.775633812
+    },
+    {
+      "target": "C=CC(=O)N1C[C@H](Nc2ncnc3[nH]ccc23)CC[C@@H]1C",
+      "number_of_routes": 14,
+      "number_of_solved_routes": 67,
+      "is_solved": true,
+      "search_time": 2.9227464199
+    },
+    {
+      "target": "[O-][n+]1cccc(C(Cl)=NOC[C@H](O)CN2CCCCC2)c1",
+      "number_of_routes": 7,
+      "number_of_solved_routes": 19,
+      "is_solved": true,
+      "search_time": 4.9672307968
+    },
+    {
+      "target": "Cc1n[nH]c(C)c1CCCOc1cc(C(=O)O)ccc1F",
+      "number_of_routes": 18,
+      "number_of_solved_routes": 63,
+      "is_solved": true,
+      "search_time": 3.6929950714
+    },
+    {
+      "target": "CSc1ccc(C(=O)/C=C/c2cc(C)c(OC(C)(C)C(=O)O)c(C)c2)cc1",
+      "number_of_routes": 5,
+      "number_of_solved_routes": 80,
+      "is_solved": true,
+      "search_time": 2.736243248
+    },
+    {
+      "target": "O=C(O)CNC(=O)c1ncc(-c2cccc(Cl)c2)cc1O",
+      "number_of_routes": 13,
+      "number_of_solved_routes": 80,
+      "is_solved": true,
+      "search_time": 4.0900189877
+    },
+    {
+      "target": "CCCCCCOc1nsnc1C1=CCCN(C)C1",
+      "number_of_routes": 6,
+      "number_of_solved_routes": 11,
+      "is_solved": true,
+      "search_time": 3.104736805
+    },
+    {
+      "target": "CCN(CC)Cc1ccc2cc(COC(=O)Nc3ccc(C(=O)NO)cc3)ccc2c1",
+      "number_of_routes": 11,
+      "number_of_solved_routes": 44,
+      "is_solved": true,
+      "search_time": 8.195458889
+    },
+    {
+      "target": "CCO[C@H](COc1ccc(C(F)(F)F)cc1)CSc1ccc(OCC(=O)O)c(C)c1",
+      "number_of_routes": 5,
+      "number_of_solved_routes": 13,
+      "is_solved": true,
+      "search_time": 4.3523693085
+    },
+    {
+      "target": "O=[N+]([O-])c1cn2c(n1)OC[C@@H](OCc1ccc(OC(F)(F)F)cc1)C2",
+      "number_of_routes": 5,
+      "number_of_solved_routes": 24,
+      "is_solved": true,
+      "search_time": 2.9523944855
+    },
+    {
+      "target": "CN1CCC(C(=O)c2cccc(NC(=O)c3c(F)cc(F)cc3F)n2)CC1",
+      "number_of_routes": 5,
+      "number_of_solved_routes": 35,
+      "is_solved": true,
+      "search_time": 2.8632380962
+    },
+    {
+      "target": "CC(O)c1cc(C(=O)N[C@@H](C)Cn2ccc(-c3ccc(C#N)c(Cl)c3)n2)n[nH]1",
+      "number_of_routes": 10,
+      "number_of_solved_routes": 51,
+      "is_solved": true,
+      "search_time": 1.9085707664
+    },
+    {
+      "target": "CCn1c(=O)c2c(nc(/C=C/c3ccc(OC)c(OC)c3)n2C)n(CC)c1=O",
+      "number_of_routes": 8,
+      "number_of_solved_routes": 8,
+      "is_solved": true,
+      "search_time": 4.4277060032
+    },
+    {
+      "target": "CC(C)Oc1ccc(-c2nc(-c3cccc4c3CC[C@@H]4NCCO)no2)cc1C#N",
+      "number_of_routes": 5,
+      "number_of_solved_routes": 48,
+      "is_solved": true,
+      "search_time": 4.354839325
+    },
+    {
+      "target": "O=C(Cc1ccc(-c2ccc(OCCN3CCOCC3)cc2)cn1)NCc1ccccc1",
+      "number_of_routes": 17,
+      "number_of_solved_routes": 72,
+      "is_solved": true,
+      "search_time": 2.3745193481
+    },
+    {
+      "target": "CCC(=O)O[C@]1(C(=O)CO)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C",
+      "number_of_routes": 10,
+      "number_of_solved_routes": 10,
+      "is_solved": true,
+      "search_time": 7.7055983543
+    },
+    {
+      "target": "CNC(=O)c1ccc(-c2cnc3ncc(Cc4ccc5ncccc5c4)n3n2)cc1F",
+      "number_of_routes": 21,
+      "number_of_solved_routes": 74,
+      "is_solved": true,
+      "search_time": 4.4422478676
+    },
+    {
+      "target": "O=C(O)CSc1nnc(Br)n1-c1ccc(C2CC2)c2ccccc12",
+      "number_of_routes": 5,
+      "number_of_solved_routes": 15,
+      "is_solved": true,
+      "search_time": 7.4247920513
+    },
+    {
+      "target": "CS(=O)(=O)c1ccc(Oc2cc(F)cc(C#N)c2)c2c1[C@H](O)[C@H](F)[C@@H]2F",
+      "number_of_routes": 7,
+      "number_of_solved_routes": 0,
+      "is_solved": false,
+      "search_time": 5.5222587585
+    },
+    {
+      "target": "CCOc1ncc(C)c2c1[C@H](c1ccc(C#N)cc1OC)C(C(N)=O)=C(C)N2",
+      "number_of_routes": 12,
+      "number_of_solved_routes": 15,
+      "is_solved": true,
+      "search_time": 5.2161483765
+    },
+    {
+      "target": "C=CC(=O)N1CC[C@H](n2nc(C#Cc3cc(OC)cc(OC)c3)c3c(N)ncnc32)C1",
+      "number_of_routes": 12,
+      "number_of_solved_routes": 29,
+      "is_solved": true,
+      "search_time": 2.3942890167
+    },
+    {
+      "target": "Cc1nsc(-c2nnc3n2CCN(C(=O)c2ccc(F)cc2)[C@@H]3C)n1",
+      "number_of_routes": 5,
+      "number_of_solved_routes": 17,
+      "is_solved": true,
+      "search_time": 4.032715559
+    }
+  ],
+  "next_human_action": null,
+  "targets_csv_sha256": "603F73A0BC11E686A3160CAE6BDAFFCE59729AC254A2CB8AB59DC9540D30F919",
+  "targets_smi_sha256": "265F4806959CD18F8BC5D9406BB70C0AC0D54CB923A96484359AA0B552AC7A78",
+  "alignment": "PASS",
+  "raw_output_columns": [
+    "target",
+    "search_time",
+    "first_solution_time",
+    "first_solution_iteration",
+    "number_of_nodes",
+    "max_transforms",
+    "max_children",
+    "number_of_routes",
+    "number_of_solved_routes",
+    "top_score",
+    "is_solved",
+    "number_of_steps",
+    "number_of_precursors",
+    "number_of_precursors_in_stock",
+    "precursors_in_stock",
+    "precursors_not_in_stock",
+    "precursors_availability",
+    "policy_used_counts",
+    "profiling",
+    "stock_info",
+    "trees"
+  ]
+}

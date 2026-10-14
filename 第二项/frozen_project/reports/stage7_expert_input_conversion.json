@@ -1,0 +1,48 @@
+{
+  "stage": 7,
+  "files": {
+    "E01": {
+      "original_xlsx": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\raw_expert\\annotation_E01_labeled.xlsx",
+      "original_sha256": "D6EABD735F73E13CDCFD5BCDFA1D91EA424605DF5B860944F2D0DDEF1B7B2F8F",
+      "converted_csv": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\converted_expert\\E01.csv",
+      "converted_sha256": "03C44CFDFCBE8BFF9AABD957ECC670505C3C4D7452FD41BB788E4D3F4184C47B",
+      "rows": 300,
+      "columns": [
+        "reaction_id",
+        "reaction_smiles",
+        "reactants",
+        "product",
+        "expert_label"
+      ]
+    },
+    "E02": {
+      "original_xlsx": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\raw_expert\\annotation_E02_labeled.xlsx",
+      "original_sha256": "0DBE566DE8027B222A2447DFEEE5CFEB827161F87B71E7279F490B8BE37D6D69",
+      "converted_csv": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\converted_expert\\E02.csv",
+      "converted_sha256": "EB40B9DD432C37A7206097EBDCE34FA9712840915DECB2E273A4B54346C4D349",
+      "rows": 300,
+      "columns": [
+        "reaction_id",
+        "reaction_smiles",
+        "reactants",
+        "product",
+        "expert_label"
+      ]
+    },
+    "E03": {
+      "original_xlsx": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\raw_expert\\annotation_E03_labeled.xlsx",
+      "original_sha256": "E7B43D93AF4950880AC153C8A33073B93D84A6E3050476150707B898670D94FC",
+      "converted_csv": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\converted_expert\\E03.csv",
+      "converted_sha256": "88575251B1E5B545EF2434D76263156CE4069ABD4F46F682F2B9B343ADC27FB5",
+      "rows": 300,
+      "columns": [
+        "reaction_id",
+        "reaction_smiles",
+        "reactants",
+        "product",
+        "expert_label"
+      ]
+    }
+  },
+  "conversion": "read-only tabular conversion; labels and visible fields unchanged"
+}

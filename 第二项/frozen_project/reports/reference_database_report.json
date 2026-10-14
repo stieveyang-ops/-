@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "source_type": "ord",
+  "source_name": "Open Reaction Database (ORD) official GitHub default release, commit 05fe1a62cb36d6bc3c07592ac1bd4ff1a4d8e43c (2026-08-04; locally verified 2026-09-11)",
+  "input_path": "E:\\ord-data-github-05fe1a6",
+  "errors": [],
+  "warnings": [],
+  "input_manifest_path": "E:\\ord-data-github-05fe1a6\\ord_manifest.json",
+  "input_manifest_sha256": "AEAF164127C07E22FFC8C10AFFE1FC643DADE0D34E3A8BA10AE53B0CBBEE1832",
+  "input_file_count": 49,
+  "input_file_manifest_sha256": "4BBA503D2B8511798CB7D1D401B33652AA458311D96F5A19659AAFDB1EA74D73",
+  "reaction_column": null,
+  "payload_column": "reaction",
+  "source_id_column": "reaction_id",
+  "reaction_representation": "Native ORD Reaction protobuf bytes converted to transformation-only reactants>>products through ord-schema typed-role helpers; no reaction SMILES column was assumed.",
+  "ord_schema_helper": "ord_schema.message_helpers.smiles_from_compound",
+  "n_input": 178224,
+  "n_valid_before_dedup": 176385,
+  "n_clean_unique": 4946,
+  "n_exact_duplicates_removed": 171439,
+  "n_rejected": 1839,
+  "rejection_counts": {
+    "MALFORMED_REACTION": 288,
+    "RDKIT_PARSE_FAILED": 1551
+  },
+  "source_counts_before_dedup": {
+    "ord": 176385
+  },
+  "source_counts_after_dedup": {
+    "ord": 4946
+  },
+  "canonicalizer_file_sha256": "F6A71B210F152096D41F94713ECDCAADC58FA2653FAE7706A0C6A316C55C8E38",
+  "raw_import_parquet_sha256": "4F0B098E97B8465E38F2B900BB4BCC8C9B5ECC43709D91FAC570470EF0E6970B",
+  "clean_parquet_sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+  "rejected_parquet_sha256": "8CD219229FEC58C7FC784A20C8B8BBDCCBC6781ECAAAEC35B84352C5DD3BC6DF",
+  "license_or_terms": "CC-BY-SA-4.0; evidence E:/ord-data-github-metadata/LICENSE, README.md, CITATION.cff; official source https://github.com/open-reaction-database/ord-data",
+  "timestamp_utc": "2026-09-11T01:48:33.663568+00:00"
+}

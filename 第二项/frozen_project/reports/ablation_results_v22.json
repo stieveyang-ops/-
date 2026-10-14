@@ -1,0 +1,90 @@
+{
+  "stage": 10,
+  "cycle_version": "stage10_v2.2",
+  "status": "PASS",
+  "results": [
+    {
+      "ablation": "Full",
+      "source_model": "D",
+      "n_test": 47,
+      "kendall_tau_b": -0.03448731531164059,
+      "spearman_rho": -0.0476892883818471,
+      "macro_f1": 0.21256038647342992,
+      "balanced_accuracy": 0.3333333333333333,
+      "quadratic_weighted_kappa": 0.0
+    },
+    {
+      "ablation": "Feasibility-only",
+      "source_model": "A",
+      "n_test": 47,
+      "kendall_tau_b": 0.26900105943079666,
+      "spearman_rho": 0.3294498546012007,
+      "macro_f1": 0.21256038647342992,
+      "balanced_accuracy": 0.3333333333333333,
+      "quadratic_weighted_kappa": 0.0
+    },
+    {
+      "ablation": "Precedent-only",
+      "source_model": "B",
+      "n_test": 47,
+      "kendall_tau_b": -0.09305468755977471,
+      "spearman_rho": -0.11695258482824897,
+      "macro_f1": 0.21256038647342992,
+      "balanced_accuracy": 0.3333333333333333,
+      "quadratic_weighted_kappa": 0.0
+    },
+    {
+      "ablation": "Delta-SC-only",
+      "source_model": "C",
+      "n_test": 47,
+      "kendall_tau_b": -0.029958370833639163,
+      "spearman_rho": -0.047477393155956775,
+      "macro_f1": 0.21256038647342992,
+      "balanced_accuracy": 0.3333333333333333,
+      "quadratic_weighted_kappa": 0.0
+    },
+    {
+      "ablation": "Full-Feasibility",
+      "features": [
+        "d_prec",
+        "d_sc"
+      ],
+      "n_test": 47,
+      "kendall_tau_b": -0.12185518076779675,
+      "spearman_rho": -0.16563121128688707,
+      "macro_f1": 0.21256038647342992,
+      "balanced_accuracy": 0.3333333333333333,
+      "quadratic_weighted_kappa": 0.0,
+      "converged": true
+    },
+    {
+      "ablation": "Full-Precedent",
+      "features": [
+        "d_feas",
+        "d_sc"
+      ],
+      "n_test": 47,
+      "kendall_tau_b": 0.09196617416437493,
+      "spearman_rho": 0.11125417210968264,
+      "macro_f1": 0.21256038647342992,
+      "balanced_accuracy": 0.3333333333333333,
+      "quadratic_weighted_kappa": 0.0,
+      "converged": true
+    },
+    {
+      "ablation": "Full-Delta-SC",
+      "features": [
+        "d_feas",
+        "d_prec"
+      ],
+      "n_test": 47,
+      "kendall_tau_b": -0.020692389186984357,
+      "spearman_rho": -0.016375614097043176,
+      "macro_f1": 0.21256038647342992,
+      "balanced_accuracy": 0.3333333333333333,
+      "quadratic_weighted_kappa": 0.0,
+      "converged": true
+    }
+  ],
+  "leave_one_out": "PASS"
+}

@@ -1,0 +1,218 @@
+{
+  "stage": 5,
+  "status": "PASS",
+  "validation_status": "PASS",
+  "created_at_utc": "2026-09-11T06:22:40.495563+00:00",
+  "git_commit": null,
+  "git_commit_reason": "Project directory is not a Git worktree",
+  "python_version": "3.10.20",
+  "package_versions": {
+    "aizynthfinder": "4.4.1",
+    "rdkit": "2023.9.6",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.5.2",
+    "rxnfp": "0.1.0",
+    "ord_schema": "0.5.9",
+    "pyarrow": "25.0.1",
+    "scscore": "aizynthfinder.utils.sc_score.SCScore"
+  },
+  "input_files": {
+    "reaction_steps_raw": "data/processed/reaction_steps_raw.parquet",
+    "reaction_feasibility": "data/processed/reaction_feasibility.parquet",
+    "reaction_sc_raw": "data/processed/reaction_sc_raw.parquet",
+    "stage4_manifest": "reports/stage4_manifest.json",
+    "stage5_config": "config/stage5_features.yml"
+  },
+  "input_sha256": {
+    "reaction_steps_raw": "611B4F7DA5C701D093BA3D36B1E79EF76F08DEDFA6E3A1D9397814C532FF43DF",
+    "reaction_feasibility": "11CEC9A29C108DB3402793A48F2E49FD7883338DF4998EE019CBCD2E2ABFBDF4",
+    "reaction_sc_raw": "91E01FF220538DC3C9B3FAD6EE87B28520C45169235C3BECC74EBBD95E25D1BE",
+    "stage4_manifest": "4EE006512CB84F1E2F41392F8E59A092AC8D34F89FB922B96FF0479F03789B69",
+    "stage5_config": "334D3C707DFCC6B0E8ECED12B99E91E27657640EE5E995893FEA33137A085E22"
+  },
+  "reference_corpus_sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+  "reference_embedding_sha256": "37766193FEADD7C05CB97FF6285AF5D791A7FCF0EB37CE5D311D481DAD115E44",
+  "reference_metadata_sha256": "7062193C9936AA08FF2E43DB9BBA7C1B1269CC9FED12DE0A85827CAFF1EEB2AB",
+  "scscore_model_sha256": "0D7975D63D35492DE828C9C6D804821B9348D3103EE55685D1FDF956855D2980",
+  "rxnfp_model_identity": {
+    "package": "0.1.0",
+    "model_name": "bert_ft",
+    "dimension": 256,
+    "device": "cpu",
+    "interpreter": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\.conda-rxnfp\\python.exe"
+  },
+  "tau": 0.8,
+  "n0": 10,
+  "precedent_mode": "deployment",
+  "product_rule_version": "single_connected_product_only_v1",
+  "ecdf_definition": "#(delta<=x)/N",
+  "ecdf_side": "right",
+  "ecdf_n_reference_valid": 4748,
+  "ecdf_n_reference_invalid": 198,
+  "ecdf_invalid_reason_counts": {
+    "multiple_products_undefined": 198
+  },
+  "ecdf_invalid_duplicate_count_sum": 12804,
+  "output_files": {
+    "reaction_precedent": "data/processed/reaction_precedent.parquet",
+    "reference_sc_ecdf_audit": "data/reference/reference_sc_ecdf_audit.parquet",
+    "sc_delta_ecdf": "artifacts/sc_delta_ecdf.npz",
+    "reaction_sc_normalized": "data/processed/reaction_sc_normalized.parquet"
+  },
+  "output_sha256": {
+    "reaction_precedent": "B5697790CF3D502A0F197F2A6E6007DCE458DCD743D5EBBF1AFE7B1863F57A80",
+    "reference_sc_ecdf_audit": "10F47BB483F14EA3B3FBBED82A41E43F51C18355D7A4D04C058B80538027427F",
+    "sc_delta_ecdf": "3F82C235D0B48F6CADA66461E1664B68DA310593E0D76992C3CA546D6E68F6C5",
+    "reaction_sc_normalized": "26DFF4A3603975E47FBC440CF22409E9F22873A382BD7FD3353C6D1BC1CF2EB7"
+  },
+  "validation_report": "reports/stage5_validation.json",
+  "validation_status_detail": {
+    "status": "PASS",
+    "errors": [],
+    "warnings": [],
+    "precedent": {
+      "n_queries": 828,
+      "mode": "deployment",
+      "tau": 0.8,
+      "n0": 10.0,
+      "s_max_min": 0.3459718991323588,
+      "s_max_max": 0.9983626575858489,
+      "n_analog_min": 0,
+      "n_analog_max": 592,
+      "p_prec_min": 0.0,
+      "p_prec_max": 0.9983626575858489,
+      "n_exact_hash_excluded": 0
+    },
+    "sc_ecdf": {
+      "product_rule_version": "single_connected_product_only_v1",
+      "n_reference_total": 4946,
+      "n_reference_valid": 4748,
+      "n_reference_invalid": 198,
+      "invalid_reason_counts": {
+        "multiple_products_undefined": 198
+      },
+      "invalid_duplicate_count_sum": 12804,
+      "delta_min": -0.8148665428161621,
+      "delta_median": 0.7494872808456421,
+      "delta_max": 3.718854308128357,
+      "d_sc_min": 0.00021061499578770007,
+      "d_sc_max": 0.9901010951979781,
+      "ecdf_algorithm": "#(delta<=x)/N, side=right"
+    },
+    "integrity": {
+      "query_row_alignment": true,
+      "hash_alignment": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "determinism": "PASS",
+      "reference_corpus_sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+      "scscore_model_sha256": "0D7975D63D35492DE828C9C6D804821B9348D3103EE55685D1FDF956855D2980",
+      "ecdf_artifact_sha256": "3F82C235D0B48F6CADA66461E1664B68DA310593E0D76992C3CA546D6E68F6C5"
+    },
+    "timestamp_utc": "2026-09-11T06:22:40.319525+00:00",
+    "product_rule_audit": {
+      "status": "PASS",
+      "product_rule_version": "single_connected_product_only_v1",
+      "n_reference_clean_unique": 4946,
+      "n_multi_product_unique": 198,
+      "n_multi_product_raw_weight": 12804,
+      "n_single_product_unique": 4748,
+      "n_single_product_raw_weight": 163581,
+      "n_empty_or_unparseable_product": 0,
+      "n_other_invalid_for_sc_ecdf": 0,
+      "n_reference_sc_ecdf_eligible": 4748,
+      "invalid_counts_and_reasons": {
+        "multiple_products_undefined": 198
+      },
+      "audit_json_sha256": "AE2054414B64A344848AAE879FA8017532E5143DA03741F4F0BFF1C48EE3E6D6",
+      "audit_csv_sha256": "5AEBCB94135741815B25236672288DDFD866858E1AAD45A6EE94400168A034F7"
+    },
+    "canonicalization_audit": {
+      "status": "PASS",
+      "path": "reports/stage4_canonicalization_audit.json",
+      "csv_path": "reports/stage4_canonicalization_audit.csv",
+      "sha256": "F292DFB751D3AD719A4BF2E18EBBA6F3FBE7D025DDDBDDC3C68195C6722CCFB4",
+      "csv_sha256": "405E229342002ADA171FCA60F620B90F3F367E9007E148ED767D719C7528F044",
+      "canonicalization_version": "stage2_aiz_rd_chemistry_v1",
+      "raw_valid_transformation_rows": 176385,
+      "clean_unique_rows": 4946,
+      "recanonicalization_errors": 0,
+      "clean_hash_frequency_mismatches": 0,
+      "mapping_removed": true,
+      "agent_block_removed": true,
+      "stereochemistry_preserved": true,
+      "formal_charge_preserved": true,
+      "isotope_preserved": true,
+      "salts_ions_small_molecules_preserved": true,
+      "disconnected_components_preserved": true,
+      "neutralization": false,
+      "desalting": false,
+      "largest_fragment_selection": false,
+      "tautomer_normalization": false,
+      "reaction_hash_definition": "SHA256(UTF-8 bytes of complete canonical reactants>>products)"
+    }
+  },
+  "warnings": [
+    "No Stage 6 computations were started.",
+    "No Difficulty Model, D_dev, expert labels, or AiZynthFinder changes were performed."
+  ],
+  "product_rule_audit": {
+    "path": "reports/stage5_product_rule_audit.json",
+    "csv_path": "reports/stage5_product_rule_audit.csv",
+    "sha256": "AE2054414B64A344848AAE879FA8017532E5143DA03741F4F0BFF1C48EE3E6D6",
+    "csv_sha256": "5AEBCB94135741815B25236672288DDFD866858E1AAD45A6EE94400168A034F7",
+    "n_reference_clean_unique": 4946,
+    "n_multi_product_unique": 198,
+    "n_multi_product_raw_weight": 12804,
+    "n_single_product_unique": 4748,
+    "n_single_product_raw_weight": 163581,
+    "n_empty_or_unparseable_product": 0,
+    "n_other_invalid_for_sc_ecdf": 0,
+    "n_reference_sc_ecdf_eligible": 4748,
+    "invalid_counts_and_reasons": {
+      "multiple_products_undefined": 198
+    },
+    "multi_product_component_count_distribution": {
+      "2": 188,
+      "3": 4,
+      "4": 5,
+      "6": 1
+    },
+    "precise_22_vs_198_explanation": {
+      "historical_22": "Historical preflight blocker count; exact derivation not present in current audit artifacts.",
+      "current_198": "Current frozen corpus row-wise RDKit product-side component audit: 198 canonical unique rows.",
+      "current_breakdown": "188 rows with 2 components, 4 with 3, 5 with 4, 1 with 6; duplicate_count weight 12804.",
+      "rule": "198 is the reproducible count used by current ECDF artifact; 22 must not be substituted."
+    }
+  },
+  "precedent_output_recomputed": true,
+  "stage6_started": false,
+  "difficulty_model_started": false,
+  "aizynthfinder_modified": false,
+  "stage4_files_modified": false,
+  "canonicalization_audit": {
+    "status": "PASS",
+    "path": "reports/stage4_canonicalization_audit.json",
+    "csv_path": "reports/stage4_canonicalization_audit.csv",
+    "sha256": "F292DFB751D3AD719A4BF2E18EBBA6F3FBE7D025DDDBDDC3C68195C6722CCFB4",
+    "csv_sha256": "405E229342002ADA171FCA60F620B90F3F367E9007E148ED767D719C7528F044",
+    "canonicalization_version": "stage2_aiz_rd_chemistry_v1",
+    "raw_valid_transformation_rows": 176385,
+    "clean_unique_rows": 4946,
+    "recanonicalization_errors": 0,
+    "clean_hash_frequency_mismatches": 0,
+    "mapping_removed": true,
+    "agent_block_removed": true,
+    "stereochemistry_preserved": true,
+    "formal_charge_preserved": true,
+    "isotope_preserved": true,
+    "salts_ions_small_molecules_preserved": true,
+    "disconnected_components_preserved": true,
+    "neutralization": false,
+    "desalting": false,
+    "largest_fragment_selection": false,
+    "tautomer_normalization": false,
+    "reaction_hash_definition": "SHA256(UTF-8 bytes of complete canonical reactants>>products)"
+  }
+}

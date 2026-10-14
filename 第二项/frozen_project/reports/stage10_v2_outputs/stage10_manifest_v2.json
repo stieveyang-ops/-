@@ -1,0 +1,87 @@
+{
+  "stage": 10,
+  "cycle_version": "stage10_v2",
+  "status": "PASS",
+  "created_at_utc": "2026-09-12T14:57:40.568201+00:00",
+  "preanalysis_manifest_sha256": "F2B09709031792B4C5D20757CA0CB1A937D1B5982D98CC8633CB16E4C3889E69",
+  "preunseal_test_report_sha256": "8C0DE5184E31B1C23DF34A2022866AF5642DC96954AB3DDA37322755B0BA7E0A",
+  "unseal_receipt_sha256": "F0A4FEBF145ED69BB1A3955FC965C5E48EE3930A1AF8A7446CC061E326C0DBA7",
+  "locked_test_ids_sha256": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+  "expert_labels_sha256": "F5BA0C82D24DBADD0EC6169246966C492C99EA69E66A95E641B08CD38F0FB72D",
+  "reaction_features_sha256": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+  "final_model_sha256": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+  "final_model_metadata_sha256": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055",
+  "reference_corpus_sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+  "reference_embeddings_sha256": "37766193FEADD7C05CB97FF6285AF5D791A7FCF0EB37CE5D311D481DAD115E44",
+  "primary_metric": "kendall_tau_b",
+  "secondary_metrics": [
+    "spearman_rho",
+    "macro_f1",
+    "balanced_accuracy",
+    "quadratic_weighted_kappa"
+  ],
+  "bootstrap_method": "percentile",
+  "bootstrap_repetitions": 1000,
+  "bootstrap_unit": "leakage_group_id",
+  "bootstrap_seed": 42,
+  "precedent_parameter_grid": [
+    [
+      0.75,
+      5
+    ],
+    [
+      0.75,
+      10
+    ],
+    [
+      0.75,
+      20
+    ],
+    [
+      0.8,
+      5
+    ],
+    [
+      0.8,
+      10
+    ],
+    [
+      0.8,
+      20
+    ],
+    [
+      0.85,
+      5
+    ],
+    [
+      0.85,
+      10
+    ],
+    [
+      0.85,
+      20
+    ]
+  ],
+  "scscore_primary_definition": "product_minus_max_precursor",
+  "scscore_alternate_definition": "product_minus_mean_precursor",
+  "all_output_sha256": {
+    "data/benchmark/stage10_benchmark_reactions.parquet": "DE7FB583DFA97DC6680346552906FC40330638CA2D27604EEE013FAE1FD96FBA",
+    "outputs/stage10_locked_test_predictions.parquet": "4921D1E8ECEDFF2CF9D77F1F1DC36D2D860C5ECFAE592D9D4168AEC17D8162A5",
+    "reports/benchmark_results.csv": "50D067959E4AD1B678F3289D6AA59929C30648A1D380C780472B793F1AF33AB4",
+    "reports/benchmark_results.json": "A5248B67915543F7BD7B966937D775A4E888C153099E565F9563BFE522748BAC",
+    "reports/bootstrap_metrics.parquet": "F67366420676AC21688E603A6269835C807B42AEDEBBD7A8F67A1904D42A9F16",
+    "reports/model_pairwise_differences.csv": "99A3009F365FC06181D0723C9F72B05BA0A9E1061ECCE3A77093D4A143359054",
+    "reports/ablation_results.csv": "82D22DC238C529C740018A2DDCD1775D3BA2CD5BD3665057FFD8663F52FA497A",
+    "reports/ablation_results.json": "A398DBA3DA69DD4B220CFC8ECD8464811195DD4746F70A8FC283FBB60759FE84",
+    "reports/precedent_sensitivity_results.csv": "7C2FEE8CDD6330DE7C9226313AAE4823F503B92739DDB32579D3A0B1654CB181",
+    "reports/precedent_sensitivity_results.json": "CA5264F362C0F25CC2D676192ADDCA0653A7DF87EDA2F9BEAEAAD06A28C71BB4",
+    "artifacts/sc_delta_mean_ecdf_stage10.npz": "8F4088264C6F0CB9BFFBE9962768A2D7565D2A54D6628A25E6CA972EDCCFB288",
+    "reports/scscore_sensitivity_results.csv": "825763F605FF0FCED2BD3EE5A24573F0AAC97D811F039DD54239DD964F956BD3",
+    "reports/scscore_sensitivity_results.json": "E2514FD005BBFD4BCA3708B63F0921DA815E5BE13864CA430E31CADC548E7E6C",
+    "reports/leakage_audit_v2.json": "AC627F21E18CBB21F17647946A79F6E5F9A426F1F1CC7B3FE67B87C267B3F008"
+  },
+  "locked_test_modified": "NO",
+  "stage2_9_modified": "NO",
+  "stage11_started": "NO",
+  "test_set_tuning": "NO"
+}

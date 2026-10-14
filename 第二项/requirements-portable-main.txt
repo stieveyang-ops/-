@@ -1,0 +1,16 @@
+# Target-computer environment specification. Do not replace versions silently.
+python==3.10.20
+aizynthfinder==4.4.1
+rdkit==2023.9.6
+numpy==1.26.4
+pandas==2.3.3
+pyarrow==25.0.0
+scipy==1.15.2
+scikit-learn==1.5.2
+statsmodels==0.14.4
+onnxruntime==1.23.2
+PyYAML==6.0.3
+joblib==1.5.3
+pillow==12.3.0
+tables==3.10.1
+reaction-utils==1.9.3

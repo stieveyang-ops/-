@@ -1,0 +1,38 @@
+reference:
+  source_type: ord
+  input_path: E:/ord-data-github-05fe1a6
+  source_name: "Open Reaction Database (ORD) official GitHub default release, commit 05fe1a62cb36d6bc3c07592ac1bd4ff1a4d8e43c (2026-08-04; locally verified 2026-09-11)"
+  # Native ORD Parquet stores serialized Reaction protobuf bytes, not SMILES.
+  # The semantic reaction_column is therefore null; payload_column identifies
+  # the protobuf bytes consumed by ord-schema helpers.
+  reaction_column: null
+  payload_column: reaction
+  source_id_column: reaction_id
+  license_or_terms: "CC-BY-SA-4.0; evidence E:/ord-data-github-metadata/LICENSE, README.md, CITATION.cff; official source https://github.com/open-reaction-database/ord-data"
+  manifest_path: E:/ord-data-github-05fe1a6/ord_manifest.json
+representation:
+  use_stage2_canonicalizer: true
+  remove_atom_mapping: true
+  preserve_stereochemistry: true
+  preserve_formal_charge: true
+  preserve_isotope: true
+  transformation_only: true
+  exclude_agent_block: true
+  forbid_implicit_salt_stripping: true
+rxnfp:
+  model_name: bert_ft
+  dimension: 256
+  dtype: float32
+  l2_normalize: true
+  batch_size: 32
+  device: cpu
+  interpreter: C:/Users/Pasem/Documents/Codex/2026-09-09/xia/aizynth-reaction-difficulty/.conda-rxnfp/python.exe
+search:
+  backend: sklearn
+  metric: cosine
+  algorithm: brute
+  top_k: 100
+  similarity_clip_min: 0.0
+  similarity_clip_max: 1.0
+reproducibility:
+  random_seed: 42

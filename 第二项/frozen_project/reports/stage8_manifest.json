@@ -1,0 +1,37 @@
+{
+  "stage": 8,
+  "status": "PASS",
+  "input_file_hashes": {
+    "reaction_features": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+    "final_expert_labels": "F5BA0C82D24DBADD0EC6169246966C492C99EA69E66A95E641B08CD38F0FB72D",
+    "stage6_manifest": "BA87AD76E4C6C2087CADB76D71A3C9B56E5F533EDA7C5CC7E6DF58DCD07C5105",
+    "stage7_manifest": "D9417A0FAE588987045B746A231C5FB0659E7E38A656CB22ED6BB2CA1FFC641A"
+  },
+  "train_ids_sha256": "77B0BF7238686AE0339622181CD421923222A4F0961CD0FAC1722DD718ED30B4",
+  "test_ids_sha256": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+  "split_strategy": "StratifiedGroupKFold",
+  "random_seed": 42,
+  "feature_order": [
+    "d_feas",
+    "d_prec",
+    "d_sc"
+  ],
+  "model_artifact_sha256": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+  "model_metadata_sha256": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055",
+  "q33": 0.3005421128682305,
+  "q67": 0.5006582129614043,
+  "package_versions": {
+    "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Jun 11 2026, 15:13:20) [MSC v.1942 64 bit (AMD64)]",
+    "statsmodels": "0.14.4",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "sklearn": "1.5.2"
+  },
+  "created_at": "2026-09-12T12:32:49.673029+00:00",
+  "all_tests_passed": true,
+  "locked_test_used_for_fit": false,
+  "locked_test_used_for_cv": false,
+  "locked_test_used_for_thresholds": false,
+  "stage9_started": false,
+  "scientific_statement": "The final reaction-difficulty model is a condition-agnostic ordinal model trained exclusively on human expert labels using three predictors: feasibility difficulty (D_F), precedent difficulty (D_P), and normalized delta synthetic complexity (D_SC). The locked test set was not used for model fitting, feature selection, threshold selection, uncertainty calibration, or hyperparameter selection. Reaction difficulty is a relative expert-aligned score and must not be interpreted as experimental success probability or reaction yield."
+}

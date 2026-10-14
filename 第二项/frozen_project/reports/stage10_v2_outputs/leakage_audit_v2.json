@@ -1,0 +1,16 @@
+{
+  "stage": 10,
+  "cycle_version": "stage10_v2",
+  "exact_match_count": 0,
+  "duplicate_hash_count": 0,
+  "train_test_target_overlap": 0,
+  "train_test_reaction_overlap": 0,
+  "train_test_leakage_group_overlap": 0,
+  "reference_test_exact_overlap_raw": 0,
+  "reference_test_exact_overlap": 0,
+  "reference_test_exact_overlap_effective": 0,
+  "reference_train_exact_overlap_raw": 0,
+  "benchmark_exact_exclusion_verified": true,
+  "label_duplicate_conflict_count": 0,
+  "status": "PASS"
+}

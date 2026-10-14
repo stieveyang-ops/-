@@ -1,0 +1,22 @@
+﻿# ===== 运行时环境与第三方大数据（不随仓库分发）=====
+frozen_project/.conda-rxnfp/
+frozen_project/.conda-rxnfp-local/
+external_public_data/
+_runtime_tmp/
+_selftest_tmp/
+*.hdf5
+
+# ===== 编译缓存 =====
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# ===== 系统与编辑器 =====
+Thumbs.db
+desktop.ini
+~$*
+.vscode/
+.idea/

@@ -1,0 +1,20 @@
+{
+  "stage": 9,
+  "status": "PASS",
+  "input_path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\processed\\reaction_features.parquet",
+  "output_path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\outputs\\scored_reactions.parquet",
+  "preview_path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\reports\\stage9_reaction_inference_preview.csv",
+  "feature_order": [
+    "d_feas",
+    "d_prec",
+    "d_sc"
+  ],
+  "formula": "D_reaction=50*p_medium+100*p_difficult; U=[4*p_feas*(1-p_feas)+(1-p_prec)]/2",
+  "rows": 828,
+  "unique_reaction_hash": 537,
+  "q33": 0.3005421128682305,
+  "q67": 0.5006582129614043,
+  "model_sha256": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+  "metadata_sha256": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055",
+  "stage8_manifest_sha256": "F1E9C120ED1B01CAD40CDF53ED6657C8AFC71DC897A05B4E84F77A664C9333C2"
+}

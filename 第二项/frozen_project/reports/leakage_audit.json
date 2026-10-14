@@ -1,0 +1,18 @@
+{
+  "exact_match_count": 0,
+  "duplicate_hash_count": 0,
+  "train_test_target_overlap": 0,
+  "train_test_reaction_overlap": 0,
+  "train_test_leakage_group_overlap": 0,
+  "reference_test_exact_overlap_raw": 0,
+  "reference_test_exact_overlap": 0,
+  "reference_test_exact_overlap_effective": 0,
+  "reference_train_exact_overlap_raw": 0,
+  "benchmark_exact_exclusion_verified": true,
+  "label_duplicate_conflict_count": 0,
+  "status": "PASS",
+  "stage": 10,
+  "reference_metadata_sha256": "7062193C9936AA08FF2E43DB9BBA7C1B1269CC9FED12DE0A85827CAFF1EEB2AB",
+  "benchmark_reaction_hashes": 300,
+  "timestamp_utc": "2026-09-12T15:31:12.124015+00:00"
+}

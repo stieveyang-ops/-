@@ -1,0 +1,22 @@
+{
+  "stage": 2,
+  "status": "PASS",
+  "checks": {
+    "expected_reaction_rows": 828,
+    "actual_reaction_rows": 828,
+    "row_count_reconciliation": true,
+    "required_columns": true,
+    "step_id_unique": true,
+    "target_ids_known": true,
+    "reaction_direction": true,
+    "hash_format": true,
+    "hash_recalculation": true,
+    "canonical_idempotence": true,
+    "routes_raw_sha256": "5FA6489B6DF5437066F42AC1323C179C0871F711ACFE9BC3435A0C63221F49BE",
+    "routes_hash_file_match": true,
+    "routes_manifest_hash_match": true,
+    "routes_unchanged_reference": true
+  },
+  "errors": [],
+  "reaction_steps_raw_sha256": "611B4F7DA5C701D093BA3D36B1E79EF76F08DEDFA6E3A1D9397814C532FF43DF"
+}

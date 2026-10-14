@@ -1,0 +1,18 @@
+{
+  "stage": 10,
+  "status": "BLOCKED",
+  "code": "BLOCKED_TEST_UNSEAL_PRECONDITION_ORDER",
+  "reason": "The one-time test_unseal_receipt.json was created before the required Stage 10 comparator/metric/bootstrap/ablation/sensitivity/leakage test suite had been executed and recorded. The contract requires those tests to pass before unseal; post-unseal tests cannot retroactively satisfy that gate.",
+  "preanalysis_manifest": "reports/stage10_preanalysis_manifest.json",
+  "preanalysis_manifest_sha256": "0FD700E27DE623B92D44A6ED0AE2F7BD13B276B4DB7FA9BDA17CD426B6871F4A",
+  "test_unseal_receipt": "reports/test_unseal_receipt.json",
+  "test_unseal_receipt_sha256": "E638A85CF118479A27539AFE630D6F0D54B77977E87516A57E55648DFB5AE9FF",
+  "pre_unseal_required_tests": "NOT_RECORDED",
+  "post_observation_specialized_tests": {"command": "E:\\Anaconda\\envs\\aizynth\\python.exe -m pytest -q tests/test_stage10_models.py tests/test_stage10_metrics.py tests/test_cluster_bootstrap.py tests/test_ablation.py tests/test_precedent_sensitivity.py tests/test_scscore_sensitivity.py tests/test_leakage_audit.py tests/test_stage10_integrity.py", "status": "PASS", "passed": 9},
+  "full_pytest_after_observation": {"command": "E:\\Anaconda\\envs\\aizynth\\python.exe -m pytest -q", "status": "PASS", "passed": 100, "failed": 0},
+  "locked_test_metrics_computed": false,
+  "formal_outputs_generated": false,
+  "stage2_9_artifacts_modified": false,
+  "stage9_route_ranking_modified": false,
+  "stage11_started": false
+}

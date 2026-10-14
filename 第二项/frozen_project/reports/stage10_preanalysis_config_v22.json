@@ -1,0 +1,23 @@
+{
+  "cycle_version": "stage10_v2.2",
+  "primary_metric": "kendall_tau_b",
+  "secondary_metrics": ["spearman_rho", "macro_f1", "balanced_accuracy", "quadratic_weighted_kappa"],
+  "models": ["A", "B", "C", "D", "E"],
+  "bootstrap_repetitions": 1000,
+  "bootstrap_unit": "leakage_group_id",
+  "bootstrap_seed": 42,
+  "precedent_tau": [0.75, 0.8, 0.85],
+  "precedent_N0": [5, 10, 20],
+  "primary_precedent_tau": 0.8,
+  "primary_precedent_N0": 10,
+  "primary_delta_sc": "product_minus_max_precursor",
+  "alternate_delta_sc": "product_minus_mean_precursor",
+  "primary_benchmark_excludes_abstain": true,
+  "leave_one_out_models": [
+    ["d_prec", "d_sc"],
+    ["d_feas", "d_sc"],
+    ["d_feas", "d_prec"]
+  ],
+  "locked_test_tuning": false,
+  "stage11_started": false
+}

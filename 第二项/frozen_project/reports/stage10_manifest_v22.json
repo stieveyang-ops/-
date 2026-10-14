@@ -1,0 +1,95 @@
+{
+  "stage": 10,
+  "cycle_version": "stage10_v2.2",
+  "status": "PASS",
+  "created_at_utc": "2026-09-12T15:32:38.445876+00:00",
+  "preanalysis_manifest_sha256": "820ECCF6942C28280BFB5670726919B835E65921ACDB7DA6F77AE18035F60A71",
+  "preunseal_test_report_sha256": "5FE9D8F75A8C8590FAA5043C529185712D0DC7482C533A8ECFE753F3A0E64757",
+  "unseal_receipt_sha256": "E923BC093786F31CE2AD081BEDDD84E634193846A5AB49461DBFB406A98D3C58",
+  "locked_test_ids_sha256": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+  "expert_labels_sha256": "F5BA0C82D24DBADD0EC6169246966C492C99EA69E66A95E641B08CD38F0FB72D",
+  "reaction_features_sha256": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+  "final_model_sha256": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+  "final_model_metadata_sha256": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055",
+  "reference_corpus_sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+  "reference_embeddings_sha256": "37766193FEADD7C05CB97FF6285AF5D791A7FCF0EB37CE5D311D481DAD115E44",
+  "primary_metric": "kendall_tau_b",
+  "secondary_metrics": [
+    "spearman_rho",
+    "macro_f1",
+    "balanced_accuracy",
+    "quadratic_weighted_kappa"
+  ],
+  "bootstrap_method": "percentile",
+  "bootstrap_repetitions": 1000,
+  "bootstrap_unit": "leakage_group_id",
+  "bootstrap_seed": 42,
+  "precedent_parameter_grid": [
+    [
+      0.75,
+      5
+    ],
+    [
+      0.75,
+      10
+    ],
+    [
+      0.75,
+      20
+    ],
+    [
+      0.8,
+      5
+    ],
+    [
+      0.8,
+      10
+    ],
+    [
+      0.8,
+      20
+    ],
+    [
+      0.85,
+      5
+    ],
+    [
+      0.85,
+      10
+    ],
+    [
+      0.85,
+      20
+    ]
+  ],
+  "scscore_primary_definition": "product_minus_max_precursor",
+  "scscore_alternate_definition": "product_minus_mean_precursor",
+  "abstention_excluded_n": 9,
+  "leave_one_out": "PASS",
+  "comparator_metadata_sha256": {
+    "A": "D4E9BDA62C4FE674758AFED9A4CC3710D74E304128E65935CA1457F6DBF6A588",
+    "B": "95776EB1C49D9ACF24756AEEFBC55BFD0D976DABCB248AA02969F0E00240B6D2",
+    "C": "3B56A187D79E25AFEA2E9E30614B7BA8AD2A826469C446879AF853964D3225E0",
+    "E": "69AD5311A7B2EFCBBFEC2A61EC9E9B3CD883510000E771B7D5550EB900B14E1D"
+  },
+  "all_output_sha256": {
+    "data/benchmark/stage10_benchmark_reactions_v22.parquet": "04219BE93CE954A5BF1DE668395235BEBFA0B99D045EEC29D79E17B9868705A4",
+    "outputs/stage10_locked_test_predictions_v22.parquet": "90A895686BF507D37AE1136419E8EFDF0EBFEE7E2CA5AD1A58EF51A8E09A271F",
+    "reports/benchmark_results_v22.csv": "50D067959E4AD1B678F3289D6AA59929C30648A1D380C780472B793F1AF33AB4",
+    "reports/benchmark_results_v22.json": "1659AAD7536997C9DB591419DEE6F1CF03CE02B140C3A4DF9ADF41241D374601",
+    "reports/bootstrap_metrics_v22.parquet": "3F4078BF8EA8B3FCFCEAC26DF0A71DAAD89FA9ADA2E209EC286BCB5EF3C6C547",
+    "reports/model_pairwise_differences_v22.csv": "81217A4B7DEDC4A0BD96DCFA6E7B6D103EE4CFD9D3AD4352F89BFC6A9E83FEAD",
+    "reports/ablation_results_v22.csv": "099C6CD7E20879AE1BBA0D8B27269B9C27ABE16574B22FF745A9E326FBF704E1",
+    "reports/ablation_results_v22.json": "6CEC77F540E5D103682A41B58F93F4E948638E4221B3176DE78FA241E6FF2D68",
+    "reports/precedent_sensitivity_results_v22.csv": "7C2FEE8CDD6330DE7C9226313AAE4823F503B92739DDB32579D3A0B1654CB181",
+    "reports/precedent_sensitivity_results_v22.json": "F389AA1B3223D0F1BBAD386E7B76498E82AA21690C00491360FBD43ED617E119",
+    "artifacts/sc_delta_mean_ecdf_stage10_v22.npz": "8F4088264C6F0CB9BFFBE9962768A2D7565D2A54D6628A25E6CA972EDCCFB288",
+    "reports/scscore_sensitivity_results_v22.csv": "F07C9BC12B88ED74341B6E92E6E43D36C44F2C4AD52554039D1A427295EDB4DE",
+    "reports/scscore_sensitivity_results_v22.json": "7A526A3969802D2CAA8423D81E868EC59F6193C02F109A713F73D59106813D5E",
+    "reports/leakage_audit_v22.json": "7B734DEC67EF7D32F201B64423A987D44FAF892B2FC09779E5D6DFF04946815E"
+  },
+  "locked_test_modified": "NO",
+  "stage2_9_modified": "NO",
+  "stage11_started": "NO",
+  "test_set_tuning": "NO"
+}

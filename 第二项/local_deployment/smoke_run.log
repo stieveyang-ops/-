@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "output_dir": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\deployment_smoke_ethyl_benzoate_20261009_092047",
+  "manifest": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\deployment_smoke_ethyl_benzoate_20261009_092047\\prospective_manifest.json",
+  "visualization": "C:\\Users\\18706\\OneDrive\\Desktop\\AI2026_30.6\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\prospective_runs\\deployment_smoke_ethyl_benzoate_20261009_092047\\prospective_dashboard.html",
+  "routes": 3,
+  "reaction_rows": 3,
+  "manifest_sha256": "1AEF07EB451BD72EA8B390C335FED5BBF4E45DB692AA1B79D344ABD37C06ACAA"
+}
+Completed. Dashboard: C:\Users\18706\OneDrive\Desktop\AI2026_30.6\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\prospective_runs\deployment_smoke_ethyl_benzoate_20261009_092047\prospective_dashboard.html

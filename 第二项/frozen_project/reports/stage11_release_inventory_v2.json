@@ -1,0 +1,38 @@
+﻿{
+    "audit_type":  "stage11_release_inventory_v2",
+    "status":  "PASS",
+    "created_at_utc":  "2026-09-13T02:02:15.3062167+08:00",
+    "files":  {
+                  "config/difficulty.yml":  "815A9F7D21E396349457A535F97CFAB94D10226EE5F353335E770D4D36A395C6",
+                  "scripts/run_difficulty_pipeline.py":  "D6E982901FE50AFEC089C6857E1E4ECDBE37BE3E6A9107308C20BCDA7117A95C",
+                  "scripts/run_release_qa_v2.py":  "0E992D1C58B4238FF034EC68E7AA02CA2C231038B2C92A2477C1778962A34648",
+                  "scripts/validate_stage11_dependency_v2.py":  "E21AC724F669C9961B8DACF29F6C62C6D329877ED2A3736243F9C12D0AFF1A3A",
+                  "tests/test_stage11_release.py":  "46D789AE8571F4C764C17725BF2335C5F86E1C19E291A947BBD2997C8E1F246B",
+                  "reports/stage11_dependency_validation_v2.json":  "B821B66156384E21234AE58EA88A32451E338278EE1E6FE4E656474B9E478ACE",
+                  "reports/stage11_dependency_validation_v2.log":  "20966B694A222635BC77EE34FC1A66A2F6057B11B0C99B83864A529BF52D3220",
+                  "reports/stage11_specialized_tests_v2.txt":  "A677673BAECBA2710732DECBBCD4AB167FF4960C403E2A476AC983BABC68AA42",
+                  "reports/stage11_full_pytest_v2.txt":  "0FC75623A7E6FDC11AE173749B455EBFD7F87DF882EB9672F391E1B3CBD05B4A",
+                  "reports/stage11_release_qa_v2.json":  "B9DAA1A5C55F27772FBF827CBB31503D57075952ACB1B986179F51F63BABF9CB",
+                  "reports/stage11_reproducibility_v2.json":  "E60048DEAB9EB4E850AA757BFE14DAB2479758D253917CE243C51076E2C07D63",
+                  "reports/final_engineering_audit_v2.json":  "E4189FC273C7A8D4C2B38BC9D13199466CA0A0A3360ADCB39D1F12764C10767A",
+                  "reports/stage11_release_receipt_v2.json":  "B3EC26C8763D22D89013845DCD4BC3DBAC5852BBC374F0B26AE7B633BDF0D2D2",
+                  "outputs/stage11_release_v2/scored_routes.json":  "F039DDF4E6DE25C6CCB9F969D632651EE111FC23F33C2AF93D03908C6B8453E8",
+                  "outputs/stage11_release_v2/scored_routes.csv":  "DF9085D0D4063E31B33ECF4702FEF7567A798B6692FB6894E8A57529CC744755",
+                  "outputs/stage11_release_v2/scored_reactions.parquet":  "A7ED126D108EA45D4BD76D337B3F3F74586270352D01E0BF8DA6C05D803B503F",
+                  "outputs/stage11_release_v2_repeat/scored_routes.json":  "F039DDF4E6DE25C6CCB9F969D632651EE111FC23F33C2AF93D03908C6B8453E8",
+                  "outputs/stage11_release_v2_repeat/scored_routes.csv":  "DF9085D0D4063E31B33ECF4702FEF7567A798B6692FB6894E8A57529CC744755",
+                  "outputs/stage11_release_v2_repeat/scored_reactions.parquet":  "A7ED126D108EA45D4BD76D337B3F3F74586270352D01E0BF8DA6C05D803B503F",
+                  "outputs/stage11_clean_environment_v2/scored_routes.json":  "F039DDF4E6DE25C6CCB9F969D632651EE111FC23F33C2AF93D03908C6B8453E8",
+                  "outputs/stage11_clean_environment_v2/scored_routes.csv":  "DF9085D0D4063E31B33ECF4702FEF7567A798B6692FB6894E8A57529CC744755",
+                  "outputs/stage11_clean_environment_v2/scored_reactions.parquet":  "A7ED126D108EA45D4BD76D337B3F3F74586270352D01E0BF8DA6C05D803B503F"
+              },
+    "external_ord":  {
+                         "path":  "E:\\ord-data-github-05fe1a6",
+                         "manifest":  "E:\\ord-data-github-05fe1a6\\ord_manifest.json",
+                         "not_copied_into_repo":  true
+                     },
+    "stage2_10_modified":  false,
+    "locked_test_modified":  false,
+    "stage12_started":  false,
+    "release_tag":  "reaction-difficulty-v1.0"
+}

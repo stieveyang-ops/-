@@ -1,0 +1,78 @@
+{
+  "audit_type": "stage11_release_qa_v2",
+  "status": "PASS",
+  "created_at_utc": "2026-09-12T18:26:37.563544+00:00",
+  "checks": {
+    "isolated_dependency": {
+      "python": "E:\\Anaconda\\envs\\aizynth\\python.exe",
+      "prefix": "E:\\Anaconda\\envs\\aizynth",
+      "enable_user_site": false,
+      "statsmodels_version": "0.14.4",
+      "statsmodels_file": "E:\\Anaconda\\envs\\aizynth\\lib\\site-packages\\statsmodels\\__init__.py",
+      "ordered_model": "OrderedModel",
+      "sys_path": [
+        "",
+        "E:\\Anaconda\\envs\\aizynth\\python310.zip",
+        "E:\\Anaconda\\envs\\aizynth\\DLLs",
+        "E:\\Anaconda\\envs\\aizynth\\lib",
+        "E:\\Anaconda\\envs\\aizynth",
+        "E:\\Anaconda\\envs\\aizynth\\lib\\site-packages"
+      ],
+      "status": "PASS",
+      "file_in_target": true,
+      "user_site_on_sys_path": false,
+      "version_ok": true,
+      "pass": true
+    },
+    "git_before": {
+      "head": "1d4a101aea0af53a95361f503ecc79f9e619109a",
+      "status": "M reports/run_metadata.json\n?? outputs/stage11_clean_environment_v2/\n?? outputs/stage11_release_v2/\n?? outputs/stage11_release_v2_repeat/\n?? reports/final_engineering_audit_v2.json\n?? reports/stage11_dependency_validation_v2.json\n?? reports/stage11_full_pytest_v2.txt\n?? reports/stage11_release_inventory_v2.json\n?? reports/stage11_release_qa_v2.json\n?? reports/stage11_release_qa_v2.stdout.txt\n?? reports/stage11_release_receipt_v2.json\n?? reports/stage11_reproducibility_v2.json\n?? reports/stage11_specialized_tests_v2.txt\n?? scripts/run_release_qa_v2.py\n?? scripts/validate_stage11_dependency_v2.py"
+    },
+    "stage2_10_hashes": {
+      "count": 26,
+      "failures": [],
+      "all_match": true
+    },
+    "locked_test": {
+      "path": "data/splits/test_ids_locked.txt",
+      "expected": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+      "actual": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+      "match": true
+    },
+    "e2e_v2": {
+      "reaction_exists": true,
+      "routes_exists": true,
+      "reaction_rows": 828,
+      "routes_sha256": "F039DDF4E6DE25C6CCB9F969D632651EE111FC23F33C2AF93D03908C6B8453E8",
+      "reaction_sha256": "A7ED126D108EA45D4BD76D337B3F3F74586270352D01E0BF8DA6C05D803B503F"
+    },
+    "repeated_e2e": {
+      "routes_sha256": "F039DDF4E6DE25C6CCB9F969D632651EE111FC23F33C2AF93D03908C6B8453E8",
+      "reaction_sha256": "A7ED126D108EA45D4BD76D337B3F3F74586270352D01E0BF8DA6C05D803B503F",
+      "byte_identical": true
+    },
+    "clean_environment_e2e": {
+      "routes_sha256": "F039DDF4E6DE25C6CCB9F969D632651EE111FC23F33C2AF93D03908C6B8453E8",
+      "reaction_sha256": "A7ED126D108EA45D4BD76D337B3F3F74586270352D01E0BF8DA6C05D803B503F",
+      "exists": true,
+      "command": "E:\\Anaconda\\envs\\aizynth\\python.exe -s scripts/run_difficulty_pipeline.py"
+    },
+    "output_bounds": {
+      "finite": true,
+      "difficulty_0_100": true,
+      "uncertainty_0_1": true
+    },
+    "inference_isolation": {
+      "labels_or_locked_test_read": false,
+      "training_or_refit": false,
+      "stage12_started": false
+    },
+    "external_ord": {
+      "path": "E:\\ord-data-github-05fe1a6",
+      "manifest": "E:\\ord-data-github-05fe1a6\\ord_manifest.json",
+      "not_copied_into_repo": true
+    },
+    "stage2_10_modified": false
+  },
+  "error_code": null
+}

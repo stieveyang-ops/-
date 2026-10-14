@@ -1,0 +1,17 @@
+【第二项 · 可运行作品】
+可整包复制的便携作品：自带模型、模板、库存与冻结科研资产。
+运行方式（Windows，需已安装 Conda 并建好 aizynth-portable 环境）：
+  1) 自检：powershell -NoProfile -ExecutionPolicy Bypass -File .\package_completeness_test.ps1
+     必须看到 package_completeness_report.json 与 environment_validation.json 均为 PASS；
+  2) 双击 启动_可运行作品.cmd；或命令行运行 prospective_difficulty_tool\run_prospective_scoring.ps1；
+  3) 结果在 prospective_runs\<TargetID>_<时间戳>\prospective_dashboard.html。
+关键目录：prospective_difficulty_tool\（界面与评分核心）、frozen_project\（冻结科研资产）、
+         external_public_data\public_data\（USPTO 模型与模板、ZINC 库存）。
+环境：Python 3.10.20 / AiZynthFinder 4.4.1 / RDKit 2023.9.6 / statsmodels 0.14.4 / ONNX Runtime 1.23.2；
+     反应指纹独立运行时 Python 3.8.20 + rxnfp 0.1.0；全部推理在 CPU 完成，无需 GPU。
+
+首次运行提示：若双击 launch_gui.cmd 出现“打开文件 - 安全警告：无法验证发布者”，
+  这是 Windows 对无签名脚本 + 云同步来源标记的常规提示，不是故障。
+  解决办法：先双击根目录（或本目录）的“解除文件锁定.cmd”一次性清除来源标记，
+  或右键该文件 → 属性 → 勾选“解除锁定”，或直接在提示框点“运行(R)”。
+  详见 本机使用说明.md 的“首次运行出现安全警告怎么办”一节。

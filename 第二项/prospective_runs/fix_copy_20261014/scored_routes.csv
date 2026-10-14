@@ -1,0 +1,2 @@
+target_id,route_id,original_rank,new_rank,solved,original_state_score,number_of_reactions,difficulty_applicable,difficulty_bottleneck,difficulty_mean,route_uncertainty,route_confidence,hardest_step_id,hardest_step_ids,hardest_step_reaction,hardest_step_reactions,route_type,route_explanation,rank_change
+fix_copy_20261014,fix_copy_20261014__route_001,1,1,False,0.049100689501895424,0,False,,,,not_applicable,,[],,[],direct_stock_no_reaction,No reaction steps were present; route difficulty is not applicable.,0

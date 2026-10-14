@@ -1,0 +1,28 @@
+{
+  "targets": {
+    "fix_copy_20261014": [
+      {
+        "target_id": "fix_copy_20261014",
+        "route_id": "fix_copy_20261014__route_001",
+        "original_rank": 1,
+        "new_rank": 1,
+        "solved": false,
+        "original_state_score": 0.049100689501895424,
+        "number_of_reactions": 0,
+        "difficulty_applicable": false,
+        "difficulty_bottleneck": null,
+        "difficulty_mean": null,
+        "route_uncertainty": null,
+        "route_confidence": "not_applicable",
+        "hardest_step_id": null,
+        "hardest_step_ids": [],
+        "hardest_step_reaction": null,
+        "hardest_step_reactions": [],
+        "route_type": "direct_stock_no_reaction",
+        "steps": [],
+        "route_explanation": "No reaction steps were present; route difficulty is not applicable.",
+        "rank_change": 0
+      }
+    ]
+  }
+}

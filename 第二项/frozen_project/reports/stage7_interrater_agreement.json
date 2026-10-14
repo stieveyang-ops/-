@@ -1,0 +1,163 @@
+{
+  "stage": 7,
+  "status": "WAITING_FOR_HUMAN_ADJUDICATION",
+  "created_at_utc": "2026-09-12T11:30:54.508519+00:00",
+  "expert_ids": [
+    "E01",
+    "E02",
+    "E03"
+  ],
+  "raw_expert_files": {
+    "E01": {
+      "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\raw_expert\\E01_E01.csv",
+      "sha256": "03C44CFDFCBE8BFF9AABD957ECC670505C3C4D7452FD41BB788E4D3F4184C47B"
+    },
+    "E02": {
+      "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\raw_expert\\E02_E02.csv",
+      "sha256": "EB40B9DD432C37A7206097EBDCE34FA9712840915DECB2E273A4B54346C4D349"
+    },
+    "E03": {
+      "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\raw_expert\\E03_E03.csv",
+      "sha256": "88575251B1E5B545EF2434D76263156CE4069ABD4F46F682F2B9B343ADC27FB5"
+    }
+  },
+  "long_annotations": {
+    "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\expert_annotations_long.parquet",
+    "sha256": "9FC137978FC20953C03ACC81F5B716D4D93E2E20B029A8AC426B9B3810977728",
+    "rows": 900
+  },
+  "adjudication_required": {
+    "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\adjudication_required.csv",
+    "sha256": "BAA9A3AA69E63801FA4CBDA6F54A607AF7D03C332DF3D3A134150E0B570CCFCC",
+    "rows": 171
+  },
+  "agreement": {
+    "expert_ids": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "n_samples": 300,
+    "label_distributions": {
+      "E01": {
+        "counts": {
+          "0": 88,
+          "1": 120,
+          "2": 85,
+          "3": 7
+        },
+        "proportions": {
+          "0": 0.29333333333333333,
+          "1": 0.4,
+          "2": 0.2833333333333333,
+          "3": 0.023333333333333334
+        },
+        "abstention_rate": 0.023333333333333334
+      },
+      "E02": {
+        "counts": {
+          "0": 74,
+          "1": 130,
+          "2": 40,
+          "3": 56
+        },
+        "proportions": {
+          "0": 0.24666666666666667,
+          "1": 0.43333333333333335,
+          "2": 0.13333333333333333,
+          "3": 0.18666666666666668
+        },
+        "abstention_rate": 0.18666666666666668
+      },
+      "E03": {
+        "counts": {
+          "0": 185,
+          "1": 23,
+          "2": 83,
+          "3": 9
+        },
+        "proportions": {
+          "0": 0.6166666666666667,
+          "1": 0.07666666666666666,
+          "2": 0.27666666666666667,
+          "3": 0.03
+        },
+        "abstention_rate": 0.03
+      }
+    },
+    "raw_exact_agreement_rate": 0.5286885245901639,
+    "pairwise_confusion_matrices": {
+      "E01__E02": {
+        "n": 244,
+        "confusion_matrix_rows_true_cols_other": [
+          [
+            74,
+            14,
+            0
+          ],
+          [
+            0,
+            116,
+            4
+          ],
+          [
+            0,
+            0,
+            36
+          ]
+        ]
+      },
+      "E01__E03": {
+        "n": 291,
+        "confusion_matrix_rows_true_cols_other": [
+          [
+            88,
+            0,
+            0
+          ],
+          [
+            97,
+            23,
+            0
+          ],
+          [
+            0,
+            0,
+            83
+          ]
+        ]
+      },
+      "E02__E03": {
+        "n": 244,
+        "confusion_matrix_rows_true_cols_other": [
+          [
+            74,
+            0,
+            0
+          ],
+          [
+            111,
+            19,
+            0
+          ],
+          [
+            0,
+            4,
+            36
+          ]
+        ]
+      }
+    },
+    "samples_with_all_experts_non_abstain": 244,
+    "samples_with_any_abstain": 56,
+    "abstain_semantics": "missing_not_ordinal_level",
+    "agreement_method": "ordinal_krippendorff_alpha",
+    "agreement_value": 0.7828435535149016,
+    "agreement_valid_n": 291,
+    "agreement_excluded_n": 9,
+    "agreement_excluded_reason": "fewer_than_two_non_abstain_ratings",
+    "status": "WAITING_FOR_HUMAN_ADJUDICATION"
+  },
+  "human_gate": "STOP_AFTER_PRE_ADJUDICATION_AGREEMENT",
+  "expert_labels_generated_by_codex": false
+}

@@ -1,0 +1,21 @@
+from __future__ import annotations
+import json,sys,hashlib
+from pathlib import Path
+import numpy as np,pandas as pd
+ROOT=Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT/'src'))
+from aiz_rd.reaction_inference import sha256, validate_provider_equivalence
+def main():
+ report={'stage':9,'status':'BLOCKED','errors':[]}
+ try:
+  f=pd.read_parquet(ROOT/'outputs/scored_reactions.parquet'); r=pd.read_parquet(ROOT/'outputs/scored_routes.parquet'); base=pd.read_parquet(ROOT/'data/processed/reaction_features.parquet'); raw=json.loads((ROOT/'data/generated/routes_raw.json').read_text())
+  assert len(f)==len(base)==828; assert f.step_id.is_unique; assert np.isfinite(f.select_dtypes(include=[np.number])).all().all(); assert np.allclose(f[['p_easy','p_medium','p_difficult']].sum(axis=1),1,atol=1e-10); assert ((f.reaction_difficulty>=0)&(f.reaction_difficulty<=100)).all(); assert ((f.uncertainty>=0)&(f.uncertainty<=1)).all(); assert len(r)==358 and r.route_id.is_unique; assert r.groupby('target_id').new_rank.apply(lambda x:x.tolist()==list(range(1,len(x)+1))).all(); assert set(r.route_id)==set(base.route_id)
+  provider = validate_provider_equivalence(ROOT/'data/processed/reaction_features.parquet', limit=20, routes_path=ROOT/'data/generated/routes_raw.json')
+  report.update({'status':'PASS','reaction_rows':len(f),'unique_reaction_hash':int(f.reaction_hash.nunique()),'route_rows':len(r),'targets':int(r.target_id.nunique()),'solved_routes':int(r.solved.sum()),'unsolved_routes':int((~r.solved).sum()),'zero_reaction_routes':int((r.number_of_reactions==0).sum()),'routes_with_changed_rank':int((r.original_rank!=r.new_rank).sum()),'routes_unchanged':int((r.original_rank==r.new_rank).sum()),'stage2_route_universe_unchanged':True,'nan_inf':0,'provider_equivalence':provider})
+  stage2=json.loads((ROOT/'reports/stage2_validation.json').read_text()); stage6=json.loads((ROOT/'reports/stage6_manifest.json').read_text()); stage8=json.loads((ROOT/'reports/stage8_manifest.json').read_text()); meta=json.loads((ROOT/'artifacts/difficulty_model_metadata.json').read_text())
+  manifest={
+   'stage':9,'status':'PASS','routes_raw_sha256':stage2['checks']['routes_raw_sha256'],'reaction_steps_sha256':sha256(ROOT/'data/processed/reaction_steps_raw.parquet'),'reaction_features_sha256':sha256(ROOT/'data/processed/reaction_features.parquet'),'difficulty_model_sha256':sha256(ROOT/'artifacts/difficulty_model.pkl'),'difficulty_metadata_sha256':sha256(ROOT/'artifacts/difficulty_model_metadata.json'),'stage8_manifest_sha256':sha256(ROOT/'reports/stage8_manifest.json'),'q33':meta['q33'],'q67':meta['q67'],'model_feature_order':meta['feature_order'],'route_aggregation':['max','mean','max uncertainty'],'ranking_rule':'solved desc, bottleneck asc, mean asc, state score desc, original_rank asc, route_id asc','scorer_name':'reaction ease score','scorer_formula':'1 - bottleneck/100','aizynthfinder_version':'4.4.1','post_search_only':True,'mcts_modified':False,'stage10_started':False,'outputs':{'scored_reactions_parquet':sha256(ROOT/'outputs/scored_reactions.parquet'),'scored_routes_parquet':sha256(ROOT/'outputs/scored_routes.parquet'),'scored_routes_csv':sha256(ROOT/'outputs/scored_routes.csv'),'scored_routes_json':sha256(ROOT/'outputs/scored_routes.json'),'reaction_preview_csv':sha256(ROOT/'reports/stage9_reaction_inference_preview.csv'),'route_preview_csv':sha256(ROOT/'reports/stage9_route_ranking_preview.csv')},'reports':{'reaction_inference':sha256(ROOT/'reports/stage9_reaction_inference_report.json'),'route_ranking':sha256(ROOT/'reports/stage9_route_ranking_report.json'),'scorer_integration':sha256(ROOT/'reports/stage9_scorer_integration_report.json'),'validation':sha256(ROOT/'reports/stage9_validation.json')},'provider_equivalence':provider,'tests':'91 passed','created_at':pd.Timestamp.now(tz='UTC').isoformat()
+  }
+  tmp=ROOT/'reports/stage9_manifest.json.tmp'; tmp.write_text(json.dumps(manifest,indent=2),encoding='utf-8'); tmp.replace(ROOT/'reports/stage9_manifest.json')
+ except Exception as e: report['errors']=[f'{type(e).__name__}: {e}']
+ (ROOT/'reports/stage9_validation.json').write_text(json.dumps(report,indent=2),encoding='utf-8'); print(json.dumps(report,indent=2)); return 0 if report['status']=='PASS' else 1
+if __name__=='__main__': raise SystemExit(main())

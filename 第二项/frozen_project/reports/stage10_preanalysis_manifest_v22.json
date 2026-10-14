@@ -1,0 +1,84 @@
+{
+  "stage": 10,
+  "cycle_version": "stage10_v2.2",
+  "status": "FROZEN",
+  "config_path": "reports/stage10_preanalysis_config_v22.json",
+  "config_sha256": "7B9CC961D689EAFFFC6206F77BCEC5D83AD0E3A8A79ADCF5887C3424A0DA60E4",
+  "locked_test_path": "data/splits/test_ids_locked.txt",
+  "locked_test_sha256": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+  "stage8_model_path": "artifacts/difficulty_model.pkl",
+  "stage8_model_sha256": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+  "stage8_model_metadata_path": "artifacts/difficulty_model_metadata.json",
+  "stage8_model_metadata_sha256": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055",
+  "stage9_ranking_path": "outputs/scored_routes.parquet",
+  "stage9_ranking_sha256": "8EB0A886716FA8F7CAD6EB25B828BBFB0B95ED3B1B1E9D637AEB3578F572CF01",
+  "stage8_manifest_sha256": "F1E9C120ED1B01CAD40CDF53ED6657C8AFC71DC897A05B4E84F77A664C9333C2",
+  "stage9_manifest_sha256": "CD531F6EAB0D2C9CC67A215E4433697D0E0AE1404EECA9933B23B1D9A3A87E04",
+  "expert_label_sha256": "F5BA0C82D24DBADD0EC6169246966C492C99EA69E66A95E641B08CD38F0FB72D",
+  "reaction_features_sha256": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+  "reference_corpus_sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+  "reference_embeddings_sha256": "37766193FEADD7C05CB97FF6285AF5D791A7FCF0EB37CE5D311D481DAD115E44",
+  "primary_metric": "kendall_tau_b",
+  "secondary_metrics": [
+    "spearman_rho",
+    "macro_f1",
+    "balanced_accuracy",
+    "quadratic_weighted_kappa"
+  ],
+  "models": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "bootstrap_repetitions": 1000,
+  "bootstrap_unit": "leakage_group_id",
+  "bootstrap_seed": 42,
+  "precedent_tau": [
+    0.75,
+    0.8,
+    0.85
+  ],
+  "precedent_N0": [
+    5,
+    10,
+    20
+  ],
+  "primary_precedent_tau": 0.8,
+  "primary_precedent_N0": 10,
+  "primary_delta_sc": "product_minus_max_precursor",
+  "alternate_delta_sc": "product_minus_mean_precursor",
+  "primary_benchmark_excludes_abstain": true,
+  "leave_one_out_models": [
+    [
+      "d_prec",
+      "d_sc"
+    ],
+    [
+      "d_feas",
+      "d_sc"
+    ],
+    [
+      "d_feas",
+      "d_prec"
+    ]
+  ],
+  "python_version": "3.10.20 | packaged by Anaconda, Inc. | (main, Jun 11 2026, 15:13:20) [MSC v.1942 64 bit (AMD64)]",
+  "package_versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.5.2",
+    "statsmodels": "0.14.4",
+    "pyarrow": "25.0.0"
+  },
+  "git_commit": null,
+  "git_commit_reason": "Project directory is not a Git worktree",
+  "locked_test_modified": "NO",
+  "test_metrics_computed_before_unseal": false,
+  "test_tuning": false,
+  "model_retrained": false,
+  "stage11_started": false,
+  "created_at_utc": "2026-09-12T15:29:38.487210+00:00"
+}

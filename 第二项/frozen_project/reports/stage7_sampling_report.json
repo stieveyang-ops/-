@@ -1,0 +1,231 @@
+{
+  "stage": 7,
+  "status": "READY_FOR_HUMAN_ANNOTATION",
+  "created_at_utc": "2026-09-11T11:55:38.192177+00:00",
+  "errors": [],
+  "input_candidate_rows": 828,
+  "unique_reaction_hashes": 537,
+  "eligible_unique_reactions": 537,
+  "target_n": 300,
+  "minimum_acceptable_n": 200,
+  "actual_n": 300,
+  "seed": 42,
+  "n_experts": 3,
+  "expert_ids": [
+    "E01",
+    "E02",
+    "E03"
+  ],
+  "per_expert_shuffle_seeds": {
+    "E01": 4201,
+    "E02": 4202,
+    "E03": 4203
+  },
+  "sampling": {
+    "bin_edges": {
+      "feas": {
+        "quantile_tertiles": {
+          "q1": 0.8849717179934183,
+          "q2": 0.9993416865666708
+        },
+        "effective_edges": [
+          -Infinity,
+          0.8849717179934183,
+          0.9993416865666708,
+          Infinity
+        ],
+        "n_effective_bins": 3,
+        "unique_value_count": 516
+      },
+      "prec": {
+        "quantile_tertiles": {
+          "q1": 0.0,
+          "q2": 0.5830325039057839
+        },
+        "effective_edges": [
+          -Infinity,
+          0.0,
+          0.5830325039057839,
+          Infinity
+        ],
+        "n_effective_bins": 3,
+        "unique_value_count": 297
+      },
+      "dsc": {
+        "quantile_tertiles": {
+          "q1": 0.06830946363381071,
+          "q2": 0.32729570345408593
+        },
+        "effective_edges": [
+          -Infinity,
+          0.06830946363381071,
+          0.32729570345408593,
+          Infinity
+        ],
+        "n_effective_bins": 3,
+        "unique_value_count": 344
+      }
+    },
+    "stratum_population_counts": {
+      "highxhighxhigh": 41,
+      "highxhighxlow": 10,
+      "highxhighxmiddle": 31,
+      "highxlowxhigh": 12,
+      "highxlowxlow": 21,
+      "highxlowxmiddle": 27,
+      "highxmiddlexhigh": 14,
+      "highxmiddlexlow": 8,
+      "highxmiddlexmiddle": 15,
+      "lowxhighxhigh": 20,
+      "lowxhighxlow": 11,
+      "lowxhighxmiddle": 8,
+      "lowxlowxhigh": 15,
+      "lowxlowxlow": 62,
+      "lowxlowxmiddle": 23,
+      "lowxmiddlexhigh": 13,
+      "lowxmiddlexlow": 10,
+      "lowxmiddlexmiddle": 17,
+      "middlexhighxhigh": 25,
+      "middlexhighxlow": 13,
+      "middlexhighxmiddle": 20,
+      "middlexlowxhigh": 22,
+      "middlexlowxlow": 30,
+      "middlexlowxmiddle": 29,
+      "middlexmiddlexhigh": 13,
+      "middlexmiddlexlow": 14,
+      "middlexmiddlexmiddle": 13
+    },
+    "stratum_sample_counts": {
+      "highxhighxhigh": 12,
+      "highxhighxlow": 10,
+      "highxhighxmiddle": 12,
+      "highxlowxhigh": 12,
+      "highxlowxlow": 12,
+      "highxlowxmiddle": 12,
+      "highxmiddlexhigh": 12,
+      "highxmiddlexlow": 8,
+      "highxmiddlexmiddle": 12,
+      "lowxhighxhigh": 12,
+      "lowxhighxlow": 11,
+      "lowxhighxmiddle": 8,
+      "lowxlowxhigh": 12,
+      "lowxlowxlow": 12,
+      "lowxlowxmiddle": 12,
+      "lowxmiddlexhigh": 11,
+      "lowxmiddlexlow": 10,
+      "lowxmiddlexmiddle": 11,
+      "middlexhighxhigh": 11,
+      "middlexhighxlow": 11,
+      "middlexhighxmiddle": 11,
+      "middlexlowxhigh": 11,
+      "middlexlowxlow": 11,
+      "middlexlowxmiddle": 11,
+      "middlexmiddlexhigh": 11,
+      "middlexmiddlexlow": 11,
+      "middlexmiddlexmiddle": 11
+    },
+    "non_empty_strata": 27
+  },
+  "excluded_counts_by_reason": {
+    "not_sampled_after_stratified_quota": 237
+  },
+  "reaction_hash_deduplication": {
+    "input_rows": 828,
+    "unique_hashes": 537,
+    "duplicate_occurrences_collapsed": 291
+  },
+  "blinding": {
+    "visible_columns": [
+      "reaction_id",
+      "reaction_smiles",
+      "reactants",
+      "product",
+      "expert_label"
+    ],
+    "forbidden_field_audit": "PASS",
+    "master_audit": {
+      "columns": [
+        "reaction_id",
+        "reaction_smiles",
+        "reactants",
+        "product",
+        "expert_label"
+      ],
+      "rows": 300,
+      "forbidden_hits": [],
+      "labels_blank": true
+    },
+    "expert_audits": {
+      "E01": {
+        "columns": [
+          "reaction_id",
+          "reaction_smiles",
+          "reactants",
+          "product",
+          "expert_label"
+        ],
+        "rows": 300,
+        "forbidden_hits": [],
+        "labels_blank": true
+      },
+      "E02": {
+        "columns": [
+          "reaction_id",
+          "reaction_smiles",
+          "reactants",
+          "product",
+          "expert_label"
+        ],
+        "rows": 300,
+        "forbidden_hits": [],
+        "labels_blank": true
+      },
+      "E03": {
+        "columns": [
+          "reaction_id",
+          "reaction_smiles",
+          "reactants",
+          "product",
+          "expert_label"
+        ],
+        "rows": 300,
+        "forbidden_hits": [],
+        "labels_blank": true
+      }
+    }
+  },
+  "files": {
+    "expert_annotation_blinded": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\expert_annotation_blinded.csv",
+    "expert_annotation_key": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\expert_annotation_key.parquet",
+    "protocol": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\EXPERT_ANNOTATION_PROTOCOL.md",
+    "expert_files": {
+      "E01": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\blinded\\annotation_E01.csv",
+      "E02": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\blinded\\annotation_E02.csv",
+      "E03": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\blinded\\annotation_E03.csv"
+    }
+  },
+  "hashes": {
+    "features_sha256": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+    "steps_sha256": "611B4F7DA5C701D093BA3D36B1E79EF76F08DEDFA6E3A1D9397814C532FF43DF",
+    "stage6_report_sha256": "9A2F6B58C452D27A7F409C1C86B758EF86A25DA48D597B276B11F2B8B99B7516",
+    "stage6_manifest_sha256": "BA87AD76E4C6C2087CADB76D71A3C9B56E5F533EDA7C5CC7E6DF58DCD07C5105",
+    "blinded_master_sha256": "6C7135E308D1C7852DCE0BE211C9B07F09393490C8D1A7B1B900C45C3E2BAD4D",
+    "hidden_key_sha256": "F86B087099C79A3A7D2C80CBA633953F2EA8A0498F4083FCB5354031C5359B64",
+    "protocol_sha256": "452ACDE122DC79175BFB39DAB6BD1FA75CC44014D28375DF8B70DB956E94DBF1",
+    "per_expert_template_sha256": {
+      "E01": "7E231E4200BF6391D89B526CE776C09528D3499ACA8F8A148A314EEF53D629E8",
+      "E02": "CD7E073C9E7DAE7DF288F6F52657B8DD85EF8D27FE33B8598E2D94F28F2B7B47",
+      "E03": "2CD3307A34561F53F93069C529115F0D536EC38CD27B4AFD48390D696032B1DB"
+    },
+    "reaction_id_salt_sha256": "7DF3D11F4453E17F92B2CF4125613B8B4B1D8C017F39986ADC67D8FBE50DBDE4"
+  },
+  "human_gate": "STOP_AFTER_GATE_A",
+  "expert_labels_generated_by_codex": false,
+  "pytest_summary": {
+    "command": "E:\\Anaconda\\envs\\aizynth\\python.exe -m pytest -q",
+    "exit_code": 0,
+    "passed": 74,
+    "failed": 0,
+    "warnings": 9
+  }
+}

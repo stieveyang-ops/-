@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "checks": {
+    "reaction_steps_raw_sha256": "611B4F7DA5C701D093BA3D36B1E79EF76F08DEDFA6E3A1D9397814C532FF43DF",
+    "reaction_feasibility_sha256": "11CEC9A29C108DB3402793A48F2E49FD7883338DF4998EE019CBCD2E2ABFBDF4",
+    "reaction_sc_raw_sha256": "91E01FF220538DC3C9B3FAD6EE87B28520C45169235C3BECC74EBBD95E25D1BE",
+    "row_counts": {
+      "input": 828,
+      "feasibility": 828,
+      "sc": 828
+    },
+    "p_feas_range": true,
+    "d_feas_identity": true,
+    "cutoff_contract": true,
+    "sc_precursor_max_identity": true,
+    "delta_sc_identity": true,
+    "precursor_count_identity": true,
+    "no_later_stage_fields": true,
+    "model_hashes_match_stage1": true,
+    "routes_hash_matches_stage2": true,
+    "input_hash_matches_stage2": true
+  }
+}

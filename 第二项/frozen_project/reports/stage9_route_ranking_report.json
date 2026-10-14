@@ -1,0 +1,18 @@
+{
+  "stage": 9,
+  "status": "PASS",
+  "aggregation": {
+    "bottleneck": "max",
+    "mean": "arithmetic mean",
+    "route_uncertainty": "max"
+  },
+  "ranking_rule": "solved desc, bottleneck asc, mean asc, original_state_score desc, original_rank asc, route_id asc",
+  "q33": 0.3005421128682305,
+  "q67": 0.5006582129614043,
+  "targets": 40,
+  "routes": 358,
+  "solved_routes": 331,
+  "unsolved_routes": 27,
+  "zero_reaction_routes": 0,
+  "routes_with_changed_rank": 320
+}

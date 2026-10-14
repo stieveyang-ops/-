@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "package_root": "D:\\Desktop\\Evaluate\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2",
+  "python_executable": "E:\\Anaconda\\envs\\aizynth\\python.exe",
+  "requested_python": "E:\\Anaconda\\envs\\aizynth\\python.exe",
+  "user_site_enabled": false,
+  "user_site_paths_active": [],
+  "versions": {
+    "python": "3.10.20",
+    "aizynthfinder": "4.4.1",
+    "rdkit": "2023.9.6",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.0",
+    "scipy": "1.15.2",
+    "statsmodels": "0.14.4",
+    "onnxruntime": "1.23.2"
+  },
+  "required_versions": {
+    "python": "3.10",
+    "aizynthfinder": "4.4.1",
+    "rdkit": "2023.9.6",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.0",
+    "scipy": "1.15.2",
+    "statsmodels": "0.14.4",
+    "onnxruntime": "1.23.2"
+  },
+  "ordered_model_import": "PASS",
+  "missing_files": [],
+  "rxnfp": {
+    "python": "D:\\Desktop\\Evaluate\\AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2\\frozen_project\\.conda-rxnfp\\python.exe",
+    "status": "PASS",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "shape": [
+      1,
+      256
+    ],
+    "finite": true
+  },
+  "errors": [],
+  "scientific_artifacts_modified": false,
+  "stage_1_11_recomputed": false
+}

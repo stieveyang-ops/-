@@ -1,0 +1,31 @@
+{
+  "stage": 10,
+  "cycle_version": "stage10_v2.1",
+  "status": "PASS",
+  "reference_valid_n": 4748,
+  "reference_invalid_n": 198,
+  "results": [
+    {
+      "definition": "product_minus_max_precursor",
+      "model": "D_frozen",
+      "n_test": 47,
+      "kendall_tau_b": -0.03448731531164059,
+      "spearman_rho": -0.0476892883818471,
+      "macro_f1": 0.21256038647342992,
+      "balanced_accuracy": 0.3333333333333333,
+      "quadratic_weighted_kappa": 0.0
+    },
+    {
+      "definition": "product_minus_mean_precursor",
+      "model": "S_refit_development_only",
+      "n_test": 47,
+      "kendall_tau_b": 0.09196617416437493,
+      "spearman_rho": 0.11462929867930224,
+      "macro_f1": 0.21256038647342992,
+      "balanced_accuracy": 0.3333333333333333,
+      "quadratic_weighted_kappa": 0.0
+    }
+  ],
+  "spearman_dsc_max_vs_mean": 0.8902897461106933,
+  "median_abs_change": 0.11457455770850884
+}

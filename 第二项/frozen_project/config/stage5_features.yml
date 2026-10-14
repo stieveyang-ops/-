@@ -1,0 +1,18 @@
+precedent:
+  mode: deployment
+  tau: 0.80
+  n0: 10
+  exact_analog_count: true
+  top_k_for_reporting: 10
+sc_ecdf:
+  definition: right_continuous
+  side: right
+  source: reference_reactions_clean
+  include_negative_delta: true
+  fit_on_query_data: false
+  product_rule_version: single_connected_product_only_v1
+validation:
+  numerical_tolerance: 1.0e-6
+  fail_on_nan: true
+  fail_on_inf: true
+  fail_on_missing_step: true

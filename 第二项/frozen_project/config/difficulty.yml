@@ -1,0 +1,30 @@
+schema_version: "1.0"
+mode: deployment
+artifacts:
+  quick_filter_model: D:/aizynthfinder-work/public_data/uspto_filter_model.onnx
+  scscore_model: artifacts/runtime/scscore/scscore_model_1024bool_aizynth.pickle
+  rxnfp_model: bert_ft
+  reference_embeddings: artifacts/reference_rxnfp.npy
+  reference_metadata: artifacts/reference_metadata.parquet
+  reference_index: artifacts/reference_nn_index.joblib
+  sc_delta_ecdf: artifacts/sc_delta_ecdf.npz
+  difficulty_model: artifacts/difficulty_model.pkl
+  difficulty_model_metadata: artifacts/difficulty_model_metadata.json
+  stage8_manifest: reports/stage8_manifest.json
+  stage9_manifest: reports/stage9_manifest.json
+  stage5_manifest: reports/stage5_manifest.json
+precedent:
+  tau: 0.80
+  N0: 10
+  metric: cosine
+  top_k: 100
+feature_order: [d_feas, d_prec, d_sc]
+uncertainty:
+  formula: "[4*P_feas*(1-P_feas)+(1-P_prec)]/2"
+  thresholds_source: artifacts/difficulty_model_metadata.json
+outputs:
+  include_reaction_details: true
+  include_explanations: true
+  output_schema_version: "1.0"
+reproducibility:
+  random_seed: 42

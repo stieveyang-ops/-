@@ -1,0 +1,152 @@
+{
+  "stage": 7,
+  "status": "COMPLETE",
+  "created_at_utc": "2026-09-12T11:54:52.680999+00:00",
+  "output": {
+    "path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\labels\\final_expert_labels.parquet",
+    "sha256": "F5BA0C82D24DBADD0EC6169246966C492C99EA69E66A95E641B08CD38F0FB72D",
+    "rows": 300
+  },
+  "labeled_n": 291,
+  "abstain_n": 9,
+  "unanimous_n": 129,
+  "adjudication_n": 171,
+  "adjudication_input_sha256": "C4BEE6C3C0B030141FC6681448B602803B10240425B9FC41276768E70F10588B",
+  "agreement_before_adjudication": {
+    "expert_ids": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "n_samples": 300,
+    "label_distributions": {
+      "E01": {
+        "counts": {
+          "0": 88,
+          "1": 120,
+          "2": 85,
+          "3": 7
+        },
+        "proportions": {
+          "0": 0.29333333333333333,
+          "1": 0.4,
+          "2": 0.2833333333333333,
+          "3": 0.023333333333333334
+        },
+        "abstention_rate": 0.023333333333333334
+      },
+      "E02": {
+        "counts": {
+          "0": 74,
+          "1": 130,
+          "2": 40,
+          "3": 56
+        },
+        "proportions": {
+          "0": 0.24666666666666667,
+          "1": 0.43333333333333335,
+          "2": 0.13333333333333333,
+          "3": 0.18666666666666668
+        },
+        "abstention_rate": 0.18666666666666668
+      },
+      "E03": {
+        "counts": {
+          "0": 185,
+          "1": 23,
+          "2": 83,
+          "3": 9
+        },
+        "proportions": {
+          "0": 0.6166666666666667,
+          "1": 0.07666666666666666,
+          "2": 0.27666666666666667,
+          "3": 0.03
+        },
+        "abstention_rate": 0.03
+      }
+    },
+    "raw_exact_agreement_rate": 0.5286885245901639,
+    "pairwise_confusion_matrices": {
+      "E01__E02": {
+        "n": 244,
+        "confusion_matrix_rows_true_cols_other": [
+          [
+            74,
+            14,
+            0
+          ],
+          [
+            0,
+            116,
+            4
+          ],
+          [
+            0,
+            0,
+            36
+          ]
+        ]
+      },
+      "E01__E03": {
+        "n": 291,
+        "confusion_matrix_rows_true_cols_other": [
+          [
+            88,
+            0,
+            0
+          ],
+          [
+            97,
+            23,
+            0
+          ],
+          [
+            0,
+            0,
+            83
+          ]
+        ]
+      },
+      "E02__E03": {
+        "n": 244,
+        "confusion_matrix_rows_true_cols_other": [
+          [
+            74,
+            0,
+            0
+          ],
+          [
+            111,
+            19,
+            0
+          ],
+          [
+            0,
+            4,
+            36
+          ]
+        ]
+      }
+    },
+    "samples_with_all_experts_non_abstain": 244,
+    "samples_with_any_abstain": 56,
+    "abstain_semantics": "missing_not_ordinal_level",
+    "agreement_method": "ordinal_krippendorff_alpha",
+    "agreement_value": 0.7828435535149016,
+    "agreement_valid_n": 291,
+    "agreement_excluded_n": 9,
+    "agreement_excluded_reason": "fewer_than_two_non_abstain_ratings",
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  "stage8_started": false,
+  "qa": {
+    "final_output_validation": "PASS",
+    "pytest_command": "E:\\Anaconda\\envs\\aizynth\\python.exe -m pytest -q (project root)",
+    "pytest_exit_code": 0,
+    "pytest_passed": 74,
+    "pytest_failed": 0,
+    "pytest_warnings": 9,
+    "expert_labels_generated_or_inferred_by_codex": false
+  }
+}

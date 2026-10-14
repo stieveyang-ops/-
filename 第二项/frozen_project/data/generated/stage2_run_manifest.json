@@ -1,0 +1,21 @@
+{
+  "stage": 2,
+  "schema_version": "stage2-run-manifest-v1",
+  "random_seed": 42,
+  "seed_scope_note": "Project-controlled randomness only; AiZynthFinder CLI exposes no documented --seed.",
+  "aizynthfinder_version": "4.4.1",
+  "benchmark_config": "config/config_benchmark.yml",
+  "benchmark_config_sha256": "07C118A0AC88A71A62C8D7B57B2EC1A76C39A71862751543A4796B09DD1F3EB3",
+  "targets_csv_sha256": "603F73A0BC11E686A3160CAE6BDAFFCE59729AC254A2CB8AB59DC9540D30F919",
+  "targets_smi_sha256": "265F4806959CD18F8BC5D9406BB70C0AC0D54CB923A96484359AA0B552AC7A78",
+  "routes_raw_sha256": "5FA6489B6DF5437066F42AC1323C179C0871F711ACFE9BC3435A0C63221F49BE",
+  "expansion_policy_selected": "uspto",
+  "stock_selected": "zinc",
+  "filter_loaded_for_search": false,
+  "nproc": 1,
+  "route_output_format": "pandas orient=table JSON",
+  "target_count": 40,
+  "route_count_total": 358,
+  "route_count_total": 358,
+  "timestamp_utc": "2026-09-09T14:25:27.162056+00:00"
+}

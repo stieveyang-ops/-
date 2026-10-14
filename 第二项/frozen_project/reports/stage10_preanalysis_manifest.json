@@ -1,0 +1,44 @@
+{
+  "stage": 10,
+  "primary_metric": "kendall_tau_b",
+  "secondary_metrics": [
+    "spearman_rho",
+    "macro_f1",
+    "balanced_accuracy",
+    "quadratic_weighted_kappa"
+  ],
+  "models": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "bootstrap_repetitions": 1000,
+  "bootstrap_unit": "leakage_group_id",
+  "bootstrap_seed": 42,
+  "precedent_tau": [
+    0.75,
+    0.8,
+    0.85
+  ],
+  "precedent_N0": [
+    5,
+    10,
+    20
+  ],
+  "primary_precedent_tau": 0.8,
+  "primary_precedent_N0": 10,
+  "primary_delta_sc": "product_minus_max_precursor",
+  "alternate_delta_sc": "product_minus_mean_precursor",
+  "locked_test_hash": "0891F4CB2DDD5422B68DE526A81495C3969462DE1520B7DD5EBDF5F4C8449FE7",
+  "final_model_hash": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+  "final_model_metadata_hash": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055",
+  "expert_label_hash": "F5BA0C82D24DBADD0EC6169246966C492C99EA69E66A95E641B08CD38F0FB72D",
+  "reaction_features_hash": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+  "reference_corpus_hash": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+  "reference_embeddings_hash": "37766193FEADD7C05CB97FF6285AF5D791A7FCF0EB37CE5D311D481DAD115E44",
+  "code_git_commit": null,
+  "created_at_utc": "2026-09-12T14:15:32.416606+00:00",
+  "test_metrics_computed": false
+}

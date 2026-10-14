@@ -1,0 +1,30 @@
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\第二项\external_public_data\public_data\uspto_model.onnx to uspto
+Loading templates from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\第二项\external_public_data\public_data\uspto_templates.csv.gz to uspto
+Loading template-based expansion policy model from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\第二项\external_public_data\public_data\uspto_ringbreaker_model.onnx to ringbreaker
+Loading templates from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\第二项\external_public_data\public_data\uspto_ringbreaker_templates.csv.gz to ringbreaker
+Loading filter policy model from C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\第二项\external_public_data\public_data\uspto_filter_model.onnx to uspto
+Loading stock from InMemoryInchiKeyQuery to zinc
+Selected as stock: zinc
+Compounds in stock: 35205265
+Selected as expansion policy: uspto
+Selected as filter policy: uspto
+  0%|          | 0/100 [00:00<?, ?it/s]  2%|▏         | 2/100 [00:03<02:28,  1.51s/it]  4%|▍         | 4/100 [00:03<01:03,  1.50it/s]  6%|▌         | 6/100 [00:03<00:37,  2.52it/s]  8%|▊         | 8/100 [00:03<00:24,  3.76it/s] 10%|█         | 10/100 [00:05<00:43,  2.07it/s] 12%|█▏        | 12/100 [00:05<00:30,  2.91it/s] 15%|█▌        | 15/100 [00:05<00:18,  4.54it/s] 18%|█▊        | 18/100 [00:05<00:12,  6.42it/s] 20%|██        | 20/100 [00:05<00:10,  7.67it/s] 22%|██▏       | 22/100 [00:05<00:08,  8.84it/s] 24%|██▍       | 24/100 [00:06<00:07, 10.06it/s] 26%|██▌       | 26/100 [00:06<00:06, 11.58it/s] 28%|██▊       | 28/100 [00:06<00:06, 11.76it/s] 30%|███       | 30/100 [00:06<00:05, 11.97it/s] 32%|███▏      | 32/100 [00:06<00:05, 11.86it/s] 34%|███▍      | 34/100 [00:06<00:05, 12.38it/s] 36%|███▌      | 36/100 [00:06<00:04, 13.06it/s] 38%|███▊      | 38/100 [00:07<00:04, 13.89it/s] 41%|████      | 41/100 [00:07<00:04, 13.78it/s] 44%|████▍     | 44/100 [00:07<00:03, 16.83it/s] 48%|████▊     | 48/100 [00:07<00:02, 19.53it/s] 51%|█████     | 51/100 [00:07<00:02, 20.50it/s] 54%|█████▍    | 54/100 [00:07<00:02, 22.05it/s] 57%|█████▋    | 57/100 [00:07<00:02, 21.27it/s] 60%|██████    | 60/100 [00:08<00:01, 21.22it/s] 63%|██████▎   | 63/100 [00:08<00:01, 20.07it/s] 66%|██████▌   | 66/100 [00:08<00:01, 21.35it/s] 69%|██████▉   | 69/100 [00:08<00:01, 20.09it/s] 72%|███████▏  | 72/100 [00:08<00:01, 19.67it/s] 76%|███████▌  | 76/100 [00:08<00:01, 22.29it/s] 79%|███████▉  | 79/100 [00:08<00:00, 21.64it/s] 84%|████████▍ | 84/100 [00:09<00:00, 26.53it/s] 89%|████████▉ | 89/100 [00:09<00:00, 28.98it/s] 92%|█████████▏| 92/100 [00:09<00:00, 26.68it/s] 95%|█████████▌| 95/100 [00:09<00:00, 24.47it/s] 98%|█████████▊| 98/100 [00:09<00:00, 21.42it/s]                                                Trees saved to C:\Users\18706\OneDrive\Desktop\黑客松\待提交作品\第二项\prospective_runs\my_compound_0020_20261014_130329\routes_raw.json
+target: [O-][n+]1cccc(C(Cl)=NOC[C@H](O)CN2CCCCC2)c1
+search time: 9.874072790145874
+first solution time: 5.401066064834595
+first solution iteration: 12
+number of nodes: 419
+max transforms: 6
+max children: 13
+number of routes: 106
+number of solved routes: 23
+top score: 0.994039853898894
+is solved: True
+number of steps: 2
+number of precursors: 3
+number of precursors in stock: 3
+precursors in stock: O[C@@H](CCl)CN1CCCCC1, O=C(OO)c1cccc(Cl)c1, ON=C(Cl)c1cccnc1
+precursors not in stock: 
+precursors availability: zinc;zinc;zinc
+policy used counts: {'uspto': 418}
+profiling: {'expansion_calls': 317, 'reactants_generations': 2107, 'iterations': 100}

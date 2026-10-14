@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-09-12T18:20:59.069797+00:00",
+  "python_executable": "E:\\Anaconda\\envs\\aizynth\\python.exe",
+  "runtime_versions": {
+    "python": "3.10.20",
+    "python_executable": "E:\\Anaconda\\envs\\aizynth\\python.exe",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.0",
+    "sklearn": "UNAVAILABLE:ModuleNotFoundError",
+    "scipy": "1.15.2",
+    "statsmodels": "0.14.4",
+    "aizynthfinder": "unknown",
+    "rdkit": "2023.09.6"
+  },
+  "routes_path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\generated\\routes_raw.json",
+  "reference_path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\data\\reference\\reference_reactions_clean.parquet",
+  "config_path": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\config\\difficulty.yml",
+  "input_hashes": {
+    "routes": "5FA6489B6DF5437066F42AC1323C179C0871F711ACFE9BC3435A0C63221F49BE",
+    "reference": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+    "config": "815A9F7D21E396349457A535F97CFAB94D10226EE5F353335E770D4D36A395C6",
+    "reaction_features": "B2990C19F94020D6E9C23EF8E1C5E57772D58631AD2F68863D0B11721D3A3226",
+    "difficulty_model": "1BEECF8BF88378E1AC39AB3F5CD996CE068E110635D0E6913B03A11147EF84A2",
+    "difficulty_model_metadata": "DF2AD18C9A40DC30D7B0F767D30E44D953DEDB6F84884FAA047241EDEB416055"
+  },
+  "output_hashes": {
+    "scored_reactions": "A7ED126D108EA45D4BD76D337B3F3F74586270352D01E0BF8DA6C05D803B503F",
+    "scored_routes": "F039DDF4E6DE25C6CCB9F969D632651EE111FC23F33C2AF93D03908C6B8453E8",
+    "scored_routes_csv": "DF9085D0D4063E31B33ECF4702FEF7567A798B6692FB6894E8A57529CC744755"
+  },
+  "output_content_hashes": {
+    "scored_routes": "25DAC10FCFB7F38A37E6FDFE6FA1739D6C686510F1D67BF4AFD6EA76D91B04A6"
+  },
+  "feature_order": [
+    "d_feas",
+    "d_prec",
+    "d_sc"
+  ],
+  "precedent": {
+    "tau": 0.8,
+    "N0": 10.0,
+    "mode": "deployment"
+  },
+  "q33": 0.3005421128682305,
+  "q67": 0.5006582129614043,
+  "labels_or_locked_test_read": false,
+  "training_or_refit": false,
+  "stage12_started": false,
+  "counts": {
+    "reaction_rows": 828,
+    "route_count": 358,
+    "target_count": 40
+  }
+}

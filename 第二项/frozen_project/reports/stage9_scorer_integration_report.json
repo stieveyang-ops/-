@@ -1,0 +1,13 @@
+{
+  "stage": 9,
+  "status": "PASS",
+  "scorer_name": "reaction ease score",
+  "post_search_only": true,
+  "collection_load": "PASS",
+  "smoke_test": "PASS",
+  "score": 0.4787865154631039,
+  "scorer_class": "ReactionDifficultyScorer",
+  "feature_provider": "OnDemandFeatureProvider",
+  "aizynthfinder_version": "4.4.1",
+  "mcts_modified": false
+}

@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "python_executable": "C:\\Users\\18706\\miniconda3\\envs\\aizynth-portable\\python.exe",
+  "user_site_enabled": false,
+  "versions": {
+    "python": {
+      "expected": "3.10.20",
+      "actual": "3.10.20",
+      "match": true
+    },
+    "aizynthfinder": {
+      "expected": "4.4.1",
+      "actual": "4.4.1",
+      "match": true
+    },
+    "rdkit": {
+      "expected": "2023.9.6",
+      "actual": "2023.9.6",
+      "match": true
+    },
+    "numpy": {
+      "expected": "1.26.4",
+      "actual": "1.26.4",
+      "match": true
+    },
+    "pandas": {
+      "expected": "2.3.3",
+      "actual": "2.3.3",
+      "match": true
+    },
+    "pyarrow": {
+      "expected": "25.0.0",
+      "actual": "25.0.0",
+      "match": true
+    },
+    "scipy": {
+      "expected": "1.15.2",
+      "actual": "1.15.2",
+      "match": true
+    },
+    "scikit-learn": {
+      "expected": "1.5.2",
+      "actual": "1.5.2",
+      "match": true
+    },
+    "statsmodels": {
+      "expected": "0.14.4",
+      "actual": "0.14.4",
+      "match": true
+    },
+    "onnxruntime": {
+      "expected": "1.23.2",
+      "actual": "1.23.2",
+      "match": true
+    },
+    "PyYAML": {
+      "expected": "6.0.3",
+      "actual": "6.0.3",
+      "match": true
+    },
+    "joblib": {
+      "expected": "1.5.3",
+      "actual": "1.5.3",
+      "match": true
+    },
+    "pillow": {
+      "expected": "12.3.0",
+      "actual": "12.3.0",
+      "match": true
+    },
+    "tables": {
+      "expected": "3.10.1",
+      "actual": "3.10.1",
+      "match": true
+    },
+    "reaction-utils": {
+      "expected": "1.9.3",
+      "actual": "1.9.3",
+      "match": true
+    }
+  },
+  "core_imports": "PASS",
+  "errors": []
+}

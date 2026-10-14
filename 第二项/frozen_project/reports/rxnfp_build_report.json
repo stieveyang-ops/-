@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "rxnfp_package_version": "0.1.0",
+  "transformers_version": "4.46.3",
+  "torch_version": "2.4.1",
+  "model_name": "bert_ft",
+  "device": "cpu",
+  "dimension": 256,
+  "dtype": "float32",
+  "l2_normalized": true,
+  "batch_size_requested": 32,
+  "batch_size_actual": 32,
+  "n_embeddings": 4946,
+  "embedding_shape": [
+    4946,
+    256
+  ],
+  "reference_clean_sha256": "7506803AAB4EFA13FFD2E4D20ECABF1E37AC0D01FA4C7880B9EF1963E02576B8",
+  "embedding_npy_sha256": "37766193FEADD7C05CB97FF6285AF5D791A7FCF0EB37CE5D311D481DAD115E44",
+  "metadata_sha256": "7062193C9936AA08FF2E43DB9BBA7C1B1269CC9FED12DE0A85827CAFF1EEB2AB",
+  "metadata_csv": "work/reference_metadata.csv",
+  "model_files": [],
+  "tokenizer_vocab_sha256": null,
+  "tokenizer_vocab_note": "RXNFP package-managed bert_ft resources; no standalone vocabulary path was exposed.",
+  "repeatability_max_abs_diff": 1.0244548320770264e-07,
+  "build_elapsed_seconds": 31.1311459,
+  "interpreter": "C:\\Users\\Pasem\\Documents\\Codex\\2026-09-09\\xia\\aizynth-reaction-difficulty\\.conda-rxnfp\\python.exe",
+  "timestamp_utc": "2026-09-11T01:49:09.015836+00:00"
+}

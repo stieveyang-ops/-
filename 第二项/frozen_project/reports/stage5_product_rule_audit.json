@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "audit_type": "read_only_stage5_product_rule_audit",
+  "product_rule_version": "single_connected_product_only_v1",
+  "n_reference_clean_unique": 4946,
+  "n_multi_product_unique": 198,
+  "n_multi_product_raw_weight": 12804,
+  "n_single_product_unique": 4748,
+  "n_single_product_raw_weight": 163581,
+  "n_empty_or_unparseable_product": 0,
+  "n_other_invalid_for_sc_ecdf": 0,
+  "n_reference_sc_ecdf_eligible": 4748,
+  "invalid_counts_and_reasons": {
+    "multiple_products_undefined": 198
+  },
+  "multi_product_component_count_distribution": {
+    "2": 188,
+    "3": 4,
+    "4": 5,
+    "6": 1
+  },
+  "multi_product_raw_weight_by_component_count": {
+    "2": 11176,
+    "3": 1155,
+    "4": 472,
+    "6": 1
+  },
+  "precise_22_vs_198_explanation": {
+    "historical_22": "Historical preflight blocker count; exact derivation not present in current audit artifacts.",
+    "current_198": "Current frozen corpus row-wise RDKit product-side component audit: 198 canonical unique rows.",
+    "current_breakdown": "188 rows with 2 components, 4 with 3, 5 with 4, 1 with 6; duplicate_count weight 12804.",
+    "rule": "198 is the reproducible count used by current ECDF artifact; 22 must not be substituted."
+  },
+  "ecdf_count_identity": {
+    "n_reference_valid_artifact": 4748,
+    "n_clean_unique_minus_invalid": 4748,
+    "matches": true
+  },
+  "stage6_started": false,
+  "difficulty_model_started": false,
+  "aizynthfinder_modified": false,
+  "stage4_files_modified": false
+}
