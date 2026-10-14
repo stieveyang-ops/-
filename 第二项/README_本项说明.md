@@ -25,25 +25,37 @@
 
 | 未包含 | 原体量 | 原因 | 如何补齐 |
 | --- | --- | --- | --- |
-| `frozen_project\.conda-rxnfp\`（Python 3.8 + rxnfp 0.1.0 反应指纹运行时） | 1.66 GB / 26,863 个文件 | 环境不应进版本库；会让仓库文件数失控 | 运行 `rebuild_rxnfp_environment.ps1` 一键重建 |
-| `external_public_data\`（USPTO 模型与模板、ZINC 库存） | 1.40 GB | `zinc_stock.hdf5` 为 1.27 GB，**超过 GitHub 单文件 100 MB 硬限**；且 ZINC 数据受其许可约束，不可再分发 | 按 `README_中文部署说明.md` 从官方来源下载后放入 `external_public_data\public_data\` |
+| `frozen_project\.conda-rxnfp\`（Python 3.8 + rxnfp 0.1.0 反应指纹运行时） | 1.66 GB / 26,863 个文件 | 环境不应进版本库；会让仓库文件数失控 | 运行 `rebuild_rxnfp_environment.ps1 -CondaExe "<你的conda.exe>"` 重建（该参数为必填），再执行 `switch_to_local_rxnfp.ps1`；详见 [`复现指南_REPRODUCE.md`](../复现指南_REPRODUCE.md) 第四节 |
+| `external_public_data\`（USPTO 模型与模板、ZINC 库存） | 1.40 GB | `zinc_stock.hdf5` 为 1.27 GB，**超过 GitHub 单文件 100 MB 硬限**；且 ZINC 数据受其许可约束，不可再分发 | 见 [`复现指南_REPRODUCE.md`](../复现指南_REPRODUCE.md) 第三节：6 个文件的官方直链、字节数与 SHA-256 已全部给出并实测（HTTP 200、大小与包内一致），下载后用 `verify_public_data.py` 一键校验 |
 | `__pycache__\` / `*.pyc` 等编译缓存 | 2,177 个文件 | 无信息价值，Python 自动重建 | 无需处理 |
 
 ## 三、跑起来需要什么
 
+> **完整的分步指南见仓库根目录 [`复现指南_REPRODUCE.md`](../复现指南_REPRODUCE.md)（含全部官方数据直链、文件大小与 SHA-256）。**
+
 ```powershell
-# 1) 主环境（Python 3.10）：见 requirements-portable-main.txt
-conda create -n aizynth-portable python=3.10 -y
+# 1) 主环境（Python 3.10.20）
+conda create -n aizynth-portable python=3.10.20 -y
+conda activate aizynth-portable
 pip install -r requirements-portable-main.txt
 
-# 2) 反应指纹独立运行时（Python 3.8，约 1.6 GB）
-powershell -NoProfile -ExecutionPolicy Bypass -File .\rebuild_rxnfp_environment.ps1
+# 2) 配置 python 路径（必做：仓库里的 portable_config.ps1 是作者本机路径）
+Copy-Item portable_config.example.ps1 portable_config.ps1
+notepad portable_config.ps1      # 把 $env:AIZYNTH_PYTHON 改成你的 python.exe 绝对路径
 
-# 3) 放入第三方公开数据到 external_public_data\public_data\
-#    uspto_model.onnx / uspto_filter_model.onnx / uspto_ringbreaker_model.onnx
-#    uspto_templates.csv.gz / uspto_ringbreaker_templates.csv.gz / zinc_stock.hdf5
+# 3) 反应指纹独立运行时（Python 3.8，约 1.7 GB）—— -CondaExe 为必填参数
+powershell -NoProfile -ExecutionPolicy Bypass -File .\rebuild_rxnfp_environment.ps1 `
+  -CondaExe "C:\你的Miniconda路径\Scripts\conda.exe"
+powershell -NoProfile -ExecutionPolicy Bypass -File .\switch_to_local_rxnfp.ps1
 
-# 4) 自检并启动
+# 4) 公开数据：6 个文件放入 external_public_data\public_data\（直链见复现指南）
+python -m aizynthfinder.tools.download_public_data external_public_data\public_data
+#    ⚠️ 该命令下载的 ZINC 库存是 2020 旧版（663 MB），本项目使用的是 1,339,073,560 字节版本：
+#    https://ndownloader.figshare.com/files/54815918
+python verify_public_data.py external_public_data\public_data   # 期望 6 项全部 OK
+
+# 5) 自检（两项都必须是 PASS）并启动
+. .\portable_config.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File .\package_completeness_test.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File .\launch_gui.ps1
 ```

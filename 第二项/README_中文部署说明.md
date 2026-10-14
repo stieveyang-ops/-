@@ -4,9 +4,9 @@
 
 ## 需要你在新电脑上完成的操作
 
-1. 将整个 `AIZynthFinder_Reaction_Difficulty_Portable_2026-10-08_v2` 文件夹复制到目标电脑，不能只复制其中一部分。
+1. 将本目录（GitHub 仓库中的 `第二项/`，或交付压缩包）**整体**复制到目标电脑，不能只复制其中一部分。
 2. 在目标电脑安装 Conda/Miniconda，并建立一个可写的 Python 3.10.20 环境。主环境所需版本见 `requirements-portable-main.txt`。禁止使用 `pip --user`，禁止用其他版本模型或随机权重替代。
-3. 将 `portable_config.example.ps1` 复制为 `portable_config.ps1`，只修改其中的 Python 路径，例如：
+3. 将 `portable_config.example.ps1` 复制为 `portable_config.ps1`（若仓库内已有 `portable_config.ps1`，请**直接编辑它**——其中默认是作者本机路径），只修改其中的 Python 路径，例如：
 
    ```powershell
    $env:AIZYNTH_PYTHON = "C:\Tools\CondaEnvs\aizynth-portable\python.exe"
@@ -22,6 +22,23 @@
    - `package_completeness_report.json`
    - `environment_validation.json`
 6. 双击 `launch_gui.cmd` 启动图形界面。输入 SMILES、Target ID，设置轮数、时间、最大反应步数和路线数，然后点击 `RUN SEARCH AND SHOW ROUTES`。
+
+## 外部公开数据的获取（2026-10-14 补充）
+
+运行前必须准备 6 个第三方公开文件（放入 `external_public_data\public_data\`）。**官方直链、字节数与 SHA-256 见仓库根目录 [`复现指南_REPRODUCE.md`](../复现指南_REPRODUCE.md) 第三节**，要点：
+
+| 文件 | 官方来源 | 字节数 |
+| --- | --- | --- |
+| `uspto_model.onnx` / `uspto_filter_model.onnx` / `uspto_ringbreaker_model.onnx` | Zenodo 记录 7797465（AiZynthFinder 官方发布） | 91,518,243 / 16,788,859 / 15,036,094 |
+| `uspto_templates.csv.gz` / `uspto_ringbreaker_templates.csv.gz` | Zenodo 记录 7341155（下载后需按此重命名） | 3,313,598 / 373,753 |
+| `zinc_stock.hdf5` | Figshare 文章 29145899（DOI 10.6084/m9.figshare.29145899.v1） | **1,339,073,560** |
+
+```powershell
+python -m aizynthfinder.tools.download_public_data external_public_data\public_data   # 可下载 5 个模型/模板
+# ⚠️ 该命令的 ZINC 库存是 2020 旧版（663,232,280 字节），与本项目使用的版本不同，需单独替换为：
+#    https://ndownloader.figshare.com/files/54815918
+python verify_public_data.py external_public_data\public_data                          # 校验 6 个文件的大小与 SHA-256
+```
 
 ## 中文路径下的 BLOCKED 问题（已于 2026-10-13 修复）
 

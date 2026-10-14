@@ -128,7 +128,9 @@ AGH 还把"执行成功"（outcome）与"结果可信"（verdict）作为两个�
 | [`第五项/`](第五项) | ⑤ 成员分工与独立声明 | 每名成员的实际工作明细、第三方素材来源，以及全体成员签署页 |
 | [`第六项/`](第六项) | ⑥ 公开成果内容 | 本页正文与配图、发布证据与链接（本文即公开发布载体） |
 
-**本仓库未包含**运行时环境（`frozen_project/.conda-rxnfp/`，1.66 GB）与第三方公开数据（`external_public_data/`，1.40 GB，其中 ZINC 库存受其许可约束不可再分发）；二者的重建与获取方式见 [`第二项/README_本项说明.md`](第二项/README_本项说明.md)。
+**本仓库未包含**运行时环境（`frozen_project/.conda-rxnfp/`，1.66 GB）与第三方公开数据（`external_public_data/`，1.40 GB，其中 ZINC 库存受其许可约束不可再分发）。
+
+👉 **想自己跑起来？请按 [`复现指南_REPRODUCE.md`](复现指南_REPRODUCE.md) 操作**：从零开始的 5 步流程（主环境 → 公开数据 6 个文件的官方直链与 SHA-256 → 反应指纹运行时重建 → fail-closed 自检 → 运行复现），并用 [`verify_public_data.py`](verify_public_data.py) 一键校验下载的数据是否与本文结果所用版本完全一致。
 
 ---
 
