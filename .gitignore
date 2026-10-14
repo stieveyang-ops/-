@@ -1,0 +1,23 @@
+# ===== Python 编译缓存与测试缓存 =====
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# ===== 运行时环境与第三方数据（不随仓库分发，见 复现指南_REPRODUCE.md）=====
+frozen_project/.conda-rxnfp/
+frozen_project/.conda-rxnfp-local/
+external_public_data/
+_runtime_tmp/
+_selftest_tmp/
+*.hdf5
+*.onnx
+
+# ===== 临时与系统文件 =====
+Thumbs.db
+desktop.ini
+~$*
+.vscode/
+.idea/
